@@ -1,0 +1,284 @@
+/* Menu First Mobile*/
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 25px;
+}
+
+.menu-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 5000;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+
+.header__scroll > .menu-container {
+  background-color: var(--white);
+}
+
+.menu {
+  position: absolute;
+  width: 90vw;
+  height: 100px;
+  max-width: 1300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* para efecto sticky */
+}
+
+.logo {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: 100px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.logo--img {
+  width: 100%;
+  height: 80%;
+}
+
+.logo--title {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: var(--letterSizeSmall);
+}
+
+.menu-active,
+.menu-active::after,
+.menu-desactive,
+.menu-desactive::before,
+.menu-desactive::after {
+  display: inline-block;
+  height: 3px;
+  width: 27px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+}
+
+.menu-active {
+  height: 20px;
+
+  overflow: hidden;
+}
+
+.menu-active::after {
+  content: '';
+  border-radius: 1px;
+  background-color: var(--colorPrimario);
+  box-shadow: -5px 6.5px var(--colorPrimario), -10px 13px var(--colorSecundario);
+}
+
+.nav {
+  height: 100vh;
+  width: 60vw;
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  right: -85%;
+
+  overflow-y: auto;
+  transition: right 0.4s ease;
+  box-shadow: 0 0 5px -3px var(--colorSecundario);
+  z-index: 1400;
+}
+
+.menu__start {
+  right: 0%;
+  /* Active event menu */
+}
+
+/* menu-desactive va ubicado en otro contenedor*/
+.menu-desactive {
+  height: 20px;
+  top: 60px;
+  left: 86%;
+}
+
+.menu-desactive::after,
+.menu-desactive::before {
+  content: '';
+  border-radius: 1px;
+  background-color: var(--colorPrimario);
+  top: 7px;
+  transform: rotate(0.375turn);
+}
+
+.menu-desactive::before {
+  transform: rotate(0.125turn);
+}
+
+/* Elementos Menu - mismo bloque menu */
+
+.list {
+  position: absolute;
+  top: 120px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.list--item {
+  height: 70px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.list--item > a {
+  text-decoration: none;
+  font-size: var(--letterSizeMedium);
+  margin-left: 15px;
+  color: var(--black);
+  border-radius: 5px;
+  border-bottom: 3px solid var(--colorSecundario);
+}
+
+/* Idioma menu */
+
+.list--item:last-child {
+  border-bottom: none;
+  position: absolute;
+  top: 110%;
+  right: 10%;
+  display: inline-block;
+  font-size: var(--letterSizeSmall);
+  cursor: pointer;
+}
+
+.idioma {
+  border-bottom: none;
+
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+.idioma > em {
+  font-style: normal;
+}
+
+.idioma--selector {
+  width: 90px;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+}
+
+.idioma--list {
+  position: absolute;
+  top: -100px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  transition: top 1s ease;
+}
+
+.idioma--list__active {
+  top: 0;
+}
+
+.idioma--list-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px solid var(--colorPrimario);
+  border-radius: 5px;
+}
+
+.idioma--list-item:first-child {
+  margin-bottom: 7.5px;
+}
+
+.idioma--list-item > a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+@media (min-width: 600px) {
+  .nav {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 800px) {
+  .nav {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .nav {
+    width: 25vw;
+  }
+}
+
+@media (min-width: 1300px) {
+  .menu-active,
+  .menu-desactive {
+    display: none;
+  }
+
+  .nav {
+    height: 100px;
+    width: 80%;
+    box-shadow: none;
+    background-color: transparent;
+    position: absolute;
+    /* producto del desplzamiento del formato mobile */
+    right: 0;
+    transition: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .list {
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .list--item {
+    height: 100%;
+    width: 150px;
+    border-bottom: none;
+    justify-content: center;
+  }
+
+  .list--item a {
+    text-decoration: none;
+    font-size: var(--letterSizeSmall);
+
+    margin-left: 0px;
+    height: 22px;
+
+    border-bottom: 0px solid var(--colorSecundario);
+    transition: border 0.1s ease;
+  }
+
+  .list--item a:hover {
+    border-bottom: 3px solid var(--colorSecundario);
+  }
+}
