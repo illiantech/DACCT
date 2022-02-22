@@ -6,8 +6,11 @@ const menuNav = document.getElementById('menu-nav');
 
 const headerHeightDocument = () => {
   const header = menuNav.parentElement.parentElement.parentElement;
+  // para que header no se mas grande que body
   const bodyHeight =
-    menuNav.parentElement.parentElement.parentElement.parentElement.offsetHeight;
+    menuNav.parentElement.parentElement.parentElement.parentElement.offsetHeight -
+    50;
+
   header.style.height = `${bodyHeight}px`;
 };
 
@@ -42,9 +45,11 @@ addEventListener('scroll', () => {
 });
 
 // Idioma
+
 const idioma = document.getElementById('idioma');
+const idiomaSelector = idioma.nextElementSibling;
 
 idioma.addEventListener('click', () => {
-  const idiomaList = idioma.nextElementSibling.nextElementSibling.firstElementChild;
+  const idiomaList = idioma.nextElementSibling.firstElementChild;
   idiomaList.classList.toggle('idioma--list__active');
 });

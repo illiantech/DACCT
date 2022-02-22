@@ -15,7 +15,7 @@
   top: 0;
   z-index: 5000;
   background-color: transparent;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.4s ease;
 }
 
 .header__scroll > .menu-container {
@@ -91,7 +91,6 @@
   top: 0;
   right: -85%;
 
-  overflow-y: auto;
   transition: right 0.4s ease;
   box-shadow: 0 0 5px -3px var(--colorSecundario);
   z-index: 1400;
@@ -149,8 +148,10 @@
   font-size: var(--letterSizeMedium);
   margin-left: 15px;
   color: var(--black);
-  border-radius: 5px;
+  width: 135px;
+  padding-bottom: 5px;
   border-bottom: 3px solid var(--colorSecundario);
+  text-align: center;
 }
 
 /* Idioma menu */
@@ -163,13 +164,17 @@
   display: inline-block;
   font-size: var(--letterSizeSmall);
   cursor: pointer;
+  height: 25px;
 }
 
 .idioma {
   border-bottom: none;
-
+  display: flex;
+  justify-content: center;
   width: 90px;
   margin-bottom: 10px;
+  padding-bottom: 2.5px;
+  border-bottom: 2px solid var(--colorSecundario);
 }
 
 .idioma > em {
@@ -192,7 +197,8 @@
   list-style-type: none;
   width: 100%;
   height: 100%;
-  transition: top 1s ease;
+
+  transition: top 0.4s ease;
 }
 
 .idioma--list__active {
@@ -204,6 +210,11 @@
   padding-bottom: 5px;
   border: 2px solid var(--colorPrimario);
   border-radius: 5px;
+  background-color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .idioma--list-item:first-child {
@@ -213,6 +224,15 @@
 .idioma--list-item > a {
   text-decoration: none;
   color: var(--black);
+
+  position: absolute;
+  left: 2.5px;
+}
+
+.idioma--list-item > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 2.5px;
 }
 
 @media (min-width: 600px) {
@@ -241,15 +261,14 @@
 
   .nav {
     height: 100px;
-    width: 80%;
+    width: 70%;
     box-shadow: none;
     background-color: transparent;
     position: absolute;
     /* producto del desplzamiento del formato mobile */
     right: 0;
     transition: none;
-    display: flex;
-    justify-content: flex-end;
+    right: 125px;
   }
 
   .list {
@@ -267,18 +286,26 @@
     justify-content: center;
   }
 
-  .list--item a {
+  .list--item > a {
     text-decoration: none;
     font-size: var(--letterSizeSmall);
-
+    width: auto;
     margin-left: 0px;
     height: 22px;
-
+    border-radius: 5px;
     border-bottom: 0px solid var(--colorSecundario);
     transition: border 0.1s ease;
   }
 
-  .list--item a:hover {
+  .list--item > a:hover {
     border-bottom: 3px solid var(--colorSecundario);
+  }
+
+  /* Idioma menu */
+
+  .list--item:last-child {
+    right: -120px;
+    top: 50%;
+    width: 90px;
   }
 }

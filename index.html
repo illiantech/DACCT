@@ -7,7 +7,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
-
+    <!-- CDN font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="CSS/template/Normalize.css" />
     <link rel="stylesheet" href="CSS/template/principal.css" />
@@ -63,16 +70,24 @@
                 <a title="Contáctanos" href="">Contáctanos</a>
               </li>
               <li class="list--item">
-                <div id="idioma" class="idioma">
+                <div title="Seleccionar idioma" id="idioma" class="idioma">
                   <em> Idioma </em>
                 </div>
                 <div class="idioma--selector">
                   <ul class="idioma--list">
                     <li class="idioma--list-item">
-                      <a href="">ES</a>
+                      <a title="Español" lang="es" href="">ES</a>
+                      <img
+                        src="assets/img/png/icon/republica-dominicana.png"
+                        alt="bandera de republica dominicana"
+                      />
                     </li>
                     <li class="idioma--list-item">
-                      <a href="">EN</a>
+                      <a title="Ingles" lang="en" href="">EN</a>
+                      <img
+                        src="assets/img/png/icon/estados-unidos.png"
+                        alt="bandera de estados unidos"
+                      />
                     </li>
                   </ul>
                 </div>
@@ -83,168 +98,400 @@
       </div>
     </header>
     <main role="main" class="main">
+      <!-- Slider automatico -->
+
+      <div class="slider-container">
+        <div class="slider" id="slider">
+          <picture class="slider--picture0">
+            <source
+              media="(min-width: 1200px)"
+              srcset="assets/img/webp/chica_tlf_slider/chica_tlfn_1920.webp"
+            />
+            <source
+              media="(min-width: 350px)"
+              srcset="assets/img/webp/chica_tlf_slider/chica_tlfn_1280.webp"
+            />
+            <source srcset="assets/img/webp/chica_tlf_slider/chica_tlfn_640.webp" />
+            <img
+              class="slider--img0"
+              src="assets/img/jpg/slider/chica _tlf/chica_tlfn_1280.jpg"
+              alt="chica joven observando su telefono"
+            />
+          </picture>
+          <picture class="slider--picture1">
+            <source
+              media="(min-width: 1200px)"
+              srcset="assets/img/webp/diseño_slider/diseño_1920.webp"
+            />
+            <source
+              media="(min-width: 350px)"
+              srcset="assets/img/webp/diseño_slider/diseño_1280.webp"
+            />
+            <source srcset="assets/img/webp/diseño_slider/diseño_640.webp" />
+            <img
+              class="slider--img1"
+              src="assets/img/jpg/slider/diseño/diseño_1280.jpg"
+              alt="persona diseñando en su espacio de trabajo"
+            />
+          </picture>
+          <picture class="slider--picture2">
+            <source
+              media="(min-width: 1200px)"
+              srcset="assets/img/webp/equipo_digital_slider/equipo_digital_1920.webp"
+            />
+            <source
+              media="(min-width: 350px)"
+              srcset="assets/img/webp/equipo_digital_slider/equipo_digital_1280.webp"
+            />
+            <source
+              srcset="assets/img/webp/equipo_digital_slider/equipo_digital_640.webp"
+            />
+            <img
+              class="slider--img2"
+              src="assets/img/jpg/slider/equipo_digital/equipo_digital_1280.jpg"
+              alt="equipo de desarrollo digital trabajando en un proyecto"
+            />
+          </picture>
+          <picture class="slider--picture3">
+            <source
+              media="(min-width: 1200px)"
+              srcset="assets/img/webp/libro_slider/libro_1920.webp"
+            />
+            <source
+              media="(min-width: 350px)"
+              srcset="assets/img/webp/libro_slider/libro_1280.webp"
+            />
+            <source srcset="assets/img/webp/libro_slider/libro_640.webp" />
+            <img
+              class="slider--img3"
+              src="assets/img/jpg/slider/libro/libro_1280.jpg"
+              alt="persona editando un libro en su computadora/laptop"
+            />
+          </picture>
+          <picture class="slider--picture4">
+            <source
+              media="(min-width: 1200px)"
+              srcset="assets/img/webp/ui_slider/ui_1920.webp"
+            />
+            <source
+              media="(min-width: 350px)"
+              srcset="assets/img/webp/ui_slider/ui_1280.webp"
+            />
+            <source srcset="assets/img/webp/ui_slider/ui_640.webp" />
+            <img
+              class="slider--img4"
+              src="assets/img/jpg/slider/ui/ui_1280.jpg"
+              alt="crecion del diseño o la interfaz de usuario en un cuaderno"
+            />
+          </picture>
+          <!-- efects wave slider -->
+        </div>
+        <!-- <div class="slider--efect-box"></div> -->
+        <div class="slider-container--efect">
+          <div id="sliderElementRotate" class="slider--efect-wave"></div>
+        </div>
+        <div class="title-container">
+          <h1 class="title">
+            <span cals class="title--item">La</span> <br />
+            Coalición Domínico Americana
+            <br />
+            <span cals class="title--item">de</span> Connecticut
+          </h1>
+        </div>
+      </div>
+
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure. Officia
-        optio sunt, error blanditiis quos, eligendi nostrum, aliquid necessitatibus
-        odio esse adipisci possimus magnam consectetur modi iste placeat
-        delectus.lore
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
       </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
+        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
+        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
+        impedit temporibus voluptatem?
+      </p>
+      <footer class="footer">
+        <div class="container-contact">
+          <address class="contact">
+            <!-- LOGO FOOTER -->
+            <!-- sobre si mismo -->
+            <a href="" class="logo logo__footer">
+              <h2 class="logo--title">DACCT</h2>
+              <picture>
+                <!-- adaptar imagenes -->
+                <source
+                  media="(min-width: 1300px)"
+                  srcset="assets/img/webp/logo_dacct.webp"
+                />
+                <source
+                  media="(min-width: 350px)"
+                  srcset="assets/img/webp/logo_dacct.webp"
+                />
+                <source srcset="assets/img/webp/logo_dacct.webp" />
+                <img
+                  class="logo--img"
+                  src="assets/img/webp/logo_dacct.webp"
+                  alt=""
+                />
+              </picture>
+            </a>
+            <!-- Flata links de redes sociales en plantillas -->
+            <ul class="contact--list">
+              <li class="contact--item">
+                <a title="Facebook" href=""
+                  ><i class="fa-brands fa-facebook-square"></i
+                ></a>
+              </li>
+              <li class="contact--item">
+                <a title="Whatsapp" href=""
+                  ><i class="fa-brands fa-whatsapp-square"></i
+                ></a>
+              </li>
+              <li class="contact--item">
+                <a title="Instagram" href=""
+                  ><i class="fa-brands fa-instagram-square"></i
+                ></a>
+              </li>
+              <li class="contact--item">
+                <a title="Enviar Correo" href=""
+                  ><i class="fa-solid fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+            <div class="container-autor">
+              <p class="autor">Daniel Pimentel - 2022</p>
+            </div>
+            <p class="footer--info">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+              libero.
+            </p>
+          </address>
+        </div>
+      </footer>
     </main>
 
     <!-- Scripts JS -->

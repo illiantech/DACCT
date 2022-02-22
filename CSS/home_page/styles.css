@@ -1,0 +1,146 @@
+/* Slider Automatico */
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  /* --colorPrimario y colorPrimario2 con opacidad */
+  background-image: linear-gradient(
+    hsla(0, 0%, 95%, 0.9) 15%,
+    hsla(0, 0%, 95%, 0.6) 30%
+  );
+  height: 100vh;
+  position: relative;
+}
+/* No se hizo por img para facilitar la iteracion por JS */
+.slider--picture0,
+.slider--picture1,
+.slider--picture2,
+.slider--picture3,
+.slider--picture4 {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+
+.slider--picture0 {
+  z-index: -200;
+}
+
+.slider--picture1 {
+  z-index: -400;
+}
+
+.slider--picture2 {
+  z-index: -600;
+}
+
+.slider--picture3 {
+  z-index: -800;
+}
+
+.slider--picture4 {
+  z-index: -1000;
+}
+
+.slider--img0,
+.slider--img1,
+.slider--img2,
+.slider--img3,
+.slider--img4 {
+  position: relative;
+  z-index: -2000;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Los que considero que no se ven bien */
+.slider--img0 {
+  object-position: 55%;
+}
+
+.slider--img2 {
+  object-position: 44%;
+}
+
+.slider--img3 {
+  object-position: 40%;
+}
+
+/* efecto de onda */
+
+.slider-container--efect {
+  position: absolute;
+  top: 85%;
+  height: 100px;
+  width: 100%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.slider--efect-wave {
+  display: inline-block;
+  border: 10px solid var(--colorPrimario);
+  background-color: var(--white);
+  border-radius: 40%;
+  animation: rotate 15s linear infinite;
+  z-index: 100;
+  position: absolute;
+  left: -25%;
+  transform: rotate(0deg);
+}
+
+/* title H1 */
+
+.title-container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  position: absolute;
+
+  color: var(--colorPrimario2);
+  width: 85%;
+}
+
+.title--item {
+  color: var(--colorSecundario2);
+}
+
+@media (min-width: 600px) {
+  .title {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .title {
+    width: 660px;
+    font-size: calc(var(--letterSizeMedium) * 2);
+  }
+}
+
+/* todo contenido tiene que estar con z index mayor a element rotate */
+
+/* p {
+  position: relative;
+  z-index: 200;
+  margin: 0;
+  background-color: var(--white);
+  height: 1000px;
+} */
