@@ -82,7 +82,7 @@
   transform: rotateX(180deg);
   background-position: bottom;
 
-  animation: w 5s linear infinite;
+  animation: w 10s linear infinite;
 }
 /* investigar esta reaccion  particular en el key frame */
 @keyframes w {
