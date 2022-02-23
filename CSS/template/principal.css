@@ -9,8 +9,7 @@
   --white: hsl(0, 0%, 95%);
   --colorPrimario: hsl(224, 70%, 40%);
   --colorPrimario2: hsl(231, 70%, 30%);
-  --colorSecundario: hsl(357, 66%, 43%);
-  --colorSecundario2: hsl(352, 55%, 40%);
+  --colorSecundario: hsl(355, 70%, 50%);
   /* --colorSecundarioText: hsl(55, 90%, 70%); */
   --shadowGeneral: 0 0 5px -3px var(--black);
   --letterSizeSmall: 1rem;

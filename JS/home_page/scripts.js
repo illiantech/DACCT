@@ -31,18 +31,18 @@ setInterval(() => {
 
 // adaptation element rotate
 
-const sliderElementRotate = document.getElementById('sliderElementRotate');
+// const sliderElementRotate = document.getElementById('sliderElementRotate');
 
-const efectWave = () => {
-  const viewportWidth = document.firstElementChild.clientWidth;
-  const sizeElement = viewportWidth * 1.5;
+// const efectWave = () => {
+//   const viewportWidth = document.firstElementChild.clientWidth;
+//   const sizeElement = viewportWidth * 5;
 
-  sliderElementRotate.style.width = `${sizeElement}px`;
-  sliderElementRotate.style.height = `${sizeElement}px`;
-};
+//   sliderElementRotate.style.width = `${sizeElement}px`;
+//   sliderElementRotate.style.height = `${sizeElement}px`;
+// };
 
-efectWave();
+// efectWave();
 
-addEventListener('resize', () => {
-  efectWave();
-});
+// addEventListener('resize', () => {
+//   efectWave();
+// });

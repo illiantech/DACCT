@@ -11,14 +11,9 @@
   height: 100px;
   display: flex;
   justify-content: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 5000;
-  background-color: transparent;
-  transition: background-color 0.4s ease;
-}
-
-.header__scroll > .menu-container {
   background-color: var(--white);
 }
 
