@@ -31,17 +31,17 @@ menuDesac.addEventListener('click', (e) => {
 
 // side bar scroll
 
-const scrollBar = () => {
-  // side bar scroll
-  const header = menuNav.parentElement.parentElement.parentElement;
-  let scrollTop = document.firstElementChild.scrollTop;
-  if (scrollTop > header.offsetTop) header.classList.add('header__scroll');
-  else header.classList.remove('header__scroll');
-};
+// const scrollBar = () => {
+//   // side bar scroll
+//   const header = menuNav.parentElement.parentElement.parentElement;
+//   let scrollTop = document.firstElementChild.scrollTop;
+//   if (scrollTop > header.offsetTop) header.classList.add('header__scroll');
+//   else header.classList.remove('header__scroll');
+// };
 
-addEventListener('scroll', () => {
-  scrollBar();
-});
+// addEventListener('scroll', () => {
+//   scrollBar();
+// });
 
 // Idioma
 

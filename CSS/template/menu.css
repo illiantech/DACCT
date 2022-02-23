@@ -14,7 +14,8 @@
   position: fixed;
   top: 0;
   z-index: 5000;
-  background-color: var(--white);
+  /* para que combine con el logo */
+  background-color: hsl(0, 0%, 100%);
 }
 
 .menu {
@@ -33,7 +34,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 150px;
+  width: 188px;
   height: 100px;
   text-decoration: none;
   color: var(--black);
@@ -41,7 +42,7 @@
 
 .logo--img {
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 
 .logo--title {
@@ -85,9 +86,9 @@
   position: fixed;
   top: 0;
   right: -85%;
-
+  overflow: auto;
   transition: right 0.4s ease;
-  box-shadow: 0 0 5px -3px var(--colorSecundario);
+  box-shadow: var(--shadowGeneral);
   z-index: 1400;
 }
 
@@ -120,7 +121,7 @@
 
 .list {
   position: absolute;
-  top: 120px;
+  top: 100px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -131,7 +132,7 @@
 }
 
 .list--item {
-  height: 70px;
+  height: 100px;
 
   display: flex;
 
@@ -140,13 +141,12 @@
 
 .list--item > a {
   text-decoration: none;
-  font-size: var(--letterSizeMedium);
+  font-size: var(--letterSizeSmall);
   margin-left: 15px;
   color: var(--black);
-  width: 135px;
+  border-radius: 5px;
   padding-bottom: 5px;
   border-bottom: 3px solid var(--colorSecundario);
-  text-align: center;
 }
 
 /* Idioma menu */
@@ -260,6 +260,7 @@
     box-shadow: none;
     background-color: transparent;
     position: absolute;
+    overflow: initial;
     /* producto del desplzamiento del formato mobile */
     right: 0;
     transition: none;

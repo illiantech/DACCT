@@ -9,7 +9,9 @@
   /* --colorPrimario y colorPrimario2 con opacidad */
   background-image: linear-gradient(
     hsla(231, 70%, 30%, 0.9) 15%,
-    hsla(224, 70%, 40%, 0.6) 40%
+    hsla(224, 70%, 40%, 0.6) 30%,
+    hsla(224, 70%, 40%, 0.6) 97.5%,
+    var(--white) 97.5%
   );
   height: 100vh;
   position: relative;
@@ -74,7 +76,23 @@
 
 .wave {
   position: absolute;
-  bottom: 0;
+  top: 45%;
+
+  width: 600%;
+  height: 100%;
+  background-image: url(../../assets/img/svg/wave.svg);
+  transform: rotateX(180deg);
+  background-position: bottom;
+  animation: w 5s linear infinite;
+}
+
+@keyframes w {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
 }
 /* 
 .slider-container--efect {
@@ -127,15 +145,39 @@
 
 @media (min-width: 600px) {
   .title {
-    width: 500px;
+    width: 400px;
+    font-size: var(--letterSizeMedium);
+  }
+  .wave {
+    bottom: -25%;
+  }
+}
+@media (min-width: 800px) {
+  .wave {
+    bottom: -10%;
   }
 }
 
+@media (min-width: 900px) {
+  .wave {
+    bottom: -20%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .title {
+    font-size: var(--letterSizeBig);
+  }
+}
 @media (min-width: 1300px) {
   .title {
     width: 600px;
     font-size: calc(var(--letterSizeMedium) * 2);
     top: 35%;
+  }
+
+  .wave {
+    bottom: -40%;
   }
 }
 
