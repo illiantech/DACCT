@@ -2,6 +2,7 @@
 
 .container-card2 {
   position: relative;
+  margin-top: 100px;
   width: 100vw;
   height: 500px;
   display: flex;
