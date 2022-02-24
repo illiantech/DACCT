@@ -70,7 +70,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-
+  color: var(--white);
   left: 0;
 
   /* NO eliminar efeto opacidad, se ve bonito */
@@ -99,9 +99,11 @@
 
 /* contruccion contenido PEDRO */
 
+/* usar variables */
+
 .titulo-c {
   font-size: calc(var(--letterSizeBig) * 1.2);
-  color: hsl(0, 0%, 100%);
+
   margin-left: -50%;
   letter-spacing: 5px;
   font-weight: 700;
@@ -125,7 +127,7 @@
   top: -40px;
   left: 50px;
   width: 75%;
-  color: white;
+
   height: 45%;
   font-size: var(--letterSizeSmall);
 }
