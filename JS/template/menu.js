@@ -54,12 +54,11 @@ if (
   navigator.userAgent.match(/BlackBerry/i) ||
   navigator.userAgent.match(/Windows Phone/i)
 ) {
+  const idioma = document.getElementById('idioma');
+  idioma.classList.remove('idioma__hover');
+
+  idioma.addEventListener('click', () => {
+    const idiomaList = idioma.nextElementSibling.firstElementChild;
+    idiomaList.classList.toggle('idioma--list__active');
+  });
 }
-
-const idioma = document.getElementById('idioma');
-const idiomaSelector = idioma.nextElementSibling;
-
-idioma.addEventListener('click', () => {
-  const idiomaList = idioma.nextElementSibling.firstElementChild;
-  idiomaList.classList.toggle('idioma--list__active');
-});

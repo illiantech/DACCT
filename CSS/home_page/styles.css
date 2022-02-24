@@ -76,7 +76,6 @@
   background-image: url(../../assets/img/svg/wave.svg);
   position: relative;
   top: -350px;
-
   width: 600%;
   height: 400px;
   transform: rotateX(180deg);
@@ -137,63 +136,25 @@
 
 .title {
   position: absolute;
-  top: 50%;
+
   color: var(--white);
-  width: 85%;
-  letter-spacing: 8px;
-  text-align: center;
- 
+  width: 75%;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: left;
 }
-
-@media (min-width: 210px) {
-  .title {
-    margin-top: -100px;
-  }
-}
-  
-
-
 
 @media (min-width: 600px) {
   .title {
     width: 450px;
-    
-   
-  }
-  .wave {
-    bottom: -25%;
-  }
-}
-@media (min-width: 800px) {
-  .wave {
-    bottom: -10%;
-  }
-
-  .title{
-    font-size: 3.5em;
-  }
-}
-
-@media (min-width: 900px) {
-  .wave {
-    bottom: -20%;
   }
 }
 
 @media (min-width: 1000px) {
   .title {
-    font-size: var(--letterSizeBig);
-    
-  }
-}
-@media (min-width: 1300px) {
-  .title {
-    width: 600px;
     font-size: calc(var(--letterSizeMedium) * 2);
-  }
-
-  .wave {
-    bottom: -40%;
+    width: 600px;
   }
 }
 
