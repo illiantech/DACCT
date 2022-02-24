@@ -48,14 +48,17 @@
 }
 
 .card2 {
-  /* border: 1px solid black; */
+  border: 1px solid black; 
   width: 100%;
+  margin-right: 25px;
   background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   left: 50%;
+  top: -20px;
+
 }
 
 .titulo-c {
@@ -64,31 +67,50 @@
   margin-left: -50%;
   letter-spacing: 5px;
   font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
+.card2 p{
+
+  position: relative;
+  top: -80px;
+  width: 50%;
+}
+.lista{
+ width: 100%;
+ position: relative;
+ top: -25px;
+ margin: 0px 0px 0px 50px;
+}
 .Lista-s {
-  /*  border: 1px solid black; */
+  position: relative;
+  top:-40px;
+  left: 50px;
   width: 75%;
   color: white;
   height: 45%;
   font-size: var(--letterSizeSmall);
 }
 
+.Lista-s p{
+ position: relative;
+ top: 20px;
+ margin: 20px 0px 30px 0px;
+ left: -55px;
+}
 .Lista-s li {
-  line-height: 25px;
+  line-height: 20px;
+  font-weight: 700;
+  font-weight: 500;
+
 }
 
 .card2__scroll {
   opacity: 1;
 }
 
-.card2--paragrahp {
-  margin-top: 0;
-  margin-bottom: 0;
-  height: 75%;
-  width: 75%;
-  font-size: 1.5rem;
-}
+
 
 .card2--buttom {
   text-decoration: none;
@@ -110,7 +132,7 @@
 
     background-image: linear-gradient(
       to left,
-      hsla(224, 70%, 40%, 0.562) 50%,
+      hsla(224, 70%, 40%, 0.822) 45%,
       rgba(141, 140, 140, 0.342) 80%
     );
     display: flex;
