@@ -1,0 +1,34 @@
+.conocenos {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 100vh;
+}
+
+.conocenos--title,
+.conocenos--paragraph {
+  text-align: center;
+  max-width: 1200px;
+}
+
+.conocenos--title {
+  font-size: var(--letterSizeBig);
+  color: var(--colorPrimario2);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.conocenos--paragraph {
+  font-size: calc(var(--letterSizeMedium) / 1.2);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1000px) {
+  .conocenos--title {
+    margin-bottom: 75px;
+  }
+}
