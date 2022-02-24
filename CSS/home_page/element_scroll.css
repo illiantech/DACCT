@@ -1,5 +1,36 @@
 /* FIRST MOBILE */
 
+/* scrol */
+
+html::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+html::-webkit-scrollbar:vertical {
+  width:.8em;
+}
+
+html::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+} 
+
+html::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--colorSecundario);
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+
+
+
+
 /* Seccion estrategias */
 
 .container-card2 {
@@ -58,130 +89,92 @@
   left: -50%;
 }
 
-.card2 {
-<<<<<<< HEAD
-  /* border: 1px solid black;  */
-=======
-  /* marcos de referencia */
-  border: 2px solid black;
-  /*  */
->>>>>>> 0e4df4f007fdfda0b2b05f124e1a2b09c2a871f8
-  width: 100%;
-  height: 100%;
-
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  color: var(--white);
-  left: 0;
-
-  /* NO eliminar efeto opacidad, se ve bonito */
-  opacity: 0;
-  transition: opacity 1.5s ease;
-}
-
 /* transicion opacidad */
+
+
 
 .card2__scroll {
   opacity: 1;
 }
 
-.card2--buttom {
-  text-decoration: none;
-  position: absolute;
-  top: 75%;
-  font-size: 1.5rem;
-  padding: 6px 12px 6px 12px;
-  border: 2px solid var(--colorPrimario);
-  background-color: var(--white);
-  cursor: pointer;
-  color: var(--black);
-  transition: top 0.3s ease;
-}
 
 /* contruccion contenido PEDRO */
 
-/* usar variables */
+/* transicion opacidad */
 
-.titulo-c {
-  font-size: calc(var(--letterSizeBig) * 1.2);
-
-  margin-left: -50%;
-  letter-spacing: 5px;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 50px;
-}
-
-.card2 p {
-  position: relative;
-  top: -80px;
-  width: 50%;
-}
-.lista {
+.card2 {
+  /* marcos de referencia */
+/*   border: 1px solid black; */ 
   width: 100%;
+  height: 80%;
+  margin: auto;
   position: relative;
-  top: -25px;
-  margin: 0px 0px 0px 50px;
+  left: 75%;
+  color: white;
 }
-.Lista-s {
+
+.card2 h2{
   position: relative;
-  top: -40px;
-  left: 50px;
-  width: 75%;
-
-  height: 45%;
-  font-size: var(--letterSizeSmall);
-}
-
-.Lista-s p {
-  position: relative;
-  top: 20px;
-  margin: 20px 0px 30px 0px;
-  left: -55px;
-}
-.Lista-s li {
-  line-height: 20px;
-  font-weight: 700;
-  font-weight: 500;
-<<<<<<< HEAD
-
-}
-
-.card-paragraph{
-  font-size: var(--letterSizeSmall);
+  top: -55px;
+  font-size: var(--letterSizeBig);
   color: var(--white);
+  letter-spacing: 10px;
+}
+
+.card2 hr{
+  width: 30%;
   position: relative;
-  left: -55px;
-  line-height: 1.2em;
+  left: -35.5%;
+  top: -75px;
+  border-color: var(--colorSecundario);
+}
+
+.Sub-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: -8%;
+}
+
+/* contenedor Lista */
+.lista{
+  /* border: 1px solid black; */
+  margin: -10px 5px 0px 5px;
+  width: 50%;
+ 
+}
+.lista p{
+  font-size: var(--letterSizeMedium);
+  margin-bottom: -15px;
+}
+
+
+.lista li{
+  list-style: none;
+  margin: 25px 0px 0px 10px;
+  font-size: var(--letterSizeMedium);
   
+}
+
+/* Contenedor parrafo */
+.card-paragraph{
+ /*   border: 1px solid black; */
+  width: 50%;
+  height: 50%;
+  margin: 5% 10px 0px 0px;
 
 }
 
 
-
-.card2__scroll {
-  opacity: 1;
+.card-paragraph p{
+  font-size: var(--letterSizeMedium);
+  text-align: justify;
+  line-height: 40px;
+  word-spacing: 10px;
 }
 
 
 
-.card2--buttom {
-  text-decoration: none;
-  position: absolute;
-  top: 75%;
-  font-size: 1.5rem;
-  padding: 6px 12px 6px 12px;
-  border: 2px solid var(--colorPrimario);
-  background-color: var(--white);
-  cursor: pointer;
-  color: var(--black);
-  transition: top 0.3s ease;
-=======
->>>>>>> 0e4df4f007fdfda0b2b05f124e1a2b09c2a871f8
-}
+
 /* ADAPTACION A DISLAY DE PC */
 
 @media (min-width: 900px) {
@@ -204,10 +197,9 @@
   }
 }
 
-@media (min-width: 1300px) {
-  .card2--buttom:hover {
-    top: 73%;
+@media (min-width:450) {
+  .Sub-container{
+    display: flex;
+    flex-direction: row;
   }
 }
-
-/* Fin seccion estrategias */
