@@ -44,11 +44,11 @@
 }
 
 .background-card2__scroll .background-card2__size {
-  left: 0%;
+  left: -50%;
 }
 
 .card2 {
-  border: 1px solid black; 
+  /* border: 1px solid black;  */
   width: 100%;
   margin-right: 25px;
   background-color: transparent;
@@ -105,6 +105,18 @@
   font-weight: 500;
 
 }
+
+.card-paragraph{
+  font-size: var(--letterSizeSmall);
+  color: var(--white);
+  position: relative;
+  left: -55px;
+  line-height: 1.2em;
+  
+
+}
+
+
 
 .card2__scroll {
   opacity: 1;

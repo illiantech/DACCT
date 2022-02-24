@@ -16,5 +16,5 @@ const elementOpacityScroll = () => {
 };
 
 addEventListener('scroll', () => {
-/*   elementOpacityScroll(); */
+  elementOpacityScroll(); 
 });
