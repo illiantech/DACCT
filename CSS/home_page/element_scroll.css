@@ -53,11 +53,10 @@
   transition: left 1.5s ease;
 }
 
+/* efecto scroll con opacidad y desplazamiento agregado */
 .background-card2__scroll .background-card2__size {
   left: 0%;
 }
-
-/* efecto scroll con opacidad y desplazamiento agregado */
 
 .card2 {
   /* marcos de referencia */
