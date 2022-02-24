@@ -1,23 +1,28 @@
 .conocenos {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: absolute;
   top: 100vh;
+  width: 100vw;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conocenos--section {
+  width: 95%;
+  max-width: 1000px;
 }
 
 .conocenos--title,
 .conocenos--paragraph {
   text-align: center;
-  max-width: 1000px;
+  width: 100%;
 }
 
 .conocenos--title {
   font-size: var(--letterSizeBig);
   color: var(--colorPrimario2);
-  margin-top: 100px;
+  margin-top: 0;
   margin-bottom: 50px;
 }
 
