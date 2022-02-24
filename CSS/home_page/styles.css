@@ -9,9 +9,7 @@
   /* --colorPrimario y colorPrimario2 con opacidad */
   background-image: linear-gradient(
     hsla(231, 70%, 30%, 0.9) 15%,
-    hsla(224, 70%, 40%, 0.6) 30%,
-    hsla(224, 70%, 40%, 0.6) 97.5%,
-    var(--white) 97.5%
+    hsla(224, 70%, 40%, 0.6) 30%
   );
   height: 100vh;
   position: relative;
@@ -75,17 +73,18 @@
 /* efecto de onda */
 
 .wave {
-  position: absolute;
-  top: 45%;
+  background-image: url(../../assets/img/svg/wave.svg);
+  position: relative;
+  top: -350px;
 
   width: 600%;
-  height: 100%;
-  background-image: url(../../assets/img/svg/wave.svg);
+  height: 400px;
   transform: rotateX(180deg);
   background-position: bottom;
-  animation: w 5s linear infinite;
-}
 
+  animation: w 10s linear infinite;
+}
+/* investigar esta reaccion  particular en el key frame */
 @keyframes w {
   0% {
     margin-left: 0;
@@ -145,8 +144,7 @@
 
 @media (min-width: 600px) {
   .title {
-    width: 400px;
-    font-size: var(--letterSizeMedium);
+    width: 450px;
   }
   .wave {
     bottom: -25%;
