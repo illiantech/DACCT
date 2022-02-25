@@ -157,6 +157,7 @@
   left: 2.5%;
   width: 100px;
   height: 50px;
+
   justify-content: center;
 }
 
@@ -173,7 +174,7 @@
   border-radius: 10px;
   width: 90px;
   height: 45px;
-  background-color: var(--colorSecundario);
+  background-color: var(--colorPrimario);
   transition: all 0.2s ease;
 }
 
@@ -183,7 +184,7 @@
   border-bottom: none;
   position: absolute;
   top: 110%;
-  right: 10%;
+  right: 5%;
   display: inline-block;
   font-size: var(--letterSizeSmall);
   height: 25px;
@@ -362,6 +363,8 @@
     width: 100px;
     height: 50px;
     font-size: var(--letterSizeMedium);
+    background-color: var(--colorSecundario);
+    border-bottom: none;
   }
 
   /* Idioma menu */
