@@ -353,6 +353,8 @@
   }
 
   .donar-buttom a:hover {
+    /* las letras se mueven por el transforme */
+    /* transform: scale(1.2, 1.2); */
     width: 100px;
     height: 50px;
     font-size: var(--letterSizeMedium);
