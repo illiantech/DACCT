@@ -29,6 +29,15 @@ menuDesac.addEventListener('click', (e) => {
   menuNav.classList.remove('menu__start');
 });
 
+// remover menu al clicar fuera de el
+
+menuNav.addEventListener('mouseleave', () => {
+  const main = document.getElementById('main');
+  main.addEventListener('click', () => {
+    menuNav.classList.remove('menu__start');
+  });
+});
+
 // side bar scroll
 
 // const scrollBar = () => {

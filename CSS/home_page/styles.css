@@ -9,7 +9,7 @@
   /* --colorPrimario y colorPrimario2 con opacidad */
   background-image: linear-gradient(
     hsla(231, 70%, 30%, 0.9) 15%,
-    hsla(224, 70%, 40%, 0.6) 30%
+    hsla(224, 70%, 40%, 0.7) 30%
   );
   height: 100vh;
   position: relative;
@@ -167,6 +167,3 @@
   background-color: var(--white);
   height: 1000px;
 } */
-
-
-
