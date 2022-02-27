@@ -10,58 +10,18 @@ const resizeAlliance = () => {
   // desplazar un elemento para que quede otro a la izquierda
 
   allianceList.scrollLeft = viewportWidth;
-
+  //  documentar
   allianceList.addEventListener('scroll', (e) => {
-    const allianceMove = allianceList.scrollLeft / viewportWidth;
+    for (let index = 2; index <= allianceList.children.length; index++) {
+      if (viewportWidth * index == allianceList.scrollLeft) {
+        for (let i = 0; i < index - 1; i++) {
+          fragment.append(allianceList.children[i]);
+        }
 
-    if (viewportWidth * 2 == allianceList.scrollLeft) {
-      const items = [allianceList.children[0]];
-      fragment.append(...items);
-      allianceList.append(fragment);
-      allianceList.scrollLeft = viewportWidth;
-    }
-
-    if (viewportWidth * 3 == allianceList.scrollLeft) {
-      const items = [allianceList.children[0], allianceList.children[1]];
-      fragment.append(...items);
-      allianceList.append(fragment);
-      allianceList.scrollLeft = viewportWidth;
+        allianceList.append(fragment);
+      }
     }
 
-    if (viewportWidth * 4 == allianceList.scrollLeft) {
-      const items = [
-        allianceList.children[0],
-        allianceList.children[1],
-        allianceList.children[2]
-      ];
-      fragment.append(...items);
-      allianceList.append(fragment);
-      allianceList.scrollLeft = viewportWidth;
-    }
-    if (viewportWidth * 5 == allianceList.scrollLeft) {
-      const items = [
-        allianceList.children[0],
-        allianceList.children[1],
-        allianceList.children[2],
-        allianceList.children[3]
-      ];
-      fragment.append(...items);
-      allianceList.append(fragment);
-      allianceList.scrollLeft = viewportWidth;
-    }
-
-    if (viewportWidth * 6 == allianceList.scrollLeft) {
-      const items = [
-        allianceList.children[0],
-        allianceList.children[1],
-        allianceList.children[2],
-        allianceList.children[3],
-        allianceList.children[4]
-      ];
-      fragment.append(...items);
-      allianceList.append(fragment);
-      allianceList.scrollLeft = viewportWidth;
-    }
     sliderAutoDesac();
   });
 
@@ -82,8 +42,6 @@ const resizeAlliance = () => {
 // aplicacion de slider CSS con JS
 
 const allianceList = document.getElementById('allianceList');
-
-const allianceListItems = Array.from(allianceList.children);
 
 if (
   navigator.userAgent.match(/Android/i) ||
