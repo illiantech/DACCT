@@ -8,6 +8,11 @@
   margin-bottom: 0px;
 }
 
+.alliance--list-container {
+  --sizeAlliance: 400px;
+  height: var(--sizeAlliance);
+}
+
 .alliance--list {
   padding-left: 0;
   margin-top: 0;
@@ -15,8 +20,8 @@
   list-style-type: none;
   display: flex;
   /* solo cambiar un valor para redimensionar todo */
-  --sizeAlliance: 400px;
-  height: var(--sizeAlliance);
+
+  height: 100%;
 }
 
 .alliance--list-item,
@@ -48,11 +53,13 @@
 
 /* slider con CSS en movil */
 
-.alliance--list__mobile {
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-}
+@media (max-width: 999px) {
+  .alliance--list__mobile {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
 
-.alliance--list__mobile .alliance--list-item {
-  scroll-snap-align: center;
+  .alliance--list__mobile .alliance--list-item {
+    scroll-snap-align: center;
+  }
 }
