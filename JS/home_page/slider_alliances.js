@@ -12,14 +12,58 @@ const resizeAlliance = () => {
   allianceList.scrollLeft = viewportWidth;
   //  documentar
   allianceList.addEventListener('scroll', (e) => {
-    for (let index = 2; index <= allianceList.children.length; index++) {
-      if (viewportWidth * index == allianceList.scrollLeft) {
-        for (let i = 0; i < index - 1; i++) {
-          fragment.append(allianceList.children[i]);
-        }
+    if (viewportWidth * 2 == allianceList.scrollLeft) {
+      let items = [allianceList.children[0]];
+      fragment.append(...items);
 
-        allianceList.append(fragment);
-      }
+      allianceList.append(fragment);
+      allianceList.scrollLeft = viewportWidth;
+    }
+    if (viewportWidth * 3 == allianceList.scrollLeft) {
+      let items = [allianceList.children[0], allianceList.children[1]];
+      fragment.append(...items);
+
+      allianceList.append(fragment);
+      allianceList.scrollLeft = viewportWidth;
+    }
+
+    if (viewportWidth * 4 == allianceList.scrollLeft) {
+      let items = [
+        allianceList.children[0],
+        allianceList.children[1],
+        allianceList.children[2]
+      ];
+      fragment.append(...items);
+
+      allianceList.append(fragment);
+      allianceList.scrollLeft = viewportWidth;
+    }
+
+    if (viewportWidth * 5 == allianceList.scrollLeft) {
+      let items = [
+        allianceList.children[0],
+        allianceList.children[1],
+        allianceList.children[2],
+        allianceList.children[3]
+      ];
+      fragment.append(...items);
+
+      allianceList.append(fragment);
+      allianceList.scrollLeft = viewportWidth;
+    }
+
+    if (viewportWidth * 6 == allianceList.scrollLeft) {
+      let items = [
+        allianceList.children[0],
+        allianceList.children[1],
+        allianceList.children[2],
+        allianceList.children[3],
+        allianceList.children[4]
+      ];
+      fragment.append(...items);
+
+      allianceList.append(fragment);
+      allianceList.scrollLeft = viewportWidth;
     }
 
     sliderAutoDesac();
@@ -29,7 +73,7 @@ const resizeAlliance = () => {
   const sliderAutoActive = () => {
     sliderAuto = setInterval(() => {
       allianceList.scrollLeft = viewportWidth * 2;
-    }, 6000);
+    }, 100000);
   };
   sliderAutoActive();
 
@@ -62,3 +106,14 @@ if (
     resizeAlliance();
   });
 } else allianceList.classList.remove('alliance--list__mobile');
+// for (let index = 2; index < allianceList.children.length; index++) {
+//   if (viewportWidth * index == allianceList.scrollLeft) {
+//     console.dir(`tirada ${index}`);
+//     for (let i = 0; i < index - 1; i++) {
+//       fragment.append(allianceList.children[i]);
+//       console.dir(i);
+//     }
+//     allianceList.append(fragment);
+//     allianceList.scrollLeft = viewportWidth;
+//   }
+// }
