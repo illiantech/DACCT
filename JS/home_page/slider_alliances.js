@@ -34,11 +34,14 @@ const resizeAlliance = (viewportWidth) => {
     viewportWidth = document.firstElementChild.clientWidth + 18;
   }
 
+  allianceList.scrollLeft = viewportWidth;
   // desplazar un elemento para que quede otro a la izquierda
 
-  allianceList.scrollLeft = viewportWidth;
   //  documentar
+
   allianceList.addEventListener('scroll', (e) => {
+    // Se puede sumar mas 6 px en PC el allianceList.scrollLeft para desplazar infinitamente, debido a diferencias de tamaño del scroll por anclaje y el viewport
+
     if (viewportWidth * 2 == allianceList.scrollLeft) {
       let items = [allianceList.children[0]];
       fragment.append(...items);
@@ -46,6 +49,7 @@ const resizeAlliance = (viewportWidth) => {
       allianceList.append(fragment);
       allianceList.scrollLeft = viewportWidth;
     }
+
     if (viewportWidth * 3 == allianceList.scrollLeft) {
       let items = [allianceList.children[0], allianceList.children[1]];
       fragment.append(...items);
@@ -100,7 +104,7 @@ const resizeAlliance = (viewportWidth) => {
   const sliderAutoActive = () => {
     sliderAuto = setInterval(() => {
       allianceList.scrollLeft = viewportWidth * 2;
-    }, 7000);
+    }, 6000);
   };
   sliderAutoActive();
 
