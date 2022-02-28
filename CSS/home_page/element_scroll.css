@@ -1,36 +1,5 @@
 /* FIRST MOBILE */
 
-/* scrol */
-
-html::-webkit-scrollbar {
-  -webkit-appearance: none;
-}
-
-html::-webkit-scrollbar:vertical {
-  width:.8em;
-}
-
-html::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
-  display: none;
-} 
-
-html::-webkit-scrollbar:horizontal {
-  height: 10px;
-}
-
-html::-webkit-scrollbar-thumb {
-  background-color: var(--colorSecundario);
-  border-radius: 20px;
-  border: 2px solid #f1f2f3;
-}
-
-html::-webkit-scrollbar-track {
-  border-radius: 10px;  
-}
-
-
-
-
 /* Seccion estrategias */
 
 .container-card2 {
@@ -74,106 +43,89 @@ html::-webkit-scrollbar-track {
   object-fit: cover;
 }
 
-.background-card2__size {
+.background-card2--size {
   max-width: 1600px;
   height: 85%;
   width: 85%;
   position: relative;
   /* posicionamineto del elemento antes de desplazamiento */
-  left: -50%;
+  left: -25%;
   transition: left 1.5s ease;
 }
 
 /* efecto scroll con opacidad y desplazamiento agregado */
-.background-card2__scroll .background-card2__size {
-  left: -50%;
+.background-card2__scroll .background-card2--size {
+  left: 0%;
+}
+
+.card2 {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  left: 0%;
+  color: var(--white);
+  opacity: 0;
+  transition: opacity 1.5s ease;
 }
 
 /* transicion opacidad */
-
-
 
 .card2__scroll {
   opacity: 1;
 }
 
-
-/* contruccion contenido PEDRO */
-
-/* transicion opacidad */
-
-.card2 {
-  /* marcos de referencia */
-/*   border: 1px solid black; */ 
-  width: 100%;
-  height: 80%;
-  margin: auto;
-  position: relative;
-  left: 75%;
-  color: white;
-}
-
-.card2 h2{
-  position: relative;
-  top: -55px;
+.card2--title {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
   font-size: var(--letterSizeBig);
-  color: var(--white);
-  letter-spacing: 10px;
-}
-
-.card2 hr{
-  width: 30%;
-  position: relative;
-  left: -35.5%;
-  top: -75px;
-  border-color: var(--colorSecundario);
-}
-
-.Sub-container{
-  display: flex;
-  flex-direction: row;
-  margin-top: -8%;
+  border-bottom: 4px solid var(--colorSecundario);
+  border-radius: 10px;
 }
 
 /* contenedor Lista */
-.lista{
-  /* border: 1px solid black; */
-  margin: -10px 5px 0px 5px;
-  width: 50%;
- 
+
+.card2--list-container {
+  height: 75%;
 }
-.lista p{
+
+.card2--list-paragraph {
   font-size: var(--letterSizeMedium);
-  margin-bottom: -15px;
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 
+.card2--list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 
-.lista li{
-  list-style: none;
-  margin: 25px 0px 0px 10px;
-  font-size: var(--letterSizeMedium);
-  
+  list-style-type: circle;
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
 }
 
+.card2--list li {
+  height: 45px;
+
+  font-size: var(--letterSizeSmall);
+}
 /* Contenedor parrafo */
-.card-paragraph{
- /*   border: 1px solid black; */
-  width: 50%;
-  height: 50%;
-  margin: 5% 10px 0px 0px;
-
+.card2--paragraph {
+  font-size: var(--letterSizeSmall);
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-
-
-.card-paragraph p{
-  font-size: var(--letterSizeMedium);
-  text-align: justify;
-  line-height: 40px;
-  word-spacing: 10px;
-}
-
-
-
 
 /* ADAPTACION A DISLAY DE PC */
 
@@ -182,24 +134,54 @@ html::-webkit-scrollbar-track {
     background-color: transparent;
     background-image: linear-gradient(
       to left,
-      /* uilizar medidas de opacidad sin subdecimales */ hsla(224, 70%, 40%, 0.7) 60%,
-      hsla(0, 0%, 95%, 0.3) 80%
+      /* uilizar medidas de opacidad sin subdecimales */ hsla(224, 70%, 40%, 0.8) 50%,
+      hsla(199, 100%, 68%, 0.3) 80%
     );
   }
 
-  .background-card2__size {
+  .background-card2--size {
     display: flex;
     justify-content: flex-end;
   }
 
   .card2 {
-    width: 60%;
+    width: 50%;
   }
 }
 
-@media (min-width:450) {
-  .Sub-container{
+@media (min-width: 1300px) {
+  .container-card2 {
+    height: 500px;
+  }
+  .card2 {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .card2--title {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  /* contenedor Lista */
+  .card2--list-container {
+    position: absolute;
+    left: 0;
+  }
+
+  .card2--list li {
+    height: 45px;
+  }
+
+  /* Contenedor parrafo */
+  .card2--paragraph {
+    font-size: calc(var(--letterSizeMedium) / 1.1);
+    width: 300px;
+    height: 150px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
   }
 }

@@ -5,10 +5,9 @@ const containerCardTwo = document.getElementById('containerCardTwo');
 const cardTwo = document.getElementById('cardTwo');
 
 const elementOpacityScroll = () => {
-  let scrollTop = document.firstElementChild.scrollTop;
-  let cardTop = containerCardTwo.offsetTop;
-  let viewportHeight = document.firstElementChild.clientHeight;
-  console.log(1);
+  const scrollTop = document.firstElementChild.scrollTop;
+  const cardTop = containerCardTwo.offsetTop;
+  const viewportHeight = document.firstElementChild.clientHeight;
   if (scrollTop > cardTop - viewportHeight / 1.3) {
     bgrCardTwo.classList.add('background-card2__scroll');
     cardTwo.classList.add('card2__scroll');
@@ -16,5 +15,5 @@ const elementOpacityScroll = () => {
 };
 
 addEventListener('scroll', () => {
-  elementOpacityScroll(); 
+  elementOpacityScroll();
 });

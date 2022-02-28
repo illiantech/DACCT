@@ -8,9 +8,9 @@
   --black: hsl(0, 0%, 5%);
   --white: hsl(0, 0%, 95%);
   --colorPrimario: hsl(224, 70%, 40%);
-  --colorPrimario2: hsl(224, 48%, 23%);
+  --colorPrimario2: hsl(223, 49%, 23%);
   --colorSecundario: hsl(357, 70%, 44%);
-  /* --colorSecundarioText: hsl(55, 90%, 70%); */
+
   --shadowGeneral: 0 0 5px -3px var(--black);
   --letterSizeSmall: 1rem;
   --letterSizeMedium: 1.4rem;
@@ -18,6 +18,45 @@
   background-color: var(--white);
   color: var(--black);
   font-family: 'Outfit', sans-serif;
+}
+
+/* scroll */
+/* investigar a profundidad */
+
+:root::-webkit-scrollbar,
+.nav::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+:root::-webkit-scrollbar:vertical {
+  width: 0.8em;
+}
+
+.nav::-webkit-scrollbar:vertical {
+  width: 0.5rem;
+}
+
+:root::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button,
+.nav::-webkit-scrollbar-button:increment {
+  display: none;
+}
+
+:root::-webkit-scrollbar:horizontal,
+.nav::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+:root::-webkit-scrollbar-thumb,
+.nav::-webkit-scrollbar-thumb {
+  background-color: var(--colorSecundario);
+  border-radius: 20px;
+  border: 2px solid var(--white);
+}
+
+:root::-webkit-scrollbar-track,
+.nav::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
 
 body {

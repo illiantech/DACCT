@@ -92,7 +92,7 @@
 .contact--item:nth-child(2) {
   border-radius: 3px;
   position: relative;
-  top: 3px;
+  top: 4px;
   background-image: radial-gradient(
     circle 20px at center,
     transparent 48%,
@@ -116,8 +116,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+
   color: var(--white);
   /* recodar si va italica */
   font-style: normal;

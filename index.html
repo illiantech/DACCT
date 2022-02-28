@@ -17,9 +17,12 @@
     />
 
     <!-- Fuente nueva a probar  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="CSS/template/Normalize.css" />
     <link rel="stylesheet" href="CSS/template/principal.css" />
@@ -27,6 +30,7 @@
     <link rel="stylesheet" href="CSS/home_page/styles.css" />
     <link rel="stylesheet" href="CSS/home_page/about_us.css" />
     <link rel="stylesheet" href="CSS/home_page/element_scroll.css" />
+    <link rel="stylesheet" href="CSS/home_page/slider_alliances.css" />
     <link rel="stylesheet" href="CSS/template/footer.css" />
 
     <title>DACCT</title>
@@ -36,7 +40,7 @@
       <!-- Menu -->
       <div class="menu-container">
         <div class="menu">
-          <a title="L  ogo" href="" class="logo">
+          <a title="Logo" href="" class="logo">
             <picture>
               <!-- adaptar imagenes -->
 
@@ -72,21 +76,24 @@
               <li class="list--item">
                 <a title="Contáctanos" href="contacto.html">Contáctanos</a>
               </li>
+              <li class="list--item donar-buttom">
+                <a title="Donar" href="">Donar</a>
+              </li>
               <li class="list--item">
-                <div title="Seleccionar idioma" id="idioma" class="idioma">
+                <div id="idioma" class="idioma idioma__hover">
                   <em> Idioma </em>
                 </div>
                 <div class="idioma--selector">
                   <ul class="idioma--list">
-                    <li class="idioma--list-item">
-                      <a title="Español" lang="es" href="">ES</a>
+                    <li title="Español" class="idioma--list-item">
+                      <a lang="es" href="">ES</a>
                       <img
                         src="assets/img/png/icon/republica-dominicana.png"
                         alt="bandera de republica dominicana"
                       />
                     </li>
-                    <li class="idioma--list-item">
-                      <a title="Ingles" lang="en" href="">EN</a>
+                    <li title="Ingles" class="idioma--list-item">
+                      <a lang="en" href="">EN</a>
                       <img
                         src="assets/img/png/icon/estados-unidos.png"
                         alt="bandera de estados unidos"
@@ -100,7 +107,7 @@
         </div>
       </div>
     </header>
-    <main role="main" class="main">
+    <main role="main" class="main" id="main">
       <!-- Slider automatico -->
 
       <div class="slider-container">
@@ -216,7 +223,7 @@
       </div>
       <!-- Seccion de estragias -->
 
-      <section class="container-card2" id="containerCardTwo">
+      <div class="container-card2" id="containerCardTwo">
         <div class="background-card2" id="bgrCardTwo">
           <picture>
             <source
@@ -235,75 +242,154 @@
             />
           </picture>
           <!-- Contenedor de la card -->
-          <div class="background-card2__size">
-
-
+          <div class="background-card2--size">
             <!-- Contenedor de la card -->
-            <div class="card2" id="cardTwo">
-              <h2 class="titulo-c">Estrategias</h2>
-              <hr>
-             
-                 <div class="Sub-container">
-              <!-- Contenedor Lista -->
-                <div class="lista">
-                  <ul>
-                      <p>Educando comunidades en:</p>
-                      <li>Manualidades.</li>
-                      <li>Educacion Financiera.</li>
-                      <li>Metabolismo y nutrición.</li>
-                      <li>Computación Basica pra Adultos.</li>
-                      <li>ESL (Ingles como Segunda Lengua).</li>
-                      <li>Intrumentos Musicales.</li>
-                      <li>Porgramas Deportivos.</li>
-                  </ul>
-                </div>
+            <section class="card2" id="cardTwo">
+              <h3 class="card2--title">Estrategias</h3>
 
-                <!-- Contenedor parrafo -->
-                <div class="card-paragraph">
-                  <p >
-                    Las futuras generaciones latinas pueden identificar su patrimonio a través de la cultura y obtener 
-                    una perspectiva historica y comprensión de su identidad cultural.
-                  </p>
-                </div>
+              <!-- Contenedor Lista -->
+              <div class="card2--list-container">
+                <p class="card2--list-paragraph">Educando comunidades en:</p>
+                <ul class="card2--list">
+                  <li>Manualidades.</li>
+                  <li>Educación Financiera.</li>
+                  <li>Metabolismo y nutrición.</li>
+                  <li>Computación Básica para Adultos.</li>
+                  <li>ESL (Ingles como Segunda Lengua).</li>
+                  <li>Intrumentos Musicales.</li>
+                  <li>Programas Deportivos.</li>
+                </ul>
               </div>
 
-            </div>
+              <!-- Contenedor parrafo -->
+
+              <p class="card2--paragraph">
+                Las futuras generaciones latinas pueden identificar su patrimonio a
+                través de la cultura y obtener una perspectiva historica y
+                comprensión de su identidad cultural.
+              </p>
+            </section>
           </div>
         </div>
-      </section>
+      </div>
 
       <!-- Fin de la sección -->
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
-        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
-        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
-        impedit temporibus voluptatem?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
-        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
-        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
-        impedit temporibus voluptatem?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
-        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
-        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
-        impedit temporibus voluptatem?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
-        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
-        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
-        impedit temporibus voluptatem?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
-        recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
-        consequuntur magnam eaque, quisquam omnis dolorem voluptate repudiandae
-        impedit temporibus voluptatem?
-      </p>
+      <!-- alianazas slider -->
+
+      <section class="alliance">
+        <h3 class="alliance--title">Aliados</h3>
+        <div class="alliance--list-container">
+          <ul class="alliance--list alliance--list__mobile" id="allianceList">
+            <li class="alliance--list-item">
+              <a class="alliance--list-link">
+                <picture class="alliance--list-picture">
+                  <source media="(min-width:600px)" srcset="" />
+                  <source srcset="assets/ALIANZA/POP.webp" />
+                  <img
+                    src="assets/ALIANZA/POP.webp"
+                    alt=""
+                    class="alliance--list-img"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="alliance--list-item">
+              <a class="alliance--list-link">
+                <picture class="alliance--list-picture">
+                  <source media="(min-width:600px)" srcset="" />
+                  <source srcset="assets/ALIANZA/LEAD.webp" />
+                  <img
+                    src="assets/ALIANZA/LEAD.webp"
+                    alt=""
+                    class="alliance--list-img"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="alliance--list-item">
+              <a class="alliance--list-link">
+                <picture class="alliance--list-picture">
+                  <source media="(min-width:600px)" srcset="" />
+                  <source srcset="assets/ALIANZA/BDK.webp" />
+                  <img
+                    src="assets/ALIANZA/BDK.webp"
+                    alt=""
+                    class="alliance--list-img"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="alliance--list-item">
+              <a class="alliance--list-link">
+                <picture class="alliance--list-picture">
+                  <source media="(min-width:600px)" srcset="" />
+                  <source srcset="assets/ALIANZA/SEE.webp" />
+                  <img
+                    src="assets/ALIANZA/SEE.webp"
+                    alt=""
+                    class="alliance--list-img"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="alliance--list-item">
+              <a class="alliance--list-link">
+                <picture class="alliance--list-picture">
+                  <source media="(min-width:600px)" srcset="" />
+                  <source srcset="assets/ALIANZA/LCB.webp" />
+                  <img
+                    src="assets/ALIANZA/LCB.webp"
+                    alt=""
+                    class="alliance--list-img"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="alliance--list-item">
+              <a class="alliance--list-link">
+                <picture class="alliance--list-picture">
+                  <source media="(min-width:600px)" srcset="" />
+                  <source srcset="assets/ALIANZA/HCCGB.webp" />
+                  <img
+                    src="assets/ALIANZA/HCCGB.webp"
+                    alt=""
+                    class="alliance--list-img"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="alliance--list-item">
+              <a class="alliance--list-link">
+                <picture class="alliance--list-picture">
+                  <source media="(min-width:600px)" srcset="" />
+                  <source srcset="assets/ALIANZA/RED.webp" />
+                  <img
+                    src="assets/ALIANZA/RED.webp"
+                    alt=""
+                    class="alliance--list-img"
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="alliance--list-item">
+              <a class="alliance--list-link"> 8 </a>
+            </li>
+            <li class="alliance--list-item">
+              <a class="alliance--list-link"> 9 </a>
+            </li>
+            <li class="alliance--list-item">
+              <a class="alliance--list-link"> 10 </a>
+            </li>
+            <li class="alliance--list-item">
+              <a class="alliance--list-link"> 11 </a>
+            </li>
+          </ul>
+          <div class="alliance--prev" id="buttomPrev">&lt;</div>
+          <div class="alliance--next" id="buttomNext">></div>
+        </div>
+      </section>
+      <!-- fin de slider -->
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda
         recusandae eligendi in quod rem. Quas, temporibus? Pariatur repellat
@@ -376,5 +462,6 @@
     <script src="JS/template/menu.js"></script>
     <script src="JS/home_page/scripts.js"></script>
     <script src="JS/home_page/element_scroll.js"></script>
+    <script src="JS/home_page/slider_alliances.js"></script>
   </body>
 </html>

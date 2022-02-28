@@ -149,16 +149,44 @@
   border-bottom: 3px solid var(--colorSecundario);
 }
 
+/* Bottom de donar */
+
+.donar-buttom {
+  position: absolute;
+  top: 103%;
+  left: 2.5%;
+  width: 100px;
+  height: 50px;
+
+  justify-content: center;
+}
+
+.donar-buttom a {
+  border-bottom: none;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-left: 0;
+  /* ^ elemetos heredados de los otros item de la lista */
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(var(--letterSizeMedium) / 1.1);
+  border-radius: 10px;
+  width: 90px;
+  height: 45px;
+  background-color: var(--colorPrimario);
+}
+
 /* Idioma menu */
 
 .list--item:last-child {
   border-bottom: none;
   position: absolute;
-  top: 110%;
-  right: 10%;
+  top: 105%;
+  right: 5%;
   display: inline-block;
   font-size: var(--letterSizeSmall);
-  cursor: pointer;
   height: 25px;
 }
 
@@ -167,37 +195,45 @@
   display: flex;
   justify-content: center;
   width: 90px;
-  margin-bottom: 10px;
   padding-bottom: 2.5px;
-  border-bottom: 2px solid var(--colorSecundario);
+  border-bottom: 3px solid var(--colorSecundario);
 }
 
 .idioma > em {
   font-style: normal;
+
+  text-align: center;
+  cursor: pointer;
 }
 
 .idioma--selector {
   width: 90px;
-  height: 80px;
+  height: 90px;
   overflow: hidden;
   position: relative;
 }
 
 .idioma--list {
   position: absolute;
-  top: -100px;
+  top: -105%;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
   list-style-type: none;
-  width: 100%;
-  height: 100%;
-
+  cursor: pointer;
   transition: top 0.4s ease;
 }
 
+/* idioma hover CCS PC */
+
+.idioma__hover:hover + .idioma--selector > .idioma--list,
+.idioma__hover + .idioma--selector > .idioma--list:hover, 
+/* idioma bottom JS Movil */
 .idioma--list__active {
-  top: 0;
+  top: -5%;
 }
 
 .idioma--list-item {
@@ -206,14 +242,15 @@
   border: 2px solid var(--colorPrimario);
   border-radius: 5px;
   background-color: var(--white);
-
+  /* pero que el contenedor tenga altura automatica */
   display: flex;
-  align-items: center;
+
   justify-content: flex-end;
 }
 
 .idioma--list-item:first-child {
   margin-bottom: 7.5px;
+  margin-top: 15px;
 }
 
 .idioma--list-item > a {
@@ -270,7 +307,7 @@
   .list {
     top: 0;
     height: 100%;
-    display: flex;
+    width: 80%;
     flex-direction: row;
     justify-content: space-evenly;
   }
@@ -284,7 +321,7 @@
 
   .list--item > a {
     text-decoration: none;
-    font-size: var(--letterSizeSmall);
+
     width: auto;
     margin-left: 0px;
     height: 22px;
@@ -297,10 +334,38 @@
     border-bottom: 3px solid var(--colorSecundario);
   }
 
+  /* Donar */
+  .donar-buttom {
+    position: absolute;
+    left: 102.5%;
+    top: 25%;
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+  }
+
+  .donar-buttom a {
+    border-radius: 10px;
+    width: 90px;
+    height: 45px;
+
+    transition: all 0.2s ease;
+  }
+
+  .donar-buttom a:hover {
+    /* las letras se mueven por el transforme */
+    /* transform: scale(1.2, 1.2); */
+    width: 100px;
+    height: 50px;
+    font-size: var(--letterSizeMedium);
+    background-color: var(--colorSecundario);
+    border-bottom: none;
+  }
+
   /* Idioma menu */
 
   .list--item:last-child {
-    right: -120px;
+    right: -250px;
     top: 50%;
     width: 90px;
   }

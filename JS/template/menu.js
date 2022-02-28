@@ -29,6 +29,15 @@ menuDesac.addEventListener('click', (e) => {
   menuNav.classList.remove('menu__start');
 });
 
+// remover menu al clicar fuera de el
+
+menuNav.addEventListener('mouseleave', () => {
+  const main = document.getElementById('main');
+  main.addEventListener('click', () => {
+    menuNav.classList.remove('menu__start');
+  });
+});
+
 // side bar scroll
 
 // const scrollBar = () => {
@@ -54,12 +63,11 @@ if (
   navigator.userAgent.match(/BlackBerry/i) ||
   navigator.userAgent.match(/Windows Phone/i)
 ) {
+  const idioma = document.getElementById('idioma');
+  idioma.classList.remove('idioma__hover');
+
+  idioma.addEventListener('click', () => {
+    const idiomaList = idioma.nextElementSibling.firstElementChild;
+    idiomaList.classList.toggle('idioma--list__active');
+  });
 }
-
-const idioma = document.getElementById('idioma');
-const idiomaSelector = idioma.nextElementSibling;
-
-idioma.addEventListener('click', () => {
-  const idiomaList = idioma.nextElementSibling.firstElementChild;
-  idiomaList.classList.toggle('idioma--list__active');
-});
