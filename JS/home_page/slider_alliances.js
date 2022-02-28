@@ -20,19 +20,8 @@ const resizeAlliance = (viewportWidth) => {
   // ancho de viewport
 
   // para tener el ancho del documento y verificar (tomando en cuenta que los elementos a scrollear son equivalentes al viewport) que el scroll realizado sea N veces el viewportWidth y asi saber cuanto elementos existen a la izquierda
-  if (
-    navigator.userAgent.match(/Android/i) ||
-    navigator.userAgent.match(/webOS/i) ||
-    navigator.userAgent.match(/iPhone/i) ||
-    navigator.userAgent.match(/iPad/i) ||
-    navigator.userAgent.match(/iPod/i) ||
-    navigator.userAgent.match(/BlackBerry/i) ||
-    navigator.userAgent.match(/Windows Phone/i)
-  ) {
-    viewportWidth = document.firstElementChild.clientWidth;
-  } else {
-    viewportWidth = document.firstElementChild.clientWidth + 18;
-  }
+
+  viewportWidth = document.firstElementChild.clientWidth;
 
   allianceList.scrollLeft = viewportWidth;
   // desplazar un elemento para que quede otro a la izquierda
@@ -162,6 +151,9 @@ const resizeAlliance = (viewportWidth) => {
       allianceList.append(fragment);
       allianceList.scrollLeft = viewportWidth;
     }
+    // limpiar TIEMPOS de slider pc
+    clearTimeout(sliderAutoTime);
+    clearInterval(sliderAutoInterval);
 
     sliderAutoDesac();
   });
@@ -197,7 +189,6 @@ addEventListener('resize', () => {
     resizeAlliance(viewportWidth);
   }
 });
-
 // Slider para PC
 
 // valid click event
