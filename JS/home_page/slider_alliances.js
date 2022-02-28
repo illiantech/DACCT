@@ -155,7 +155,7 @@ const resizeAlliance = (viewportWidth) => {
   sliderAutoActive(viewportWidth);
 };
 
-// slider automaitco Mobile en scope General
+// slider automaitco Mobile en scope General - ATTENTION
 let sliderAutoMobile;
 // desplazaiento de un elemento a otro reposicionante con primer IF
 const sliderAutoActive = (viewportWidth) => {
@@ -168,6 +168,8 @@ const sliderAutoDesac = () => {
   clearInterval(sliderAutoMobile);
   sliderAutoActive(viewportWidth);
 };
+
+// exit aslider auto mobile
 
 // variables slider auto PC - (se tiene arriba para que lo limpie en mobile)
 let sliderAutoTime, sliderAutoInterval;
