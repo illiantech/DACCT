@@ -43,7 +43,7 @@
 }
 
 .alliance--list-picture {
-  height: 80%;
+  height: calc(var(--sizeAlliance) * 0.8);
   /* equivalente al alto */
   width: calc(var(--sizeAlliance) * 0.8);
   border-radius: 50%;
@@ -122,6 +122,11 @@
   .alliance--list-item {
     width: 100%;
     transform: scale(0.6, 0.6);
+    transition: transform 0.4s ease;
+  }
+
+  .alliance--list-item:hover {
+    transform: scale(0.8, 0.8);
   }
 
   .alliance--list-item:nth-child(3) {
@@ -135,12 +140,10 @@
   }
 
   .alliance--list__prev .alliance--list-item:nth-child(2) {
-    transition: transform 0.6s ease;
     transform: scale(1, 1);
   }
 
   .alliance--list__prev .alliance--list-item:nth-child(3) {
-    transition: transform 0.6s ease;
     transform: scale(0.6, 0.6);
   }
 
