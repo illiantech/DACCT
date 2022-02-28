@@ -21,16 +21,12 @@ const resizeAlliance = (viewportWidth) => {
 
   // para tener el ancho del documento y verificar (tomando en cuenta que los elementos a scrollear son equivalentes al viewport) que el scroll realizado sea N veces el viewportWidth y asi saber cuanto elementos existen a la izquierda
 
-  viewportWidth = document.firstElementChild.clientWidth;
-
-  allianceList.scrollLeft = viewportWidth;
   // desplazar un elemento para que quede otro a la izquierda
+  allianceList.scrollLeft = viewportWidth;
 
   //  documentar
 
   allianceList.addEventListener('scroll', (e) => {
-    // Se puede sumar mas 6 px en PC el allianceList.scroll para desplazar infinitamente, debido a diferencias de tamaño del scroll por anclaje y el viewport
-
     if (viewportWidth * 2 == allianceList.scrollLeft) {
       let items = [allianceList.children[0]];
       fragment.append(...items);
@@ -151,42 +147,66 @@ const resizeAlliance = (viewportWidth) => {
       allianceList.append(fragment);
       allianceList.scrollLeft = viewportWidth;
     }
-    // limpiar TIEMPOS de slider pc
-    clearTimeout(sliderAutoTime);
-    clearInterval(sliderAutoInterval);
-
+    // RESEST slider auto mobile
     sliderAutoDesac();
   });
 
-  let sliderAuto;
-  const sliderAutoActive = () => {
-    sliderAuto = setInterval(() => {
-      allianceList.scrollLeft = viewportWidth * 2;
-    }, 6000);
-  };
-  sliderAutoActive();
-
-  const sliderAutoDesac = () => {
-    clearInterval(sliderAuto);
-    sliderAutoActive();
-  };
+  // activar slider auto mobile
+  sliderAutoActive(viewportWidth);
 };
 
+// slider automaitco Mobile en scope General - ATTENTION
+let sliderAutoMobile;
+// desplazaiento de un elemento a otro reposicionante con primer IF
+const sliderAutoActive = (viewportWidth) => {
+  sliderAutoMobile = setInterval(() => {
+    allianceList.scrollLeft = viewportWidth * 2;
+  }, 6000);
+};
+
+const sliderAutoDesac = () => {
+  clearInterval(sliderAutoMobile);
+  sliderAutoActive(viewportWidth);
+};
+
+// exit aslider auto mobile
+
+// variables slider auto PC - (se tiene arriba para que lo limpie en mobile)
+let sliderAutoTime, sliderAutoInterval;
+const sliderAuto = () => {
+  sliderAutoTime = setTimeout(() => {
+    sliderAutoInterval = setInterval(() => {
+      next();
+    }, 4000);
+  }, 10000);
+};
+
+sliderAuto();
+
 // aplicacion de slider CSS con JS
+
+let validSliderMobile = true;
 
 const allianceList = document.getElementById('allianceList');
 
 // construccion de slider infinito CSS mobile
-const viewportWidth = document.firstElementChild.clientWidth;
+let viewportWidth = document.firstElementChild.clientWidth;
 
 if (viewportWidth < 1000) {
+  // limpiar TIEMPOS de slider pc
+  clearTimeout(sliderAutoTime);
+  clearInterval(sliderAutoInterval);
   resizeAlliance(viewportWidth);
 }
 
+/* EMERGENCE : ERROR CUANDO HACES MUCHO RESIZE */
+
 addEventListener('resize', () => {
+  viewportWidth = document.firstElementChild.clientWidth;
+
   // no se ocupara espacio en memoria cada vez que haga resize en PC
   if (viewportWidth < 1000) {
-    resizeAlliance(viewportWidth);
+    history.go();
   }
 });
 // Slider para PC
@@ -217,17 +237,6 @@ const next = () => {
 };
 
 // slider automatic
-let sliderAutoTime, sliderAutoInterval;
-
-const sliderAuto = () => {
-  sliderAutoTime = setTimeout(() => {
-    sliderAutoInterval = setInterval(() => {
-      next();
-    }, 4000);
-  }, 10000);
-};
-
-sliderAuto();
 
 const sliderAutoReset = () => {
   clearTimeout(sliderAutoTime);
