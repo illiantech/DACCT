@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <!-- CDN font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Fuente nueva a probar  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="CSS/template/Normalize.css" />
+    <link rel="stylesheet" href="CSS/template/principal.css" />
+    <link rel="stylesheet" href="CSS/template/menu.css" />
+    <link rel="stylesheet" href="CSS/home_page/styles.css" />
+    <link rel="stylesheet" href="CSS/home_page/about_us.css" />
+    <link rel="stylesheet" href="CSS/home_page/element_scroll.css" />
+    <link rel="stylesheet" href="CSS/template/footer.css" />
+    <link rel="stylesheet" href="CSS/template/contacto.css">
+
+    <title>DACCT</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Menu -->
+      <div class="menu-container">
+        <div class="menu">
+          <a title="L  ogo" href="" class="logo">
+            <picture>
+              <!-- adaptar imagenes -->
+
+              <source srcset="assets/img/webp/logo/logo_name.webp" />
+              <img
+                class="logo--img"
+                src="assets/img/webp/logo/logo_name.webp"
+                alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
+              />
+            </picture>
+          </a>
+          <div title="Activar Menú" class="menu-active" id="menu-active"></div>
+
+          <nav role="navigation" class="nav" id="menu-nav">
+            <div
+              title="Desactivar Menú"
+              class="menu-desactive"
+              id="menu-desactive"
+            ></div>
+            <ul class="list" id="list">
+              <li class="list--item">
+                <a title="Inicio" href="index.html">Inicio</a>
+              </li>
+              <li class="list--item">
+                <a title="Conócenos" href="contacto.html">Conócenos</a>
+              </li>
+              <li class="list--item">
+                <a title="Programas" href="">Programas</a>
+              </li>
+              <li class="list--item">
+                <a title="Blog" href="">Blog</a>
+              </li>
+              <li class="list--item">
+                <a title="Contáctanos" href="">Contáctanos</a>
+              </li>
+              <li class="list--item">
+                <div title="Seleccionar idioma" id="idioma" class="idioma">
+                  <em> Idioma </em>
+                </div>
+                <div class="idioma--selector">
+                  <ul class="idioma--list">
+                    <li class="idioma--list-item">
+                      <a title="Español" lang="es" href="">ES</a>
+                      <img
+                        src="assets/img/png/icon/republica-dominicana.png"
+                        alt="bandera de republica dominicana"
+                      />
+                    </li>
+                    <li class="idioma--list-item">
+                      <a title="Ingles" lang="en" href="">EN</a>
+                      <img
+                        src="assets/img/png/icon/estados-unidos.png"
+                        alt="bandera de estados unidos"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="main">
+    
+        <section class="container-contacto">
+         
+            <div class="card-1">
+              <h1>Contactanos</h1>
+              <p>
+              Tus preguntas y comentarios son importantes para nosotros.
+              </p>
+
+              <form action="" class="formulario">
+                <label for="">Nombre</label>
+                <input type="text" name="" id="name">
+                <label for="">Email</label>
+                <input type="email" id="email">
+              <label for="">Mensaje</label>
+                <textarea name="" id="mensaje" cols="20" rows="10"></textarea>
+                <button type="submit">Enviar</button>
+                
+              </form>
+  
+          </div>
+
+          <div class="info">
+            <h2>Información</h2>
+            <ul>
+              <li><i class="fa-solid fa-phone"></i> 203-502-1394</li>
+              <li><i class="fa-solid fa-location-dot"></i> 853 Fairfield Ave 2nd Bridgeport CT 06605</li>
+              <li><i class="fa-solid fa-envelope"></i> Aqui va el correo</li>
+            </ul>
+          </div>
+
+          <div class="decorador"></div>
+        </section>
+
+
+      <footer class="footer">
+        <div class="container-contact">
+          <address class="contact">
+            <!-- LOGO FOOTER -->
+            <!-- sobre si mismo -->
+            <a title="Logo" href="" class="logo logo__footer">
+              <picture>
+                <!-- adaptar imagenes -->
+
+                <source srcset="assets/img/webp/logo/logo_name.webp" />
+                <img
+                  class="logo--img"
+                  src="assets/img/webp/logo/logo_name.webp"
+                  alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
+                />
+              </picture>
+            </a>
+            <!-- Flata links de redes sociales en plantillas -->
+            <ul class="contact--list">
+              <li class="contact--item">
+                <a title="Facebook" href=""
+                  ><i class="fa-brands fa-facebook-square"></i
+                ></a>
+              </li>
+              <li class="contact--item">
+                <a title="Telegram" href=""><i class="fa-brands fa-telegram"></i></a>
+              </li>
+              <li class="contact--item">
+                <a title="Instagram" href=""
+                  ><i class="fa-brands fa-instagram-square"></i
+                ></a>
+              </li>
+              <li class="contact--item">
+                <a title="Enviar Correo" href=""
+                  ><i class="fa-solid fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+            <div class="container-autor">
+              <p class="autor">Daniel Pimentel - 2022</p>
+            </div>
+            <p class="footer--info">
+              The Dominican-American Coalition es una organizacion sin fines de lucro
+              con el codigo 501 C 3.
+            </p>
+          </address>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Scripts JS -->
+    <script src="JS/template/menu.js"></script>
+    <script src="JS/home_page/scripts.js"></script>
+    <script src="JS/home_page/element_scroll.js"></script>
+    <script src="JS/template/contactoForm.js"></script>
+  </body>
+</html>
