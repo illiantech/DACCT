@@ -33,7 +33,7 @@ menuDesac.addEventListener('click', (e) => {
 
 menuNav.addEventListener('mouseleave', () => {
   const main = document.getElementById('main');
-  main.addEventListener('click', () => {
+  main.addEventListener('mousedown', () => {
     menuNav.classList.remove('menu__start');
   });
 });

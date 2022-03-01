@@ -27,11 +27,10 @@
     <link rel="stylesheet" href="CSS/template/Normalize.css" />
     <link rel="stylesheet" href="CSS/template/principal.css" />
     <link rel="stylesheet" href="CSS/template/menu.css" />
-    <link rel="stylesheet" href="CSS/home_page/styles.css" />
-    <link rel="stylesheet" href="CSS/home_page/about_us.css" />
-    <link rel="stylesheet" href="CSS/home_page/element_scroll.css" />
+
+    <link rel="stylesheet" href="CSS/contacts/card_contacts.css" />
+
     <link rel="stylesheet" href="CSS/template/footer.css" />
-    <link rel="stylesheet" href="CSS/template/contacto.css" />
 
     <title>DACCT</title>
   </head>
@@ -40,7 +39,8 @@
       <!-- Menu -->
       <div class="menu-container">
         <div class="menu">
-          <a title="L  ogo" href="" class="logo">
+          <!-- Logo -->
+          <a title="Logo" href="index.html" class="logo">
             <picture>
               <!-- adaptar imagenes -->
 
@@ -65,32 +65,35 @@
                 <a title="Inicio" href="index.html">Inicio</a>
               </li>
               <li class="list--item">
-                <a title="Conócenos" href="contacto.html">Conócenos</a>
+                <a title="Conócenos" href="conocenos.html">Conócenos</a>
               </li>
               <li class="list--item">
-                <a title="Programas" href="">Programas</a>
+                <a title="Programas" href="programas.html">Programas</a>
               </li>
               <li class="list--item">
-                <a title="Blog" href="">Blog</a>
+                <a title="Blog" href="blog.html">Blog</a>
               </li>
               <li class="list--item">
-                <a title="Contáctanos" href="">Contáctanos</a>
+                <a title="Contáctanos" href="contactanos.html">Contáctanos</a>
+              </li>
+              <li class="list--item donar-buttom">
+                <a title="Donar" href="">Donar</a>
               </li>
               <li class="list--item">
-                <div title="Seleccionar idioma" id="idioma" class="idioma">
+                <div id="idioma" class="idioma idioma__hover">
                   <em> Idioma </em>
                 </div>
                 <div class="idioma--selector">
                   <ul class="idioma--list">
-                    <li class="idioma--list-item">
-                      <a title="Español" lang="es" href="">ES</a>
+                    <li title="Español" class="idioma--list-item">
+                      <a lang="es" href="">ES</a>
                       <img
                         src="assets/img/png/icon/republica-dominicana.png"
                         alt="bandera de republica dominicana"
                       />
                     </li>
-                    <li class="idioma--list-item">
-                      <a title="Ingles" lang="en" href="">EN</a>
+                    <li title="Ingles" class="idioma--list-item">
+                      <a lang="en" href="">EN</a>
                       <img
                         src="assets/img/png/icon/estados-unidos.png"
                         alt="bandera de estados unidos"
@@ -135,61 +138,60 @@
 
         <div class="decorador"></div>
       </section>
-
-      <footer class="footer">
-        <div class="container-contact">
-          <address class="contact">
-            <!-- LOGO FOOTER -->
-            <!-- sobre si mismo -->
-            <a title="Logo" href="" class="logo logo__footer">
-              <picture>
-                <!-- adaptar imagenes -->
-
-                <source srcset="assets/img/webp/logo/logo_name.webp" />
-                <img
-                  class="logo--img"
-                  src="assets/img/webp/logo/logo_name.webp"
-                  alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
-                />
-              </picture>
-            </a>
-            <!-- Flata links de redes sociales en plantillas -->
-            <ul class="contact--list">
-              <li class="contact--item">
-                <a title="Facebook" href=""
-                  ><i class="fa-brands fa-facebook-square"></i
-                ></a>
-              </li>
-              <li class="contact--item">
-                <a title="Telegram" href=""><i class="fa-brands fa-telegram"></i></a>
-              </li>
-              <li class="contact--item">
-                <a title="Instagram" href=""
-                  ><i class="fa-brands fa-instagram-square"></i
-                ></a>
-              </li>
-              <li class="contact--item">
-                <a title="Enviar Correo" href=""
-                  ><i class="fa-solid fa-envelope"></i
-                ></a>
-              </li>
-            </ul>
-            <div class="container-autor">
-              <p class="autor">Daniel Pimentel - 2022</p>
-            </div>
-            <p class="footer--info">
-              The Dominican-American Coalition es una organizacion sin fines de lucro
-              con el codigo 501 C 3.
-            </p>
-          </address>
-        </div>
-      </footer>
     </main>
+
+    <footer class="footer">
+      <div class="container-contact">
+        <address class="contact">
+          <!-- LOGO FOOTER -->
+          <!-- sobre si mismo -->
+          <a title="Logo" href="index.html" class="logo logo__footer">
+            <picture>
+              <!-- adaptar imagenes -->
+
+              <source srcset="assets/img/webp/logo/logo_name.webp" />
+              <img
+                class="logo--img"
+                src="assets/img/webp/logo/logo_name.webp"
+                alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
+              />
+            </picture>
+          </a>
+          <!-- Flata links de redes sociales en plantillas -->
+          <ul class="contact--list">
+            <li class="contact--item">
+              <a title="Facebook" href=""
+                ><i class="fa-brands fa-facebook-square"></i
+              ></a>
+            </li>
+            <li class="contact--item">
+              <a title="Telegram" href=""><i class="fa-brands fa-telegram"></i></a>
+            </li>
+            <li class="contact--item">
+              <a title="Instagram" href=""
+                ><i class="fa-brands fa-instagram-square"></i
+              ></a>
+            </li>
+            <li class="contact--item">
+              <a title="Enviar Correo" href=""
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="container-autor">
+            <p class="autor">Daniel Pimentel - 2022</p>
+          </div>
+          <p class="footer--info">
+            The Dominican-American Coalition es una organizacion sin fines de lucro
+            con el codigo 501 C 3.
+          </p>
+        </address>
+      </div>
+    </footer>
 
     <!-- Scripts JS -->
     <script src="JS/template/menu.js"></script>
-    <script src="JS/home_page/scripts.js"></script>
-    <script src="JS/home_page/element_scroll.js"></script>
-    <script src="JS/template/contactoForm.js"></script>
+
+    <script src="JS/contacts/contactoForm.js"></script>
   </body>
 </html>
