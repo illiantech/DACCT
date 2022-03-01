@@ -47,8 +47,9 @@
   /* equivalente al alto */
   width: calc(var(--sizeAlliance) * 0.8);
   border-radius: 50%;
-  /* VARIABLE de shadowGeneral modificada */
-  box-shadow: 0 0 5px -1px var(--black);
+
+  background-color: #fff;
+  box-shadow: -5px 10px 15px 0px hsl(0, 0%, 84%);
 }
 
 .alliance--list-img {
@@ -131,6 +132,10 @@
 
   .alliance--list-item:nth-child(3) {
     transform: scale(1, 1);
+  }
+
+  .alliance--list-item:nth-child(3):hover {
+    transform: scale(1.1, 1.1);
   }
 
   /* evento click Prev JS */
