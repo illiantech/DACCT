@@ -169,7 +169,7 @@ const sliderAutoDesac = () => {
   sliderAutoActive(viewportWidth);
 };
 
-// exit aslider auto mobile
+// exit slider auto mobile
 
 // variables slider auto PC - (se tiene arriba para que lo limpie en mobile)
 let sliderAutoTime, sliderAutoInterval;
@@ -185,8 +185,6 @@ sliderAuto();
 
 // aplicacion de slider CSS con JS
 
-let validSliderMobile = true;
-
 const allianceList = document.getElementById('allianceList');
 
 // construccion de slider infinito CSS mobile
@@ -198,8 +196,6 @@ if (viewportWidth < 1000) {
   clearInterval(sliderAutoInterval);
   resizeAlliance(viewportWidth);
 }
-
-/* EMERGENCE : ERROR CUANDO HACES MUCHO RESIZE */
 
 addEventListener('resize', () => {
   viewportWidth = document.firstElementChild.clientWidth;
