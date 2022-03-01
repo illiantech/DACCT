@@ -115,10 +115,10 @@
 .info{
     /* border: 1px solid black; */
     width: 25%;
-    height: 35%;
+    height: 40%;
     position: absolute;
     z-index: 1;
-    top: 12%;
+    top: 20%;
     left: 57.5%;
     background-color: hsl(0, 0%, 100%);
     border-top-left-radius: 30px;
@@ -135,8 +135,10 @@
     color: var(--colorPrimario);
     letter-spacing: 5px;
     text-align: center;
-    margin-top: -20px;
+    position: relative;
+    top: 30px;
     text-decoration: underline;
+    margin-top: -10px;
 }
 
 .info ul{
@@ -166,3 +168,119 @@
 .error{
     border: 3px solid #ff2e5a;
 }
+
+
+
+
+/* Media Queries */
+@media screen and (max-width:1000px){
+    .container-contacto{
+        display: flex;
+        flex-direction: column;
+        margin:10% 0 10% 0;
+        margin-top: 12%;
+       /*  border: 1px solid black; */
+        height: 70%;
+    }
+    .info{
+        width: 50%;
+        height: 360px;
+        position: absolute;
+        left: 150px;
+        top: 50px;
+        padding: 20px;
+        margin: 0px 50px 0px 10px;
+        text-align: center;
+        border-radius: 0;
+       
+    }
+
+    .info h2{
+        font-size: var(--letterSizeMedium);
+    }
+
+    .card-1{
+
+        width: 100%;
+        z-index: -1;
+        position: relative;
+        top:50px;
+        margin: auto;
+        border-radius: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-bottom: 800px;
+
+    }
+
+    .formulario{
+        height: auto;
+     /*    border: 1px solid black; */
+        position: relative;
+        top: 550px;
+        margin: auto;
+        width: 100%;
+        padding: 0px 15px 0 15px;
+
+    }
+
+    .formulario input{
+        margin: auto;
+        width: 100%;
+    }
+
+    .formulario textarea{
+        margin: auto;
+        width: 100%;
+    }
+    .formulario label{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .formulario button{
+        margin: auto;
+        margin-top: 30px;
+    }
+    .card-1 h1{
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        /* border: 1px solid; */
+        position: relative;
+        left: 5px;
+        top: 410px;
+        font-size: 32px;
+        letter-spacing: 5px;
+    }
+
+    .card-1 p{
+        /* border: 1px solid black; */
+        margin: auto;
+        position: relative;
+        top:470px;
+        font-size: 25px;
+        padding-bottom: 25px;
+    }
+
+
+
+
+
+    .decorador{
+        width: 100%;
+        height:230px;
+        position: absolute;
+        margin: auto;
+        border-radius: 0;
+        top: -20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        
+    }
+}
+
+
+
