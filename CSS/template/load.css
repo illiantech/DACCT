@@ -1,0 +1,22 @@
+/* Pantalla de carga */
+.load {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--colorPrimario);
+  z-index: 7000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --heightLoad: 150px;
+  transition: opacity 0.5s ease;
+}
+
+.load__end {
+  opacity: 0;
+}
+
+.load--icon {
+  height: var(--heightLoad);
+  width: calc(var(--heightLoad) * 1.954);
+}
