@@ -120,23 +120,6 @@ const scrollAlliance = () => {
     allianceList.scrollLeft = viewportWidth;
   }
 
-  if (viewportWidth * 10 == allianceList.scrollLeft) {
-    let items = [
-      allianceList.children[0],
-      allianceList.children[1],
-      allianceList.children[2],
-      allianceList.children[3],
-      allianceList.children[4],
-      allianceList.children[5],
-      allianceList.children[6],
-      allianceList.children[7],
-      allianceList.children[8]
-    ];
-    fragment.append(...items);
-
-    allianceList.append(fragment);
-    allianceList.scrollLeft = viewportWidth;
-  }
   // RESEST slider auto mobile
   sliderAutoDesac();
 };

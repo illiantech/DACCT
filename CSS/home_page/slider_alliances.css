@@ -53,8 +53,13 @@
 }
 
 .alliance--list-img {
-  height: 70%;
-  width: 70%;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.alliance--list-img__size {
+  transform: scale(1.2, 1.2);
 }
 
 /* slider con CSS en movil */
@@ -115,7 +120,7 @@
   .alliance--list {
     position: absolute;
 
-    width: 366.66%;
+    width: 335%;
     /* para desplazamiento a la izquierda - DUDA MARGIN */
     margin-left: calc(-100% / 3);
   }
