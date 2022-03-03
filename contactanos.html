@@ -16,17 +16,19 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Fuente nueva a probar  -->
+    <!-- Outfit de 400 a 800 (regular a extra bold) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="CSS/template/Normalize.css" />
     <link rel="stylesheet" href="CSS/template/principal.css" />
+    <link rel="stylesheet" href="CSS/template/load.css" />
     <link rel="stylesheet" href="CSS/template/menu.css" />
+    <link rel="stylesheet" href="CSS/template_menu/banner_menu.css" />
 
     <link rel="stylesheet" href="CSS/contacts/card_contacts.css" />
 
@@ -35,6 +37,10 @@
     <title>DACCT</title>
   </head>
   <body>
+    <!-- Pantalla de carga -->
+    <div class="load" id="load">
+      <div class="load--icon"></div>
+    </div>
     <header class="header">
       <!-- Menu -->
       <div class="menu-container">
@@ -47,7 +53,7 @@
               <source srcset="assets/img/webp/logo/logo_name.webp" />
               <img
                 class="logo--img"
-                src="assets/img/webp/logo/logo_name.webp"
+                src="assets/img/png/logo/logo_name_png.png"
                 alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
               />
             </picture>
@@ -108,6 +114,29 @@
       </div>
     </header>
     <main role="main" class="main">
+      <div class="banner">
+        <picture class="banner--picture">
+          <source
+            srcset="assets/img/jpg/prueba/prueba_menus.jpg"
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="assets/img/jpg/prueba/prueba_menus.jpg"
+            media="(min-width:350px)"
+          />
+          <source srcset="assets/img/jpg/prueba/prueba_menus.jpg" />
+          <img
+            class="banner--img"
+            src="assets/img/jpg/prueba/prueba_menus.jpg"
+            alt="grupo de personas en una oficina trabajando en distintos servicios digitales que ofrecen a las empresas"
+          />
+        </picture>
+
+        <h2 class="banner--title">CONTÁCTANOS</h2>
+      </div>
+
+      <div class="wave"></div>
+
       <section class="container-contacto">
         <div class="card-1">
           <h1>Contactanos</h1>
@@ -152,7 +181,7 @@
               <source srcset="assets/img/webp/logo/logo_name.webp" />
               <img
                 class="logo--img"
-                src="assets/img/webp/logo/logo_name.webp"
+                src="assets/img/png/logo/logo_name_png.png"
                 alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
               />
             </picture>
@@ -190,6 +219,7 @@
     </footer>
 
     <!-- Scripts JS -->
+    <script src="JS/template/load.js"></script>
     <script src="JS/template/menu.js"></script>
 
     <script src="JS/contacts/contactoForm.js"></script>

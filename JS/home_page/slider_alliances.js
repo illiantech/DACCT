@@ -13,10 +13,135 @@
 //   }
 // }
 
-const resizeAlliance = (viewportWidth) => {
+const scrollAlliance = () => {
   //   fragment para elementos hermanos menores
   const fragment = document.createDocumentFragment();
 
+  if (viewportWidth * 2 == allianceList.scrollLeft) {
+    let items = [allianceList.children[0]];
+    fragment.append(...items);
+
+    allianceList.append(fragment);
+    allianceList.scrollLeft = viewportWidth;
+  }
+
+  if (viewportWidth * 3 == allianceList.scrollLeft) {
+    let items = [allianceList.children[0], allianceList.children[1]];
+    fragment.append(...items);
+
+    allianceList.append(fragment);
+    allianceList.scrollLeft = viewportWidth;
+  }
+
+  if (viewportWidth * 4 == allianceList.scrollLeft) {
+    let items = [
+      allianceList.children[0],
+      allianceList.children[1],
+      allianceList.children[2]
+    ];
+    fragment.append(...items);
+
+    allianceList.append(fragment);
+    allianceList.scrollLeft = viewportWidth;
+  }
+
+  if (viewportWidth * 5 == allianceList.scrollLeft) {
+    let items = [
+      allianceList.children[0],
+      allianceList.children[1],
+      allianceList.children[2],
+      allianceList.children[3]
+    ];
+    fragment.append(...items);
+
+    allianceList.append(fragment);
+    allianceList.scrollLeft = viewportWidth;
+  }
+
+  if (viewportWidth * 6 == allianceList.scrollLeft) {
+    let items = [
+      allianceList.children[0],
+      allianceList.children[1],
+      allianceList.children[2],
+      allianceList.children[3],
+      allianceList.children[4]
+    ];
+    fragment.append(...items);
+
+    allianceList.append(fragment);
+    allianceList.scrollLeft = viewportWidth;
+  }
+
+  if (viewportWidth * 7 == allianceList.scrollLeft) {
+    let items = [
+      allianceList.children[0],
+      allianceList.children[1],
+      allianceList.children[2],
+      allianceList.children[3],
+      allianceList.children[4],
+      allianceList.children[5]
+    ];
+    fragment.append(...items);
+
+    allianceList.append(fragment);
+    allianceList.scrollLeft = viewportWidth;
+  }
+
+  if (viewportWidth * 8 == allianceList.scrollLeft) {
+    let items = [
+      allianceList.children[0],
+      allianceList.children[1],
+      allianceList.children[2],
+      allianceList.children[3],
+      allianceList.children[4],
+      allianceList.children[5],
+      allianceList.children[6]
+    ];
+    fragment.append(...items);
+
+    allianceList.append(fragment);
+    allianceList.scrollLeft = viewportWidth;
+  }
+
+  if (viewportWidth * 9 == allianceList.scrollLeft) {
+    let items = [
+      allianceList.children[0],
+      allianceList.children[1],
+      allianceList.children[2],
+      allianceList.children[3],
+      allianceList.children[4],
+      allianceList.children[5],
+      allianceList.children[6],
+      allianceList.children[7]
+    ];
+    fragment.append(...items);
+
+    allianceList.append(fragment);
+    allianceList.scrollLeft = viewportWidth;
+  }
+
+  if (viewportWidth * 10 == allianceList.scrollLeft) {
+    let items = [
+      allianceList.children[0],
+      allianceList.children[1],
+      allianceList.children[2],
+      allianceList.children[3],
+      allianceList.children[4],
+      allianceList.children[5],
+      allianceList.children[6],
+      allianceList.children[7],
+      allianceList.children[8]
+    ];
+    fragment.append(...items);
+
+    allianceList.append(fragment);
+    allianceList.scrollLeft = viewportWidth;
+  }
+  // RESEST slider auto mobile
+  sliderAutoDesac();
+};
+
+const resizeAlliance = (viewportWidth) => {
   // ancho de viewport
 
   // para tener el ancho del documento y verificar (tomando en cuenta que los elementos a scrollear son equivalentes al viewport) que el scroll realizado sea N veces el viewportWidth y asi saber cuanto elementos existen a la izquierda
@@ -24,132 +149,8 @@ const resizeAlliance = (viewportWidth) => {
   // desplazar un elemento para que quede otro a la izquierda
   allianceList.scrollLeft = viewportWidth;
 
-  //  documentar
-
-  allianceList.addEventListener('scroll', (e) => {
-    if (viewportWidth * 2 == allianceList.scrollLeft) {
-      let items = [allianceList.children[0]];
-      fragment.append(...items);
-
-      allianceList.append(fragment);
-      allianceList.scrollLeft = viewportWidth;
-    }
-
-    if (viewportWidth * 3 == allianceList.scrollLeft) {
-      let items = [allianceList.children[0], allianceList.children[1]];
-      fragment.append(...items);
-
-      allianceList.append(fragment);
-      allianceList.scrollLeft = viewportWidth;
-    }
-
-    if (viewportWidth * 4 == allianceList.scrollLeft) {
-      let items = [
-        allianceList.children[0],
-        allianceList.children[1],
-        allianceList.children[2]
-      ];
-      fragment.append(...items);
-
-      allianceList.append(fragment);
-      allianceList.scrollLeft = viewportWidth;
-    }
-
-    if (viewportWidth * 5 == allianceList.scrollLeft) {
-      let items = [
-        allianceList.children[0],
-        allianceList.children[1],
-        allianceList.children[2],
-        allianceList.children[3]
-      ];
-      fragment.append(...items);
-
-      allianceList.append(fragment);
-      allianceList.scrollLeft = viewportWidth;
-    }
-
-    if (viewportWidth * 6 == allianceList.scrollLeft) {
-      let items = [
-        allianceList.children[0],
-        allianceList.children[1],
-        allianceList.children[2],
-        allianceList.children[3],
-        allianceList.children[4]
-      ];
-      fragment.append(...items);
-
-      allianceList.append(fragment);
-      allianceList.scrollLeft = viewportWidth;
-    }
-
-    if (viewportWidth * 7 == allianceList.scrollLeft) {
-      let items = [
-        allianceList.children[0],
-        allianceList.children[1],
-        allianceList.children[2],
-        allianceList.children[3],
-        allianceList.children[4],
-        allianceList.children[5]
-      ];
-      fragment.append(...items);
-
-      allianceList.append(fragment);
-      allianceList.scrollLeft = viewportWidth;
-    }
-
-    if (viewportWidth * 8 == allianceList.scrollLeft) {
-      let items = [
-        allianceList.children[0],
-        allianceList.children[1],
-        allianceList.children[2],
-        allianceList.children[3],
-        allianceList.children[4],
-        allianceList.children[5],
-        allianceList.children[6]
-      ];
-      fragment.append(...items);
-
-      allianceList.append(fragment);
-      allianceList.scrollLeft = viewportWidth;
-    }
-
-    if (viewportWidth * 9 == allianceList.scrollLeft) {
-      let items = [
-        allianceList.children[0],
-        allianceList.children[1],
-        allianceList.children[2],
-        allianceList.children[3],
-        allianceList.children[4],
-        allianceList.children[5],
-        allianceList.children[6],
-        allianceList.children[7]
-      ];
-      fragment.append(...items);
-
-      allianceList.append(fragment);
-      allianceList.scrollLeft = viewportWidth;
-    }
-
-    if (viewportWidth * 10 == allianceList.scrollLeft) {
-      let items = [
-        allianceList.children[0],
-        allianceList.children[1],
-        allianceList.children[2],
-        allianceList.children[3],
-        allianceList.children[4],
-        allianceList.children[5],
-        allianceList.children[6],
-        allianceList.children[7],
-        allianceList.children[8]
-      ];
-      fragment.append(...items);
-
-      allianceList.append(fragment);
-      allianceList.scrollLeft = viewportWidth;
-    }
-    // RESEST slider auto mobile
-    sliderAutoDesac();
-  });
+  // Event scroll function
+  allianceList.addEventListener('scroll', scrollAlliance);
 
   // activar slider auto mobile
   sliderAutoActive(viewportWidth);
@@ -202,7 +203,13 @@ addEventListener('resize', () => {
 
   // no se ocupara espacio en memoria cada vez que haga resize en PC
   if (viewportWidth < 1000) {
-    history.go();
+    // limpiar TIEMPOS de slider pc
+    clearTimeout(sliderAutoTime);
+    clearInterval(sliderAutoInterval);
+    // limpiar acumulacion de automatic slider mobile
+    clearInterval(sliderAutoMobile);
+    allianceList.removeEventListener('scroll', scrollAlliance);
+    resizeAlliance(viewportWidth);
   }
 });
 // Slider para PC

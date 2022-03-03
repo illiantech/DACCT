@@ -7,6 +7,87 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
+
+    <!-- iconos adaptables -->
+    <!-- <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/img/favicons/apple-icon-57x57.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/img/favicons/apple-icon-60x60.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/img/favicons/apple-icon-72x72.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/img/favicons/apple-icon-76x76.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/img/favicons/apple-icon-114x114.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/img/favicons/apple-icon-120x120.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/img/favicons/apple-icon-144x144.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/img/favicons/apple-icon-152x152.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicons/apple-icon-180x180.png?"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/img/favicons/android-icon-192x192.png?"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicons/favicon-32x32.png?"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/img/favicons/favicon-96x96.png?"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicons/favicon-16x16.png?"
+    />
+    <link rel="manifest" href="assets/img/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png?" />
+    <meta name="theme-color" content="#ffffff" /> -->
+    <!-- <link
+      rel="shortcut icon"
+      href="assets/0 dominican cohalition icono.png"
+      type="image/x-icon"
+    /> -->
+
     <!-- CDN font awesome -->
     <link
       rel="stylesheet"
@@ -16,26 +97,33 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Fuente nueva a probar  -->
+    <!-- Outfit de 400 a 800 (regular a extra bold) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="CSS/template/Normalize.css" />
     <link rel="stylesheet" href="CSS/template/principal.css" />
+    <link rel="stylesheet" href="CSS/template/load.css" />
     <link rel="stylesheet" href="CSS/template/menu.css" />
     <link rel="stylesheet" href="CSS/home_page/styles.css" />
     <link rel="stylesheet" href="CSS/home_page/about_us.css" />
     <link rel="stylesheet" href="CSS/home_page/element_scroll.css" />
+    <link rel="stylesheet" href="CSS/home_page/programs.css" />
     <link rel="stylesheet" href="CSS/home_page/slider_alliances.css" />
     <link rel="stylesheet" href="CSS/template/footer.css" />
 
     <title>DACCT</title>
   </head>
   <body>
+    <!-- Pantalla de carga -->
+    <div class="load" id="load">
+      <div class="load--icon"></div>
+    </div>
     <header class="header">
       <!-- Menu -->
       <div class="menu-container">
@@ -48,7 +136,7 @@
               <source srcset="assets/img/webp/logo/logo_name.webp" />
               <img
                 class="logo--img"
-                src="assets/img/webp/logo/logo_name.webp"
+                src="assets/img/png/logo/logo_name_png.png"
                 alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
               />
             </picture>
@@ -227,18 +315,11 @@
       <div class="container-card2" id="containerCardTwo">
         <div class="background-card2" id="bgrCardTwo">
           <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="assets/img/webp/Equipo_mesa_1920.webp"
-            />
-            <source
-              media="(min-width: 350px)"
-              srcset="assets/img/webp/Equipo_mesa_1280.webp"
-            />
-            <source srcset="assets/img/webp/Equipo_mesa_640.webp" />
+            <source srcset="assets/img/webp/home_page/Estrategias_webp.webp" />
+
             <img
               class="background-card2--img"
-              src="assets/img/jpg/Equipo_mesa_1280.jpg"
+              src="assets/img/jpg/home_page/Estrategias.jpg"
               alt="equipo de trabajo en una oficina"
             />
           </picture>
@@ -275,6 +356,83 @@
       </div>
 
       <!-- Fin de la sección -->
+
+      <section class="programs">
+        <h2 class="programs--title">Programas</h2>
+        <ul class="programs--list">
+          <li class="programs--list-item">
+            <section class="programs--list-section">
+              <img
+                class="programs--list-icon"
+                src="assets/img/svg/programs/chocolate_yola.svg"
+                alt="dos  manos unidas"
+              />
+
+              <h3 class="programs--list-title">
+                Chocolate <br />
+                con Yola
+              </h3>
+              <p class="programs--list-paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem porro
+                dicta, quo accusamus cum minima soluta fugia,animi non iure illo
+                sapiente quas...
+              </p>
+              <a class="programs--list-buttom">Ver Más</a>
+            </section>
+          </li>
+          <li class="programs--list-item">
+            <section class="programs--list-section">
+              <img
+                class="programs--list-icon"
+                src="assets/img/svg/programs/codac.svg"
+                alt="dos  manos unidas"
+              />
+
+              <h3 class="programs--list-title">CODAC</h3>
+              <p class="programs--list-paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem porro
+                dicta, quo accusamus cum minima soluta fugiat, animi non iure illo
+                sapiente quas...
+              </p>
+              <a class="programs--list-buttom">Ver Más</a>
+            </section>
+          </li>
+          <li class="programs--list-item">
+            <section class="programs--list-section">
+              <img
+                class="programs--list-icon"
+                src="assets/img/svg/programs/finanzas.svg"
+                alt="dos  manos unidas"
+              />
+
+              <h3 class="programs--list-title">Mis<br />Finanzas</h3>
+              <p class="programs--list-paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem porro
+                dicta, quo accusamus cum minima soluta fugiat, animi non iure illo
+                sapiente quas...
+              </p>
+              <a class="programs--list-buttom">Ver Más</a>
+            </section>
+          </li>
+          <li class="programs--list-item">
+            <section class="programs--list-section">
+              <img
+                class="programs--list-icon"
+                src="assets/img/svg/programs/co-alianza.svg"
+                alt="dos  manos unidas"
+              />
+
+              <h3 class="programs--list-title">Co<br />Alianzas</h3>
+              <p class="programs--list-paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem porro
+                dicta, quo accusamus cum minima soluta fugiat, animi non iure illo
+                sapiente quas...
+              </p>
+              <a class="programs--list-buttom">Ver Más</a>
+            </section>
+          </li>
+        </ul>
+      </section>
 
       <!-- alianazas slider -->
 
@@ -422,7 +580,7 @@
               <source srcset="assets/img/webp/logo/logo_name.webp" />
               <img
                 class="logo--img"
-                src="assets/img/webp/logo/logo_name.webp"
+                src="assets/img/png/logo/logo_name_png.png"
                 alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
               />
             </picture>
@@ -460,6 +618,7 @@
     </footer>
 
     <!-- Scripts JS -->
+    <script src="JS/template/load.js"></script>
     <script src="JS/template/menu.js"></script>
     <script src="JS/home_page/scripts.js"></script>
     <script src="JS/home_page/element_scroll.js"></script>

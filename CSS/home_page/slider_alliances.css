@@ -3,9 +3,9 @@
 .alliance--title {
   font-size: var(--letterSizeBig);
   color: var(--colorPrimario2);
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .alliance--list-container {
