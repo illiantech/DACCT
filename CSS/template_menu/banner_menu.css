@@ -35,6 +35,8 @@
   font-size: calc(var(--letterSizeGiant) / 3);
   margin-right: 50px;
   letter-spacing: 3px;
+  /* extra bold */
+  font-weight: 800;
 }
 
 @media (min-width: 600px) {
