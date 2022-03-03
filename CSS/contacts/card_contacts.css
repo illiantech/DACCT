@@ -164,10 +164,6 @@
     border-bottom-right-radius: 30px;
 }
 
-/* Error */
-.error{
-    border: 3px solid #ff2e5a;
-}
 
 
 
@@ -284,3 +280,7 @@
 
 
 
+.error {
+    border: 3px solid red;
+    background-color: red;
+}
