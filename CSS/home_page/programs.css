@@ -5,7 +5,8 @@
 .programs--title {
   text-align: center;
   color: var(--colorPrimario2);
-  margin-top: 120px;
+  margin-top: 150px;
+  margin-bottom: 50px;
 }
 
 .programs--list {
@@ -13,13 +14,15 @@
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--white);
   display: flex;
   /* cambiar en PC */
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 2000px;
+  height: 1700px;
 }
 
 .programs--list-item {
@@ -102,7 +105,23 @@
   right: 12px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
+  .programs--list {
+    height: 900px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 450px 450px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .programs--list {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    max-width: 2000px;
+  }
+
   .programs--list-item:hover .programs--list-icon {
     top: -30%;
   }
@@ -110,6 +129,7 @@
   .programs--list-item:hover .programs--list-title {
     top: -20%;
   }
+
   /* 
   .programs--list-item:nth-child(2):hover .programs--list-title {
   } */
