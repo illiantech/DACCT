@@ -1,286 +1,266 @@
-.container-contacto{
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content:center;
-    flex-direction: row;
-    margin-top: 10%;
-    margin-bottom: -2%;
+.wave {
+  background-image: url(../../assets/img/svg/contactanos/wave_contactanos.svg);
+}
+.container-contacto {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 10%;
+  margin-bottom: -2%;
 }
 
-.container-card{
-    display: flex;
-    justify-content: flex-start;
+.container-card {
+  display: flex;
+  justify-content: flex-start;
 }
 
-
-
-.card-1{
+.card-1 {
   /*   border: 1px solid black; */
-    height: 80%;
-    width: 50%;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    background-color: hsla(225, 5%, 69%, 0.719);
-    padding-right: 10px;
+  height: 80%;
+  width: 50%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: hsla(225, 5%, 69%, 0.719);
+  padding-right: 10px;
 }
-.card-1 h1{
-   text-align: center;
-   margin: auto;
-   padding-top: 25px;
-   width: 70%;
+.card-1 h1 {
+  text-align: center;
+  margin: auto;
+  padding-top: 25px;
+  width: 70%;
   position: relative;
   left: -58px;
   color: var(--colorPrimario);
   font-size: var(--letterSizeBig);
 }
-.card-1 p{
-    text-align: center;
-    font-size: 20px;
-    color: gray;
-    margin-left: -65px;
- 
+.card-1 p {
+  text-align: center;
+  font-size: 20px;
+  color: gray;
+  margin-left: -65px;
 }
-.formulario{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    margin: 10px 50px 10px 120px;
-    padding-bottom: 90px;
-}
-
-.formulario label{
-    font-size: 20px;
-    padding: 10px;
-    color: var(--colorPrimario);
-    font-weight: 600;
+.formulario {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 50px 10px 120px;
+  padding-bottom: 90px;
 }
 
-.formulario input{
-    width: 89%;
-    margin-left: 15px;
-    height: 50px;
-    background: transparent;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.959);
-    color: var(--colorPrimario);
-    border-radius: 15px;
+.formulario label {
+  font-size: 20px;
+  padding: 10px;
+  color: var(--colorPrimario);
+  font-weight: 600;
 }
 
+.formulario input {
+  width: 89%;
+  margin-left: 15px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.959);
+  color: var(--colorPrimario);
+  border-radius: 15px;
+}
 
-.formulario input:focus{
+.formulario input:focus {
   border: 2px solid var(--colorPrimario);
   outline: none;
 }
 
-.formulario textarea{
-    resize: none;
-    width: 90%;
-    height: 120px;
-    margin-left: 10px;
-    border-radius: 20px;
-    background-color: transparent;
-    outline: none;
-    padding: 5px;
-    background-color: rgba(255, 255, 255, 0.959);
+.formulario textarea {
+  resize: none;
+  width: 90%;
+  height: 120px;
+  margin-left: 10px;
+  border-radius: 20px;
+  background-color: transparent;
+  outline: none;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.959);
 }
 
-
-.formulario textarea:focus{
-    background-color: rgb(255, 255, 255);
-    transition: .3s ease;
-    outline: none;
-    border: 2px solid var(--colorPrimario);
-  }
-
-
-
-  .formulario button{
-      width: 70%;
-      margin: 15px 12%;
-      height: 50px;
-      background-color: var(--colorSecundario);
-      border: none;
-      border-radius: 20px;
-      color: white;
-      font-size: 18px;
-      transition: .3s all ease-in;
-  }
-  .formulario button:hover{
-      background-color: hsl(357, 86%, 51%);
-      transition: .3s all ease-in;
-      cursor: pointer;
-  }
-
-.info{
-    /* border: 1px solid black; */
-    width: 25%;
-    height: 40%;
-    position: absolute;
-    z-index: 1;
-    top: 20%;
-    left: 57.5%;
-    background-color: hsl(0, 0%, 100%);
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-.info h2{
-    font-size: var(--letterSizeMedium);
-    text-transform: uppercase;
-    color: var(--colorPrimario);
-    letter-spacing: 5px;
-    text-align: center;
-    position: relative;
-    top: 30px;
-    text-decoration: underline;
-    margin-top: -10px;
+.formulario textarea:focus {
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s ease;
+  outline: none;
+  border: 2px solid var(--colorPrimario);
 }
 
-.info ul{
+.formulario button {
+  width: 70%;
+  margin: 15px 12%;
+  height: 50px;
+  background-color: var(--colorSecundario);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s all ease-in;
+}
+.formulario button:hover {
+  background-color: hsl(357, 86%, 51%);
+  transition: 0.3s all ease-in;
+  cursor: pointer;
+}
+
+.info {
+  /* border: 1px solid black; */
+  width: 25%;
+  height: 40%;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: 57.5%;
+  background-color: hsl(0, 0%, 100%);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.info h2 {
+  font-size: var(--letterSizeMedium);
+  text-transform: uppercase;
+  color: var(--colorPrimario);
+  letter-spacing: 5px;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  text-decoration: underline;
+  margin-top: -10px;
+}
+
+.info ul {
   margin-top: 30px;
-    
 }
-.info li{
-    list-style: none;
- line-height: 50px;
-    font-size: var(--letterSizeMedium);
-    text-align: left;
-}
-
-.info li:nth-child(2){
-    font-size:20px;
-}
-.decorador{
-    /* border: 1px solid black; */
-    background-color: var(--colorPrimario);
-    width: 15%;
-    height: 80%;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+.info li {
+  list-style: none;
+  line-height: 50px;
+  font-size: var(--letterSizeMedium);
+  text-align: left;
 }
 
-
-
-
+.info li:nth-child(2) {
+  font-size: 20px;
+}
+.decorador {
+  /* border: 1px solid black; */
+  background-color: var(--colorPrimario);
+  width: 15%;
+  height: 80%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
 
 /* Media Queries */
-@media screen and (max-width:1000px){
-    .container-contacto{
-        display: flex;
-        flex-direction: column;
-        margin:10% 0 10% 0;
-        margin-top: 12%;
-       /*  border: 1px solid black; */
-        height: 70%;
-    }
-    .info{
-        width: 50%;
-        height: 360px;
-        position: absolute;
-        left: 150px;
-        top: 50px;
-        padding: 20px;
-        margin: 0px 50px 0px 10px;
-        text-align: center;
-        border-radius: 0;
-       
-    }
+@media screen and (max-width: 1000px) {
+  .container-contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 0 10% 0;
+    margin-top: 12%;
+    /*  border: 1px solid black; */
+    height: 70%;
+  }
+  .info {
+    width: 50%;
+    height: 360px;
+    position: absolute;
+    left: 150px;
+    top: 50px;
+    padding: 20px;
+    margin: 0px 50px 0px 10px;
+    text-align: center;
+    border-radius: 0;
+  }
 
-    .info h2{
-        font-size: var(--letterSizeMedium);
-    }
+  .info h2 {
+    font-size: var(--letterSizeMedium);
+  }
 
-    .card-1{
+  .card-1 {
+    width: 100%;
+    z-index: -1;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    border-radius: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-        width: 100%;
-        z-index: -1;
-        position: relative;
-        top:50px;
-        margin: auto;
-        border-radius: 0;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    padding-bottom: 800px;
+  }
 
-        padding-bottom: 800px;
+  .formulario {
+    height: auto;
+    /*    border: 1px solid black; */
+    position: relative;
+    top: 550px;
+    margin: auto;
+    width: 100%;
+    padding: 0px 15px 0 15px;
+  }
 
-    }
+  .formulario input {
+    margin: auto;
+    width: 100%;
+  }
 
-    .formulario{
-        height: auto;
-     /*    border: 1px solid black; */
-        position: relative;
-        top: 550px;
-        margin: auto;
-        width: 100%;
-        padding: 0px 15px 0 15px;
+  .formulario textarea {
+    margin: auto;
+    width: 100%;
+  }
+  .formulario label {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .formulario button {
+    margin: auto;
+    margin-top: 30px;
+  }
+  .card-1 h1 {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid; */
+    position: relative;
+    left: 5px;
+    top: 410px;
+    font-size: 32px;
+    letter-spacing: 5px;
+  }
 
-    }
+  .card-1 p {
+    /* border: 1px solid black; */
+    margin: auto;
+    position: relative;
+    top: 470px;
+    font-size: 25px;
+    padding-bottom: 25px;
+  }
 
-    .formulario input{
-        margin: auto;
-        width: 100%;
-    }
-
-    .formulario textarea{
-        margin: auto;
-        width: 100%;
-    }
-    .formulario label{
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-    .formulario button{
-        margin: auto;
-        margin-top: 30px;
-    }
-    .card-1 h1{
-        margin: auto;
-        width: 100%;
-        text-align: center;
-        /* border: 1px solid; */
-        position: relative;
-        left: 5px;
-        top: 410px;
-        font-size: 32px;
-        letter-spacing: 5px;
-    }
-
-    .card-1 p{
-        /* border: 1px solid black; */
-        margin: auto;
-        position: relative;
-        top:470px;
-        font-size: 25px;
-        padding-bottom: 25px;
-    }
-
-
-
-
-
-    .decorador{
-        width: 100%;
-        height:230px;
-        position: absolute;
-        margin: auto;
-        border-radius: 0;
-        top: -20px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        
-    }
+  .decorador {
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    margin: auto;
+    border-radius: 0;
+    top: -20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
 }
 
-
-
 .error {
-    border: 3px solid red;
-    background-color: red;
+  border: 3px solid red;
+  background-color: red;
 }
