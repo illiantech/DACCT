@@ -29,8 +29,7 @@
 
 .background-card2 > picture {
   position: absolute;
-  top: 0;
-  left: 0;
+
   height: 100%;
   width: 100%;
 }
@@ -42,6 +41,7 @@
   height: 100%;
   object-fit: cover;
   object-position: left top;
+
   transform: scaleX(-1);
 }
 
@@ -142,7 +142,6 @@
   }
 
   .background-card2--img {
-    object-position: top;
     transform: scale(1);
   }
 
