@@ -4,30 +4,13 @@
 
 /* NEWS Blog */
 
-.blog {
+.blog--list {
   --width: 340px;
   position: relative;
-  /* top: 100px;
-  opacity: 0; */
-  transition: all 0.6s ease;
-}
-
-.blog__scroll {
-  top: 0px;
-  opacity: 1;
-}
-.blog--title {
-  text-align: center;
-  color: var(--colorPrimario2);
-  margin-top: 100px;
-  margin-bottom: 0px;
-}
-
-.blog--list {
   list-style-type: none;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   /* para centrar en grandes resoluciones */
   margin-left: auto;
   margin-right: auto;
@@ -36,7 +19,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 3500px;
+  height: 2500px;
 }
 
 .blog--list-item {
@@ -91,11 +74,16 @@
   background-image: url(../../assets/img/svg/blog/blog_new_3.svg);
 }
 
+.blog--article-wave_4 {
+  background-image: url(../../assets/img/svg/blog/blog_new_4.svg);
+}
+
 .blog--article-title {
   color: var(--colorPrimario2);
   position: relative;
   top: -10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .blog--article-paragraph {
@@ -118,8 +106,8 @@
   padding-left: 12px;
   text-decoration: none;
   cursor: pointer;
-  position: absolute;
-  bottom: 6%;
+  position: relative;
+  top: 5px;
   transition: width 0.3s ease;
 }
 
@@ -137,17 +125,131 @@
     height: auto;
     display: grid;
     grid-template-columns: var(--width) var(--width);
-    grid-template-rows: 550px 550px 550px;
+    grid-template-rows: 550px 550px;
   }
 }
 
 @media (min-width: 1300px) {
-  /* buttom BLOG and PROGRAMS */
-  .article--buttom:hover {
-    width: calc(34.55px * 3.4827);
+  .blog--list {
+    --width: 1000px;
+    display: flex;
+    height: 1700px;
   }
 
+  .blog--list-item {
+    width: var(--width);
+    height: calc(var(--width) / 3);
+
+    border-radius: 50px;
+    background: linear-gradient(-90deg, #ffffff 50%, #f0f2fa 102.11%);
+  }
+
+  .blog--list-item:nth-child(2n) {
+    background: linear-gradient(90deg, #ffffff 50%, #f0f2fa 102.11%);
+  }
+
+  .blog--article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .blog--list-item:nth-child(2n) .blog--article {
+    align-items: flex-end;
+  }
+
+  .blog--article-picture {
+    height: 100%;
+
+    width: 40%;
+    position: absolute;
+    right: 0;
+  }
+
+  .blog--list-item:nth-child(2n) .blog--article-picture {
+    left: 0;
+  }
+
+  .blog--article-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .blog--article-wave_1,
+  .blog--article-wave_2,
+  .blog--article-wave_3,
+  .blog--article-wave_4 {
+    height: 100%;
+    width: calc(var(--width) / 2.6);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    top: 0;
+    transform: rotate(90deg);
+    left: -45px;
+  }
+
+  .blog--article-wave_2,
+  .blog--article-wave_4 {
+    transform: rotate(-90deg);
+    left: 45px;
+  }
+
+  .blog--article-title {
+    margin-bottom: 0px;
+    position: absolute;
+    text-align: left;
+    width: 600px;
+    left: 50px;
+    top: 20px;
+    font-size: var(--letterSizeMedium);
+  }
+
+  .blog--list-item:nth-child(2n) .blog--article-title {
+    left: calc(100% - 600px);
+  }
+
+  .blog--article-paragraph {
+    width: 50%;
+
+    position: relative;
+    left: 50px;
+    text-align: left;
+    margin-bottom: 0;
+    font-size: calc(var(--letterSizeSmall) * 1.2);
+  }
+
+  .blog--list-item:nth-child(2n) .blog--article-paragraph {
+    left: -100px;
+  }
+
+  .article--buttom-container {
+    width: calc(40px * 3.1034);
+    height: 40px;
+    position: absolute;
+    /* mitad de su width */
+    left: calc(50% - 53.6px);
+    /* doble de su height */
+    top: calc(100% - 69.1px);
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .blog--list-item:nth-child(2n) .article--buttom-container {
+    left: calc(100% - 170px);
+  }
+
+  /* buttom BLOG and PROGRAMS */
   .blog--list-item:hover {
     transform: scale(1.03, 1.03);
+  }
+
+  .article--buttom:hover {
+    width: calc(34.55px * 3.4827);
   }
 }

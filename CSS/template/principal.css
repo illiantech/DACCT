@@ -15,6 +15,7 @@
   --letterSizeSmall: 1rem;
   --letterSizeMedium: 1.4rem;
   --letterSizeBig: 1.8rem;
+  --letterSizeTitle: 3rem;
   --letterSizeGiant: 6rem;
   background-color: var(--white);
   color: var(--black);

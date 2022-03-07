@@ -93,6 +93,7 @@
 .buttom__programs {
   background-color: var(--white);
   color: var(--colorSecundario);
+  position: absolute;
   bottom: 13%;
 }
 
