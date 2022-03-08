@@ -1,5 +1,5 @@
 .team {
-  --widthTeam: 300px;
+  --widthTeam: 290px;
   --displayRatio: 1.9;
   color: var(--white);
 }
@@ -35,14 +35,14 @@
     hsla(224, 70%, 40%, 0.9) -1.54%,
     hsla(223, 49%, 23%, 0.9) 100%
   );
-  border-radius: 0px 0px 150px 0px;
+  border-radius: 0px 0px 120px 0px;
 }
 
 .team--article-picture {
   display: inline-block;
   position: relative;
-  left: 50px;
-  top: 70px;
+  left: 60px;
+  top: 60px;
   width: calc(var(--widthTeam) / 1.1);
   height: calc(var(--widthTeam) / 1.1);
 }
@@ -52,19 +52,20 @@
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+  box-shadow: var(--shadowGeneral);
 }
 
 .team--article-title,
 .team--article-paragraph {
-  width: 85%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 1px;
 }
 
 .team--article-title {
-  font-size: var(--letterSizeBig);
-  margin-bottom: 2px;
+  font-size: calc(var(--letterSizeBig) / 1.1);
+  margin-bottom: 10px;
   margin-top: 110px;
   /* semi bold */
   font-weight: 600;
@@ -72,8 +73,10 @@
 
 .team--article-paragraph {
   margin-top: 0;
-  line-height: 1.2;
-  font-size: calc(var(--letterSizeSmall) * 1.2);
+  font-size: calc(var(--letterSizeSmall) * 1.1);
+  /* light */
+  font-weight: 300;
+  font-style: normal;
 }
 
 .team--article-paragraph em {
