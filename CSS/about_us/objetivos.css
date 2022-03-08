@@ -2,3 +2,34 @@
 .wave {
   background-image: url(../../assets/img/svg/conocenos/wave_conocenos.svg);
 }
+
+.first-container {
+  width: 100vw;
+  height: 800px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.aboutUs,
+.objects {
+  width: 95%;
+  max-width: 1000px;
+}
+
+.aboutUs--title,
+.objects--title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: var(--letterSizeBig);
+  color: var(--colorPrimario2);
+  text-align: center;
+}
+
+.aboutUs--paragraph,
+.objetcs--paragraph {
+  font-size: calc(var(--letterSizeMedium) / 1.2);
+  text-align: center;
+}

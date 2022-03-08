@@ -70,7 +70,7 @@
   margin-bottom: 0;
   font-size: var(--letterSizeBig);
   text-align: center;
-
+  z-index: 100;
   /* semi bold */
   font-weight: 600;
   transition: top 0.6s ease;
