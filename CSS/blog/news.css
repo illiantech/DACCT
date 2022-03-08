@@ -55,7 +55,8 @@
 
 .blog--article-wave_1,
 .blog--article-wave_2,
-.blog--article-wave_3 {
+.blog--article-wave_3,
+.blog--article-wave_4 {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -76,6 +77,7 @@
 
 .blog--article-wave_4 {
   background-image: url(../../assets/img/svg/blog/blog_new_4.svg);
+  top: 0px;
 }
 
 .blog--article-title {
