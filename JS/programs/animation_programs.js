@@ -12,7 +12,7 @@ const elementAnimationScroll = () => {
 
     if (scrollTop > itemTop + viewportHeight / 1.7) {
       item.classList.add('programs-list--item__scroll');
-      console.log('HOLAAAA');
+
       if (index == programsArray.length - 1) {
         removeEventListener('scroll', elementAnimationScroll);
       }
