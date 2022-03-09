@@ -80,6 +80,20 @@
   top: 0px;
 }
 
+.blog--article-time {
+  position: absolute;
+  left: -5px;
+  top: -2.5px;
+  width: 180px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 50px;
+  font-size: calc(var(--letterSizeSmall) / 1.3);
+  color: var(--white);
+  background-color: var(--colorPrimario);
+}
+
 .blog--article-title {
   color: var(--colorPrimario2);
   position: relative;
@@ -199,6 +213,15 @@
   .blog--article-wave_4 {
     transform: rotate(-90deg);
     left: 45px;
+  }
+
+  .blog--article-time {
+    position: absolute;
+    left: calc(100% - 190px);
+  }
+
+  .blog--list-item:nth-child(2n) .blog--article-time {
+    left: 10px;
   }
 
   .blog--article-title {
