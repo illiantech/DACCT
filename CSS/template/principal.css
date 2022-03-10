@@ -26,7 +26,8 @@
 /* investigar a profundidad */
 
 :root::-webkit-scrollbar,
-.nav::-webkit-scrollbar {
+.nav::-webkit-scrollbar,
+.blog--article::-webkit-scrollbar {
   -webkit-appearance: none;
 }
 
@@ -34,30 +35,35 @@
   width: 0.8em;
 }
 
-.nav::-webkit-scrollbar:vertical {
+.nav::-webkit-scrollbar:vertical,
+.blog--article::-webkit-scrollbar:vertical {
   width: 0.5rem;
 }
 
 :root::-webkit-scrollbar-button:increment,
 .contenedor::-webkit-scrollbar-button,
-.nav::-webkit-scrollbar-button:increment {
+.nav::-webkit-scrollbar-button:increment,
+.blog--article::-webkit-scrollbar-button:increment {
   display: none;
 }
 
 :root::-webkit-scrollbar:horizontal,
-.nav::-webkit-scrollbar:horizontal {
+.nav::-webkit-scrollbar:horizontal,
+.blog--article::-webkit-scrollbar:horizontal {
   height: 10px;
 }
 
 :root::-webkit-scrollbar-thumb,
-.nav::-webkit-scrollbar-thumb {
+.nav::-webkit-scrollbar-thumb,
+.blog--article::-webkit-scrollbar-thumb {
   background-color: var(--colorSecundario);
   border-radius: 20px;
   border: 2px solid var(--white);
 }
 
 :root::-webkit-scrollbar-track,
-.nav::-webkit-scrollbar-track {
+.nav::-webkit-scrollbar-track,
+.blog--article::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 

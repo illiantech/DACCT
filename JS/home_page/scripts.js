@@ -46,3 +46,27 @@ setInterval(() => {
 // addEventListener('resize', () => {
 //   efectWave();
 // });
+
+// Blog PushState
+
+const blogOpenOne = document.getElementById('blogOpenOne');
+
+const blogOpenTwo = document.getElementById('blogOpenTwo');
+
+const blogOpenThree = document.getElementById('blogOpenThree');
+
+const preViewBlog = [blogOpenOne, blogOpenTwo, blogOpenThree];
+
+preViewBlog.forEach((item, index) => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+    history.pushState(
+      {
+        validOpenBlog: index
+      },
+      '',
+      'http://127.0.0.1:5500/blog.html'
+    );
+    history.go();
+  });
+});

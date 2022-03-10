@@ -195,6 +195,9 @@ addEventListener('resize', () => {
     resizeAlliance(viewportWidth);
   }
 });
+
+// INCISO
+
 // Slider para PC
 
 // valid click event
