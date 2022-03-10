@@ -109,6 +109,10 @@
   font-weight: 500;
 }
 
+.article--buttom-container {
+  width: calc(34.55px * 3.1034);
+}
+
 /* buttom BLOG and PROGRAMS */
 
 .article--buttom {
@@ -122,8 +126,9 @@
   padding-left: 12px;
   text-decoration: none;
   cursor: pointer;
-  position: relative;
-  top: 5px;
+  position: absolute;
+
+  bottom: 20px;
   transition: width 0.3s ease;
 }
 

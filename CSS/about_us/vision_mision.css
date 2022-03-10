@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .mision--picture,
@@ -50,7 +51,9 @@
   position: relative;
   font-size: var(--letterSizeBig);
   text-align: center;
-  margin-top: 50px;
+  margin-top: 70px;
+  margin-bottom: 0;
+
   transform: translateY(100px);
   opacity: 0;
   transition: all 0.8s ease;
@@ -69,7 +72,8 @@
   position: relative;
   width: 90%;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 0;
+  margin-bottom: 70px;
   transform: translateY(100px);
   opacity: 0;
   transition: all 0.8s ease;
@@ -83,6 +87,10 @@
 }
 
 @media (min-width: 1000px) {
+  .second-container {
+    height: 500px;
+  }
+
   .second-container--wrapper {
     flex-direction: row;
     justify-content: center;
@@ -103,7 +111,8 @@
   .mision--paragraph,
   .vision--paragraph {
     font-size: calc(var(--letterSizeSmall) * 1.4);
-    margin-top: 50px;
+    margin-bottom: 100px;
     max-width: 400px;
+    height: 130px;
   }
 }

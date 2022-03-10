@@ -89,6 +89,18 @@
   border-radius: 63% 27% 36% 33% / 49% 35% 42% 41%;
 }
 
+.programs-list--item:nth-child(2) .programs-list--img {
+  border-radius: 33% 66% 25% 52% / 38% 44% 35% 51%;
+}
+
+.programs-list--item:nth-child(3) .programs-list--img {
+  border-radius: 39% 57% 68% 33% / 59% 47% 42% 31%;
+}
+
+.programs-list--item:nth-child(4) .programs-list--img {
+  border-radius: 63% 35% 27% 70% / 50% 36% 37% 63%;
+}
+
 .programs-list--title {
   font-size: var(--letterSizeBig);
   width: 85%;
@@ -187,7 +199,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 50%;
     margin-top: 0px;
     margin-left: 50px;
     height: 350px;

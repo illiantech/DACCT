@@ -127,9 +127,9 @@
   padding-left: 12px;
   text-decoration: none;
   cursor: pointer;
-  position: relative;
+  position: absolute;
 
-  bottom: -5px;
+  bottom: 20px;
   transition: width 0.3s ease;
 }
 
