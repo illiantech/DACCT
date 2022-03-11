@@ -140,7 +140,6 @@
   }
 
   .programs-list--item {
-    width: 95%;
     height: 650px;
   }
 
@@ -159,7 +158,6 @@
   }
 
   .programs-list--item {
-    width: 95%;
     height: 500px;
     max-width: 1200px;
   }
@@ -196,7 +194,6 @@
   }
 
   .programs-list--paragraph-container {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
