@@ -85,15 +85,16 @@
   background-color: var(--white);
   position: fixed;
   top: 0;
-  right: -85%;
+  right: 0%;
+  transform: translateX(100%);
   overflow: auto;
-  transition: right 0.4s ease;
+  transition: transform 0.4s ease;
   box-shadow: var(--shadowGeneral);
   z-index: 1400;
 }
 
 .menu__start {
-  right: 0%;
+  transform: translateX(0%);
   /* Active event menu */
 }
 
@@ -299,6 +300,7 @@
     overflow: initial;
     /* producto del desplzamiento del formato mobile */
     right: 0;
+    transform: translateX(0%);
     transition: none;
     right: 125px;
   }

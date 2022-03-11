@@ -28,10 +28,11 @@ const elementOpacityScroll = () => {
     if (scrollTop > elements[element][1] - viewportHeight / 2) {
       elements[element][0].classList.add(elements[element][2]);
 
+      // Desac evento scroll
       // se requiere cambiar manualmente la clausula
-      if (element == 'elementThree') {
-        removeEventListener('scroll', elementOpacityScroll);
-      }
+      // if (element == 'elementThree') {
+      //   removeEventListener('scroll', elementOpacityScroll);
+      // }
     }
   }
 };

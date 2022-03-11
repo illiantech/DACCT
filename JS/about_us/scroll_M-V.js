@@ -7,7 +7,9 @@ const efectScrollMV = () => {
 
   if (scrollTop > MVTop - viewportHeight / 3) {
     misionVision.classList.add('second-container__scroll');
-    removeEventListener('scroll', efectScrollMV);
+
+    // Desac evento scroll
+    // removeEventListener('scroll', efectScrollMV);
   }
 };
 

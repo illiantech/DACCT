@@ -68,3 +68,9 @@ blogListArray.forEach((item, index) => {
     history.go();
   });
 });
+
+// redireccion a blog cuando desde home page
+
+addEventListener('popstate', () => {
+  history.go();
+});

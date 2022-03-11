@@ -13,9 +13,10 @@ const elementAnimationScroll = () => {
     if (scrollTop > itemTop + viewportHeight / 1.7) {
       item.classList.add('programs-list--item__scroll');
 
-      if (index == programsArray.length - 1) {
-        removeEventListener('scroll', elementAnimationScroll);
-      }
+      // Desac evento scroll
+      // if (index == programsArray.length - 1) {
+      //   removeEventListener('scroll', elementAnimationScroll);
+      // }
     }
   });
 };
