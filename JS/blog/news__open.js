@@ -1,12 +1,24 @@
-if (history.state != null) {
-  console.log(history.state.validOpenBlog);
-}
+// variables blog
 
 const blogList = document.getElementById('blogList');
 
-const blogListArray = Array.from(blogList.children);
+// Push de estado de blog desde la home page
+
+if (history.state != null) {
+  blogList.children[history.state.validOpenBlog].classList.add(
+    'blog--list-item__open'
+  );
+
+  setTimeout(() => {
+    blogList.children[history.state.validOpenBlog].classList.add(
+      'blog--list-item__open-opacity'
+    );
+  }, 0001);
+}
 
 // active open blog
+
+const blogListArray = Array.from(blogList.children);
 
 blogListArray.forEach((item, index) => {
   const itemButtom =
@@ -19,7 +31,7 @@ blogListArray.forEach((item, index) => {
 
     setTimeout(() => {
       item.classList.add('blog--list-item__open-opacity');
-    }, 10);
+    }, 0001);
   });
 });
 
@@ -31,8 +43,18 @@ blogListArray.forEach((item, index) => {
   itemButtomDesac.addEventListener('click', (e) => {
     e.preventDefault();
 
-    item.classList.remove('blog--list-item__open');
+    item.classList.add('blog--list-item__open-opacityDesac');
 
-    item.classList.remove('blog--list-item__open-opacity');
+    setTimeout(() => {
+      item.classList.remove('blog--list-item__open-opacityDesac');
+      item.classList.remove('blog--list-item__open-opacity');
+      item.classList.remove('blog--list-item__open');
+    }, 0410);
   });
+});
+
+// redireccion a index cuando se accede a blog desde home page
+
+addEventListener('popstate', () => {
+  history.go();
 });

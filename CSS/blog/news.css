@@ -19,7 +19,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 2500px;
+  height: 6000px;
 }
 
 .blog--list-item {
@@ -65,7 +65,13 @@
 .blog--article-wave_1::after,
 .blog--article-wave_2::after,
 .blog--article-wave_3::after,
-.blog--article-wave_4::after {
+.blog--article-wave_4::after,
+.blog--article-wave_5::after,
+.blog--article-wave_6::after,
+.blog--article-wave_7::after,
+.blog--article-wave_8::after,
+.blog--article-wave_9::after,
+.blog--article-wave_10::after {
   content: '';
   height: 100%;
   width: 100%;
@@ -88,6 +94,30 @@
 
 .blog--article-wave_4::after {
   background-image: url(../../assets/img/svg/blog/blog_new_4.svg);
+}
+
+.blog--article-wave_5::after {
+  background-image: url(../../assets/img/svg/blog/blog_new_5.svg);
+}
+
+.blog--article-wave_6::after {
+  background-image: url(../../assets/img/svg/blog/blog_new_6.svg);
+}
+
+.blog--article-wave_7::after {
+  background-image: url(../../assets/img/svg/blog/blog_new_7.svg);
+}
+
+.blog--article-wave_8::after {
+  background-image: url(../../assets/img/svg/blog/blog_new_8.svg);
+}
+
+.blog--article-wave_9::after {
+  background-image: url(../../assets/img/svg/blog/blog_new_9.svg);
+}
+
+.blog--article-wave_10::after {
+  background-image: url(../../assets/img/svg/blog/blog_new_10.svg);
 }
 
 .blog--article-time {
@@ -160,7 +190,7 @@
     height: auto;
     display: grid;
     grid-template-columns: var(--width) var(--width);
-    grid-template-rows: 550px 550px;
+    grid-template-rows: repeat(5, 600px);
   }
 }
 
@@ -168,7 +198,7 @@
   .blog--list {
     --width: 1000px;
     display: flex;
-    height: 1700px;
+    height: 4500px;
   }
 
   .blog--article-wrapper {
@@ -209,7 +239,13 @@
   .blog--article-wave_1::after,
   .blog--article-wave_2::after,
   .blog--article-wave_3::after,
-  .blog--article-wave_4::after {
+  .blog--article-wave_4::after,
+  .blog--article-wave_5::after,
+  .blog--article-wave_6::after,
+  .blog--article-wave_7::after,
+  .blog--article-wave_8::after,
+  .blog--article-wave_9::after,
+  .blog--article-wave_10::after {
     width: calc(var(--width) / 2.6);
 
     transform: rotate(90deg);
@@ -217,7 +253,10 @@
   }
 
   .blog--article-wave_2::after,
-  .blog--article-wave_4::after {
+  .blog--article-wave_4::after,
+  .blog--article-wave_6::after,
+  .blog--article-wave_8::after,
+  .blog--article-wave_10::after {
     transform: rotate(-90deg);
     left: 45px;
   }

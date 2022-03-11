@@ -71,7 +71,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 10px;
+  bottom: -5px;
   left: 0;
   background-repeat: no-repeat;
   background-position: bottom;

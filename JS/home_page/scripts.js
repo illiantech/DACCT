@@ -49,16 +49,14 @@ setInterval(() => {
 
 // Blog PushState
 
-const blogOpenOne = document.getElementById('blogOpenOne');
+const blogList = document.getElementById('blogList');
 
-const blogOpenTwo = document.getElementById('blogOpenTwo');
+const blogListArray = Array.from(blogList.children);
 
-const blogOpenThree = document.getElementById('blogOpenThree');
+blogListArray.forEach((item, index) => {
+  const itemButtom = item.firstElementChild.lastElementChild;
 
-const preViewBlog = [blogOpenOne, blogOpenTwo, blogOpenThree];
-
-preViewBlog.forEach((item, index) => {
-  item.addEventListener('click', (e) => {
+  itemButtom.addEventListener('click', (e) => {
     e.preventDefault();
     history.pushState(
       {
