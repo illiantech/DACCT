@@ -63,8 +63,9 @@ blogListArray.forEach((item, index) => {
         validOpenBlog: index
       },
       '',
-      'https://kanutegx.github.io/DACCT/blog.html'
+      'blog.html'
     );
+    // NO CONSIDERA EL PUSHSTATE COMO UN CAMBIO DE ESTADO DE POPSTATE
     history.go();
   });
 });
