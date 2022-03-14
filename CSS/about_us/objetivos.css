@@ -3,6 +3,13 @@
   background-image: url(../../assets/img/svg/conocenos/wave_conocenos.svg);
 }
 
+/* border Indicator */
+.list--item:nth-child(2) > a {
+  border-bottom: 3px solid var(--colorSecundario);
+}
+
+/* ----- */
+
 .first-container {
   width: 100vw;
   height: 800px;

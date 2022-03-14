@@ -76,3 +76,8 @@ body {
 .main {
   position: relative;
 }
+
+hr {
+  border: none;
+  margin: 0;
+}

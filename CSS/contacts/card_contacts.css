@@ -2,6 +2,13 @@
   background-image: url(../../assets/img/svg/contactanos/wave_contactanos.svg);
 }
 
+/* border Indicator */
+.list--item:nth-child(6) > a {
+  border-bottom: 3px solid var(--colorSecundario);
+}
+
+/* ----- */
+
 .father-container {
   width: 95vw;
   height: auto;
