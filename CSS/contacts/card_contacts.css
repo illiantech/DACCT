@@ -97,24 +97,25 @@
 
 .informacion-container {
   top: 0;
-  width: 70vw;
+  width: 75vw;
   margin: auto;
   background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   position: relative;
   height: 250px;
 }
 
-.informacion-container p {
+.informacion-container > p {
   border-bottom: 3px solid var(--colorSecundario);
   border-radius: 5px;
-  width: 190px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 25px;
-  margin-bottom: 15px;
-  text-align: center;
+
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   text-transform: uppercase;
   font-size: 25px;
   color: var(--colorPrimario);
@@ -122,41 +123,41 @@
 
 .informacion-container ul {
   padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .informacion-container li {
   list-style: none;
   line-height: 30px;
   font-size: 20px;
-  width: 100%;
-  text-align: center;
+  width: 90%;
+  padding-left: 0;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
   position: relative;
-  padding-bottom: 12px;
 }
 
 .informacion-container li i {
   position: absolute;
+  top: calc(50% - 13px);
+  left: 0;
   color: var(--colorSecundario);
   font-size: 25px;
-  left: 15px;
+}
+.informacion-container li p {
+  display: inline-block;
+  max-width: 250px;
+  width: 70%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* Responsive */
-
-@media screen and (min-width: 428px) {
-  .informacion-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .informacion-container p {
-    display: inline-block;
-
-    align-items: center;
-  }
-  .informacion-container li:nth-child(2) {
-    padding-left: 30px;
-  }
-}
 
 @media screen and (min-width: 1000px) {
   .father-container {
@@ -186,12 +187,6 @@
 
   .father-container::before {
     height: 200px;
-  }
-
-  .informacion-container li i {
-    line-height: 60px;
-    position: relative;
-    left: -15px;
   }
 }
 

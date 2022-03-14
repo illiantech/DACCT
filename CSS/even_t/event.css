@@ -29,7 +29,7 @@
 }
 
 .events h4,
-.events p {
+.events .events--paragraph {
   width: 80vw;
 }
 
@@ -62,11 +62,11 @@
     display: none;
   }
 
-  .events p {
+  .events .events--paragraph {
     max-width: 250px;
   }
 
-  .events p:first-of-type {
+  .events .events--paragraph:first-of-type {
     margin-left: 10px;
   }
 }
