@@ -28,10 +28,6 @@ blogListArray.forEach((item, index) => {
     e.preventDefault();
 
     item.classList.add('blog--list-item__open');
-
-    setTimeout(() => {
-      item.classList.add('blog--list-item__open-opacity');
-    }, 0001);
   });
 });
 
@@ -43,13 +39,7 @@ blogListArray.forEach((item, index) => {
   itemButtomDesac.addEventListener('click', (e) => {
     e.preventDefault();
 
-    item.classList.add('blog--list-item__open-opacityDesac');
-
-    setTimeout(() => {
-      item.classList.remove('blog--list-item__open-opacityDesac');
-      item.classList.remove('blog--list-item__open-opacity');
-      item.classList.remove('blog--list-item__open');
-    }, 0410);
+    item.classList.remove('blog--list-item__open');
   });
 });
 

@@ -70,7 +70,7 @@ blogListArray.forEach((item, index) => {
   });
 });
 
-// redireccion a blog cuando desde home page.
+// redireccion a blog cuando accede desde home page con las flechas del navegador.
 
 addEventListener('popstate', () => {
   history.go();
