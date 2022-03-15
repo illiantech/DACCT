@@ -33,7 +33,7 @@
   font-size: 2rem;
   z-index: 100;
   font-size: calc(var(--letterSizeGiant) / 3);
-
+  text-transform: uppercase;
   letter-spacing: 3px;
   /* extra bold */
   font-weight: 800;

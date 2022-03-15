@@ -29,13 +29,18 @@
 }
 
 .events h4,
-.events .events--paragraph {
+.events--paragraph {
   width: 80vw;
 }
 
 .events h4 {
   margin-bottom: 0;
   color: var(--colorPrimario2);
+}
+
+.events time {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 1300px) {
@@ -62,11 +67,7 @@
     display: none;
   }
 
-  .events .events--paragraph {
+  .events--paragraph {
     max-width: 250px;
-  }
-
-  .events .events--paragraph:first-of-type {
-    margin-left: 10px;
   }
 }
