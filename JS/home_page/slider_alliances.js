@@ -217,7 +217,7 @@ addEventListener('resize', () => {
     //     resizeAlliance(viewportWidth);
 
     if (validSliderMovil) {
-      sliderAutoActive(viewportWidth, 1); // NEW
+      sliderAutoActive(viewportWidth, 0); // NEW
       validSliderMovil = false;
       sliderAutoDesac();
     }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        color: #f2f2f2;
+        background-color: #3a3a3a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>prueba de barra de busqueda</h1>
+
+    <input id="searchBar" type="text" />
+    <ul id="list">
+      <li>Platano Maduro</li>
+      <li>Pera Verde</li>
+      <li>Platano Verde</li>
+      <li>Manzana Roja</li>
+      <li>Pera Agria</li>
+    </ul>
+    <script>
+      const products = [
+        { nombre: 'Platano Maduro' },
+        { nombre: 'Pera Verde' },
+        { nombre: 'Platano Verde' },
+        { nombre: 'Manzana Roja' },
+        { nombre: 'Pera Agria' },
+        { nombre: 'Rabano Morado' },
+        { nombre: 'Mañzana Amarilla' },
+        { nombre: 'Brocoli Rósa.' },
+        { nombre: 'Mañzana Rósa.' }
+      ];
+
+      const searchBar = document.getElementById('searchBar');
+
+      const removeAccents = (str) => {
+        return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      };
+
+      const filter = () => {
+        const text = removeAccents(searchBar.value.toLowerCase());
+        const fragment = document.createDocumentFragment();
+
+        const list = document.getElementById('list');
+        const listClone = list.cloneNode(false);
+
+        for (const product of products) {
+          let nombre = removeAccents(product.nombre.toLowerCase());
+
+          if (nombre.indexOf(text) !== -1) {
+            const item = document.createElement('li');
+            item.textContent = product.nombre;
+            fragment.append(item);
+          }
+        }
+
+        listClone.append(fragment);
+
+        if (listClone.children.length === 0) {
+          // en caso de que no ninguna key coinsida
+          const item = document.createElement('li');
+          item.textContent = 'Articulo no encontrado...';
+
+          // agregar alerta en lista
+          listClone.append(item);
+          list.parentElement.replaceChild(listClone, list);
+        } else list.parentElement.replaceChild(listClone, list);
+      };
+
+      searchBar.addEventListener('keyup', filter);
+    </script>
+  </body>
+</html>
