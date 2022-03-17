@@ -44,6 +44,11 @@
   box-sizing: content-box;
   padding: 10px;
   border-radius: 50px;
+  transform: scaleY(0px);
+}
+
+.patrons--sections:hover .patrons--title {
+  transform: scaleY(300px);
 }
 
 .patrons--list {
