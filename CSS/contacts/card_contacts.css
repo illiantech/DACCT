@@ -65,6 +65,10 @@
   outline: none;
 }
 
+.card-1 input:invalid {
+  border: 3px solid var(--colorSecundario);
+}
+
 .card-1 textarea {
   resize: none;
   border-radius: 25px;
@@ -277,7 +281,7 @@
   opacity: 1;
 }
 
-.mensajeE{
+.mensajeE {
   text-align: center;
   border: 1px solid red;
   margin-bottom: 10px;

@@ -1,0 +1,96 @@
+/* border Indicator */
+.list--item:nth-child(4) > a {
+  border-bottom: 3px solid var(--colorSecundario);
+}
+
+.blog-title {
+  margin-top: 180px;
+  margin-bottom: 75px;
+  color: var(--colorPrimario2);
+  text-align: center;
+}
+
+.container-input {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.search-bar {
+  all: initial;
+  font-family: 'Outfit', sans-serif;
+  border-radius: 7px;
+  min-width: 200px;
+  width: 50%;
+  border: 3px solid var(--black);
+  transition: border 0.2s;
+}
+
+.search-bar:focus {
+  border: 3px solid var(--colorPrimario);
+}
+
+/* para cuando sea invalido */
+
+.search-bar__invalid:first-of-type {
+  border: 3px solid var(--colorSecundario);
+}
+
+/* list object*/
+
+.list-blog {
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-blog--item {
+  width: 90%;
+  max-width: 1000px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.list-blog--item-title {
+  color: var(--colorPrimario2);
+  font-size: calc(var(--letterSizeSmall) * 1.2);
+  margin-bottom: 5px;
+}
+
+.list-blog--item-title:visited {
+  color: var(--colorSecundario);
+}
+
+.list-blog--item-time {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* undefine */
+
+.list-blog--item__undefined {
+  font-size: var(--letterSizeMedium);
+}
+
+@media (min-width: 800px) {
+  .list-blog--item {
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+
+  .list-blog--item-title {
+    margin-bottom: 0px;
+  }
+
+  .list-blog--item-time {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
