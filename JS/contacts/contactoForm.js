@@ -28,16 +28,18 @@ function validarInput(e){
     if(e.target.value < 1){
        errorMensaje('Todos los campos son obligatorios');
     }else{
-        console.log('paso')
+
     }
 
 
     /* Validar el correo */
     if(e.target.type === 'email'){
         if(er.test(e.target.value)){
-            console.log('paso');
+       
         }else{
+           setTimeout(()=>{
             errorMensaje('Debe Ingresar un correo valido');
+           },3000)
         }
     }
 
