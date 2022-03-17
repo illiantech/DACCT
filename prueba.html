@@ -14,65 +14,133 @@
   </head>
   <body>
     <h1>prueba de barra de busqueda</h1>
-
-    <input id="searchBar" type="text" />
-    <ul id="list">
-      <li>Platano Maduro</li>
-      <li>Pera Verde</li>
-      <li>Platano Verde</li>
-      <li>Manzana Roja</li>
-      <li>Pera Agria</li>
-    </ul>
+    <main id="main">
+      <input class="search-bar" id="searchBar" type="text" />
+      <div class="container-list" id="containerList"></div>
+    </main>
+    <!-- <ul id="list"></ul> -->
     <script>
-      const products = [
-        { nombre: 'Platano Maduro' },
-        { nombre: 'Pera Verde' },
-        { nombre: 'Platano Verde' },
-        { nombre: 'Manzana Roja' },
-        { nombre: 'Pera Agria' },
-        { nombre: 'Rabano Morado' },
-        { nombre: 'Mañzana Amarilla' },
-        { nombre: 'Brocoli Rósa.' },
-        { nombre: 'Mañzana Rósa.' }
+      const articles = [
+        {
+          title: 'La Ballena Azul.',
+          date: '2022-03-17',
+          link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+        },
+        {
+          title: 'Don Quijote de la Mancha.',
+          date: '2022-03-10',
+          link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+        },
+        {
+          title: 'Luces en el Cielo.',
+          date: '2022-03-05',
+          link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+        },
+        {
+          title: 'Eres mia pequeña.',
+          date: '2022-03-01',
+          link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+        },
+        {
+          title: 'La Razón de estar contigo',
+          date: '2022-02-17',
+          link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+        },
+        {
+          title: 'Yo antes de ti',
+          date: '2022-01-17',
+          link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+        },
+        {
+          title: 'Bajo la Misma Estrella',
+          date: '2021-11-17',
+          link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+        },
+        {
+          title: 'Atrás de mi Ventana',
+          date: '2021-11-12',
+          link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+        },
+        {
+          title: 'Y una vida sin tí.',
+          date: '2022-11-10',
+          link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+        }
       ];
 
       const searchBar = document.getElementById('searchBar');
 
-      const removeAccents = (str) => {
-        return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-      };
+      const containerList = document.getElementById('containerList');
+
+      // eliminarDiacriticosEs
+
+      function removeAccents(texto) {
+        return texto
+          .normalize('NFD')
+          .replace(
+            /([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+/gi,
+            '$1'
+          )
+          .normalize();
+      }
 
       const filter = () => {
+        // declaracion de elementos
         const text = removeAccents(searchBar.value.toLowerCase());
         const fragment = document.createDocumentFragment();
 
-        const list = document.getElementById('list');
-        const listClone = list.cloneNode(false);
+        const list = document.createElement('ul');
+        list.classList.add('list-blog');
 
-        for (const product of products) {
-          let nombre = removeAccents(product.nombre.toLowerCase());
+        // busqueda de articulos
+        for (const article of articles) {
+          const title = removeAccents(article.title.toLowerCase());
 
-          if (nombre.indexOf(text) !== -1) {
+          if (title.indexOf(text) !== -1) {
+            // crecion de elementos
             const item = document.createElement('li');
-            item.textContent = product.nombre;
-            fragment.append(item);
+            item.classList.add('list-blog--item');
+
+            const title = document.createElement('a');
+            title.classList.add('list-blog--item-title');
+
+            title.textContent = article.title;
+            title.title = 'Abrir artículo';
+            title.href = article.link;
+            title.target = '_blank';
+
+            const date = document.createElement('time');
+            date.classList.add('list-blog--item-time');
+
+            date.textContent = article.date;
+            date.dateTime = article.date;
+
+            item.append(title, date);
+
+            list.append(item);
           }
         }
 
-        listClone.append(fragment);
+        // Insercion de elementos en el DOM con metodologia fragment
+        if (containerList.children.length > 0) {
+          containerList.removeChild(containerList.children[0]);
+        }
 
-        if (listClone.children.length === 0) {
+        if (list.children.length === 0) {
           // en caso de que no ninguna key coinsida
           const item = document.createElement('li');
           item.textContent = 'Articulo no encontrado...';
 
           // agregar alerta en lista
-          listClone.append(item);
-          list.parentElement.replaceChild(listClone, list);
-        } else list.parentElement.replaceChild(listClone, list);
+          list.append(item);
+
+          containerList.append(list);
+        } else containerList.append(list);
       };
 
       searchBar.addEventListener('keyup', filter);
+
+      filter();
     </script>
   </body>
 </html>
