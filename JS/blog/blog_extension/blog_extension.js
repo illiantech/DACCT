@@ -65,7 +65,6 @@ function removeAccents(texto) {
 const filter = () => {
   // declaracion de elementos
   const text = removeAccents(searchBar.value.toLowerCase());
-  const fragment = document.createDocumentFragment();
 
   const list = document.createElement('ul');
   list.classList.add('list-blog');
@@ -74,18 +73,18 @@ const filter = () => {
   for (const article of articles) {
     const title = removeAccents(article.title.toLowerCase());
 
-    if (title.indexOf(text) !== -1) {
+    if (title.includes(text)) {
       // crecion de elementos
       const item = document.createElement('li');
       item.classList.add('list-blog--item');
 
-      const title = document.createElement('a');
-      title.classList.add('list-blog--item-title');
+      const link = document.createElement('a');
+      link.classList.add('list-blog--item-title');
 
-      title.textContent = article.title;
-      title.title = 'Abrir artículo';
-      title.href = article.link;
-      title.target = '_blank';
+      link.textContent = article.title;
+      link.title = 'Abrir artículo';
+      link.href = article.link;
+      link.target = '_blank';
 
       const date = document.createElement('time');
       date.classList.add('list-blog--item-time');
@@ -93,16 +92,18 @@ const filter = () => {
       date.textContent = article.date;
       date.dateTime = article.date;
 
-      item.append(title, date);
+      item.append(link, date);
       // esto con la finalidad de insertar una vez en el doom
       list.append(item);
     }
   }
 
   // Insercion de elementos en el DOM con metodologia fragment
-  if (containerList.children.length > 0) {
+  if (containerList.children.length > 0)
     containerList.removeChild(containerList.children[0]);
-  }
+
+  // aplicar estilos de invalid a barra de busqueda
+  searchBar.classList.toggle('search-bar__invalid', list.children.length === 0);
 
   if (list.children.length === 0) {
     // en caso de que no ninguna key coinsida
@@ -113,11 +114,7 @@ const filter = () => {
     list.append(item);
 
     containerList.append(list);
-    searchBar.classList.add('search-bar__invalid');
-  } else {
-    containerList.append(list);
-    searchBar.classList.remove('search-bar__invalid');
-  }
+  } else containerList.append(list);
 };
 
 searchBar.addEventListener('keyup', filter);
