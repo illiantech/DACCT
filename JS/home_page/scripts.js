@@ -57,7 +57,6 @@ blogListArray.forEach((item, index) => {
   const itemButtom = item.firstElementChild.lastElementChild;
 
   itemButtom.addEventListener('click', (e) => {
-    e.preventDefault();
     history.pushState(
       {
         validOpenBlog: index
@@ -66,7 +65,6 @@ blogListArray.forEach((item, index) => {
       'blog.html'
     );
     // NO CONSIDERA EL PUSHSTATE COMO UN CAMBIO DE ESTADO DE POPSTATE
-    history.go();
   });
 });
 
