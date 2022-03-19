@@ -18,6 +18,7 @@
       <input class="search-bar" id="searchBar" type="text" />
       <div class="container-list" id="containerList"></div>
       <a id="button">button push</a>
+      <a href="index.html">index</a>
       <div id="indicator" data-page="en"></div>
     </main>
     <!-- <ul id="list"></ul> -->
@@ -25,14 +26,16 @@
       const button = document.getElementById('button');
 
       button.addEventListener('click', () => {
-        history.pushState({ id: 1 }, '', 'index.html');
+        // history.pushState({ id: 1 }, '', 'index.html');
+
+        localStorage.setItem('id', '1');
+        localStorage.setItem('name', 'ibrain no te ama');
+
+        console.log(localStorage);
       });
       const d = document.getElementById('indicator');
 
       addEventListener('popstate', (e) => {
-        console.dir(e);
-
-        console.log(history);
         // history.pushState({ lang: d.dataset.page }, '', `${d.dataset.page}.html`);
       });
 

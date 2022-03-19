@@ -1,5 +1,5 @@
 .programs {
-  --width: 300px;
+  --widthPrograms: 300px;
   position: relative;
   top: 100px;
   opacity: 0;
@@ -15,29 +15,28 @@
   text-align: center;
   color: var(--colorPrimario2);
   margin-top: 150px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .programs--list {
   list-style-type: none;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 0;
   /* para centrar en grandes resoluciones */
   margin-left: auto;
   margin-right: auto;
   color: var(--white);
-  display: flex;
-  /* cambiar en PC */
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 1700px;
+  max-width: 1800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--widthPrograms), 1fr));
 }
 
 .programs--list-item {
-  width: var(--width);
-  height: calc(var(--width) * 1.1915);
+  width: var(--widthPrograms);
+  height: calc(var(--widthPrograms) * 1.1915);
+  margin-bottom: 100px;
+  position: relative;
+  left: calc(50% - var(--widthPrograms) / 2);
   background: linear-gradient(
     213.1deg,
     hsl(224, 70%, 40%) 23.22%,
@@ -101,26 +100,26 @@
   border-left: 12px solid var(--colorSecundario);
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
   .programs--list {
     height: auto;
     display: grid;
-    grid-template-columns: var(--width) var(--width);
+    grid-template-columns: var(--widthPrograms) var(--widthPrograms);
     grid-template-rows: 450px 450px;
   }
-}
+} */
 
 @media (min-width: 1300px) {
   .programs--title {
     margin-top: 170px;
   }
 
-  .programs--list {
+  /* .programs--list {
     height: 500px;
     display: flex;
     flex-direction: row;
     max-width: 2000px;
-  }
+  } */
 
   .programs--list-item:hover .programs--list-icon {
     top: -30%;
