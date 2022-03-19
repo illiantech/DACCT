@@ -28,8 +28,10 @@
       button.addEventListener('click', () => {
         // history.pushState({ id: 1 }, '', 'index.html');
 
-        localStorage.setItem('id', '1');
-        localStorage.setItem('name', 'ibrain no te ama');
+        // sessionStorage.setItem('id', '1');
+        // localStorage.setItem('id', '1');
+
+        localStorage.clear();
 
         console.log(localStorage);
       });
