@@ -38,11 +38,6 @@ const articles = [
     title: 'Atrás de mi Ventana',
     date: '2021-11-12',
     link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
-  },
-  {
-    title: 'Y una vida sin tí.',
-    date: '2022-11-10',
-    link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
   }
 ];
 
@@ -62,7 +57,7 @@ function removeAccents(texto) {
     .normalize();
 }
 
-const filter = () => {
+const filterSearch = () => {
   // declaracion de elementos
   const text = removeAccents(searchBar.value.toLowerCase());
 
@@ -117,6 +112,6 @@ const filter = () => {
   } else containerList.append(list);
 };
 
-searchBar.addEventListener('keyup', filter);
+searchBar.addEventListener('keyup', filterSearch);
 
-filter();
+filterSearch();
