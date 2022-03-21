@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -151,55 +151,118 @@
                 class="logo--img"
                 src="assets/img/png/logo/logo_name_png.png"
                 alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
+                data-section="header"
+                data-content="alt-logo"
               />
             </picture>
           </a>
-          <div title="Activar Menú" class="menu-active" id="menu-active"></div>
+          <div
+            data-section="header"
+            data-content="title-active-menu"
+            title="
+            Enable menu"
+            class="menu-active"
+            id="menu-active"
+          ></div>
 
           <nav role="navigation" class="nav" id="menu-nav">
             <div
-              title="Desactivar Menú"
+              data-section="header"
+              data-content="title-desactive-menu"
+              title="Disable menu"
               class="menu-desactive"
               id="menu-desactive"
             ></div>
             <ul class="list" id="list">
               <li class="list--item">
-                <a title="Inicio" href="index.html">Inicio</a>
+                <a
+                  data-section="header"
+                  data-content="title-nav-home"
+                  title="Home"
+                  href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="list--item">
-                <a title="Conócenos" href="conocenos.html">Conócenos</a>
+                <a
+                  data-section="header"
+                  data-content="title-nav-about_us"
+                  title="About us"
+                  href="conocenos.html"
+                  >About us</a
+                >
               </li>
               <li class="list--item">
-                <a title="Programas" href="programas.html">Programas</a>
+                <a
+                  data-section="header"
+                  data-content="title-nav-programs"
+                  title="Programs"
+                  href="programas.html"
+                  >Programs</a
+                >
               </li>
               <li class="list--item">
                 <a title="Blog" href="blog.html">Blog</a>
               </li>
               <li class="list--item">
-                <a title="Eventos" href="eventos.html">Eventos</a>
+                <a
+                  data-section="header"
+                  data-content="title-nav-events"
+                  title="Events"
+                  href="eventos.html"
+                  >Events</a
+                >
               </li>
               <li class="list--item">
-                <a title="Contáctanos" href="contactanos.html">Contáctanos</a>
+                <a
+                  data-section="header"
+                  data-content="title-nav-contacts"
+                  title="Contact us"
+                  href="contactanos.html"
+                  >Contact us</a
+                >
               </li>
               <li class="list--item donar-buttom">
-                <a title="Donar" href="">Donar</a>
+                <a
+                  data-section="header"
+                  data-content="title-nav-donate"
+                  title="Donate"
+                  href=""
+                  >Donate</a
+                >
               </li>
               <li class="list--item">
                 <div id="idioma" class="idioma idioma__hover">
-                  <em> Idioma </em>
+                  <em data-section="header" data-content="nav-lang"> language </em>
                 </div>
                 <div class="idioma--selector">
-                  <ul class="idioma--list">
-                    <li title="Español" class="idioma--list-item">
-                      <a lang="es" href="">ES</a>
+                  <ul id="languageContainer" class="idioma--list">
+                    <li
+                      data-lang="es"
+                      data-section="header"
+                      data-content="title-es"
+                      title="Spanish"
+                      class="idioma--list-item"
+                    >
+                      <span lang="es">ES</span>
                       <img
+                        data-section="header"
+                        data-content="alt-es"
                         src="assets/img/png/icon/republica-dominicana.png"
                         alt="bandera de republica dominicana"
                       />
                     </li>
-                    <li title="Ingles" class="idioma--list-item">
-                      <a lang="en" href="">EN</a>
+                    <li
+                      data-lang="en"
+                      data-section="header"
+                      data-content="title-en"
+                      title="English"
+                      class="idioma--list-item"
+                    >
+                      <span lang="en">EN</span>
                       <img
+                        data-section="header"
+                        data-content="alt-en"
                         src="assets/img/png/icon/estados-unidos.png"
                         alt="bandera de estados unidos"
                       />
@@ -225,9 +288,11 @@
             <source srcset="assets/img/webp/ui_slider/ui_1280.webp" />
 
             <img
+              data-section="slider"
+              data-content="alt-img0"
               class="slider--img0"
               src="assets/img/jpg/slider/img-1/ui_1280.jpg"
-              alt="pending"
+              alt=""
             />
           </picture>
           <picture class="slider--picture1">
@@ -238,6 +303,8 @@
 
             <source srcset="assets/img/webp/img-2_slider/slider-2-720-webp.webp" />
             <img
+              data-section="slider"
+              data-content="alt-img1"
               class="slider--img1"
               src="assets/img/jpg/slider/img-2/slider-2-720.jpg"
               alt="mujeres grandisas en un salon compartiendo ideas"
@@ -251,6 +318,8 @@
 
             <source srcset="assets/img/webp/img-3_slider/slider-3-720-webp.webp" />
             <img
+              data-section="slider"
+              data-content="alt-img2"
               class="slider--img2"
               src="assets/img/jpg/slider/img-3/slider-3-720.jpg"
               alt="catedral o iglesia imponente con banderas de republica dominicana"
@@ -264,6 +333,8 @@
 
             <source srcset="assets/img/webp/img-4_slider/slider-4-720-webp.webp" />
             <img
+              data-section="slider"
+              data-content="alt-img3"
               class="slider--img3"
               src="assets/img/jpg/slider/img-4/slider-4-720.jpg"
               alt="adultos mayores tocando instrumentos latinos"
@@ -277,6 +348,8 @@
 
             <source srcset="assets/img/webp/img-5_slider/slider-5-720-webp.webp" />
             <img
+              data-section="slider"
+              data-content="alt-img4"
               class="slider--img4"
               src="assets/img/jpg/slider/img-5/slider-5-720.jpg"
               alt="diversidad de personas uniendo sus manos en simbolo de alianza"
@@ -286,8 +359,13 @@
 
         <!-- end efects wave slider -->
         <div class="title-container">
-          <h1 id="title" class="title">
-            La Coalición Domínico Americana de Connecticut
+          <h1
+            data-section="slider"
+            data-content="slider-title-principal"
+            id="title"
+            class="title"
+          >
+            The Dominican American Coalition of Connecticut
           </h1>
         </div>
       </div>
@@ -298,22 +376,28 @@
       <!-- conocenos  -->
       <div class="conocenos">
         <section class="conocenos--section">
-          <h2 class="conocenos--title">
-            ¿Qué hace La Coalición Dominico-Americana de Connecticut?
+          <h2 data-section="about_us" data-content="title" class="conocenos--title">
+            What does The Dominican American Coalition of Connecticut do?
           </h2>
-          <p class="conocenos--paragraph">
-            Mediante la ejecución de programas de desarrollo humano, La Coalición
-            Dominico-Americana de Connecticut trabaja en beneficio de los habitantes
-            del Estado de Connecticut aplicando modelos de intervención social que
-            busca la transformación de las personas, aplicando el método
-            “Valor-Arte”.
+          <p
+            data-section="about_us"
+            data-content="paragraph"
+            class="conocenos--paragraph"
+          >
+            Through the execution of human development programs, The Dominican
+            American Coalition of Connecticut works for the benefit of the
+            inhabitants of the State of Connecticut by applying models of social
+            intervention that seek the transformation of people, applying the
+            "Value-Art" method.
           </p>
         </section>
       </div>
       <hr />
       <!-- blog preview home page -->
       <section class="blog" id="blogHome">
-        <h2 class="blog--title">¡No te lo Pierdas! Conoce Sobre Nuestro Blog</h2>
+        <h2 data-section="blog" data-content="title" class="blog--title">
+          Don't Miss Out! Check Our Blog
+        </h2>
         <ul id="blogList" class="blog--list">
           <li class="blog--list-item">
             <article class="blog--article">
@@ -399,7 +483,7 @@
         </ul>
       </section>
       <hr />
-      <!-- Seccion de estragias -->
+      <!-- Seccion de estrategias -->
 
       <div class="container-card2" id="containerCardTwo">
         <div class="background-card2" id="bgrCardTwo">
@@ -413,6 +497,8 @@
             />
 
             <img
+              data-section="strategies"
+              data-content="alt"
               class="background-card2--img"
               src="assets/img/jpg/home_page/Estrategias-home-page-720_jpg.jpg"
               alt="equipo de trabajo en una oficina conformando una estrategia social"
@@ -422,28 +508,58 @@
           <div class="background-card2--size">
             <!-- Contenedor de la card -->
             <section class="card2" id="cardTwo">
-              <h3 class="card2--title">Estrategias</h3>
+              <h3
+                data-section="strategies"
+                data-content="title"
+                class="card2--title"
+              >
+                Strategies
+              </h3>
 
               <!-- Contenedor Lista -->
               <div class="card2--list-container">
-                <p class="card2--list-paragraph">Educando comunidades en:</p>
+                <p
+                  class="card2--list-paragraph"
+                  data-section="strategies"
+                  data-content="paragraph0"
+                >
+                  Educating communities in:
+                </p>
                 <ul class="card2--list">
-                  <li>Manualidades.</li>
-                  <li>Educación Financiera.</li>
-                  <li>Metabolismo y nutrición.</li>
-                  <li>Computación Básica para Adultos.</li>
-                  <li>ESL (Ingles como Segunda Lengua).</li>
-                  <li>Intrumentos Musicales.</li>
-                  <li>Programas Deportivos.</li>
+                  <li data-section="strategies" data-content="list0">
+                    Handicrafts.
+                  </li>
+                  <li data-section="strategies" data-content="list1">
+                    Financial education.
+                  </li>
+                  <li data-section="strategies" data-content="list2">
+                    Metabolism and nutrition.
+                  </li>
+                  <li data-section="strategies" data-content="list3">
+                    Basic computer literacy for adults.
+                  </li>
+                  <li data-section="strategies" data-content="list4">
+                    ESL program.
+                  </li>
+                  <li data-section="strategies" data-content="list5">
+                    Musical Instruments.
+                  </li>
+                  <li data-section="strategies" data-content="list6">
+                    Sports programs.
+                  </li>
                 </ul>
               </div>
 
               <!-- Contenedor parrafo -->
 
-              <p class="card2--paragraph">
-                Las futuras generaciones latinas pueden identificar su patrimonio a
-                través de la cultura y obtener una perspectiva historica y
-                comprensión de su identidad cultural.
+              <p
+                data-section="strategies"
+                data-content="paragraph1"
+                class="card2--paragraph"
+              >
+                Future generations of Latinos can identify their heritage through
+                culture and gain a historical perspective and understanding of their
+                cultural identity.
               </p>
             </section>
           </div>
@@ -455,13 +571,17 @@
       <!-- Progrmas -->
 
       <section id="programs" class="programs">
-        <h2 class="programs--title">Programas</h2>
+        <h2 data-section="programs" data-content="title" class="programs--title">
+          Programs
+        </h2>
         <ul class="programs--list">
           <li class="programs--list-item">
             <article class="programs--list-article">
               <img
                 class="programs--list-icon"
                 src="assets/img/svg/programs/chocolate_yola.svg"
+                data-section="programs"
+                data-content="alt0"
                 alt="dos manos unidas"
               />
 
@@ -469,82 +589,122 @@
                 Chocolate <br />
                 con Yola
               </h3>
-              <p class="programs--list-paragraph">
-                Este programa nació de la mano de United Healthcare, Gala Foods
-                Supermarket y la Fundación Be Well Kairos como respuesta a la
-                imperante necesidad...
+              <p
+                data-section="programs"
+                data-content="paragraph0"
+                class="programs--list-paragraph"
+              >
+                This program was born from the hand of United Healthcare, Gala Foods
+                Supermarket and the Be Well Kairos Foundation as a response to the
+                imperative need...
               </p>
               <a
+                data-section="programs"
+                data-content="title-link"
                 href="programas.html#programOne"
-                title="Ver más"
+                title="See more"
                 class="article--buttom buttom__programs"
-                >Ver más</a
+                >See more</a
               >
             </article>
           </li>
           <li class="programs--list-item">
             <article class="programs--list-article">
               <img
+                data-section="programs"
+                data-content="alt1"
                 class="programs--list-icon"
                 src="assets/img/svg/programs/codac.svg"
                 alt="botiquin de primeros auxilios con medicinas"
               />
 
               <h3 class="programs--list-title">CODAC</h3>
-              <p class="programs--list-paragraph">
-                Es el nombre del programa de asistencia social con el que
-                beneficiamos a decenas de residentes de Connecticut, con aplicaciones
-                de inmigración...
+              <p
+                data-section="programs"
+                data-content="paragraph1"
+                class="programs--list-paragraph"
+              >
+                Is the name of the social assistance program with which we benefit
+                dozens of Connecticut residents, with immigration applications...
               </p>
               <a
+                data-section="programs"
+                data-content="title-link"
                 href="programas.html#programTwo"
-                title="Ver más"
+                title="See more"
                 class="article--buttom buttom__programs"
-                >Ver más</a
+                >See more</a
               >
             </article>
           </li>
           <li class="programs--list-item">
             <article class="programs--list-article">
               <img
+                data-section="programs"
+                data-content="alt2"
                 class="programs--list-icon"
                 src="assets/img/svg/programs/finanzas.svg"
                 alt="finanzas responsables para aprender como manejar el dinero"
               />
 
-              <h3 class="programs--list-title">Mis<br />Finanzas</h3>
-              <p class="programs--list-paragraph">
-                Nuestro Programa de Educación Financiera y Desarrollo Personal busca
-                fomentar en la comunidad la estabilidad financiera. Entre más
-                conocimiento...
+              <h3
+                data-section="programs"
+                data-content="sub-title2"
+                class="programs--list-title"
+              >
+                My<br />Finances
+              </h3>
+              <p
+                data-section="programs"
+                data-content="paragraph2"
+                class="programs--list-paragraph"
+              >
+                Our Financial Education and Personal Development Program seeks to
+                promote financial stability in the community. The more knowledge...
               </p>
               <a
+                data-section="programs"
+                data-content="title-link"
                 href="programas.html#programThree"
-                title="Ver más"
+                title="See more"
                 class="article--buttom buttom__programs"
-                >Ver más</a
+                >See more</a
               >
             </article>
           </li>
           <li class="programs--list-item">
             <article class="programs--list-article">
               <img
+                data-section="programs"
+                data-content="alt3"
                 class="programs--list-icon"
                 src="assets/img/svg/programs/co-alianza.svg"
                 alt="alianza entre personas que unen sus manos a sus corazones"
               />
 
-              <h3 class="programs--list-title">Co<br />Alianzas</h3>
-              <p class="programs--list-paragraph">
-                Nuestro programa Co-Alianza busca establecer lasos con organizaciones
-                sociales y privadas en temas relevantes para las comunidades, con el
-                objetivo...
+              <h3
+                data-section="programs"
+                data-content="sub-title3"
+                class="programs--list-title"
+              >
+                Co<br />Alliance
+              </h3>
+              <p
+                data-section="programs"
+                data-content="paragraph3"
+                class="programs--list-paragraph"
+              >
+                Our Co-Alliance program seeks to establish partnerships with social
+                and private organizations on issues relevant to the communities, with
+                the objective...
               </p>
               <a
+                data-section="programs"
+                data-content="title-link"
                 href="programas.html#programFour"
-                title="Ver más"
+                title="See more"
                 class="article--buttom buttom__programs"
-                >Ver más</a
+                >See more</a
               >
             </article>
           </li>
@@ -556,26 +716,44 @@
       <!-- alt de logos-->
 
       <section class="alliance">
-        <h2 class="alliance--title">Aliados</h2>
+        <h2 data-section="alliance" data-content="title" class="alliance--title">
+          Allies
+        </h2>
         <div class="alliance--list-container">
           <ul class="alliance--list alliance--list__mobile" id="allianceList">
             <li class="alliance--list-item">
-              <a class="alliance--list-link">
+              <a
+                data-section="alliance"
+                data-content="title-link"
+                title="See more"
+                target="_blank"
+                href="https://www.youtube.com/c/SUPERELITEENTERTAINMENT"
+                class="alliance--list-link"
+              >
                 <picture class="alliance--list-picture">
                   <source srcset="assets/img/alliance/aliados_webp/SEE_webp.webp" />
                   <img
+                    data-section="alliance"
+                    data-content="title-alt0"
                     src="assets/img/alliance/aliados_png/SEE.png"
-                    alt=""
+                    alt="Super elite entertainment"
                     class="alliance--list-img alliance--list-img__size"
                   />
                 </picture>
               </a>
             </li>
             <li class="alliance--list-item">
-              <a class="alliance--list-link">
+              <a
+                data-section="alliance"
+                data-content="title-link"
+                title="See more"
+                class="alliance--list-link"
+              >
                 <picture class="alliance--list-picture">
                   <source srcset="assets/img/alliance/aliados_webp/LCB_webp.webp" />
                   <img
+                    data-section="alliance"
+                    data-content="title-alt1"
                     src="assets/img/alliance/aliados_png/LCB.png"
                     alt=""
                     class="alliance--list-img alliance--list-img__size"
@@ -584,28 +762,46 @@
               </a>
             </li>
             <li class="alliance--list-item">
-              <a class="alliance--list-link">
+              <a
+                data-section="alliance"
+                data-content="title-link"
+                title="See more"
+                target="_blank"
+                href="https://hccgb.org/"
+                class="alliance--list-link"
+              >
                 <picture class="alliance--list-picture">
                   <source
                     srcset="assets/img/alliance/aliados_webp/HCCGE_webp.webp"
                   />
                   <img
+                    data-section="alliance"
+                    data-content="title-alt2"
                     src="assets/img/alliance/aliados_png/HCCGE.png"
-                    alt=""
+                    alt="Hispanic Chamber of Commerce of greater Bridgeport"
                     class="alliance--list-img alliance--list-img__size"
                   />
                 </picture>
               </a>
             </li>
             <li class="alliance--list-item">
-              <a class="alliance--list-link">
+              <a
+                data-section="alliance"
+                data-content="title-link"
+                title="See more"
+                target="_blank"
+                href="https://redcontraelabusosexual.org/"
+                class="alliance--list-link"
+              >
                 <picture class="alliance--list-picture">
                   <source
                     srcset="assets/img/alliance/aliados_webp/fundation_ed_webp.webp"
                   />
                   <img
+                    data-section="alliance"
+                    data-content="title-alt3"
                     src="assets/img/alliance/aliados_png/fundation_ed.png"
-                    alt=""
+                    alt="red contra el abuso sexual"
                     class="alliance--list-img alliance--list-img__size"
                   />
                 </picture>
@@ -613,7 +809,12 @@
             </li>
 
             <li class="alliance--list-item">
-              <a class="alliance--list-link">
+              <a
+                data-section="alliance"
+                data-content="title-link"
+                title="See more"
+                class="alliance--list-link"
+              >
                 <picture class="alliance--list-picture">
                   <source
                     srcset="
@@ -621,6 +822,8 @@
                     "
                   />
                   <img
+                    data-section="alliance"
+                    data-content="title-alt4"
                     src="assets/img/alliance/aliados_png/chocolate_con_yola.png"
                     alt=""
                     class="alliance--list-img alliance--list-img__size"
@@ -629,19 +832,35 @@
               </a>
             </li>
             <li class="alliance--list-item">
-              <a class="alliance--list-link">
+              <a
+                data-section="alliance"
+                data-content="title-link"
+                title="See more"
+                target="_blank"
+                href="https://ctlead.org/"
+                class="alliance--list-link"
+              >
                 <picture class="alliance--list-picture">
                   <source srcset="assets/img/alliance/aliados_webp/LEAD_webp.webp" />
                   <img
+                    data-section="alliance"
+                    data-content="title-alt5"
                     src="assets/img/alliance/aliados_png/LEAD.png"
-                    alt=""
+                    alt="Latinos for Educational Advocacy and Diversity"
                     class="alliance--list-img alliance--list-img__size"
                   />
                 </picture>
               </a>
             </li>
             <li class="alliance--list-item">
-              <a class="alliance--list-link">
+              <a
+                data-section="alliance"
+                data-content="title-link"
+                title="See more"
+                target="_blank"
+                href="https://es.uhccommunityplan.com/"
+                class="alliance--list-link"
+              >
                 <picture class="alliance--list-picture">
                   <source
                     srcset="
@@ -649,15 +868,24 @@
                     "
                   />
                   <img
+                    data-section="alliance"
+                    data-content="title-alt6"
                     src="assets/img/alliance/aliados_png/unitedhealthcare.png"
-                    alt=""
+                    alt="United Healthcare Community Plan"
                     class="alliance--list-img"
                   />
                 </picture>
               </a>
             </li>
             <li class="alliance--list-item">
-              <a class="alliance--list-link">
+              <a
+                data-section="alliance"
+                data-content="title-link"
+                title="See more"
+                target="_blank"
+                href="https://kairosfundation.org/"
+                class="alliance--list-link"
+              >
                 <picture class="alliance--list-picture">
                   <source
                     srcset="
@@ -665,33 +893,53 @@
                     "
                   />
                   <img
+                    data-section="alliance"
+                    data-content="title-alt7"
                     src="assets/img/alliance/aliados_png/kairos_foundation.png"
-                    alt=""
+                    alt="kairos fundation"
                     class="alliance--list-img"
                   /> </picture
               ></a>
             </li>
             <li class="alliance--list-item">
-              <a class="alliance--list-link">
+              <a
+                data-section="alliance"
+                data-content="title-link"
+                title="See more"
+                target="_blank"
+                href="https://galasupermarkets.com/#"
+                class="alliance--list-link"
+              >
                 <picture class="alliance--list-picture">
                   <source
                     srcset="assets/img/alliance/aliados_webp/gala_foods_webp.webp"
                   />
                   <img
+                    data-section="alliance"
+                    data-content="title-alt8"
                     src="assets/img/alliance/aliados_png/gala_foods.png"
-                    alt=""
+                    alt="Gala foods supermarkets"
                     class="alliance--list-img"
                   />
                 </picture>
               </a>
             </li>
             <li class="alliance--list-item">
-              <a class="alliance--list-link">
+              <a
+                data-section="alliance"
+                data-content="title-link"
+                title="See more"
+                target="_blank"
+                href="http://www.bdklawgroup.com/"
+                class="alliance--list-link"
+              >
                 <picture class="alliance--list-picture">
                   <source srcset="assets/img/alliance/aliados_webp/BDK_webp.webp" />
                   <img
+                    data-section="alliance"
+                    data-content="title-alt9"
                     src="assets/img/alliance/aliados_png/BDK.png"
-                    alt=""
+                    alt="BDK Law Group"
                     class="alliance--list-img"
                   />
                 </picture>
@@ -706,47 +954,99 @@
       <hr />
       <!-- patroners-->
       <section>
-        <h2 class="title-patrons">Patrocinadores</h2>
-        <p class="paragraph-patrons">¡Clickea nuestro botton de donar!</p>
+        <h2 data-section="patrons" data-content="title" class="title-patrons">
+          Sponsors
+        </h2>
+        <p
+          data-section="patrons"
+          data-content="sub-title0"
+          class="paragraph-patrons"
+        >
+          Click our donate button!
+        </p>
         <div class="container-patrons">
           <section class="patrons--sections">
-            <h3 class="patrons--title">Soporte a miembros de la comunidad</h3>
+            <h3
+              data-section="patrons"
+              data-content="sub-title1"
+              class="patrons--title"
+            >
+              Community Member Support
+            </h3>
             <ul class="patrons--list">
-              <li>Apoyo a la comunidad latina en el estado de Connecticut.</li>
+              <li data-section="patrons" data-content="sub-title1_list0">
+                Support to the Latino Community in the state of Connecticut.
+              </li>
             </ul>
             <p class="patrons--money">$1 – $1k</p>
           </section>
           <section class="patrons--sections">
-            <h3 class="patrons--title">Benefactor de la comunidad</h3>
+            <h3
+              data-section="patrons"
+              data-content="sub-title2"
+              class="patrons--title"
+            >
+              Community Benefactor
+            </h3>
             <ul class="patrons--list">
-              <li>Reconocimiento público extra.</li>
-              <li>Apoyo a la comunidad latina en el estado de Connecticut.</li>
+              <li data-section="patrons" data-content="sub-title2_list0">
+                Extra Public recognition.
+              </li>
+              <li data-section="patrons" data-content="sub-title2_list1">
+                Support to the Latino Community in the state of Connecticut.
+              </li>
             </ul>
             <p class="patrons--money">$1k – $5k</p>
           </section>
           <section class="patrons--sections">
-            <h3 class="patrons--title">Campeón de la comunidad</h3>
+            <h3
+              data-section="patrons"
+              data-content="sub-title3"
+              class="patrons--title"
+            >
+              Community Champion
+            </h3>
             <ul class="patrons--list">
-              <li>Reconocimiento público extra.</li>
-              <li>Cobertura en redes sociales.</li>
-              <li>
-                Mostrar el logotipo del socio en todas nuestras plataformas y
-                comunicaciones de medios.
+              <li data-section="patrons" data-content="sub-title3_list0">
+                Extra Public recognition.
+              </li>
+              <li data-section="patrons" data-content="sub-title3_list1">
+                Social media coverage.
+              </li>
+              <li data-section="patrons" data-content="sub-title3_list2">
+                Display partner logo in all of our platforms and media
+                communications.
               </li>
             </ul>
             <p class="patrons--money">$5k – $10k</p>
           </section>
           <section class="patrons--sections">
-            <h3 class="patrons--title">Patrocinador especial de DACCT</h3>
+            <h3
+              data-section="patrons"
+              data-content="sub-title4"
+              class="patrons--title"
+            >
+              DACCT Special Patron
+            </h3>
             <ul class="patrons--list">
-              <li>Cobertura extra en las redes sociales.</li>
-              <li>Video oficial del patrocinador.</li>
-              <li>
-                Reconocimiento en placa, gran pancarta y TODOS los beneficios del
-                Benefactor de la Comunidad.
+              <li data-section="patrons" data-content="sub-title4_list0">
+                Extra social media coverage.
+              </li>
+              <li data-section="patrons" data-content="sub-title4_list1">
+                Official sponsor video.
+              </li>
+              <li data-section="patrons" data-content="sub-title4_list2">
+                Recognition in plaque, big banner and ALL benefits from the Community
+                Benefactor.
               </li>
             </ul>
-            <p class="patrons--money">Más de $10K</p>
+            <p
+              data-section="patrons"
+              data-content="sub-title4_money"
+              class="patrons--money"
+            >
+              $10K and up
+            </p>
           </section>
         </div>
       </section>
@@ -762,6 +1062,8 @@
 
               <source srcset="assets/img/webp/logo/logo_name.webp" />
               <img
+                data-section="footer"
+                data-content="alt-logo"
                 class="logo--img"
                 src="assets/img/png/logo/logo_name_png.png"
                 alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
@@ -784,7 +1086,12 @@
               ></a>
             </li>
             <li class="contact--item">
-              <a title="Enviar Correo" href=""
+              <a
+                data-section="footer"
+                data-content="title-email"
+                title="
+                Send email"
+                href=""
                 ><i class="fa-solid fa-envelope"></i
               ></a>
             </li>
@@ -792,9 +1099,9 @@
           <div class="container-autor">
             <p class="autor">Daniel Pimentel - 2022</p>
           </div>
-          <p class="footer--info">
-            The Dominican-American Coalition es una organizacion sin fines de lucro
-            con el codigo 501 C 3.
+          <p data-section="footer" data-content="paragraph" class="footer--info">
+            The Dominican-American Coalition is a non profit organization with the
+            code 501 C 3.
           </p>
         </address>
       </div>
@@ -803,6 +1110,7 @@
     <!-- Scripts JS -->
     <script src="JS/template/load.js"></script>
     <script src="JS/template/menu.js"></script>
+    <script src="JS/template/lang.js"></script>
     <script src="JS/home_page/scripts.js"></script>
     <script src="JS/home_page/element_scroll.js"></script>
     <script src="JS/home_page/slider_alliances.js"></script>
