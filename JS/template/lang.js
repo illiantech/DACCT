@@ -23,7 +23,11 @@ const translate = async (lang) => {
       blockContent.alt = objectTranslate[section][content];
     else if (blockContent.hasAttribute('title'))
       blockContent.title = objectTranslate[section][content];
-    else if (blockContent.localName == 'p')
+    else if (
+      blockContent.localName == 'p' ||
+      blockContent.localName == 'h2' ||
+      blockContent.localName == 'h3'
+    )
       blockContent.innerHTML = objectTranslate[section][content];
     else blockContent.innerText = objectTranslate[section][content];
   }
