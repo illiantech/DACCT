@@ -7,7 +7,8 @@ const routeLang = document.querySelector('[data-routeLang]').dataset.routelang;
 const blocksContent = document.querySelectorAll('[data-section]');
 
 // funcion async - await fetch JSON Lang
-
+const email = document.getElementById('email');
+console.dir(email);
 const translate = async (lang) => {
   // objeto JSON
   const objectTranslate = await fetch(`../../JSON/${routeLang}/${lang}.json`).then(
@@ -21,15 +22,19 @@ const translate = async (lang) => {
 
     if (blockContent.hasAttribute('alt'))
       blockContent.alt = objectTranslate[section][content];
-    else if (blockContent.hasAttribute('title'))
+    else if (blockContent.hasAttribute('title') && blockContent.hasChildNodes()) {
+      if (blockContent.firstChild.nodeName == '#text') {
+        const textFormat = blockContent.firstChild.textContent.trim();
+        if (textFormat.length == 0)
+          blockContent.title = objectTranslate[section][content];
+        else {
+          blockContent.title = objectTranslate[section][content];
+          blockContent.innerText = objectTranslate[section][content];
+        }
+      }
+    } else if (blockContent.hasAttribute('title') && !blockContent.hasChildNodes())
       blockContent.title = objectTranslate[section][content];
-    else if (
-      blockContent.localName == 'p' ||
-      blockContent.localName == 'h2' ||
-      blockContent.localName == 'h3'
-    )
-      blockContent.innerHTML = objectTranslate[section][content];
-    else blockContent.innerText = objectTranslate[section][content];
+    else blockContent.innerHTML = objectTranslate[section][content];
   }
 };
 
