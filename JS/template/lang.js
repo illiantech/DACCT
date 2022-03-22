@@ -14,12 +14,18 @@ const translate = async (lang) => {
     (res) => res.json()
   );
 
-  // iteracion de bloques de contenido para agrear datos de objeto a partir del indice del mismo
+  // iteracion de bloques de contenido para agregar datos del objeto a partir del indice del mismo
   for (const blockContent of blocksContent) {
     const section = blockContent.dataset.section;
     const content = blockContent.dataset.content;
 
-    blockContent.innerHTML = objectTranslate[section][content];
+    if (blockContent.hasAttribute('alt'))
+      blockContent.alt = objectTranslate[section][content];
+    else if (blockContent.hasAttribute('title'))
+      blockContent.title = objectTranslate[section][content];
+    else if (blockContent.localName == 'p')
+      blockContent.innerHTML = objectTranslate[section][content];
+    else blockContent.innerText = objectTranslate[section][content];
   }
 };
 
