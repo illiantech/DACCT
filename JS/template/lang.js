@@ -35,6 +35,7 @@ const languageContainer = document.getElementById('languageContainer');
 
 languageContainer.addEventListener('click', (e) => {
   const language = e.target.dataset.lang;
+
   if (language != undefined) {
     translate(language);
   }
