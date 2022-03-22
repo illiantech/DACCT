@@ -1,6 +1,6 @@
 {
   "header": {
-    "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
+    "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
 
     "title-active-menu": "Enable menu",
     "title-desactive-menu": "Disable menu",
@@ -16,16 +16,16 @@
     "title-es": "Spanish",
     "title-en": "English",
 
-    "alt-es": "bandera de republica dominicana",
-    "alt-en": "bandera de estados unidos"
+    "alt-es": "Flag of The Dominican Republic",
+    "alt-en": "Flag of The United States"
   },
 
   "slider": {
     "alt-img0": "",
-    "alt-img1": "mujeres grandisas en un salon compartiendo ideas",
-    "alt-img2": "catedral o iglesia imponente con banderas de republica dominicana",
-    "alt-img3": "adultos mayores tocando instrumentos latinos",
-    "alt-img4": "diversidad de personas uniendo sus manos en simbolo de alianza",
+    "alt-img1": "Great women in a classroom sharing ideas",
+    "alt-img2": "Imposing church with flags of The Dominican Republic",
+    "alt-img3": "Elderly people playing music with latino instruments",
+    "alt-img4": "Diverse people joining hands as a symbol of alliance",
 
     "slider-title-principal": "The Dominican American Coalition of Connecticut"
   },
@@ -39,7 +39,7 @@
     "title": "Don't Miss Out! Check Our Blog"
   },
   "strategies": {
-    "alt": "equipo de trabajo en una oficina conformando una estrategia social",
+    "alt": "A work team in a office making a social strategy",
     "title": "Strategies",
 
     "paragraph0": "Educating communities in:",
@@ -57,18 +57,18 @@
   "programs": {
     "title": "Programs",
 
-    "alt0": "dos manos unidas",
+    "alt0": "Two hands joined together",
     "paragraph0": "This program was born from the hand of United Healthcare, Gala Foods Supermarket and the Be Well Kairos Foundation as a response to the imperative need...",
 
-    "alt1": "botiquin de primeros auxilios con medicinas",
+    "alt1": "First aid kit with medicines",
     "paragraph1": "Is the name of the social assistance program with which we benefit dozens of Connecticut residents, with immigration applications...",
 
-    "alt2": "finanzas responsables para aprender como manejar el dinero",
-    "sub-title2": "Mis<br />Finanzas",
+    "alt2": "Responsible finances to learn to manage your money better",
+    "sub-title2": "My<br />Finances",
     "paragraph2": "Our Financial Education and Personal Development Program seeks to promote financial stability in the community. The more knowledge...",
 
-    "alt3": "alianza entre personas que unen sus manos a sus corazones",
-    "sub-title3": "Co<br />Alianzas",
+    "alt3": "Alliance between people with their hands on their hearts",
+    "sub-title3": "Co<br />Alliance",
     "paragraph3": "Our Co-Alliance program seeks to establish partnerships with social and private organizations on issues relevant to the communities, with the objective...",
 
     "title-link": "See more"
@@ -101,7 +101,7 @@
     "sub-title4_money": "$10K and up"
   },
   "footer": {
-    "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
+    "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
 
     "title-email": "Send email",
 
