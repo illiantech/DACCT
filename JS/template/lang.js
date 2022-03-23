@@ -11,9 +11,9 @@ const email = document.getElementById('email');
 console.dir(email);
 const translate = async (lang) => {
   // objeto JSON
-  const objectTranslate = await fetch(`../../JSON/${routeLang}/${lang}.json`).then(
-    (res) => res.json()
-  );
+  const objectTranslate = await fetch(
+    `https://kanutegx.github.io/DACCT/../../JSON/${routeLang}/${lang}.json`
+  ).then((res) => res.json());
 
   // iteracion de bloques de contenido para agregar datos del objeto a partir del indice del mismo
   for (const blockContent of blocksContent) {
@@ -29,9 +29,9 @@ const translate = async (lang) => {
           blockContent.title = objectTranslate[section][content];
         else {
           blockContent.title = objectTranslate[section][content];
-          blockContent.innerText = objectTranslate[section][content];
+          blockContent.innerHTML = objectTranslate[section][content];
         }
-      }
+      } else blockContent.title = objectTranslate[section][content];
     } else if (blockContent.hasAttribute('title') && !blockContent.hasChildNodes())
       blockContent.title = objectTranslate[section][content];
     else blockContent.innerHTML = objectTranslate[section][content];
