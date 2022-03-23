@@ -7,7 +7,7 @@ const routeLang = document.querySelector('[data-routeLang]').dataset.routelang;
 const blocksContent = document.querySelectorAll('[data-section]');
 
 // funcion async - await fetch JSON Lang
-
+// dsd
 const translate = async (lang) => {
   // objeto JSON
   const objectTranslate = await fetch(
