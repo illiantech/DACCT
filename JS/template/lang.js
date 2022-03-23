@@ -7,12 +7,11 @@ const routeLang = document.querySelector('[data-routeLang]').dataset.routelang;
 const blocksContent = document.querySelectorAll('[data-section]');
 
 // funcion async - await fetch JSON Lang
-const email = document.getElementById('email');
-console.dir(email);
+
 const translate = async (lang) => {
   // objeto JSON
   const objectTranslate = await fetch(
-    `https://kanutegx.github.io/DACCT/../../JSON/${routeLang}/${lang}.json`
+    `https://kanutegx.github.io/DACCT/JSON/${routeLang}/${lang}.json`
   ).then((res) => res.json());
 
   // iteracion de bloques de contenido para agregar datos del objeto a partir del indice del mismo
