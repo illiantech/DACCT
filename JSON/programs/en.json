@@ -1,0 +1,59 @@
+{
+  "header": {
+    "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
+
+    "title-active-menu": "Activar Menú",
+    "title-desactive-menu": "Desactivar Menú",
+
+    "title-nav-home": "Inicio",
+    "title-nav-about_us": "Conócenos",
+    "title-nav-programs": "Programas",
+    "title-nav-events": "Eventos",
+    "title-nav-contacts": "Contáctanos",
+    "title-nav-donate": "Donar",
+
+    "nav-lang": "Idioma",
+    "title-es": "Español",
+    "title-en": "Ingles",
+
+    "alt-es": "bandera de republica dominicana",
+    "alt-en": "bandera de estados unidos"
+  },
+  "banner": {
+    "alt": "",
+    "title-principal": "PROGRAMAS"
+  },
+  "programs0": {
+    "alt-svg": "dos manos unidas",
+    "alt": "Grupo de personas jovenes y adultos mayores compartiendo y aprendiendo valores para la sana convivencia para fortalecer los lazos familiares",
+
+    "paragraph": "This program was born from the hand of United Healthcare, Gala Foods Supermarket and the Be Well Kairos Foundation as a response to the imperative need to bring the aging population with early childhood to share experience, anecdotes and values grandparents to children and art, joy and affection of children to grandparents, this in order to strengthen family ties in a world that is slowly beginning to suffer from them.<br /><br /> Our older adults are motivated through talks by different specialists on topics such as: metabolism, nutrition, financial education, psychology, etc. In addition to artistic presentations, raffles, dynamics, refreshments and the love of the volunteers of our organization."
+  },
+  "programs1": {
+    "alt-svg": "botiquin de primeros auxilios con medicinas",
+    "alt": "personas en un almacen gestionando los alimentos para el programa de asistencia socal CODAC",
+
+    "paragraph": "Is the name of the social assistance program with which we benefit dozens of Connecticut residents, with immigration applications, translations, notaries, rent, food among others.<br /><br /> The coalition relies on the professional and valuable work of 2 social workers who address all kinds of problems on Mondays and Tuesdays."
+  },
+  "programs2": {
+    "alt-svg": "finanzas responsables para aprender como manejar el dinero",
+    "alt": "anilisis financiero para aprender a gestionar mejor las finanzas personales y las de pequeñas empresas",
+
+    "title": "Mis Finanzas",
+    "paragraph": "<p class='programs-list--paragraph'>Our Financial Education and Personal Development Program seeks to promote financial stability in the community. The more knowledge people have about credit and banking services, the better decisions they will make regarding money matters, saving money and improving their financial condition and wellbeing. Some of our workshops include:</p><ul><li>Personal Finance.</li><li>Finance and small business development.</li><li>Women's Entrepreneurship.</li><li>Job Search Tools.</li></ul>"
+  },
+  "programs3": {
+    "alt-svg": "alianza entre personas que unen sus manos a sus corazones",
+    "alt": "personas formando una alianza con el fin de ofrecer valor a la sociedad",
+
+    "title": "Co Alianzas",
+    "paragraph": "Our Co-Alliance program seeks to establish partnerships with social and private organizations on issues relevant to the communities, with the objective of sharing knowledge, programs and resources with these entities. <br /><br />In alliance with LEAD, we developed our “ESL” program where our volunteers and beneficiaries are trained in the English language to open doors to better professional opportunities."
+  },
+  "footer": {
+    "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
+
+    "title-email": "Enviar Correo",
+
+    "paragraph": "La Coalición Domínico Americana es una organizacion sin fines de lucro con el codigo 501 C 3."
+  }
+}

@@ -7,9 +7,10 @@ const routeLang = document.querySelector('[data-routeLang]').dataset.routelang;
 const blocksContent = document.querySelectorAll('[data-section]');
 
 // funcion async - await fetch JSON Lang
-// dsd
+
 const translate = async (lang) => {
   // objeto JSON
+  // la ruta del fetch esta sujeta a cambio en funcion al hosting
   const objectTranslate = await fetch(
     `https://kanutegx.github.io/DACCT/JSON/${routeLang}/${lang}.json`
   ).then((res) => res.json());
@@ -37,6 +38,13 @@ const translate = async (lang) => {
   }
 };
 
+//  localStorage para indicar la heredacion del cambio de idioma en otras paginas cuando recargue y cambio de paginación
+// No se coloca solo un "else" porque si recarga la pagina y el valor no es "es" se ejecutara la funcion incluso ya tiendo el idioma en ingles por defecto
+
+if (localStorage.getItem('lang') === 'es') translate(localStorage.getItem('lang'));
+else if (localStorage.getItem('lang') === 'en')
+  translate(localStorage.getItem('lang'));
+
 // declaracion del click para cambio de idioma
 
 const languageContainer = document.getElementById('languageContainer');
@@ -46,5 +54,6 @@ languageContainer.addEventListener('click', (e) => {
 
   if (language != undefined) {
     translate(language);
+    localStorage.setItem('lang', `${language}`);
   }
 });

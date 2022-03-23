@@ -1,0 +1,59 @@
+{
+  "header": {
+    "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
+
+    "title-active-menu": "Activar Menú",
+    "title-desactive-menu": "Desactivar Menú",
+
+    "title-nav-home": "Inicio",
+    "title-nav-about_us": "Conócenos",
+    "title-nav-programs": "Programas",
+    "title-nav-events": "Eventos",
+    "title-nav-contacts": "Contáctanos",
+    "title-nav-donate": "Donar",
+
+    "nav-lang": "Idioma",
+    "title-es": "Español",
+    "title-en": "Ingles",
+
+    "alt-es": "bandera de republica dominicana",
+    "alt-en": "bandera de estados unidos"
+  },
+  "banner": {
+    "alt": "",
+    "title-principal": "PROGRAMAS"
+  },
+  "programs0": {
+    "alt-svg": "dos manos unidas",
+    "alt": "Grupo de personas jovenes y adultos mayores compartiendo y aprendiendo valores para la sana convivencia para fortalecer los lazos familiares",
+
+    "paragraph": "Este programa nació de la mano de United Healthcare, Gala Foods Supermarket y la Fundación Be Well Kairos como respuesta a la imperante necesidad de acercar la población envejeciente con la primera infancia para compartir experiencia, anécdotas y valores de los abuelos hacia los niños y el arte, la alegría y el cariño de los niños hacia los abuelos, esto con el fin de reforzar los lazos familiares en un mundo que poco a poco comienza a adolecer de los mismos. <br /> <br /> Nuestros Adultos mayores son motivados a través de las charlas de diferentes especialistas, en temas como: metabolismo, nutrición, educación financiera, psicología, etc. Además de las presentaciones artísticas, las rifas, las dinámicas, los refrigerios y el amor de los voluntarios de la nuestra organización."
+  },
+  "programs1": {
+    "alt-svg": "botiquin de primeros auxilios con medicinas",
+    "alt": "personas en un almacen gestionando los alimentos para el programa de asistencia socal CODAC",
+
+    "paragraph": "Es el nombre del programa de asistencia social con el que beneficiamos a decenas de residentes de Connecticut, con aplicaciones de inmigración, traducciones, notarias, renta, alimentos entre otros.<br /><br /> La coalición cuenta con el trabajo profesional y valioso de 2 asistentes sociales que abordan todo tipo de problemáticas los días lunes y martes."
+  },
+  "programs2": {
+    "alt-svg": "finanzas responsables para aprender como manejar el dinero",
+    "alt": "anilisis financiero para aprender a gestionar mejor las finanzas personales y las de pequeñas empresas",
+
+    "title": "Mis Finanzas",
+    "paragraph": "<p class='programs-list--paragraph'>Nuestro Programa de Educación Financiera y Desarrollo Personal busca fomentar en la comunidad la estabilidad financiera. Entre más conocimiento tengan las personas sobre el crédito y los servicios bancarios, mejores serán las decisiones que tomarán con respecto a cuestiones monetarias, el ahorro de dinero y el mejorar su condición y bienestar financiero. Algunos de nuestros talleres incluyen:</p><ul><li>Finanzas personales.</li><li>Finanzas y desarrollo de pequeñas empresas.</li><li>Emprendimiento de la mujer.</li><li>Herramientas en busca de empleo.</li></ul>"
+  },
+  "programs3": {
+    "alt-svg": "alianza entre personas que unen sus manos a sus corazones",
+    "alt": "personas formando una alianza con el fin de ofrecer valor a la sociedad",
+
+    "title": "Co Alianzas",
+    "paragraph": "Nuestro programa Co-Alianza busca establecer lasos con organizaciones sociales y privadas en temas relevantes para las comunidades, con el objetivo de compartir conocimiento, programas y recursos con estas entidades. <br /><br />En alianza con LEAD, desarrollamos nuestro programa de “ESL” donde nuestros voluntarios y beneficiarios se capacitan en el Idioma Inglés para abrirles puertas hacia mejores oportunidades profesionales."
+  },
+  "footer": {
+    "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
+
+    "title-email": "Enviar Correo",
+
+    "paragraph": "La Coalición Domínico Americana es una organizacion sin fines de lucro con el codigo 501 C 3."
+  }
+}
