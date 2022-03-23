@@ -21,20 +21,26 @@ const translate = async (lang) => {
     const content = blockContent.dataset.content;
 
     if (blockContent.hasAttribute('alt'))
+      // colocar en los alts de las imagenes la traduccion
       blockContent.alt = objectTranslate[section][content];
     else if (blockContent.hasAttribute('title') && blockContent.hasChildNodes()) {
+      // colocar en titles con nodos hijos
       if (blockContent.firstChild.nodeName == '#text') {
+        // colocar en titles con nodos hijos de tipo text
         const textFormat = blockContent.firstChild.textContent.trim();
         if (textFormat.length == 0)
+          // colocar en titles con nodos hijos de tipo text con 0 caracteres despues de formateo
           blockContent.title = objectTranslate[section][content];
         else {
+          // colocar en titles con nodos hijos de tipo text con MAS de 0 caracteres despues de formateo
           blockContent.title = objectTranslate[section][content];
           blockContent.innerHTML = objectTranslate[section][content];
         }
-      } else blockContent.title = objectTranslate[section][content];
+      } else blockContent.title = objectTranslate[section][content]; // colocar en titles con nodos hijos que NO SEAN de tipo text
     } else if (blockContent.hasAttribute('title') && !blockContent.hasChildNodes())
+      // colocar en titles que NO tengan nodos hijos
       blockContent.title = objectTranslate[section][content];
-    else blockContent.innerHTML = objectTranslate[section][content];
+    else blockContent.innerHTML = objectTranslate[section][content]; // colocar en cualquier texto que desee traducir
   }
 };
 
