@@ -47,19 +47,19 @@
     "alt-general": "team work",
 
     "name0": "Jonatan Soto",
-    "hierarchy0": "Member of the board",
+    "hierarchy0": "<em>Member of the board</em>",
 
     "name1": "Jacquelina Santos",
-    "hierarchy1": "Treasurer",
+    "hierarchy1": "<em>Treasurer</em>",
 
     "name2": "Juan Moreno",
-    "hierarchy2": "Sergeant at Arms",
+    "hierarchy2": "<em>Sergeant at Arms</em>",
 
     "name3": "Dorca Hernandez",
-    "hierarchy3": "Member of the board",
+    "hierarchy3": "<em>Member of the board</em>",
 
     "name4": "Viviana Placido",
-    "hierarchy4": "Director of Events and Logistics"
+    "hierarchy4": "<em>Director of Events and Logistics</em>"
   },
   "footer": {
     "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",

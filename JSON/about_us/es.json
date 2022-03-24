@@ -47,19 +47,19 @@
     "alt-general": "equipo de trabajo",
 
     "name0": "Jonatan Soto",
-    "hierarchy0": "Miembro de la Junta Directiva",
+    "hierarchy0": "<em>Miembro de la Junta Directiva</em>",
 
     "name1": "Jacquelina Santos",
-    "hierarchy1": "Tesorera",
+    "hierarchy1": "<em>Tesorera</em>",
 
     "name2": "Juan Moreno",
-    "hierarchy2": "Sargento de Armas",
+    "hierarchy2": "<em>Sargento de Armas</em>",
 
     "name3": "Dorca Hernandez",
-    "hierarchy3": "Miembro de la Junta Directiva",
+    "hierarchy3": "<em>Miembro de la Junta Directiva</em>",
 
     "name4": "Viviana Placido",
-    "hierarchy4": "Directora de Eventos y logística"
+    "hierarchy4": "<em>Directora de Eventos y logística</em>"
   },
   "footer": {
     "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
