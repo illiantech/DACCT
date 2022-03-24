@@ -64,7 +64,8 @@ function removeAccents(texto) {
 
 const filter = () => {
   // declaracion de elementos
-  const text = removeAccents(searchBar.value.toLowerCase());
+  let valueLowerCase = searchBar.value.toLowerCase();//toma el valor el input y lo pasa a minuscula
+  const text = removeAccents(valueLowerCase);
 
   const list = document.createElement('ul');
   list.classList.add('list-blog');
