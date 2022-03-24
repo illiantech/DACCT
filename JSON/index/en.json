@@ -1,0 +1,111 @@
+{
+  "header": {
+    "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
+
+    "title-active-menu": "Enable menu",
+    "title-desactive-menu": "Disable menu",
+
+    "title-nav-home": "Home",
+    "title-nav-about_us": "About us",
+    "title-nav-programs": "Programs",
+    "title-nav-events": "Events",
+    "title-nav-contacts": "Contact us",
+    "title-nav-donate": "Donate",
+
+    "nav-lang": "language",
+    "title-es": "Spanish",
+    "title-en": "English",
+
+    "alt-es": "Flag of The Dominican Republic",
+    "alt-en": "Flag of The United States"
+  },
+
+  "slider": {
+    "alt-img0": "",
+    "alt-img1": "Great women in a classroom sharing ideas",
+    "alt-img2": "Imposing church with flags of The Dominican Republic",
+    "alt-img3": "Elderly people playing music with latino instruments",
+    "alt-img4": "Diverse people joining hands as a symbol of alliance",
+
+    "title-principal": "The Dominican American Coalition of Connecticut"
+  },
+  "about_us": {
+    "title": "What does The Dominican American Coalition of Connecticut do?",
+
+    "paragraph": "Through the execution of human development programs, The Dominican American Coalition of Connecticut works for the benefit of the inhabitants of the State of Connecticut by applying models of social intervention that seek the transformation of people, applying the “Value-Art” method."
+  },
+
+  "blog": {
+    "title": "Don't Miss Out! Check Our Blog",
+    "title-link": "See more"
+  },
+  "strategies": {
+    "alt": "A work team in a office making a social strategy",
+    "title": "Strategies",
+
+    "paragraph0": "Educating communities in:",
+
+    "list0": "Handicrafts.",
+    "list1": "Financial education.",
+    "list2": "Metabolism and nutrition.",
+    "list3": "Basic computer literacy for adults.",
+    "list4": "ESL program.",
+    "list5": "Musical Instruments.",
+    "list6": "Sports programs.",
+
+    "paragraph1": "Future generations of Latinos can identify their heritage through culture and gain a historical perspective and understanding of their cultural identity."
+  },
+  "programs": {
+    "title": "Programs",
+
+    "alt0": "Two hands joined together",
+    "paragraph0": "This program was born from the hand of United Healthcare, Gala Foods Supermarket and the Be Well Kairos Foundation as a response to the imperative need...",
+
+    "alt1": "First aid kit with medicines",
+    "paragraph1": "Is the name of the social assistance program with which we benefit dozens of Connecticut residents, with immigration applications...",
+
+    "alt2": "Responsible finances to learn to manage your money better",
+    "sub-title2": "My<br />Finances",
+    "paragraph2": "Our Financial Education and Personal Development Program seeks to promote financial stability in the community. The more knowledge...",
+
+    "alt3": "Alliance between people with their hands on their hearts",
+    "sub-title3": "Co<br />Alliance",
+    "paragraph3": "Our Co-Alliance program seeks to establish partnerships with social and private organizations on issues relevant to the communities, with the objective...",
+
+    "title-link": "See more"
+  },
+  "alliance": {
+    "title": "Allies",
+    "title-link": "See more"
+  },
+  "patrons": {
+    "title": "Sponsors",
+
+    "sub-title0": "Click our donate button!",
+
+    "sub-title1": "Community Member Support",
+    "sub-title1_list0": "Support to the Latino Community in the state of Connecticut.",
+
+    "sub-title2": "Community Benefactor",
+    "sub-title2_list0": "Extra Public recognition.",
+    "sub-title2_list1": "Support to the Latino Community in the state of Connecticut.",
+
+    "sub-title3": "Community Champion",
+    "sub-title3_list0": "Extra Public recognition.",
+    "sub-title3_list1": "Social media coverage.",
+    "sub-title3_list2": "Display partner logo in all of our platforms and media communications.",
+
+    "sub-title4": "DACCT Special Patron",
+    "sub-title4_list0": "Extra social media coverage.",
+    "sub-title4_list1": "Official sponsor video.",
+    "sub-title4_list2": "Recognition in plaque, big banner and ALL benefits from the Community Benefactor.",
+    "sub-title4_paragraph": "$10K and up"
+  },
+  "footer": {
+    "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
+
+    "title-email": "Send email",
+
+    "paragraph": "The Dominican-American Coalition is a non profit organization with the code 501 C 3."
+  }
+}

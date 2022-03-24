@@ -2,47 +2,42 @@ const articles = [
   {
     title: 'La Ballena Azul.',
     date: '2022-03-17',
-    link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
   },
   {
     title: 'Don Quijote de la Mancha.',
     date: '2022-03-10',
-    link: '../../assets/firma_bancamiga.pdf'
+    link: 'https://kanutegx.github.io/DACCT/assets/firma_bancamiga.pdf'
   },
   {
     title: 'Luces en el Cielo.',
     date: '2022-03-05',
-    link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
   },
   {
     title: 'Eres mia pequeña.',
     date: '2022-03-01',
-    link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
   },
   {
     title: 'La Razón de estar contigo',
     date: '2022-02-17',
-    link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
   },
   {
     title: 'Yo antes de ti',
     date: '2022-01-17',
-    link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
   },
   {
     title: 'Bajo la Misma Estrella',
     date: '2021-11-17',
-    link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
   },
   {
     title: 'Atrás de mi Ventana',
     date: '2021-11-12',
-    link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
-  },
-  {
-    title: 'Y una vida sin tí.',
-    date: '2022-11-10',
-    link: '../../assets/Constancia-de-Trabajo-daniel.pdf'
+    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
   }
 ];
 
@@ -62,7 +57,7 @@ function removeAccents(texto) {
     .normalize();
 }
 
-const filter = () => {
+const filterSearch = () => {
   // declaracion de elementos
   let valueLowerCase = searchBar.value.toLowerCase();//toma el valor el input y lo pasa a minuscula
   const text = removeAccents(valueLowerCase);
@@ -118,6 +113,6 @@ const filter = () => {
   } else containerList.append(list);
 };
 
-searchBar.addEventListener('keyup', filter);
+searchBar.addEventListener('keyup', filterSearch);
 
-filter();
+filterSearch();

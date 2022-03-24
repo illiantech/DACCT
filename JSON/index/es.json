@@ -1,0 +1,110 @@
+{
+  "header": {
+    "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
+
+    "title-active-menu": "Activar Menú",
+    "title-desactive-menu": "Desactivar Menú",
+
+    "title-nav-home": "Inicio",
+    "title-nav-about_us": "Conócenos",
+    "title-nav-programs": "Programas",
+    "title-nav-events": "Eventos",
+    "title-nav-contacts": "Contáctanos",
+    "title-nav-donate": "Donar",
+
+    "nav-lang": "Idioma",
+    "title-es": "Español",
+    "title-en": "Ingles",
+
+    "alt-es": "bandera de republica dominicana",
+    "alt-en": "bandera de estados unidos"
+  },
+
+  "slider": {
+    "alt-img0": "",
+    "alt-img1": "mujeres grandiosas en un salon compartiendo ideas",
+    "alt-img2": "catedral o iglesia imponente con banderas de republica dominicana",
+    "alt-img3": "adultos mayores tocando instrumentos latinos",
+    "alt-img4": "diversidad de personas uniendo sus manos en simbolo de alianza",
+
+    "title-principal": "La Coalición Domínico Americana de Connecticut"
+  },
+  "about_us": {
+    "title": "¿Qué hace La Coalición Dominico-Americana de Connecticut?",
+
+    "paragraph": "Mediante la ejecución de programas de desarrollo humano, La Coalición Dominico-Americana de Connecticut trabaja en beneficio de los habitantes del Estado de Connecticut aplicando modelos de intervención social que busca la transformación de las personas, aplicando el método “Valor-Arte”."
+  },
+
+  "blog": {
+    "title": "¡No te lo Pierdas! Conoce Sobre Nuestro Blog",
+    "title-link": "Ver más"
+  },
+  "strategies": {
+    "alt": "equipo de trabajo en una oficina conformando una estrategia social",
+    "title": "Estrategias",
+
+    "paragraph0": "Educando comunidades en:",
+
+    "list0": "Manualidades.",
+    "list1": "Educación Financiera.",
+    "list2": "Metabolismo y nutrición.",
+    "list3": "Computación Básica para Adultos.",
+    "list4": "ESL (Ingles como Segunda Lengua).",
+    "list5": "Intrumentos Musicales.",
+    "list6": "Programas Deportivos.",
+
+    "paragraph1": "Las futuras generaciones latinas pueden identificar su patrimonio a través de la cultura y obtener una perspectiva historica y comprensión de su identidad cultural."
+  },
+  "programs": {
+    "title": "Programas",
+
+    "alt0": "dos manos unidas",
+    "paragraph0": "Este programa nació de la mano de United Healthcare, Gala Foods Supermarket y la Fundación Be Well Kairos como respuesta a la imperante necesidad...",
+
+    "alt1": "botiquin de primeros auxilios con medicinas",
+    "paragraph1": "Es el nombre del programa de asistencia social con el que beneficiamos a decenas de residentes de Connecticut, con aplicaciones de inmigración...",
+
+    "alt2": "finanzas responsables para aprender como manejar el dinero",
+    "sub-title2": "Mis<br />Finanzas",
+    "paragraph2": "Nuestro Programa de Educación Financiera y Desarrollo Personal busca fomentar en la comunidad la estabilidad financiera.Entre más conocimiento...",
+
+    "alt3": "alianza entre personas que unen sus manos a sus corazones",
+    "sub-title3": "Co<br />Alianzas",
+    "paragraph3": "Nuestro programa Co-Alianza busca establecer lasos con organizaciones sociales y privadas en temas relevantes para las comunidades, con el objetivo...",
+
+    "title-link": "Ver más"
+  },
+  "alliance": {
+    "title": "Aliados",
+    "title-link": "Ver más"
+  },
+  "patrons": {
+    "title": "Patrocinadores",
+    "sub-title0": "¡Clickea nuestro botton de donar!",
+
+    "sub-title1": "Soporte a miembros de la comunidad",
+    "sub-title1_list0": "Apoyo a la comunidad latina en el estado de Connecticut.",
+
+    "sub-title2": "Benefactor de la comunidad",
+    "sub-title2_list0": "Reconocimiento público extra.",
+    "sub-title2_list1": "Apoyo a la comunidad latina en el estado de Connecticut.",
+
+    "sub-title3": "Campeón de la comunidad",
+    "sub-title3_list0": "Reconocimiento público extra.",
+    "sub-title3_list1": "Cobertura en redes sociales.",
+    "sub-title3_list2": "Mostrar el logotipo del socio en todas nuestras plataformas y comunicaciones de medios.",
+
+    "sub-title4": "Patrocinador especial de DACCT",
+    "sub-title4_list0": "Cobertura extra en las redes sociales.",
+    "sub-title4_list1": "Video oficial del patrocinador.",
+    "sub-title4_list2": "Reconocimiento en placa, gran pancarta y TODOS los beneficios del Benefactor de la Comunidad.",
+    "sub-title4_paragraph": "Más de $10K"
+  },
+  "footer": {
+    "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
+
+    "title-email": "Enviar Correo",
+
+    "paragraph": "La Coalición Domínico Americana es una organizacion sin fines de lucro con el codigo 501 C 3."
+  }
+}

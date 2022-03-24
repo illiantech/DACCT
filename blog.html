@@ -118,7 +118,7 @@
   </head>
   <body>
     <!-- Pantalla de carga -->
-    <div class="load" id="load">
+    <div data-routeLang="blog" class="load" id="load">
       <div class="load--icon"></div>
     </div>
     <header class="header">
@@ -135,55 +135,118 @@
                 class="logo--img"
                 src="assets/img/png/logo/logo_name_png.png"
                 alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
+                data-section="header"
+                data-content="alt-logo"
               />
             </picture>
           </a>
-          <div title="Activar Menú" class="menu-active" id="menu-active"></div>
+          <div
+            data-section="header"
+            data-content="title-active-menu"
+            title="
+            Enable menu"
+            class="menu-active"
+            id="menu-active"
+          ></div>
 
           <nav role="navigation" class="nav" id="menu-nav">
             <div
-              title="Desactivar Menú"
+              data-section="header"
+              data-content="title-desactive-menu"
+              title="Disable menu"
               class="menu-desactive"
               id="menu-desactive"
             ></div>
             <ul class="list" id="list">
               <li class="list--item">
-                <a title="Inicio" href="index.html">Inicio</a>
+                <a
+                  data-section="header"
+                  data-content="title-nav-home"
+                  title="Home"
+                  href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="list--item">
-                <a title="Conócenos" href="conocenos.html">Conócenos</a>
+                <a
+                  data-section="header"
+                  data-content="title-nav-about_us"
+                  title="About us"
+                  href="about_us.html"
+                  >About us</a
+                >
               </li>
               <li class="list--item">
-                <a title="Programas" href="programas.html">Programas</a>
+                <a
+                  data-section="header"
+                  data-content="title-nav-programs"
+                  title="Programs"
+                  href="programs.html"
+                  >Programs</a
+                >
               </li>
               <li class="list--item">
                 <a title="Blog" href="blog.html">Blog</a>
-                <li class="list--item">
-                  <a title="Eventos" href="eventos.html">Eventos</a>
-                </li>
               </li>
               <li class="list--item">
-                <a title="Contáctanos" href="contactanos.html">Contáctanos</a>
+                <a
+                  data-section="header"
+                  data-content="title-nav-events"
+                  title="Events"
+                  href="events.html"
+                  >Events</a
+                >
+              </li>
+              <li class="list--item">
+                <a
+                  data-section="header"
+                  data-content="title-nav-contacts"
+                  title="Contact us"
+                  href="contact_us.html"
+                  >Contact us</a
+                >
               </li>
               <li class="list--item donar-buttom">
-                <a title="Donar" href="">Donar</a>
+                <a
+                  data-section="header"
+                  data-content="title-nav-donate"
+                  title="Donate"
+                  href=""
+                  >Donate</a
+                >
               </li>
               <li class="list--item">
                 <div id="idioma" class="idioma idioma__hover">
-                  <em> Idioma </em>
+                  <em data-section="header" data-content="nav-lang"> language </em>
                 </div>
                 <div class="idioma--selector">
-                  <ul class="idioma--list">
-                    <li title="Español" class="idioma--list-item">
-                      <a lang="es" href="">ES</a>
+                  <ul id="languageContainer" class="idioma--list">
+                    <li
+                      data-lang="es"
+                      data-section="header"
+                      data-content="title-es"
+                      title="Spanish"
+                      class="idioma--list-item"
+                    >
+                      <span lang="es">ES</span>
                       <img
+                        data-section="header"
+                        data-content="alt-es"
                         src="assets/img/png/icon/republica-dominicana.png"
                         alt="bandera de republica dominicana"
                       />
                     </li>
-                    <li title="Ingles" class="idioma--list-item">
-                      <a lang="en" href="">EN</a>
+                    <li
+                      data-lang="en"
+                      data-section="header"
+                      data-content="title-en"
+                      title="English"
+                      class="idioma--list-item"
+                    >
+                      <span lang="en">EN</span>
                       <img
+                        data-section="header"
+                        data-content="alt-en"
                         src="assets/img/png/icon/estados-unidos.png"
                         alt="bandera de estados unidos"
                       />
@@ -1007,9 +1070,12 @@
             </article>
           </div>
         </li>
-        
       </ul>
-      <div title="Artículos anteriores" class="blog-extension"><a href="extension_blog.html" class="blog-extension--link">Artículos anteriores</a></div>
+      <div title="Artículos anteriores" class="blog-extension">
+        <a href="extension_blog.html" class="blog-extension--link"
+          >Artículos anteriores</a
+        >
+      </div>
     </main>
     <footer class="footer">
       <div class="container-contact">
@@ -1022,6 +1088,8 @@
 
               <source srcset="assets/img/webp/logo/logo_name.webp" />
               <img
+                data-section="footer"
+                data-content="alt-logo"
                 class="logo--img"
                 src="assets/img/png/logo/logo_name_png.png"
                 alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
@@ -1044,7 +1112,12 @@
               ></a>
             </li>
             <li class="contact--item">
-              <a title="Enviar Correo" href=""
+              <a
+                data-section="footer"
+                data-content="title-email"
+                title="
+                Send email"
+                href=""
                 ><i class="fa-solid fa-envelope"></i
               ></a>
             </li>
@@ -1052,9 +1125,9 @@
           <div class="container-autor">
             <p class="autor">Daniel Pimentel - 2022</p>
           </div>
-          <p class="footer--info">
-            The Dominican-American Coalition es una organizacion sin fines de lucro
-            con el codigo 501 C 3.
+          <p data-section="footer" data-content="paragraph" class="footer--info">
+            The Dominican-American Coalition is a non profit organization with the
+            code 501 C 3.
           </p>
         </address>
       </div>
