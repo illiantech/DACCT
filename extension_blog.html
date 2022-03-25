@@ -259,14 +259,18 @@
       </div>
     </header>
     <main class="main" role="main" id="main">
-      <h2 class="blog-title">¡Leé nuestros artículos anteriores!</h2>
+      <h2 data-section="extension-blog" data-content="title" class="blog-title">
+        Read our previous articles!
+      </h2>
       <!-- BLOG registro PDF -->
       <div class="container-input">
         <input
+          data-section="extension-blog"
+          data-content="placeholder"
           class="search-bar"
           id="searchBar"
           type="text"
-          placeholder="Buscar por titulo"
+          placeholder="Search by title"
         />
       </div>
       <div class="container-list" id="containerList"></div>

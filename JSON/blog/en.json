@@ -1,0 +1,35 @@
+{
+  "header": {
+    "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
+
+    "title-active-menu": "Enable menu",
+    "title-desactive-menu": "Disable menu",
+
+    "title-nav-home": "Home",
+    "title-nav-about_us": "About us",
+    "title-nav-programs": "Programs",
+    "title-nav-events": "Events",
+    "title-nav-contacts": "Contact us",
+    "title-nav-donate": "Donate",
+
+    "nav-lang": "language",
+    "title-es": "Spanish",
+    "title-en": "English",
+
+    "alt-es": "Flag of The Dominican Republic",
+    "alt-en": "Flag of The United States"
+  },
+  "banner": {
+    "alt": ""
+  },
+  "blog": {
+    "title-link": "See more"
+  },
+  "footer": {
+    "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
+
+    "title-email": "Send email",
+
+    "paragraph": "The Dominican-American Coalition is a non profit organization with the code 501 C 3."
+  }
+}

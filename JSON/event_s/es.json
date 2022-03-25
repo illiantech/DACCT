@@ -29,31 +29,30 @@
     "titles": "<h3>Nombre:</h3><h3>Descripción:</h3><h3>Fecha y hora:</h3><h3>Ubicación:</h3>"
   },
 
-  "event-0": {
+  "events-title-mobile": {
     "name": "Nombre:",
+    "description": "Descripción:",
+    "date": "Fecha y hora:",
+    "location": "Ubicación:"
+  },
+
+  "event-0": {
     "name-paragraph": "Día del Adulto Mayor",
 
-    "description": "Descripción:",
     "description-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque porro nemo error nam iste distinctio ullam? Voluptas nulla suscipit...",
 
-    "date": "Fecha y hora:",
     "date-paragraph": "30 de septiembre de 2022 a las 14:00 GMT-04:00 Connecticut",
 
-    "location": "Ubicación:",
     "location-paragraph": "550 MAIN STREET HARTFORD CT 06103 United States"
   },
 
   "event-1": {
-    "name": "Nombre:",
     "name-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 
-    "description": "Descripción:",
     "description-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque porro nemo error nam iste distinctio ullam? Voluptas nulla suscipit...",
 
-    "date": "Fecha y hora:",
     "date-paragraph": "30 de marzo de 2022 a las 14:00",
 
-    "location": "Ubicación:",
     "location-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque porro nemo"
   },
 

@@ -23,6 +23,9 @@ const translate = async (lang) => {
     if (blockContent.hasAttribute('alt'))
       // colocar en los alts de las imagenes la traduccion
       blockContent.alt = objectTranslate[section][content];
+    else if (blockContent.hasAttribute('placeholder'))
+      // colocar placeholder para los inputs
+      blockContent.placeholder = objectTranslate[section][content];
     else if (blockContent.hasAttribute('title') && blockContent.hasChildNodes()) {
       // colocar en titles con nodos hijos
       if (blockContent.firstChild.nodeName == '#text') {
