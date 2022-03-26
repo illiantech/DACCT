@@ -1,7 +1,7 @@
 const fetchArticles = async () => {
-  const arrayElements = await fetch(
+  return await fetch(
     `https://kanutegx.github.io/DACCT/JSON/register_blog/es.json`
-  ).then((res) => res.json);
+  ).then((res) => res.json().articles);
 };
 
 const articles = fetchArticles();
