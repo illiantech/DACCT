@@ -50,7 +50,7 @@ const filterSearch = () => {
       const date = document.createElement('time');
       date.classList.add('list-blog--item-time');
 
-      date.textContent = article.date;
+      date.textContent = article.visual_date;
       date.dateTime = article.date;
 
       item.append(link, date);
