@@ -1,45 +1,10 @@
-const articles = [
-  {
-    title: 'La Ballena Azul.',
-    date: '2022-03-17',
-    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
-  },
-  {
-    title: 'Don Quijote de la Mancha.',
-    date: '2022-03-10',
-    link: 'https://kanutegx.github.io/DACCT/assets/firma_bancamiga.pdf'
-  },
-  {
-    title: 'Luces en el Cielo.',
-    date: '2022-03-05',
-    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
-  },
-  {
-    title: 'Eres mia pequeña.',
-    date: '2022-03-01',
-    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
-  },
-  {
-    title: 'La Razón de estar contigo',
-    date: '2022-02-17',
-    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
-  },
-  {
-    title: 'Yo antes de ti',
-    date: '2022-01-17',
-    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
-  },
-  {
-    title: 'Bajo la Misma Estrella',
-    date: '2021-11-17',
-    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
-  },
-  {
-    title: 'Atrás de mi Ventana',
-    date: '2021-11-12',
-    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
-  }
-];
+const fetchArticles = async () => {
+  const arrayElements = await fetch(
+    `https://kanutegx.github.io/DACCT/JSON/register_blog/es.json`
+  ).then((res) => res.json);
+};
+
+const articles = fetchArticles();
 
 const searchBar = document.getElementById('searchBar');
 
@@ -59,7 +24,7 @@ function removeAccents(texto) {
 
 const filterSearch = () => {
   // declaracion de elementos
-  let valueLowerCase = searchBar.value.toLowerCase();//toma el valor el input y lo pasa a minuscula
+  let valueLowerCase = searchBar.value.toLowerCase(); //toma el valor el input y lo pasa a minuscula
   const text = removeAccents(valueLowerCase);
 
   const list = document.createElement('ul');
