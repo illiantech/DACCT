@@ -8,15 +8,11 @@ if (history.state != null) {
 	blogList.children[history.state.validOpenBlog].classList.add(
 		'blog--list-item__open'
 	);
-
-	setTimeout(() => {
-		blogList.children[history.state.validOpenBlog].classList.add(
-			'blog--list-item__open-opacity'
-		);
-	}, 0001);
 }
 
 // active open blog
+
+// pending
 
 const blogListArray = Array.from(blogList.children);
 

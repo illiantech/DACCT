@@ -100,6 +100,8 @@ const fetchArticles = async (lang) => {
 
 fetchArticles(localStorage.getItem('lang'));
 
+// click event de lang
+
 languageContainer.addEventListener('click', (e) => {
 	const language = e.target.dataset.lang;
 
