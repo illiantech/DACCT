@@ -1,13 +1,17 @@
+// delcaracion de variables
+
+const elementsList = document.querySelector('[data-elementsList]');
+
 let articles;
 
 const insertArticles = () => {
-	for (let index = 0; index < articles.length; index++) {
-		blogList.children[
-			index
-		].children[1].firstElementChild.children[2].innerHTML = `${articles[index].title}`;
-		if (index == 9) {
-			break;
-		}
+	let Insertion = 0;
+	for (let position = 0; position < elementsList.children.length; position++) {
+		if (!articles[position].static)
+			elementsList.children[
+				position
+			].children[1].firstElementChild.children[2].innerHTML = `${articles[position].title}`;
+		else console.log('estatico');
 	}
 };
 
@@ -27,6 +31,7 @@ const fetchInsertArticles = async (lang) => {
 			.then((res) => res.json())
 			.then((res) => res.articles);
 	}
+	console.log(articles[1]);
 	insertArticles();
 };
 
