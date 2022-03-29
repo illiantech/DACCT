@@ -5,13 +5,22 @@ const elementsList = document.querySelector('[data-elementsList]');
 let articles;
 
 const insertArticles = () => {
-	let Insertion = 0;
-	for (let position = 0; position < elementsList.children.length; position++) {
-		if (!articles[position].static)
+	// delcaracion de variables dentro de la funcion
+	let insertion = 0;
+	let position;
+
+	for (let index = 0; index < elementsList.children.length; index++) {
+		if (!articles[index].static) {
+			position = index + 1;
 			elementsList.children[
 				position
-			].children[1].firstElementChild.children[2].innerHTML = `${articles[position].title}`;
-		else console.log('estatico');
+			].children[1].firstElementChild.children[2].innerHTML = `${articles[index].title}`;
+		} else {
+			elementsList.children[
+				insertion
+			].children[1].firstElementChild.children[2].innerHTML = `${articles[index].title}`;
+			insertion++;
+		}
 	}
 };
 
@@ -31,7 +40,7 @@ const fetchInsertArticles = async (lang) => {
 			.then((res) => res.json())
 			.then((res) => res.articles);
 	}
-	console.log(articles[1]);
+
 	insertArticles();
 };
 
