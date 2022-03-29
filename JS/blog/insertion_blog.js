@@ -1,5 +1,16 @@
 let articles;
 
+const insertArticles = () => {
+	for (let index = 0; index < articles.length; index++) {
+		blogList.children[
+			index
+		].children[1].firstElementChild.children[2].innerHTML = `${articles[index].title}`;
+		if (index == 9) {
+			break;
+		}
+	}
+};
+
 // Extraccion de articulos de API JSON con AJAX
 
 const fetchInsertArticles = async (lang) => {
@@ -16,12 +27,10 @@ const fetchInsertArticles = async (lang) => {
 			.then((res) => res.json())
 			.then((res) => res.articles);
 	}
-	console.log(articles);
+	insertArticles();
 };
 
 fetchInsertArticles(localStorage.getItem('lang'));
-
-console.log(articles);
 
 // click event de lang
 
