@@ -1,45 +1,29 @@
-const articles = [
-  {
-    title: 'La Ballena Azul.',
-    date: '2022-03-17',
-    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
-  },
-  {
-    title: 'Don Quijote de la Mancha.',
-    date: '2022-03-10',
-    link: 'https://kanutegx.github.io/DACCT/assets/firma_bancamiga.pdf'
-  },
-  {
-    title: 'Luces en el Cielo.',
-    date: '2022-03-05',
-    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
-  },
-  {
-    title: 'Eres mia pequeña.',
-    date: '2022-03-01',
-    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
-  },
-  {
-    title: 'La Razón de estar contigo',
-    date: '2022-02-17',
-    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
-  },
-  {
-    title: 'Yo antes de ti',
-    date: '2022-01-17',
-    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
-  },
-  {
-    title: 'Bajo la Misma Estrella',
-    date: '2021-11-17',
-    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
-  },
-  {
-    title: 'Atrás de mi Ventana',
-    date: '2021-11-12',
-    link: 'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'
+const conectionJson = () =>{
+  //Cargar los datos al momento de cargar la pagina
+  document.addEventListener('DOMContentLoaded', upDates())
+
+  async function upDates(){
+    fetch('\DACCT\JSON\blog_extension.json')
+    .then(res, (res)=>{
+      console.log(res)
+    })
+
+
+
+
+
   }
-];
+
+
+
+
+};
+
+
+
+
+
+
 
 const searchBar = document.getElementById('searchBar');
 
@@ -116,3 +100,8 @@ const filterSearch = () => {
 searchBar.addEventListener('keyup', filterSearch);
 
 filterSearch();
+
+
+
+// Funcion para cargar la informacion 
+
