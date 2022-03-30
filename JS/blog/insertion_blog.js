@@ -7,24 +7,134 @@ let articles;
 const insertArticles = () => {
 	// delcaracion de variables dentro de la funcion
 	let insertion = 0; // inserción del destacado
-	let position = 2; // position push
-	let p = 0;
+	let position = 2; // position push (tiene que concordar con los static article)
 
-	for (let index = 0; index < elementsList.children.length; index++) {
+	// lectura de articles para integracion de contenido
+	for (let index = 0; index < articles.length; index++) {
 		if (articles[index].static) {
 			if (insertion < elementsList.children.length) {
-				// title
-				elementsList.children[insertion].children[1].firstElementChild.children[2].innerHTML = `${articles[index].title}`;
+				if (routeLang === 'blog') {
+					// - blog
+
+					// srcset 1300 - img
+					elementsList.children[
+						insertion
+					].children[1].firstElementChild.firstElementChild.firstElementChild.srcset = `${articles[index].srcset_1300}`;
+
+					// srcset - img
+					elementsList.children[insertion].children[1].firstElementChild.firstElementChild.children[1].srcset = `${articles[index].srcset}`;
+
+					// src - img
+					elementsList.children[insertion].children[1].firstElementChild.firstElementChild.lastElementChild.src = `${articles[index].src}`;
+
+					// alt - img
+					elementsList.children[insertion].children[1].firstElementChild.firstElementChild.lastElementChild.alt = `${articles[index].alt}`;
+
+					// time
+					elementsList.children[insertion].children[1].firstElementChild.children[1].innerHTML = `${articles[index].visual_date}`;
+
+					// time - dataTime
+					elementsList.children[insertion].children[1].firstElementChild.children[1].dateTime = `${articles[index].date}`;
+
+					// title
+					elementsList.children[insertion].children[1].firstElementChild.children[2].innerHTML = `${articles[index].title}`;
+
+					// text - preview
+					elementsList.children[insertion].children[1].firstElementChild.children[3].innerHTML = `${articles[index].text_preview}`;
+
+					// text - preview
+					elementsList.children[insertion].children[1].firstElementChild.children[4].innerHTML = `${articles[index].text}`;
+				} else {
+					// - Index
+
+					// srcset 1300 - img
+					elementsList.children[insertion].firstElementChild.firstElementChild.firstElementChild.srcset = `${articles[index].srcset_1300}`;
+
+					// srcset - img
+					elementsList.children[insertion].firstElementChild.firstElementChild.children[1].srcset = `${articles[index].srcset}`;
+
+					// src - img
+					elementsList.children[insertion].firstElementChild.firstElementChild.lastElementChild.src = `${articles[index].src}`;
+
+					// alt - img
+					elementsList.children[insertion].firstElementChild.firstElementChild.lastElementChild.alt = `${articles[index].alt}`;
+
+					// time
+					elementsList.children[insertion].firstElementChild.children[1].innerHTML = `${articles[index].visual_date}`;
+
+					// time - dataTime
+					elementsList.children[insertion].firstElementChild.children[1].dateTime = `${articles[index].date}`;
+
+					// title
+					elementsList.children[insertion].firstElementChild.children[2].innerHTML = `${articles[index].title}`;
+
+					// text - preview
+					elementsList.children[insertion].firstElementChild.children[3].innerHTML = `${articles[index].text_preview}`;
+				}
 
 				insertion++;
 				index++;
 			}
 		}
 
-		// position push (tiene que concordar con los static article)
+		// position push
 		if (position < elementsList.children.length) {
-			// title
-			elementsList.children[position].children[1].firstElementChild.children[2].innerHTML = `${articles[index].title}`;
+			if (routeLang === 'blog') {
+				// - blog
+
+				// srcset 1300 - img
+				elementsList.children[position].children[1].firstElementChild.firstElementChild.firstElementChild.srcset = `${articles[index].srcset_1300}`;
+
+				// srcset - img
+				elementsList.children[position].children[1].firstElementChild.firstElementChild.children[1].srcset = `${articles[index].srcset}`;
+
+				// src - img
+				elementsList.children[position].children[1].firstElementChild.firstElementChild.lastElementChild.src = `${articles[index].src}`;
+
+				// alt - img
+				elementsList.children[position].children[1].firstElementChild.firstElementChild.lastElementChild.alt = `${articles[index].alt}`;
+
+				// time
+				elementsList.children[position].children[1].firstElementChild.children[1].innerHTML = `${articles[index].visual_date}`;
+
+				// time - dataTime
+				elementsList.children[position].children[1].firstElementChild.children[1].dateTime = `${articles[index].date}`;
+
+				// title
+				elementsList.children[position].children[1].firstElementChild.children[2].innerHTML = `${articles[index].title}`;
+
+				// text - preview
+				elementsList.children[position].children[1].firstElementChild.children[3].innerHTML = `${articles[index].text_preview}`;
+
+				// text - preview
+				elementsList.children[position].children[1].firstElementChild.children[4].innerHTML = `${articles[index].text}`;
+			} else {
+				// - Index
+
+				// srcset 1300 - img
+				elementsList.children[position].firstElementChild.firstElementChild.firstElementChild.srcset = `${articles[index].srcset_1300}`;
+
+				// srcset - img
+				elementsList.children[position].firstElementChild.firstElementChild.children[1].srcset = `${articles[index].srcset}`;
+
+				// src - img
+				elementsList.children[position].firstElementChild.firstElementChild.lastElementChild.src = `${articles[index].src}`;
+
+				// alt - img
+				elementsList.children[position].firstElementChild.firstElementChild.lastElementChild.alt = `${articles[index].alt}`;
+
+				// time
+				elementsList.children[position].firstElementChild.children[1].innerHTML = `${articles[index].visual_date}`;
+
+				// time - dataTime
+				elementsList.children[position].firstElementChild.children[1].dateTime = `${articles[index].date}`;
+
+				// title
+				elementsList.children[position].firstElementChild.children[2].innerHTML = `${articles[index].title}`;
+
+				// text - preview
+				elementsList.children[position].firstElementChild.children[3].innerHTML = `${articles[index].text_preview}`;
+			}
 
 			position++;
 		}
