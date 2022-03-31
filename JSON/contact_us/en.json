@@ -1,36 +1,36 @@
 {
-  "header": {
-    "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
+	"header": {
+		"alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
 
-    "title-active-menu": "Enable menu",
-    "title-desactive-menu": "Disable menu",
+		"title-active-menu": "Enable menu",
+		"title-desactive-menu": "Disable menu",
 
-    "title-nav-home": "Home",
-    "title-nav-about_us": "About us",
-    "title-nav-programs": "Programs",
-    "title-nav-events": "Events",
-    "title-nav-contacts": "Contact us",
-    "title-nav-donate": "Donate",
+		"title-nav-home": "Home",
+		"title-nav-about_us": "About us",
+		"title-nav-programs": "Programs",
+		"title-nav-events": "Events",
+		"title-nav-contacts": "Contact us",
+		"title-nav-donate": "Donate",
 
-    "nav-lang": "language",
-    "title-es": "Spanish",
-    "title-en": "English",
+		"nav-lang": "language",
+		"title-es": "Spanish",
+		"title-en": "English",
 
-    "alt-es": "Flag of The Dominican Republic",
-    "alt-en": "Flag of The United States"
-  },
-  "banner": {
-    "alt": "",
-    "title-principal": "CONTACT US"
-  },
-  "info-form": {
-    "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem architecto porro voluptatibus possimus maiores soluta. Sed, tempore nostrum labore corporis at, doloremque alias vero aut sequi eveniet error voluptatibus laudantium!"
-  },
-  "footer": {
-    "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
+		"alt-es": "Flag of The Dominican Republic",
+		"alt-en": "Flag of The United States"
+	},
+	"banner": {
+		"alt": "",
+		"title-principal": "CONTACT US"
+	},
+	"info-form": {
+		"paragraph": "<strong>Be a volunteer!</strong> The objective of The Dominican American Coalition of Connecticut is to educate and improve the quality of life of many people. Thanks to people like you we'll be able to reach our goals. If you have time to collaborate in our projects, <strong>Contact us and become a volunteer!</strong>"
+	},
+	"footer": {
+		"alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
 
-    "title-email": "Send email",
+		"title-email": "Send email",
 
-    "paragraph": "The Dominican-American Coalition is a non profit organization with the code 501 C 3."
-  }
+		"paragraph": "The Dominican-American Coalition is a non profit organization with the code 501 C 3."
+	}
 }
