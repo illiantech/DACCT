@@ -78,9 +78,21 @@ const insertArticles = () => {
 				if (routeLang === 'blog') {
 					// blog.html
 					contentBlogBlogs(insertion, index);
+
+					// DESTACADO - BLOG STATIC
+					const star = document.createElement('div');
+					star.classList.add('star');
+
+					elementsList.children[insertion].children[1].firstElementChild.lastElementChild.before(star);
 				} else {
 					// index.html
 					contentIndexBlogs(insertion, index);
+
+					// DESTACADO - BLOG STATIC
+					const star = document.createElement('div');
+					star.classList.add('star');
+
+					elementsList.children[insertion].firstElementChild.lastElementChild.before(star);
 				}
 
 				insertion++;
