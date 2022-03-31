@@ -107,11 +107,11 @@ const insertArticles = () => {
 
 const fetchInsertArticles = async (lang) => {
 	if (lang) {
-		articles = await fetch(`../../JSON/register_blog/${lang}.json`)
+		articles = await fetch(`https://kanutegx.github.io/DACCT/JSON/register_blog/${lang}.json`)
 			.then((res) => res.json())
 			.then((res) => res.articles);
 	} else {
-		articles = await fetch(`../../JSON/register_blog/en.json`)
+		articles = await fetch(`https://kanutegx.github.io/DACCT/JSON/register_blog/en.json`)
 			.then((res) => res.json())
 			.then((res) => res.articles);
 	}
