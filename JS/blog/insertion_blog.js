@@ -1,3 +1,5 @@
+// index.html and blog.html
+
 // delcaracion de variables
 
 const elementsList = document.querySelector('[data-elementsList]');

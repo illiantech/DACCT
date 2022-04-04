@@ -1,6 +1,6 @@
 /* border Indicator */
 .list--item:nth-child(1) > a {
-  border-bottom: 3px solid var(--colorSecundario);
+	border-bottom: 3px solid var(--colorSecundario);
 }
 
 /* ----- */
@@ -8,18 +8,15 @@
 /* Slider Automatico */
 
 .slider-container {
-  position: relative;
-  overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
 
 .slider {
-  /* --colorPrimario y colorPrimario2 con opacidad */
-  background-image: linear-gradient(
-    hsla(231, 70%, 30%, 0.9) 15%,
-    hsla(224, 70%, 40%, 0.7) 30%
-  );
-  height: 100vh;
-  position: relative;
+	/* --colorPrimario y colorPrimario2 con opacidad */
+	background-image: linear-gradient(hsla(231, 70%, 30%, 0.9) 15%, hsla(224, 70%, 40%, 0.7) 30%);
+	height: 100vh;
+	position: relative;
 }
 /* No se hizo por img para facilitar la iteracion por JS */
 .slider--picture0,
@@ -27,29 +24,29 @@
 .slider--picture2,
 .slider--picture3,
 .slider--picture4 {
-  position: absolute;
-  height: 100vh;
-  width: 100%;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
 }
 
 .slider--picture0 {
-  z-index: -200;
+	z-index: -200;
 }
 
 .slider--picture1 {
-  z-index: -400;
+	z-index: -400;
 }
 
 .slider--picture2 {
-  z-index: -600;
+	z-index: -600;
 }
 
 .slider--picture3 {
-  z-index: -800;
+	z-index: -800;
 }
 
 .slider--picture4 {
-  z-index: -1000;
+	z-index: -1000;
 }
 
 .slider--img0,
@@ -57,120 +54,82 @@
 .slider--img2,
 .slider--img3,
 .slider--img4 {
-  position: relative;
-  z-index: -2000;
-  height: 100vh;
-  width: 100%;
-  object-fit: cover;
+	position: relative;
+	z-index: -2000;
+	height: 100vh;
+	width: 100%;
+	object-fit: cover;
 }
 
 /* Los que considero que no se ven bien */
 .slider--img0 {
-  object-position: 55%;
+	object-position: 55%;
 }
 
 .slider--img2 {
-  object-position: 44%;
+	object-position: 44%;
 }
 
 .slider--img3 {
-  object-position: 40%;
+	object-position: 40%;
 }
 
 /* efecto de onda */
 
 .wave {
-  background-image: url(../../assets/img/svg/wave.svg);
-  position: relative;
-  top: -350px;
-  width: 600%;
-  height: 400px;
-  transform: rotateX(180deg);
-  background-position: bottom;
+	background-image: url(../../assets/img/svg/wave.svg);
+	position: relative;
+	top: -350px;
+	width: 600%;
+	height: 400px;
+	transform: rotateX(180deg);
+	background-position: bottom;
 
-  animation: w 15s linear infinite;
+	animation: w 15s linear infinite;
 }
+
 /* investigar esta reaccion  particular en el key frame */
 @keyframes w {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
+	0% {
+		margin-left: 0;
+	}
+	100% {
+		margin-left: -1600px;
+	}
 }
-/* 
-.slider-container--efect {
-  position: absolute;
-  top: 100%;
-  height: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-.slider--efect-wave {
-  display: inline-block;
-
-  background-color: var(--white);
-  border-radius: 40%;
-  animation: rotate 20s linear infinite;
-  z-index: 100;
-  position: absolute;
-
-  transform: rotate(0deg);
-} */
 
 /* title H1 */
 
 .title-container {
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .title {
-  position: absolute;
+	position: absolute;
 
-  color: var(--white);
-  width: 75%;
-  letter-spacing: 3px;
-  margin-bottom: 0;
-  margin-top: 0;
-  text-align: left;
+	color: var(--white);
+	width: 75%;
+	letter-spacing: 3px;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: left;
 }
 
 @media (min-width: 600px) {
-  .title {
-    width: 450px;
-  }
+	.title {
+		width: 450px;
+	}
 }
 
 @media (min-width: 1000px) {
-  .title {
-    font-size: calc(var(--letterSizeMedium) * 2);
-    width: 600px;
-  }
+	.title {
+		font-size: calc(var(--letterSizeMedium) * 2);
+		width: 600px;
+	}
 }
-
-/* todo contenido tiene que estar con z index mayor a element rotate */
-
-/* p {
-  position: relative;
-  z-index: 200;
-  margin: 0;
-  background-color: var(--white);
-  height: 1000px;
-} */

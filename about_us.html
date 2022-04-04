@@ -1,613 +1,383 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-    <!-- iconos adaptables -->
+		<!-- iconos adaptables -->
 
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="assets/favicons/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="assets/favicons/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="assets/favicons/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="assets/favicons/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="assets/favicons/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="assets/favicons/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="assets/favicons/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="assets/favicons/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicons/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="assets/favicons/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="assets/favicons/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/favicons/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+		<link rel="manifest" href="assets/favicons/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
 
-    <!-- CDN font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+		<!-- CDN font awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 
-    <!-- Outfit de 200 a 800 (regular a extra bold) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+		<!-- Outfit de 200 a 800 (regular a extra bold) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-    <!-- Estilos CSS -->
-    <link rel="stylesheet" href="CSS/template/Normalize.css" />
-    <link rel="stylesheet" href="CSS/template/principal.css" />
-    <link rel="stylesheet" href="CSS/template/load.css" />
-    <link rel="stylesheet" href="CSS/template/menu.css" />
-    <link rel="stylesheet" href="CSS/template_menu/banner_menu.css" />
+		<!-- Estilos CSS -->
+		<link rel="stylesheet" href="CSS/template/Normalize-dist.css" />
+		<link rel="stylesheet" href="CSS/template/principal-dist.css" />
+		<link rel="stylesheet" href="CSS/template/load-dist.css" />
+		<link rel="stylesheet" href="CSS/template/menu-dist.css" />
+		<link rel="stylesheet" href="CSS/template_menu/banner_menu-dist.css" />
 
-    <link rel="stylesheet" href="CSS/about_us/objetivos.css" />
-    <link rel="stylesheet" href="CSS/about_us/vision_mision.css" />
-    <link rel="stylesheet" href="CSS/about_us/team.css" />
+		<link rel="stylesheet" href="CSS/about_us/objetivos-dist.css" />
+		<link rel="stylesheet" href="CSS/about_us/vision_mision-dist.css" />
+		<link rel="stylesheet" href="CSS/about_us/team-dist.css" />
 
-    <link rel="stylesheet" href="CSS/template/footer.css" />
+		<link rel="stylesheet" href="CSS/template/footer-dist.css" />
 
-    <title>DACCT</title>
-  </head>
-  <body>
-    <!-- Pantalla de carga -->
-    <div data-routeLang="about_us" class="load" id="load">
-      <div class="load--icon"></div>
-    </div>
-    <header class="header">
-      <!-- Menu -->
-      <div class="menu-container">
-        <div class="menu">
-          <!-- Logo -->
-          <a title="Logo" href="index.html" class="logo">
-            <picture>
-              <!-- adaptar imagenes -->
+		<title>DACCT</title>
+	</head>
+	<body>
+		<!-- Pantalla de carga -->
+		<div data-routeLang="about_us" class="load" id="load">
+			<div class="load--icon"></div>
+		</div>
+		<header class="header">
+			<!-- Menu -->
+			<div class="menu-container">
+				<div class="menu">
+					<!-- Logo -->
+					<a title="Logo" href="index.html" class="logo">
+						<picture>
+							<!-- adaptar imagenes -->
 
-              <source srcset="assets/img/webp/logo/logo_name.webp" />
-              <img
-                class="logo--img"
-                src="assets/img/png/logo/logo_name_png.png"
-                alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
-                data-section="header"
-                data-content="alt-logo"
-              />
-            </picture>
-          </a>
-          <div
-            data-section="header"
-            data-content="title-active-menu"
-            title="
+							<source srcset="assets/img/webp/logo/logo_name.webp" />
+							<img
+								class="logo--img"
+								src="assets/img/png/logo/logo_name_png.png"
+								alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
+								data-section="header"
+								data-content="alt-logo"
+							/>
+						</picture>
+					</a>
+					<div
+						data-section="header"
+						data-content="title-active-menu"
+						title="
             Enable menu"
-            class="menu-active"
-            id="menu-active"
-          ></div>
+						class="menu-active"
+						id="menu-active"
+					></div>
 
-          <nav role="navigation" class="nav" id="menu-nav">
-            <div
-              data-section="header"
-              data-content="title-desactive-menu"
-              title="Disable menu"
-              class="menu-desactive"
-              id="menu-desactive"
-            ></div>
-            <ul class="list" id="list">
-              <li class="list--item">
-                <a
-                  data-section="header"
-                  data-content="title-nav-home"
-                  title="Home"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="list--item">
-                <a
-                  data-section="header"
-                  data-content="title-nav-about_us"
-                  title="About us"
-                  href="about_us.html"
-                  >About us</a
-                >
-              </li>
-              <li class="list--item">
-                <a
-                  data-section="header"
-                  data-content="title-nav-programs"
-                  title="Programs"
-                  href="programs.html"
-                  >Programs</a
-                >
-              </li>
-              <li class="list--item">
-                <a title="Blog" href="blog.html">Blog</a>
-              </li>
-              <li class="list--item">
-                <a
-                  data-section="header"
-                  data-content="title-nav-events"
-                  title="Events"
-                  href="events.html"
-                  >Events</a
-                >
-              </li>
-              <li class="list--item">
-                <a
-                  data-section="header"
-                  data-content="title-nav-contacts"
-                  title="Contact us"
-                  href="contact_us.html"
-                  >Contact us</a
-                >
-              </li>
-              <li class="list--item donar-buttom">
-                <a
-                  data-section="header"
-                  data-content="title-nav-donate"
-                  title="Donate"
-                  href=""
-                  >Donate</a
-                >
-              </li>
-              <li class="list--item">
-                <div id="idioma" class="idioma idioma__hover">
-                  <em data-section="header" data-content="nav-lang"> language </em>
-                </div>
-                <div class="idioma--selector">
-                  <ul id="languageContainer" class="idioma--list">
-                    <li
-                      data-lang="es"
-                      data-section="header"
-                      data-content="title-es"
-                      title="Spanish"
-                      class="idioma--list-item"
-                    >
-                      <span data-lang="es" lang="es">ES</span>
-                      <img
-                        data-lang="es"
-                        data-section="header"
-                        data-content="alt-es"
-                        src="assets/img/png/icon/republica-dominicana.png"
-                        alt="Flag of The Dominican Republic"
-                      />
-                    </li>
-                    <li
-                      data-lang="en"
-                      data-section="header"
-                      data-content="title-en"
-                      title="English"
-                      class="idioma--list-item"
-                    >
-                      <span data-lang="en" lang="en">EN</span>
-                      <img
-                        data-lang="en"
-                        data-section="header"
-                        data-content="alt-en"
-                        src="assets/img/png/icon/estados-unidos.png"
-                        alt="Flag of The United States"
-                      />
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main class="main" role="main" id="main">
-      <div class="banner">
-        <picture class="banner--picture">
-          <source
-            srcset="assets/img/jpg/prueba/prueba_menus.jpg"
-            media="(min-width:1300px)"
-          />
+					<nav role="navigation" class="nav" id="menu-nav">
+						<div data-section="header" data-content="title-desactive-menu" title="Disable menu" class="menu-desactive" id="menu-desactive"></div>
+						<ul class="list" id="list">
+							<li class="list--item">
+								<a data-section="header" data-content="title-nav-home" title="Home" href="index.html">Home</a>
+							</li>
+							<li class="list--item">
+								<a data-section="header" data-content="title-nav-about_us" title="About us" href="about_us.html">About us</a>
+							</li>
+							<li class="list--item">
+								<a data-section="header" data-content="title-nav-programs" title="Programs" href="programs.html">Programs</a>
+							</li>
+							<li class="list--item">
+								<a title="Blog" href="blog.html">Blog</a>
+							</li>
+							<li class="list--item">
+								<a data-section="header" data-content="title-nav-events" title="Events" href="events.html">Events</a>
+							</li>
+							<li class="list--item">
+								<a data-section="header" data-content="title-nav-contacts" title="Contact us" href="contact_us.html">Contact us</a>
+							</li>
+							<li class="list--item donar-buttom">
+								<a data-section="header" data-content="title-nav-donate" title="Donate" href="">Donate</a>
+							</li>
+							<li class="list--item">
+								<div id="idioma" class="idioma idioma__hover">
+									<em data-section="header" data-content="nav-lang"> language </em>
+								</div>
+								<div class="idioma--selector">
+									<ul id="languageContainer" class="idioma--list">
+										<li data-lang="es" data-section="header" data-content="title-es" title="Spanish" class="idioma--list-item">
+											<span data-lang="es" lang="es">ES</span>
+											<img
+												data-lang="es"
+												data-section="header"
+												data-content="alt-es"
+												src="assets/img/png/icon/republica-dominicana.png"
+												alt="Flag of The Dominican Republic"
+											/>
+										</li>
+										<li data-lang="en" data-section="header" data-content="title-en" title="English" class="idioma--list-item">
+											<span data-lang="en" lang="en">EN</span>
+											<img
+												data-lang="en"
+												data-section="header"
+												data-content="alt-en"
+												src="assets/img/png/icon/estados-unidos.png"
+												alt="Flag of The United States"
+											/>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main" role="main" id="main">
+			<div class="banner">
+				<picture class="banner--picture">
+					<source srcset="assets/img/jpg/prueba/prueba_menus.jpg" media="(min-width:1300px)" />
 
-          <source srcset="assets/img/jpg/prueba/prueba_menus.jpg" />
-          <img
-            data-section="banner"
-            data-content="alt"
-            class="banner--img"
-            src="assets/img/jpg/prueba/prueba_menus.jpg"
-            alt=""
-          />
-        </picture>
+					<source srcset="assets/img/jpg/prueba/prueba_menus.jpg" />
+					<img data-section="banner" data-content="alt" class="banner--img" src="assets/img/jpg/prueba/prueba_menus.jpg" alt="" />
+				</picture>
 
-        <h2
-          data-section="banner"
-          data-content="title-principal"
-          class="banner--title"
-        >
-          ABOUT US
-        </h2>
-      </div>
+				<h2 data-section="banner" data-content="title-principal" class="banner--title">ABOUT US</h2>
+			</div>
 
-      <div class="wave"></div>
-      <hr />
+			<div class="wave"></div>
+			<hr />
 
-      <!-- que hace la DACCT y sus objetivos  -->
-      <div class="first-container">
-        <section class="aboutUs">
-          <h3 data-section="what_is" data-content="title" class="aboutUs--title">
-            What does The Dominican American Coalition of Connecticut do?
-          </h3>
-          <p
-            data-section="what_is"
-            data-content="paragraph0"
-            class="aboutUs--paragraph"
-          >
-            Through the execution of human development programs, The Dominican
-            American Coalition of Connecticut works for the benefit of the
-            inhabitants of the State of Connecticut by applying models of social
-            intervention that seek the transformation of people, applying the
-            "Value-Art" method.
-          </p>
-          <p
-            data-section="what_is"
-            data-content="paragraph1"
-            class="aboutUs--paragraph"
-          >
-            In virtue of the above, it develops its social work through art focused
-            on education, history, culture, social welfare, entrepreneurship and
-            productivity. The work is done hand in hand with other social
-            organizations and private enterprise.
-          </p>
-        </section>
-        <section class="objects">
-          <h3 data-section="objects" data-content="title" class="objects--title">
-            What is the specific objective of the organization?
-          </h3>
-          <p
-            data-section="objects"
-            data-content="paragraph"
-            class="objetcs--paragraph"
-          >
-            To work on issues that affect the development of Connecticut residents
-            without discrimination in the areas of education and at the same time in
-            activities that promote the cultural roots, diversity and history of the
-            communities.
-          </p>
-        </section>
-      </div>
-      <hr />
-      <!-- Mision and vision -->
-      <div class="second-container" id="misionVision">
-        <div class="second-container--wrapper">
-          <section class="mision">
-            <picture class="mision--picture">
-              <source
-                media="(min-width: 1300px)"
-                srcset="assets/img/webp/about_us/Mision-webp.webp"
-              />
-              <source srcset="assets/img/webp/about_us/Mision-720_webp.webp" />
-              <img
-                data-section="mision"
-                data-content="alt"
-                class="mision--img"
-                src="assets/img/jpg/about_us/Mision-720.jpg"
-                alt="group of people in a meeting room working on the mission of their project"
-              />
-            </picture>
-            <h3 data-section="mision" data-content="title" class="mision--title">
-              MISSION
-            </h3>
-            <p
-              data-section="mision"
-              data-content="paragraph"
-              class="mision--paragraph"
-            >
-              To work towards a more united Connecticut through social service
-              assistance programs, cultural celebration and advocating for
-              educational options.
-            </p>
-          </section>
-          <section class="vision">
-            <picture class="vision--picture">
-              <source
-                media="(min-width: 1300px)"
-                srcset="assets/img/webp/about_us/Vision-webp.webp"
-              />
-              <source srcset="assets/img/webp/about_us/Vision-720_webp.webp" />
-              <img
-                data-section="vision"
-                data-content="alt"
-                class="vision--img"
-                src="assets/img/jpg/about_us/Vision-720.jpg"
-                alt="group of people in a meeting room planning the vision of their project"
-              />
-            </picture>
-            <h3 data-section="vision" data-content="title" class="vision--title">
-              VISSION
-            </h3>
-            <p
-              data-section="vision"
-              data-content="paragraph"
-              class="vision--paragraph"
-            >
-              to be the highest value provider in community support, culture
-              integration, conservation of their folklore and help in the development
-              of the people of the community.
-            </p>
-          </section>
-        </div>
-      </div>
-      <hr />
-      <!-- cards del Team -->
-      <section class="team">
-        <h3 data-section="team" data-content="title" class="team--title">
-          About us
-        </h3>
+			<!-- que hace la DACCT y sus objetivos  -->
+			<div class="first-container">
+				<section class="aboutUs">
+					<h3 data-section="what_is" data-content="title" class="aboutUs--title">What does The Dominican American Coalition of Connecticut do?</h3>
+					<p data-section="what_is" data-content="paragraph0" class="aboutUs--paragraph">
+						Through the execution of human development programs, The Dominican American Coalition of Connecticut works for the benefit of the
+						inhabitants of the State of Connecticut by applying models of social intervention that seek the transformation of people, applying the
+						"Value-Art" method.
+					</p>
+					<p data-section="what_is" data-content="paragraph1" class="aboutUs--paragraph">
+						In virtue of the above, it develops its social work through art focused on education, history, culture, social welfare, entrepreneurship
+						and productivity. The work is done hand in hand with other social organizations and private enterprise.
+					</p>
+				</section>
+				<section class="objects">
+					<h3 data-section="objects" data-content="title" class="objects--title">What is the specific objective of the organization?</h3>
+					<p data-section="objects" data-content="paragraph" class="objetcs--paragraph">
+						To work on issues that affect the development of Connecticut residents without discrimination in the areas of education and at the same
+						time in activities that promote the cultural roots, diversity and history of the communities.
+					</p>
+				</section>
+			</div>
+			<hr />
+			<!-- Mision and vision -->
+			<div class="second-container" id="misionVision">
+				<div class="second-container--wrapper">
+					<section class="mision">
+						<picture class="mision--picture">
+							<source media="(min-width: 1300px)" srcset="assets/img/webp/about_us/Mision-webp.webp" />
+							<source srcset="assets/img/webp/about_us/Mision-720_webp.webp" />
+							<img
+								data-section="mision"
+								data-content="alt"
+								class="mision--img"
+								src="assets/img/jpg/about_us/Mision-720.jpg"
+								alt="group of people in a meeting room working on the mission of their project"
+							/>
+						</picture>
+						<h3 data-section="mision" data-content="title" class="mision--title">MISSION</h3>
+						<p data-section="mision" data-content="paragraph" class="mision--paragraph">
+							To work towards a more united Connecticut through social service assistance programs, cultural celebration and advocating for
+							educational options.
+						</p>
+					</section>
+					<section class="vision">
+						<picture class="vision--picture">
+							<source media="(min-width: 1300px)" srcset="assets/img/webp/about_us/Vision-webp.webp" />
+							<source srcset="assets/img/webp/about_us/Vision-720_webp.webp" />
+							<img
+								data-section="vision"
+								data-content="alt"
+								class="vision--img"
+								src="assets/img/jpg/about_us/Vision-720.jpg"
+								alt="group of people in a meeting room planning the vision of their project"
+							/>
+						</picture>
+						<h3 data-section="vision" data-content="title" class="vision--title">VISSION</h3>
+						<p data-section="vision" data-content="paragraph" class="vision--paragraph">
+							to be the highest value provider in community support, culture integration, conservation of their folklore and help in the development
+							of the people of the community.
+						</p>
+					</section>
+				</div>
+			</div>
+			<hr />
+			<!-- cards del Team -->
+			<section class="team">
+				<h3 data-section="team" data-content="title" class="team--title">About us</h3>
 
-        <ul class="team-list">
-          <li class="team-list--item">
-            <article class="team-article">
-              <picture class="team--article-picture">
-                <source srcset="" />
-                <img
-                  data-section="team"
-                  data-content="alt-general"
-                  class="team--article-img"
-                  src="assets/img/jpg/team/fotosparacardmuestras(5).jpg"
-                  alt="team work"
-                />
-              </picture>
-              <h4
-                data-section="team"
-                data-content="name0"
-                class="team--article-title"
-              >
-                Jonatan Soto
-              </h4>
-              <p
-                data-section="team"
-                data-content="hierarchy0"
-                class="team--article-paragraph"
-              >
-                <em>Member of the board</em>
-              </p>
-            </article>
-          </li>
-          <li class="team-list--item">
-            <article class="team-article">
-              <picture class="team--article-picture">
-                <source srcset="" />
-                <img
-                  data-section="team"
-                  data-content="alt-general"
-                  class="team--article-img"
-                  src="assets/img/jpg/team/fotosparacardmuestras(1).jpg"
-                  alt="team work"
-                />
-              </picture>
-              <h4
-                data-section="team"
-                data-content="name1"
-                class="team--article-title"
-              >
-                Jacquelina Santos
-              </h4>
-              <p
-                data-section="team"
-                data-content="hierarchy1"
-                class="team--article-paragraph"
-              >
-                <em>Treasurer</em>
-              </p>
-            </article>
-          </li>
-          <li class="team-list--item">
-            <article class="team-article">
-              <picture class="team--article-picture">
-                <source srcset="" />
-                <img
-                  data-section="team"
-                  data-content="alt-general"
-                  class="team--article-img"
-                  src="assets/img/jpg/team/fotosparacardmuestras(2).jpg"
-                  alt="team work"
-                />
-              </picture>
-              <h4
-                data-section="team"
-                data-content="name2"
-                class="team--article-title"
-              >
-                Juan Moreno
-              </h4>
-              <p
-                data-section="team"
-                data-content="hierarchy2"
-                class="team--article-paragraph"
-              >
-                <em>Sergeant at Arms</em>
-              </p>
-            </article>
-          </li>
-          <li class="team-list--item">
-            <article class="team-article">
-              <picture class="team--article-picture">
-                <source srcset="assets/img/jpg/team/fotosparacardmuestras(3).jpg" />
-                <img
-                  data-section="team"
-                  data-content="alt-general"
-                  class="team--article-img"
-                  src="assets/img/jpg/team/fotosparacardmuestras(3).jpg"
-                  alt="team work"
-                />
-              </picture>
-              <h4
-                data-section="team"
-                data-content="name3"
-                class="team--article-title"
-              >
-                Dorca Hernandez
-              </h4>
-              <p
-                data-section="team"
-                data-content="hierarchy3"
-                class="team--article-paragraph"
-              >
-                <em>Member of the board</em>
-              </p>
-            </article>
-          </li>
-          <li class="team-list--item">
-            <article class="team-article">
-              <picture class="team--article-picture">
-                <source srcset="" />
-                <img
-                  data-section="team"
-                  data-content="alt-general"
-                  class="team--article-img"
-                  src="assets/img/jpg/team/fotosparacardmuestras(4).jpg"
-                  alt="team work"
-                />
-              </picture>
-              <h4
-                data-section="team"
-                data-content="name4"
-                class="team--article-title"
-              >
-                Viviana Placido
-              </h4>
-              <p
-                data-section="team"
-                data-content="hierarchy4"
-                class="team--article-paragraph"
-              >
-                <em>Director of Events and Logistics</em>
-              </p>
-            </article>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container-contact">
-        <address class="contact">
-          <!-- LOGO FOOTER -->
-          <!-- sobre si mismo -->
-          <a title="Logo" href="index.html" class="logo logo__footer">
-            <picture>
-              <!-- adaptar imagenes -->
+				<ul class="team-list">
+					<li class="team-list--item">
+						<article class="team-article">
+							<picture class="team--article-picture">
+								<source srcset="" />
+								<img
+									data-section="team"
+									data-content="alt-general"
+									class="team--article-img"
+									src="assets/img/jpg/team/fotosparacardmuestras(5).jpg"
+									alt="team work"
+								/>
+							</picture>
+							<h4 data-section="team" data-content="name0" class="team--article-title">Jonatan Soto</h4>
+							<p data-section="team" data-content="hierarchy0" class="team--article-paragraph">
+								<em>Member of the board</em>
+							</p>
+						</article>
+					</li>
+					<li class="team-list--item">
+						<article class="team-article">
+							<picture class="team--article-picture">
+								<source srcset="" />
+								<img
+									data-section="team"
+									data-content="alt-general"
+									class="team--article-img"
+									src="assets/img/jpg/team/fotosparacardmuestras(1).jpg"
+									alt="team work"
+								/>
+							</picture>
+							<h4 data-section="team" data-content="name1" class="team--article-title">Jacquelina Santos</h4>
+							<p data-section="team" data-content="hierarchy1" class="team--article-paragraph">
+								<em>Treasurer</em>
+							</p>
+						</article>
+					</li>
+					<li class="team-list--item">
+						<article class="team-article">
+							<picture class="team--article-picture">
+								<source srcset="" />
+								<img
+									data-section="team"
+									data-content="alt-general"
+									class="team--article-img"
+									src="assets/img/jpg/team/fotosparacardmuestras(2).jpg"
+									alt="team work"
+								/>
+							</picture>
+							<h4 data-section="team" data-content="name2" class="team--article-title">Juan Moreno</h4>
+							<p data-section="team" data-content="hierarchy2" class="team--article-paragraph">
+								<em>Sergeant at Arms</em>
+							</p>
+						</article>
+					</li>
+					<li class="team-list--item">
+						<article class="team-article">
+							<picture class="team--article-picture">
+								<source srcset="assets/img/jpg/team/fotosparacardmuestras(3).jpg" />
+								<img
+									data-section="team"
+									data-content="alt-general"
+									class="team--article-img"
+									src="assets/img/jpg/team/fotosparacardmuestras(3).jpg"
+									alt="team work"
+								/>
+							</picture>
+							<h4 data-section="team" data-content="name3" class="team--article-title">Dorca Hernandez</h4>
+							<p data-section="team" data-content="hierarchy3" class="team--article-paragraph">
+								<em>Member of the board</em>
+							</p>
+						</article>
+					</li>
+					<li class="team-list--item">
+						<article class="team-article">
+							<picture class="team--article-picture">
+								<source srcset="" />
+								<img
+									data-section="team"
+									data-content="alt-general"
+									class="team--article-img"
+									src="assets/img/jpg/team/fotosparacardmuestras(4).jpg"
+									alt="team work"
+								/>
+							</picture>
+							<h4 data-section="team" data-content="name4" class="team--article-title">Viviana Placido</h4>
+							<p data-section="team" data-content="hierarchy4" class="team--article-paragraph">
+								<em>Director of Events and Logistics</em>
+							</p>
+						</article>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container-contact">
+				<address class="contact">
+					<!-- LOGO FOOTER -->
+					<!-- sobre si mismo -->
+					<a title="Logo" href="index.html" class="logo logo__footer">
+						<picture>
+							<!-- adaptar imagenes -->
 
-              <source srcset="assets/img/webp/logo/logo_name.webp" />
-              <img
-                data-section="footer"
-                data-content="alt-logo"
-                class="logo--img"
-                src="assets/img/png/logo/logo_name_png.png"
-                alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
-              />
-            </picture>
-          </a>
-          <!-- Flata links de redes sociales en plantillas -->
-          <ul class="contact--list">
-            <li class="contact--item">
-              <a title="Facebook" href=""
-                ><i class="fa-brands fa-facebook-square"></i
-              ></a>
-            </li>
-            <li class="contact--item">
-              <a title="Telegram" href=""><i class="fa-brands fa-telegram"></i></a>
-            </li>
-            <li class="contact--item">
-              <a title="Instagram" href=""
-                ><i class="fa-brands fa-instagram-square"></i
-              ></a>
-            </li>
-            <li class="contact--item">
-              <a
-                data-section="footer"
-                data-content="title-email"
-                title="
+							<source srcset="assets/img/webp/logo/logo_name.webp" />
+							<img
+								data-section="footer"
+								data-content="alt-logo"
+								class="logo--img"
+								src="assets/img/png/logo/logo_name_png.png"
+								alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
+							/>
+						</picture>
+					</a>
+					<!-- Flata links de redes sociales en plantillas -->
+					<ul class="contact--list">
+						<li class="contact--item">
+							<a title="Facebook" href=""><i class="fa-brands fa-facebook-square"></i></a>
+						</li>
+						<li class="contact--item">
+							<a title="Telegram" href=""><i class="fa-brands fa-telegram"></i></a>
+						</li>
+						<li class="contact--item">
+							<a title="Instagram" href=""><i class="fa-brands fa-instagram-square"></i></a>
+						</li>
+						<li class="contact--item">
+							<a
+								data-section="footer"
+								data-content="title-email"
+								title="
                 Send email"
-                href=""
-                ><i class="fa-solid fa-envelope"></i
-              ></a>
-            </li>
-          </ul>
-          <div class="container-autor">
-            <p class="autor">Daniel Pimentel - 2022</p>
-          </div>
-          <p data-section="footer" data-content="paragraph" class="footer--info">
-            The Dominican-American Coalition is a non profit organization with the
-            code 501 C 3.
-          </p>
-        </address>
-      </div>
-    </footer>
+								href=""
+								><i class="fa-solid fa-envelope"></i
+							></a>
+						</li>
+					</ul>
+					<div class="container-autor">
+						<p class="autor">Daniel Pimentel - 2022</p>
+					</div>
+					<p data-section="footer" data-content="paragraph" class="footer--info">
+						The Dominican-American Coalition is a non profit organization with the code 501 C 3.
+					</p>
+				</address>
+			</div>
+		</footer>
 
-    <!-- Scripts JS -->
-    <script src="JS/template/load.js"></script>
-    <script src="JS/template/menu.js"></script>
-    <script src="JS/template/lang.js"></script>
-    <script src="JS/about_us/scroll_M-V.js"></script>
-  </body>
+		<!-- Scripts JS -->
+		<script src="JS/template/load.js"></script>
+		<script src="JS/template/menu.js"></script>
+		<script src="JS/template/lang.js"></script>
+		<script src="JS/about_us/scroll_M-V.js"></script>
+	</body>
 </html>

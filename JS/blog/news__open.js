@@ -8,28 +8,20 @@ if (history.state != null) {
 	blogList.children[history.state.validOpenBlog].classList.add('blog--list-item__open');
 }
 
-// active open blog
+// active and desactive open blog
 
-// pending
+blogList.addEventListener('click', (e) => {
+	const open = e.target.dataset.open;
+	if (open != undefined) {
+		if (open == 'active') {
+			const item = e.target.parentElement.parentElement.parentElement.parentElement;
 
-const blogListArray = Array.from(blogList.children);
-
-blogListArray.forEach((item, index) => {
-	const itemButtom = item.children[1].firstElementChild.lastElementChild.firstElementChild;
-
-	itemButtom.addEventListener('click', (e) => {
-		item.classList.add('blog--list-item__open');
-	});
-});
-
-// desactive open blog
-
-blogListArray.forEach((item, index) => {
-	const itemButtomDesac = item.children[0];
-
-	itemButtomDesac.addEventListener('click', (e) => {
-		item.classList.remove('blog--list-item__open');
-	});
+			item.classList.add('blog--list-item__open');
+		} else {
+			const item = e.target.parentElement;
+			item.classList.remove('blog--list-item__open');
+		}
+	}
 });
 
 // redireccion a index cuando se accede a blog desde home page
