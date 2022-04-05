@@ -8,7 +8,7 @@ let articles;
 
 // funtion integration content elements
 
-const contentBlogBlogs = (i, index) => {
+const contentOriginalBlog = (i, index) => {
 	// - blog
 
 	// srcset 1300 - img
@@ -79,7 +79,7 @@ const insertArticles = () => {
 			if (insertion < elementsList.children.length) {
 				if (routeLang === 'blog') {
 					// blog.html
-					contentBlogBlogs(insertion, index);
+					contentOriginalBlog(insertion, index);
 
 					// DESTACADO - BLOG STATIC
 					const star = document.createElement('div');
@@ -106,7 +106,7 @@ const insertArticles = () => {
 		if (position < elementsList.children.length) {
 			if (routeLang === 'blog') {
 				// blog.html
-				contentBlogBlogs(position, index);
+				contentOriginalBlog(position, index);
 			} else {
 				// index.html
 				contentIndexBlogs(position, index);
