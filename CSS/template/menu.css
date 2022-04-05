@@ -87,7 +87,7 @@
 	top: 0;
 	right: 0%;
 	transform: translateX(100%);
-	overflow: auto;
+	overflow-y: scroll;
 	transition: transform 0.4s ease;
 	box-shadow: var(--shadowGeneral);
 	z-index: 1400;
