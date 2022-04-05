@@ -1,25 +1,25 @@
 /* Principal */
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
-  --black: hsl(0, 0%, 5%);
-  --white: hsl(0, 0%, 95%);
-  --colorPrimario: hsl(224, 70%, 40%);
-  --colorPrimario2: hsl(223, 49%, 23%);
-  --colorSecundario: hsl(357, 71%, 44%);
+	--black: hsl(0, 0%, 5%);
+	--white: hsl(0, 0%, 95%);
+	--colorPrimario: hsl(224, 70%, 40%);
+	--colorPrimario2: hsl(223, 49%, 23%);
+	--colorSecundario: hsl(357, 71%, 44%);
 
-  --shadowGeneral: 0 0 5px -3px var(--black);
-  --letterSizeSmall: 1rem;
-  --letterSizeMedium: 1.4rem;
-  --letterSizeBig: 1.8rem;
-  --letterSizeTitle: 3rem;
-  --letterSizeGiant: 6rem;
-  background-color: var(--white);
-  color: var(--black);
-  font-family: 'Outfit', sans-serif;
+	--shadowGeneral: 0 0 5px -3px var(--black);
+	--letterSizeSmall: 1rem;
+	--letterSizeMedium: 1.4rem;
+	--letterSizeBig: 1.8rem;
+	--letterSizeTitle: 3rem;
+	--letterSizeGiant: 6rem;
+	background-color: var(--white);
+	color: var(--black);
+	font-family: 'Outfit', sans-serif;
 }
 
 /* scroll */
@@ -28,56 +28,56 @@
 :root::-webkit-scrollbar,
 .nav::-webkit-scrollbar,
 .blog--article::-webkit-scrollbar {
-  -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 :root::-webkit-scrollbar:vertical {
-  width: 0.8em;
+	width: 0.8em;
 }
 
 .nav::-webkit-scrollbar:vertical,
 .blog--article::-webkit-scrollbar:vertical {
-  width: 0.5rem;
+	width: 0.5rem;
 }
 
 :root::-webkit-scrollbar-button:increment,
 .contenedor::-webkit-scrollbar-button,
 .nav::-webkit-scrollbar-button:increment,
 .blog--article::-webkit-scrollbar-button:increment {
-  display: none;
+	display: none;
 }
 
 :root::-webkit-scrollbar:horizontal,
 .nav::-webkit-scrollbar:horizontal,
 .blog--article::-webkit-scrollbar:horizontal {
-  height: 10px;
+	height: 10px;
 }
 
 :root::-webkit-scrollbar-thumb,
 .nav::-webkit-scrollbar-thumb,
 .blog--article::-webkit-scrollbar-thumb {
-  background-color: var(--colorSecundario);
-  border-radius: 20px;
-  border: 2px solid var(--white);
+	background-color: var(--colorSecundario);
+	border-radius: 20px;
+	border: 2px solid var(--white);
 }
 
 :root::-webkit-scrollbar-track,
 .nav::-webkit-scrollbar-track,
 .blog--article::-webkit-scrollbar-track {
-  border-radius: 10px;
+	border-radius: 10px;
 }
 
 body {
-  position: relative;
-  overflow-x: hidden;
+	position: relative;
+	overflow-x: hidden;
 }
 
 .main {
-  position: relative;
-  min-height: 100vh;
+	position: relative;
+	min-height: 100vh;
 }
 
 hr {
-  border: none;
-  margin: 0;
+	border: none;
+	margin: 0;
 }
