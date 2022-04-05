@@ -1,0 +1,35 @@
+{
+
+    "articulos" : [{
+        "title" : "Articulos",
+        "date" : "2017-01-01",
+        "link": "'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'",
+        "text_preview" : "Articulos"
+    },
+     {
+        "title" : "Articulos",
+        "date" : "2017-01-01",
+        "link": "'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'",
+        "text_preview" : "Articulos"
+    },
+    {
+        "title" : "Articulos",
+        "date" : "2017-01-01",
+        "link": "'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'",
+        "text_preview" : "Articulos"
+    },
+     {
+        "title" : "Articulos",
+        "date" : "2017-01-01",
+        "link": "'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'",
+        "text_preview" : "Articulos"
+    },
+    {
+        "title" : "Articulos",
+        "date" : "2017-01-01",
+        "link": "'https://kanutegx.github.io/DACCT/assets/Constancia-de-Trabajo-daniel.pdf'",
+        "text_preview" : "Articulos"
+    }]
+    
+
+}

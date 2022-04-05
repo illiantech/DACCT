@@ -1,4 +1,29 @@
-// declaracion de elementos (input y container)
+const conectionJson = () =>{
+  //Cargar los datos al momento de cargar la pagina
+  document.addEventListener('DOMContentLoaded', upDates())
+
+  async function upDates(){
+    fetch('\DACCT\JSON\blog_extension.json')
+    .then(res, (res)=>{
+      console.log(res)
+    })
+
+
+
+
+
+  }
+
+
+
+
+};
+
+
+
+
+
+
 
 const searchBar = document.getElementById('searchBar');
 
@@ -105,9 +130,18 @@ fetchArticles(localStorage.getItem('lang'));
 languageContainer.addEventListener('click', (e) => {
 	const language = e.target.dataset.lang;
 
+<<<<<<< HEAD
+filterSearch();
+
+
+
+// Funcion para cargar la informacion 
+
+=======
 	if (language != undefined) {
 		// limpiar evento para que no se sobre sature al cambiar el idioma
 		searchBar.removeEventListener('keyup', filterSearch);
 		fetchArticles(language);
 	}
 });
+>>>>>>> e632994f238f027edaf27de0a86b77d12ff09405
