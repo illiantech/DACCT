@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const conectionJson = () =>{
   //Cargar los datos al momento de cargar la pagina
   document.addEventListener('DOMContentLoaded', upDates())
@@ -25,9 +24,6 @@ const conectionJson = () =>{
 
 
 
-=======
-// declaracion de elementos (input y container)
->>>>>>> e632994f238f027edaf27de0a86b77d12ff09405
 
 const searchBar = document.getElementById('searchBar');
 

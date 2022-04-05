@@ -1,532 +1,354 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-    <!-- iconos adaptables -->
+		<!-- iconos adaptables -->
 
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="assets/favicons/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="assets/favicons/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="assets/favicons/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="assets/favicons/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="assets/favicons/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="assets/favicons/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="assets/favicons/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="assets/favicons/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicons/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="assets/favicons/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="assets/favicons/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/favicons/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+		<link rel="manifest" href="assets/favicons/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
 
-    <!-- CDN font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+		<!-- CDN font awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 
-    <!-- Outfit de 200 a 800 (regular a extra bold) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+		<!-- Outfit de 200 a 800 (regular a extra bold) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-    <!-- Estilos CSS -->
-    <link rel="stylesheet" href="CSS/template/Normalize.css" />
-    <link rel="stylesheet" href="CSS/template/principal.css" />
-    <link rel="stylesheet" href="CSS/template/load.css" />
-    <link rel="stylesheet" href="CSS/template/menu.css" />
-    <link rel="stylesheet" href="CSS/template_menu/banner_menu.css" />
+		<!-- Estilos CSS -->
+		<link rel="stylesheet" href="CSS/template/Normalize-dist.css" />
+		<link rel="stylesheet" href="CSS/template/principal-dist.css" />
+		<link rel="stylesheet" href="CSS/template/load-dist.css" />
+		<link rel="stylesheet" href="CSS/template/menu-dist.css" />
+		<link rel="stylesheet" href="CSS/template_menu/banner_menu-dist.css" />
 
-    <link rel="stylesheet" href="CSS/programs/cards_programs.css" />
+		<link rel="stylesheet" href="CSS/programs/cards_programs-dist.css" />
 
-    <link rel="stylesheet" href="CSS/template/footer.css" />
+		<link rel="stylesheet" href="CSS/template/footer-dist.css" />
 
-    <title>DACCT</title>
-  </head>
-  <body>
-    <!-- Pantalla de carga -->
-    <div data-routeLang="programs" class="load" id="load">
-      <div class="load--icon"></div>
-    </div>
-    <header class="header">
-      <!-- Menu -->
-      <div class="menu-container">
-        <div class="menu">
-          <!-- Logo -->
-          <a title="Logo" href="index.html" class="logo">
-            <picture>
-              <!-- adaptar imagenes -->
+		<title>DACCT</title>
+	</head>
+	<body>
+		<!-- Pantalla de carga -->
+		<div data-routeLang="programs" class="load" id="load">
+			<div class="load--icon"></div>
+		</div>
+		<header class="header">
+			<!-- Menu -->
+			<div class="menu-container">
+				<div class="menu">
+					<!-- Logo -->
+					<a title="Logo" href="index.html" class="logo">
+						<picture>
+							<!-- adaptar imagenes -->
 
-              <source srcset="assets/img/webp/logo/logo_name.webp" />
-              <img
-                class="logo--img"
-                src="assets/img/png/logo/logo_name_png.png"
-                alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
-                data-section="header"
-                data-content="alt-logo"
-              />
-            </picture>
-          </a>
-          <div
-            data-section="header"
-            data-content="title-active-menu"
-            title="
+							<source srcset="assets/img/webp/logo/logo_name.webp" />
+							<img
+								class="logo--img"
+								src="assets/img/png/logo/logo_name_png.png"
+								alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
+								data-section="header"
+								data-content="alt-logo"
+							/>
+						</picture>
+					</a>
+					<div
+						data-section="header"
+						data-content="title-active-menu"
+						title="
             Enable menu"
-            class="menu-active"
-            id="menu-active"
-          ></div>
+						class="menu-active"
+						id="menu-active"
+					></div>
 
-          <nav role="navigation" class="nav" id="menu-nav">
-            <div
-              data-section="header"
-              data-content="title-desactive-menu"
-              title="Disable menu"
-              class="menu-desactive"
-              id="menu-desactive"
-            ></div>
-            <ul class="list" id="list">
-              <li class="list--item">
-                <a
-                  data-section="header"
-                  data-content="title-nav-home"
-                  title="Home"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="list--item">
-                <a
-                  data-section="header"
-                  data-content="title-nav-about_us"
-                  title="About us"
-                  href="about_us.html"
-                  >About us</a
-                >
-              </li>
-              <li class="list--item">
-                <a
-                  data-section="header"
-                  data-content="title-nav-programs"
-                  title="Programs"
-                  href="programs.html"
-                  >Programs</a
-                >
-              </li>
-              <li class="list--item">
-                <a title="Blog" href="blog.html">Blog</a>
-              </li>
-              <li class="list--item">
-                <a
-                  data-section="header"
-                  data-content="title-nav-events"
-                  title="Events"
-                  href="events.html"
-                  >Events</a
-                >
-              </li>
-              <li class="list--item">
-                <a
-                  data-section="header"
-                  data-content="title-nav-contacts"
-                  title="Contact us"
-                  href="contact_us.html"
-                  >Contact us</a
-                >
-              </li>
-              <li class="list--item donar-buttom">
-                <a
-                  data-section="header"
-                  data-content="title-nav-donate"
-                  title="Donate"
-                  href=""
-                  >Donate</a
-                >
-              </li>
-              <li class="list--item">
-                <div id="idioma" class="idioma idioma__hover">
-                  <em data-section="header" data-content="nav-lang"> language </em>
-                </div>
-                <div class="idioma--selector">
-                  <ul id="languageContainer" class="idioma--list">
-                    <li
-                      data-lang="es"
-                      data-section="header"
-                      data-content="title-es"
-                      title="Spanish"
-                      class="idioma--list-item"
-                    >
-                      <span data-lang="es" lang="es">ES</span>
-                      <img
-                        data-lang="es"
-                        data-section="header"
-                        data-content="alt-es"
-                        src="assets/img/png/icon/republica-dominicana.png"
-                        alt="Flag of The Dominican Republic"
-                      />
-                    </li>
-                    <li
-                      data-lang="en"
-                      data-section="header"
-                      data-content="title-en"
-                      title="English"
-                      class="idioma--list-item"
-                    >
-                      <span data-lang="en" lang="en">EN</span>
-                      <img
-                        data-lang="en"
-                        data-section="header"
-                        data-content="alt-en"
-                        src="assets/img/png/icon/estados-unidos.png"
-                        alt="Flag of The United States"
-                      />
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main class="main" role="main" id="main">
-      <div class="banner">
-        <picture class="banner--picture">
-          <source
-            srcset="assets/img/jpg/prueba/prueba_menus.jpg"
-            media="(min-width:1300px)"
-          />
+					<nav role="navigation" class="nav" id="menu-nav">
+						<div data-section="header" data-content="title-desactive-menu" title="Disable menu" class="menu-desactive" id="menu-desactive"></div>
+						<ul class="list" id="list">
+							<li class="list--item">
+								<a data-section="header" data-content="title-nav-home" title="Home" href="index.html">Home</a>
+							</li>
+							<li class="list--item">
+								<a data-section="header" data-content="title-nav-about_us" title="About us" href="about_us.html">About us</a>
+							</li>
+							<li class="list--item">
+								<a data-section="header" data-content="title-nav-programs" title="Programs" href="programs.html">Programs</a>
+							</li>
+							<li class="list--item">
+								<a title="Blog" href="blog.html">Blog</a>
+							</li>
+							<li class="list--item">
+								<a data-section="header" data-content="title-nav-events" title="Events" href="events.html">Events</a>
+							</li>
+							<li class="list--item">
+								<a data-section="header" data-content="title-nav-contacts" title="Contact us" href="contact_us.html">Contact us</a>
+							</li>
+							<li class="list--item donar-buttom">
+								<a data-section="header" data-content="title-nav-donate" title="Donate" href="">Donate</a>
+							</li>
+							<li class="list--item">
+								<div id="idioma" class="idioma idioma__hover">
+									<em data-section="header" data-content="nav-lang"> language </em>
+								</div>
+								<div class="idioma--selector">
+									<ul id="languageContainer" class="idioma--list">
+										<li data-lang="es" data-section="header" data-content="title-es" title="Spanish" class="idioma--list-item">
+											<span data-lang="es" lang="es">ES</span>
+											<img
+												data-lang="es"
+												data-section="header"
+												data-content="alt-es"
+												src="assets/img/png/icon/republica-dominicana.png"
+												alt="Flag of The Dominican Republic"
+											/>
+										</li>
+										<li data-lang="en" data-section="header" data-content="title-en" title="English" class="idioma--list-item">
+											<span data-lang="en" lang="en">EN</span>
+											<img
+												data-lang="en"
+												data-section="header"
+												data-content="alt-en"
+												src="assets/img/png/icon/estados-unidos.png"
+												alt="Flag of The United States"
+											/>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main" role="main" id="main">
+			<div class="banner">
+				<picture class="banner--picture">
+					<source srcset="assets/img/jpg/prueba/prueba_menus.jpg" media="(min-width:1300px)" />
 
-          <source srcset="assets/img/jpg/prueba/prueba_menus.jpg" />
-          <img
-            data-section="banner"
-            data-content="alt"
-            class="banner--img"
-            src="assets/img/jpg/prueba/prueba_menus.jpg"
-            alt=""
-          />
-        </picture>
+					<source srcset="assets/img/jpg/prueba/prueba_menus.jpg" />
+					<img data-section="banner" data-content="alt" class="banner--img" src="assets/img/jpg/prueba/prueba_menus.jpg" alt="" />
+				</picture>
 
-        <h2
-          data-section="banner"
-          data-content="title-principal"
-          class="banner--title"
-        >
-          PROGRAMS
-        </h2>
-      </div>
+				<h2 data-section="banner" data-content="title-principal" class="banner--title">PROGRAMS</h2>
+			</div>
 
-      <div class="wave"></div>
-      <hr />
-      <!-- PROGRAMAS -->
+			<div class="wave"></div>
+			<hr />
+			<!-- PROGRAMAS -->
 
-      <ul class="programs-list" id="programs">
-        <li class="programs-list--item">
-          <div id="programOne"></div>
-          <article class="programs-list--article">
-            <img
-              data-section="programs0"
-              data-content="alt-svg"
-              class="programs-list--icon"
-              src="assets/img/svg/programs/chocolate_yola.svg"
-              alt="Two hands joined together"
-            />
-            <picture class="programs-list--picture">
-              <source
-                srcset="assets/img/webp/programs/Chocolate-con-yola-720_webp.webp"
-              />
-              <img
-                data-section="programs0"
-                data-content="alt"
-                class="programs-list--img"
-                src="assets/img/jpg/programs/Chocolate-con-yola-720.jpg"
-                alt="Group of young people and elderly people sharing and learning values for healthy coexistance to reinforce family bonds"
-              />
-            </picture>
-            <h3 class="programs-list--title">Chocolate con Yola</h3>
-            <div class="programs-list--paragraph-container">
-              <p
-                data-section="programs0"
-                data-content="paragraph"
-                class="programs-list--paragraph"
-              >
-                This program was born from the hand of United Healthcare, Gala Foods
-                Supermarket and the Be Well Kairos Foundation as a response to the
-                imperative need to bring the aging population with early childhood to
-                share experience, anecdotes and values grandparents to children and
-                art, joy and affection of children to grandparents, this in order to
-                strengthen family ties in a world that is slowly beginning to suffer
-                from them.<br /><br />
-                Our older adults are motivated through talks by different specialists
-                on topics such as: metabolism, nutrition, financial education,
-                psychology, etc. In addition to artistic presentations, raffles,
-                dynamics, refreshments and the love of the volunteers of our
-                organization.
-              </p>
-            </div>
-          </article>
-        </li>
-        <li class="programs-list--item">
-          <div id="programTwo"></div>
-          <article class="programs-list--article">
-            <img
-              data-section="programs1"
-              data-content="alt-svg"
-              class="programs-list--icon"
-              src="assets/img/svg/programs/codac.svg"
-              alt="First aid kit with medicines"
-            />
-            <picture class="programs-list--picture">
-              <source srcset="assets/img/webp/programs/CODAC-720_webp.webp" />
-              <img
-                data-section="programs1"
-                data-content="alt"
-                class="programs-list--img"
-                src="assets/img/jpg/programs/CODAC-720.jpg"
-                alt="people in a storage managing the food for the social program CODAC"
-              />
-            </picture>
-            <h3 class="programs-list--title">CODAC</h3>
-            <div class="programs-list--paragraph-container">
-              <p
-                data-section="programs1"
-                data-content="paragraph"
-                class="programs-list--paragraph"
-              >
-                Is the name of the social assistance program with which we benefit
-                dozens of Connecticut residents, with immigration applications,
-                translations, notaries, rent, food among others.<br /><br />
-                The coalition relies on the professional and valuable work of 2
-                social workers who address all kinds of problems on Mondays and
-                Tuesdays.
-              </p>
-            </div>
-          </article>
-        </li>
-        <li class="programs-list--item">
-          <div id="programThree"></div>
-          <article class="programs-list--article">
-            <img
-              data-section="programs2"
-              data-content="alt-svg"
-              class="programs-list--icon"
-              src="assets/img/svg/programs/finanzas.svg"
-              alt="Responsible finances to learn to manage your money better"
-            />
-            <picture class="programs-list--picture">
-              <source srcset="assets/img/webp/programs/Mis-finanzas-720_webp.webp" />
-              <img
-                data-section="programs2"
-                data-content="alt"
-                class="programs-list--img"
-                src="assets/img/jpg/programs/Mis-finanzas-720.jpg"
-                alt="financial analysis to learn to better manage personal finances en small businesses"
-              />
-            </picture>
-            <h3
-              data-section="programs2"
-              data-content="title"
-              class="programs-list--title"
-            >
-              My Finances
-            </h3>
-            <div
-              data-section="programs2"
-              data-content="paragraph"
-              class="programs-list--paragraph-container"
-            >
-              <p class="programs-list--paragraph">
-                Our Financial Education and Personal Development Program seeks to
-                promote financial stability in the community. The more knowledge
-                people have about credit and banking services, the better decisions
-                they will make regarding money matters, saving money and improving
-                their financial condition and wellbeing. Some of our workshops
-                include:
-              </p>
-              <ul>
-                <li>Personal Finance.</li>
-                <li>Finance and small business development.</li>
-                <li>Women's Entrepreneurship.</li>
-                <li>Job Search Tools.</li>
-              </ul>
-            </div>
-          </article>
-        </li>
-        <li class="programs-list--item">
-          <div id="programFour"></div>
-          <article class="programs-list--article">
-            <img
-              data-section="programs3"
-              data-content="alt-svg"
-              class="programs-list--icon"
-              src="assets/img/svg/programs/co-alianza.svg"
-              alt="Alliance between people with their hands on their hearts"
-            />
-            <picture class="programs-list--picture">
-              <source srcset="assets/img/webp/programs/Co-Alianza-720_webp.webp" />
-              <img
-                data-section="programs3"
-                data-content="alt"
-                class="programs-list--img"
-                src="assets/img/jpg/programs/Co-Alianza-720.jpg"
-                alt="people forming an alliance with the purpose of offering value to society"
-              />
-            </picture>
-            <h3
-              data-section="programs3"
-              data-content="title"
-              class="programs-list--title"
-            >
-              Co Alliance
-            </h3>
-            <div class="programs-list--paragraph-container">
-              <p
-                data-section="programs3"
-                data-content="paragraph"
-                class="programs-list--paragraph"
-              >
-                Our Co-Alliance program seeks to establish partnerships with social
-                and private organizations on issues relevant to the communities, with
-                the objective of sharing knowledge, programs and resources with these
-                entities. <br /><br />In alliance with LEAD, we developed our “ESL”
-                program where our volunteers and beneficiaries are trained in the
-                English language to open doors to better professional opportunities.
-              </p>
-            </div>
-          </article>
-        </li>
-      </ul>
-    </main>
-    <footer class="footer">
-      <div class="container-contact">
-        <address class="contact">
-          <!-- LOGO FOOTER -->
-          <!-- sobre si mismo -->
-          <a title="Logo" href="index.html" class="logo logo__footer">
-            <picture>
-              <!-- adaptar imagenes -->
+			<ul class="programs-list" id="programs">
+				<li class="programs-list--item">
+					<div id="programOne"></div>
+					<article class="programs-list--article">
+						<img
+							data-section="programs0"
+							data-content="alt-svg"
+							class="programs-list--icon"
+							src="assets/img/svg/programs/chocolate_yola.svg"
+							alt="Two hands joined together"
+						/>
+						<picture class="programs-list--picture">
+							<source srcset="assets/img/webp/programs/Chocolate-con-yola-720_webp.webp" />
+							<img
+								data-section="programs0"
+								data-content="alt"
+								class="programs-list--img"
+								src="assets/img/jpg/programs/Chocolate-con-yola-720.jpg"
+								alt="Group of young people and elderly people sharing and learning values for healthy coexistance to reinforce family bonds"
+							/>
+						</picture>
+						<h3 class="programs-list--title">Chocolate con Yola</h3>
+						<div class="programs-list--paragraph-container">
+							<p data-section="programs0" data-content="paragraph" class="programs-list--paragraph">
+								This program was born from the hand of United Healthcare, Gala Foods Supermarket and the Be Well Kairos Foundation as a response to
+								the imperative need to bring the aging population with early childhood to share experience, anecdotes and values grandparents to
+								children and art, joy and affection of children to grandparents, this in order to strengthen family ties in a world that is slowly
+								beginning to suffer from them.<br /><br />
+								Our older adults are motivated through talks by different specialists on topics such as: metabolism, nutrition, financial education,
+								psychology, etc. In addition to artistic presentations, raffles, dynamics, refreshments and the love of the volunteers of our
+								organization.
+							</p>
+						</div>
+					</article>
+				</li>
+				<li class="programs-list--item">
+					<div id="programTwo"></div>
+					<article class="programs-list--article">
+						<img
+							data-section="programs1"
+							data-content="alt-svg"
+							class="programs-list--icon"
+							src="assets/img/svg/programs/codac.svg"
+							alt="First aid kit with medicines"
+						/>
+						<picture class="programs-list--picture">
+							<source srcset="assets/img/webp/programs/CODAC-720_webp.webp" />
+							<img
+								data-section="programs1"
+								data-content="alt"
+								class="programs-list--img"
+								src="assets/img/jpg/programs/CODAC-720.jpg"
+								alt="people in a storage managing the food for the social program CODAC"
+							/>
+						</picture>
+						<h3 class="programs-list--title">CODAC</h3>
+						<div class="programs-list--paragraph-container">
+							<p data-section="programs1" data-content="paragraph" class="programs-list--paragraph">
+								Is the name of the social assistance program with which we benefit dozens of Connecticut residents, with immigration applications,
+								translations, notaries, rent, food among others.<br /><br />
+								The coalition relies on the professional and valuable work of 2 social workers who address all kinds of problems on Mondays and
+								Tuesdays.
+							</p>
+						</div>
+					</article>
+				</li>
+				<li class="programs-list--item">
+					<div id="programThree"></div>
+					<article class="programs-list--article">
+						<img
+							data-section="programs2"
+							data-content="alt-svg"
+							class="programs-list--icon"
+							src="assets/img/svg/programs/finanzas.svg"
+							alt="Responsible finances to learn to manage your money better"
+						/>
+						<picture class="programs-list--picture">
+							<source srcset="assets/img/webp/programs/Mis-finanzas-720_webp.webp" />
+							<img
+								data-section="programs2"
+								data-content="alt"
+								class="programs-list--img"
+								src="assets/img/jpg/programs/Mis-finanzas-720.jpg"
+								alt="financial analysis to learn to better manage personal finances en small businesses"
+							/>
+						</picture>
+						<h3 data-section="programs2" data-content="title" class="programs-list--title">My Finances</h3>
+						<div data-section="programs2" data-content="paragraph" class="programs-list--paragraph-container">
+							<p class="programs-list--paragraph">
+								Our Financial Education and Personal Development Program seeks to promote financial stability in the community. The more knowledge
+								people have about credit and banking services, the better decisions they will make regarding money matters, saving money and improving
+								their financial condition and wellbeing. Some of our workshops include:
+							</p>
+							<ul>
+								<li>Personal Finance.</li>
+								<li>Finance and small business development.</li>
+								<li>Women's Entrepreneurship.</li>
+								<li>Job Search Tools.</li>
+							</ul>
+						</div>
+					</article>
+				</li>
+				<li class="programs-list--item">
+					<div id="programFour"></div>
+					<article class="programs-list--article">
+						<img
+							data-section="programs3"
+							data-content="alt-svg"
+							class="programs-list--icon"
+							src="assets/img/svg/programs/co-alianza.svg"
+							alt="Alliance between people with their hands on their hearts"
+						/>
+						<picture class="programs-list--picture">
+							<source srcset="assets/img/webp/programs/Co-Alianza-720_webp.webp" />
+							<img
+								data-section="programs3"
+								data-content="alt"
+								class="programs-list--img"
+								src="assets/img/jpg/programs/Co-Alianza-720.jpg"
+								alt="people forming an alliance with the purpose of offering value to society"
+							/>
+						</picture>
+						<h3 data-section="programs3" data-content="title" class="programs-list--title">Co Alliance</h3>
+						<div class="programs-list--paragraph-container">
+							<p data-section="programs3" data-content="paragraph" class="programs-list--paragraph">
+								Our Co-Alliance program seeks to establish partnerships with social and private organizations on issues relevant to the communities,
+								with the objective of sharing knowledge, programs and resources with these entities. <br /><br />In alliance with LEAD, we developed
+								our “ESL” program where our volunteers and beneficiaries are trained in the English language to open doors to better professional
+								opportunities.
+							</p>
+						</div>
+					</article>
+				</li>
+			</ul>
+		</main>
+		<footer class="footer">
+			<div class="container-contact">
+				<address class="contact">
+					<!-- LOGO FOOTER -->
+					<!-- sobre si mismo -->
+					<a title="Logo" href="index.html" class="logo logo__footer">
+						<picture>
+							<!-- adaptar imagenes -->
 
-              <source srcset="assets/img/webp/logo/logo_name.webp" />
-              <img
-                data-section="footer"
-                data-content="alt-logo"
-                class="logo--img"
-                src="assets/img/png/logo/logo_name_png.png"
-                alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
-              />
-            </picture>
-          </a>
-          <!-- Flata links de redes sociales en plantillas -->
-          <ul class="contact--list">
-            <li class="contact--item">
-              <a title="Facebook" href=""
-                ><i class="fa-brands fa-facebook-square"></i
-              ></a>
-            </li>
-            <li class="contact--item">
-              <a title="Telegram" href=""><i class="fa-brands fa-telegram"></i></a>
-            </li>
-            <li class="contact--item">
-              <a title="Instagram" href=""
-                ><i class="fa-brands fa-instagram-square"></i
-              ></a>
-            </li>
-            <li class="contact--item">
-              <a
-                data-section="footer"
-                data-content="title-email"
-                title="
+							<source srcset="assets/img/webp/logo/logo_name.webp" />
+							<img
+								data-section="footer"
+								data-content="alt-logo"
+								class="logo--img"
+								src="assets/img/png/logo/logo_name_png.png"
+								alt="Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut"
+							/>
+						</picture>
+					</a>
+					<!-- Flata links de redes sociales en plantillas -->
+					<ul class="contact--list">
+						<li class="contact--item">
+							<a title="Facebook" href=""><i class="fa-brands fa-facebook-square"></i></a>
+						</li>
+						<li class="contact--item">
+							<a title="Telegram" href=""><i class="fa-brands fa-telegram"></i></a>
+						</li>
+						<li class="contact--item">
+							<a title="Instagram" href=""><i class="fa-brands fa-instagram-square"></i></a>
+						</li>
+						<li class="contact--item">
+							<a
+								data-section="footer"
+								data-content="title-email"
+								title="
                 Send email"
-                href=""
-                ><i class="fa-solid fa-envelope"></i
-              ></a>
-            </li>
-          </ul>
-          <div class="container-autor">
-            <p class="autor">Daniel Pimentel - 2022</p>
-          </div>
-          <p data-section="footer" data-content="paragraph" class="footer--info">
-            The Dominican-American Coalition is a non profit organization with the
-            code 501 C 3.
-          </p>
-        </address>
-      </div>
-    </footer>
+								href=""
+								><i class="fa-solid fa-envelope"></i
+							></a>
+						</li>
+					</ul>
+					<div class="container-autor">
+						<p class="autor">Daniel Pimentel - 2022</p>
+					</div>
+					<p data-section="footer" data-content="paragraph" class="footer--info">
+						The Dominican-American Coalition is a non profit organization with the code 501 C 3.
+					</p>
+				</address>
+			</div>
+		</footer>
 
-    <!-- Scripts JS -->
-    <script src="JS/template/load.js"></script>
-    <script src="JS/template/menu.js"></script>
-    <script src="JS/template/lang.js"></script>
-    <script src="JS/programs/animation_programs.js"></script>
-  </body>
+		<!-- Scripts JS -->
+		<script src="JS/template/load.js"></script>
+		<script src="JS/template/menu.js"></script>
+		<script src="JS/template/lang.js"></script>
+		<script src="JS/programs/animation_programs.js"></script>
+	</body>
 </html>

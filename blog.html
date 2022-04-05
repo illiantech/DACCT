@@ -40,17 +40,17 @@
 		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
 		<!-- Estilos CSS -->
-		<link rel="stylesheet" href="CSS/template/Normalize.css" />
-		<link rel="stylesheet" href="CSS/template/principal.css" />
-		<link rel="stylesheet" href="CSS/template/load.css" />
-		<link rel="stylesheet" href="CSS/template/menu.css" />
-		<link rel="stylesheet" href="CSS/template_menu/banner_menu.css" />
+		<link rel="stylesheet" href="CSS/template/Normalize-dist.css" />
+		<link rel="stylesheet" href="CSS/template/principal-dist.css" />
+		<link rel="stylesheet" href="CSS/template/load-dist.css" />
+		<link rel="stylesheet" href="CSS/template/menu-dist.css" />
+		<link rel="stylesheet" href="CSS/template_menu/banner_menu-dist.css" />
 
-		<link rel="stylesheet" href="CSS/blog/news.css" />
+		<link rel="stylesheet" href="CSS/blog/news-dist.css" />
 
-		<link rel="stylesheet" href="CSS/blog/news__open.css" />
+		<link rel="stylesheet" href="CSS/blog/news__open-dist.css" />
 
-		<link rel="stylesheet" href="CSS/template/footer.css" />
+		<link rel="stylesheet" href="CSS/template/footer-dist.css" />
 
 		<title>DACCT</title>
 	</head>
@@ -163,481 +163,226 @@
 
 			<div class="wave"></div>
 			<hr />
+
 			<!-- BLOG -->
+			<!-- correguir metodologia BEM en list -->
 			<ul data-elementsList="blogs" class="blog--list" id="blogList">
 				<li class="blog--list-item">
 					<!-- PREVIEW -->
-					<div class="blog--article-desac" id="BlogOpenDesac">x</div>
+					<div data-open="desactive" class="blog--article-desac">x</div>
 					<div class="blog--article-wrapper">
+						<!-- CONTAINER extra para que oculte el contenido sobrante con scroll -->
 						<article class="blog--article">
 							<picture class="blog--article-picture blog--article-wave_1">
-								<source srcset="assets/img/jpg/prueba/momentaneos-blog-(stock)-(1).jpg" />
-								<img src="assets/img/jpg/prueba/momentaneos-blog-(stock)-(1).jpg" alt="" class="blog--article-img" />
+								<source media="(min-width: 1300px)" srcset="" />
+								<source srcset="" />
+								<img src="" alt="" class="blog--article-img" />
 							</picture>
-							<time class="blog--article-time" pubdate datetime="2021-09-10">10 de Septiembre del 2021</time>
+							<time class="blog--article-time" pubdate datetime=""></time>
 							<h3 class="blog--article-title"></h3>
 
-							<p class="blog--article-paragraph">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni...
-							</p>
+							<p class="blog--article-paragraph"></p>
 
-							<p class="blog--article-paragraph__open">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi
-								ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur
-								adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus
-								molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque
-								repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum
-								dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur
-								suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-								facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam
-								magniLorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione
-								ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias
-								perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus
-								adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet
-								consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit
-								voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde,
-								cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem
-								ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam
-								tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni
-							</p>
+							<p class="blog--article-paragraph__open"></p>
+
 							<div class="article--buttom-container">
-								<a data-section="blog" data-content="title-link" href="" title="See more" class="article--buttom">See more</a>
+								<!-- CONTAINER extra para que se centre -->
+								<span data-open="active" data-section="blog" data-content="title-link" title="See more" class="article--buttom">See more</span>
 							</div>
 						</article>
 					</div>
 				</li>
 				<li class="blog--list-item">
 					<!-- PREVIEW -->
-					<div class="blog--article-desac" id="BlogOpenDesac">x</div>
+					<div data-open="desactive" class="blog--article-desac">x</div>
 					<div class="blog--article-wrapper">
 						<article class="blog--article">
 							<picture class="blog--article-picture blog--article-wave_2">
-								<source srcset="assets/img/jpg/prueba/momentaneos-blog-(stock)-(2).jpg" />
-								<img src="assets/img/jpg/prueba/momentaneos-blog-(stock)-(2).jpg" alt="" class="blog--article-img" />
+								<source media="(min-width: 1300px)" srcset="" />
+								<source srcset="" />
+								<img src="" alt="" class="blog--article-img" />
 							</picture>
-							<time class="blog--article-time" pubdate datetime="2021-09-10">10 de Septiembre del 2021</time>
+							<time class="blog--article-time" pubdate datetime=""></time>
 							<h3 class="blog--article-title"></h3>
 
-							<p class="blog--article-paragraph">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni...
-							</p>
-							<p class="blog--article-paragraph__open">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi
-								ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur
-								adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus
-								molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque
-								repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum
-								dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur
-								suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-								facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam
-								magniLorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione
-								ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias
-								perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus
-								adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet
-								consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit
-								voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde,
-								cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem
-								ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam
-								tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni
-							</p>
+							<p class="blog--article-paragraph"></p>
+							<p class="blog--article-paragraph__open"></p>
 							<div class="article--buttom-container">
-								<a href="" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</a>
+								<span data-open="active" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</span>
 							</div>
 						</article>
 					</div>
 				</li>
 				<li class="blog--list-item">
 					<!-- PREVIEW -->
-					<div class="blog--article-desac" id="BlogOpenDesac">x</div>
+					<div data-open="desactive" class="blog--article-desac">x</div>
 					<div class="blog--article-wrapper">
 						<article class="blog--article">
 							<picture class="blog--article-picture blog--article-wave_3">
-								<source srcset="assets/img/jpg/prueba/momentaneos-blog-(stock)-(3).jpg" />
-								<img src="assets/img/jpg/prueba/momentaneos-blog-(stock)-(3).jpg" alt="" class="blog--article-img" />
+								<source media="(min-width: 1300px)" srcset="" />
+								<source srcset="" />
+								<img src="" alt="" class="blog--article-img" />
 							</picture>
-							<time class="blog--article-time" pubdate datetime="2021-09-10">10 de Septiembre del 2021</time>
+							<time class="blog--article-time" pubdate datetime=""></time>
 							<h3 class="blog--article-title"></h3>
 
-							<p class="blog--article-paragraph">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni...
-							</p>
-							<p class="blog--article-paragraph__open">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi
-								ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur
-								adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus
-								molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque
-								repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum
-								dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur
-								suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-								facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam
-								magniLorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione
-								ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias
-								perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus
-								adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet
-								consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit
-								voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde,
-								cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem
-								ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam
-								tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni
-							</p>
+							<p class="blog--article-paragraph"></p>
+							<p class="blog--article-paragraph__open"></p>
 							<div class="article--buttom-container">
-								<a href="" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</a>
+								<span data-open="active" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</span>
 							</div>
 						</article>
 					</div>
 				</li>
 				<li class="blog--list-item">
 					<!-- PREVIEW -->
-					<div class="blog--article-desac" id="BlogOpenDesac">x</div>
+					<div data-open="desactive" class="blog--article-desac">x</div>
 					<div class="blog--article-wrapper">
 						<article class="blog--article">
 							<picture class="blog--article-picture blog--article-wave_4">
-								<source srcset="assets/img/jpg/prueba/momentaneos-blog-(stock)-(3).jpg" />
-								<img src="assets/img/jpg/prueba/momentaneos-blog-(stock)-(3).jpg" alt="" class="blog--article-img" />
+								<source media="(min-width: 1300px)" srcset="" />
+								<source srcset="" />
+								<img src="" alt="" class="blog--article-img" />
 							</picture>
-							<time class="blog--article-time" pubdate datetime="2021-09-10">10 de Septiembre del 2021</time>
+							<time class="blog--article-time" pubdate datetime=""></time>
 							<h3 class="blog--article-title"></h3>
 
-							<p class="blog--article-paragraph">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni...
-							</p>
-							<p class="blog--article-paragraph__open">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi
-								ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur
-								adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus
-								molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque
-								repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum
-								dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur
-								suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-								facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam
-								magniLorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione
-								ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias
-								perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus
-								adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet
-								consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit
-								voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde,
-								cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem
-								ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam
-								tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni
-							</p>
+							<p class="blog--article-paragraph"></p>
+							<p class="blog--article-paragraph__open"></p>
 							<div class="article--buttom-container">
-								<a href="" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</a>
+								<span data-open="active" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</span>
 							</div>
 						</article>
 					</div>
 				</li>
 				<li class="blog--list-item">
 					<!-- PREVIEW -->
-					<div class="blog--article-desac" id="BlogOpenDesac">x</div>
+					<div data-open="desactive" class="blog--article-desac">x</div>
 					<div class="blog--article-wrapper">
 						<article class="blog--article">
 							<picture class="blog--article-picture blog--article-wave_5">
-								<source srcset="assets/img/jpg/prueba/momentaneos-blog-(stock)-(1).jpg" />
-								<img src="assets/img/jpg/prueba/momentaneos-blog-(stock)-(1).jpg" alt="" class="blog--article-img" />
+								<source media="(min-width: 1300px)" srcset="" />
+								<source srcset="" />
+								<img src="" alt="" class="blog--article-img" />
 							</picture>
-							<time class="blog--article-time" pubdate datetime="2021-09-10">10 de Septiembre del 2021</time>
+							<time class="blog--article-time" pubdate datetime=""></time>
 							<h3 class="blog--article-title"></h3>
 
-							<p class="blog--article-paragraph">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni...
-							</p>
+							<p class="blog--article-paragraph"></p>
 
-							<p class="blog--article-paragraph__open">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi
-								ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur
-								adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus
-								molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque
-								repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum
-								dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur
-								suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-								facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam
-								magniLorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione
-								ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias
-								perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus
-								adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet
-								consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit
-								voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde,
-								cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem
-								ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam
-								tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni
-							</p>
+							<p class="blog--article-paragraph__open"></p>
 							<div class="article--buttom-container">
-								<a href="" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</a>
+								<span data-open="active" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</span>
 							</div>
 						</article>
 					</div>
 				</li>
 				<li class="blog--list-item">
 					<!-- PREVIEW -->
-					<div class="blog--article-desac" id="BlogOpenDesac">x</div>
+					<div data-open="desactive" class="blog--article-desac">x</div>
 					<div class="blog--article-wrapper">
 						<article class="blog--article">
 							<picture class="blog--article-picture blog--article-wave_6">
-								<source srcset="assets/img/jpg/prueba/momentaneos-blog-(stock)-(1).jpg" />
-								<img src="assets/img/jpg/prueba/momentaneos-blog-(stock)-(1).jpg" alt="" class="blog--article-img" />
+								<source media="(min-width: 1300px)" srcset="" />
+								<source srcset="" />
+								<img src="" alt="" class="blog--article-img" />
 							</picture>
-							<time class="blog--article-time" pubdate datetime="2021-09-10">10 de Septiembre del 2021</time>
+							<time class="blog--article-time" pubdate datetime=""></time>
 							<h3 class="blog--article-title"></h3>
 
-							<p class="blog--article-paragraph">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni...
-							</p>
+							<p class="blog--article-paragraph"></p>
 
-							<p class="blog--article-paragraph__open">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi
-								ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur
-								adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus
-								molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque
-								repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum
-								dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur
-								suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-								facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam
-								magniLorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione
-								ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias
-								perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus
-								adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet
-								consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit
-								voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde,
-								cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem
-								ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam
-								tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni
-							</p>
+							<p class="blog--article-paragraph__open"></p>
 							<div class="article--buttom-container">
-								<a href="" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</a>
+								<span data-open="active" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</span>
 							</div>
 						</article>
 					</div>
 				</li>
 				<li class="blog--list-item">
 					<!-- PREVIEW -->
-					<div class="blog--article-desac" id="BlogOpenDesac">x</div>
+					<div data-open="desactive" class="blog--article-desac">x</div>
 					<div class="blog--article-wrapper">
 						<article class="blog--article">
 							<picture class="blog--article-picture blog--article-wave_7">
-								<source srcset="assets/img/jpg/prueba/momentaneos-blog-(stock)-(1).jpg" />
-								<img src="assets/img/jpg/prueba/momentaneos-blog-(stock)-(1).jpg" alt="" class="blog--article-img" />
+								<source media="(min-width: 1300px)" srcset="" />
+								<source srcset="" />
+								<img src="" alt="" class="blog--article-img" />
 							</picture>
-							<time class="blog--article-time" pubdate datetime="2021-09-10">10 de Septiembre del 2021</time>
+							<time class="blog--article-time" pubdate datetime=""></time>
 							<h3 class="blog--article-title"></h3>
 
-							<p class="blog--article-paragraph">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni...
-							</p>
+							<p class="blog--article-paragraph"></p>
 
-							<p class="blog--article-paragraph__open">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi
-								ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur
-								adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus
-								molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque
-								repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum
-								dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur
-								suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-								facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam
-								magniLorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione
-								ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias
-								perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus
-								adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet
-								consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit
-								voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde,
-								cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem
-								ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam
-								tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni
-							</p>
+							<p class="blog--article-paragraph__open"></p>
 							<div class="article--buttom-container">
-								<a href="" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</a>
+								<span data-open="active" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</span>
 							</div>
 						</article>
 					</div>
 				</li>
 				<li class="blog--list-item">
 					<!-- PREVIEW -->
-					<div class="blog--article-desac" id="BlogOpenDesac">x</div>
+					<div data-open="desactive" class="blog--article-desac">x</div>
 					<div class="blog--article-wrapper">
 						<article class="blog--article">
 							<picture class="blog--article-picture blog--article-wave_8">
-								<source srcset="assets/img/jpg/prueba/momentaneos-blog-(stock)-(1).jpg" />
-								<img src="assets/img/jpg/prueba/momentaneos-blog-(stock)-(1).jpg" alt="" class="blog--article-img" />
+								<source media="(min-width: 1300px)" srcset="" />
+								<source srcset="" />
+								<img src="" alt="" class="blog--article-img" />
 							</picture>
-							<time class="blog--article-time" pubdate datetime="2021-09-10">10 de Septiembre del 2021</time>
+							<time class="blog--article-time" pubdate datetime=""></time>
 							<h3 class="blog--article-title"></h3>
 
-							<p class="blog--article-paragraph">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni...
-							</p>
+							<p class="blog--article-paragraph"></p>
 
-							<p class="blog--article-paragraph__open">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi
-								ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur
-								adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus
-								molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque
-								repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum
-								dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur
-								suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-								facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam
-								magniLorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione
-								ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias
-								perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus
-								adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet
-								consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit
-								voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde,
-								cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem
-								ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam
-								tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni
-							</p>
+							<p class="blog--article-paragraph__open"></p>
 							<div class="article--buttom-container">
-								<a href="" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</a>
+								<span data-open="active" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</span>
 							</div>
 						</article>
 					</div>
 				</li>
 				<li class="blog--list-item">
 					<!-- PREVIEW -->
-					<div class="blog--article-desac" id="BlogOpenDesac">x</div>
+					<div data-open="desactive" class="blog--article-desac">x</div>
 					<div class="blog--article-wrapper">
 						<article class="blog--article">
 							<picture class="blog--article-picture blog--article-wave_9">
-								<source srcset="assets/img/jpg/prueba/momentaneos-blog-(stock)-(1).jpg" />
-								<img src="assets/img/jpg/prueba/momentaneos-blog-(stock)-(1).jpg" alt="" class="blog--article-img" />
+								<source media="(min-width: 1300px)" srcset="" />
+								<source srcset="" />
+								<img src="" alt="" class="blog--article-img" />
 							</picture>
-							<time class="blog--article-time" pubdate datetime="2021-09-10">10 de Septiembre del 2021</time>
+							<time class="blog--article-time" pubdate datetime=""></time>
 							<h3 class="blog--article-title"></h3>
 
-							<p class="blog--article-paragraph">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni...
-							</p>
+							<p class="blog--article-paragraph"></p>
 
-							<p class="blog--article-paragraph__open">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi
-								ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur
-								adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus
-								molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque
-								repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum
-								dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur
-								suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-								facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam
-								magniLorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione
-								ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias
-								perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus
-								adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet
-								consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit
-								voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde,
-								cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem
-								ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam
-								tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni
-							</p>
+							<p class="blog--article-paragraph__open"></p>
 							<div class="article--buttom-container">
-								<a href="" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</a>
+								<span data-open="active" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</span>
 							</div>
 						</article>
 					</div>
 				</li>
 				<li class="blog--list-item">
 					<!-- PREVIEW -->
-					<div class="blog--article-desac" id="BlogOpenDesac">x</div>
+					<div data-open="desactive" class="blog--article-desac">x</div>
 					<div class="blog--article-wrapper">
 						<article class="blog--article">
 							<picture class="blog--article-picture blog--article-wave_10">
-								<source srcset="assets/img/jpg/prueba/momentaneos-blog-(stock)-(1).jpg" />
-								<img src="assets/img/jpg/prueba/momentaneos-blog-(stock)-(1).jpg" alt="" class="blog--article-img" />
+								<source media="(min-width: 1300px)" srcset="" />
+								<source srcset="" />
+								<img src="" alt="" class="blog--article-img" />
 							</picture>
-							<time class="blog--article-time" pubdate datetime="2021-09-10">10 de Septiembre del 2021</time>
+							<time class="blog--article-time" pubdate datetime=""></time>
 							<h3 class="blog--article-title"></h3>
 
-							<p class="blog--article-paragraph">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni...
-							</p>
+							<p class="blog--article-paragraph"></p>
 
-							<p class="blog--article-paragraph__open">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam
-								aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi
-								ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur
-								adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus
-								molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque
-								repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum
-								dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur
-								suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-								facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam
-								magniLorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione
-								ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias
-								perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus
-								adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet
-								consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit
-								voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde,
-								cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem
-								ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam
-								tenetur suscipit voluptatibus molestias perspiciatis magnam magni... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis
-								magnam magni
-							</p>
+							<p class="blog--article-paragraph__open"></p>
 							<div class="article--buttom-container">
-								<a href="" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</a>
+								<span data-open="active" title="See more" data-section="blog" data-content="title-link" class="article--buttom">See more</span>
 							</div>
 						</article>
 					</div>
