@@ -1,0 +1,71 @@
+{
+  "header": {
+    "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
+
+    "title-active-menu": "Activar Menú",
+    "title-desactive-menu": "Desactivar Menú",
+
+    "title-nav-home": "Inicio",
+    "title-nav-about_us": "Conócenos",
+    "title-nav-programs": "Programas",
+    "title-nav-events": "Eventos",
+    "title-nav-contacts": "Contáctanos",
+    "title-nav-donate": "Donar",
+
+    "nav-lang": "Idioma",
+    "title-es": "Español",
+    "title-en": "Ingles",
+
+    "alt-es": "bandera de republica dominicana",
+    "alt-en": "bandera de estados unidos"
+  },
+  "banner": {
+    "alt": "",
+    "title-principal": "CONÓCENOS"
+  },
+  "what_is": {
+    "title": "¿Qué hace La Coalición Dominico-Americana de Connecticut?",
+    "paragraph0": "Mediante la ejecución de programas de desarrollo humano, La Coalición Dominico-Americana de Connecticut trabaja en beneficio de los habitantes del Estado de Connecticut aplicando modelos de intervención social que busca la transformación de las personas, aplicando el método “Valor-Arte”.",
+    "paragraph1": "En virtud de lo anterior, desarrolla su labor social a través del arte enfocado en la educación, la historia, la cultura, el bienestar social, el emprendimiento y la productividad. La labor se hace de la mano de otras organizaciones sociales y la empresa privada."
+  },
+  "objects": {
+    "title": "¿Cuál es el objetivo específico de la organización?",
+    "paragraph": "Trabajar temas que afectan el desarrollo de los residentes en Connecticut sin discriminación en las áreas de educación al mismo tiempo en actividades que promuevan las raíces culturales, diversidad e historia de las comunidades."
+  },
+  "mision": {
+    "alt": "Grupo de personas en una sala de reuniones trabajando en su mision para un proyecto",
+    "title": "MISIÓN",
+    "paragraph": "Trabajar en pos de un Connecticut mas unido, a través de programas de asistencia en servicios sociales, celebración cultural y abogar por opciones educacionales."
+  },
+  "vision": {
+    "alt": "Grupo de personas en una sala de reuniones planificando su vision de un poryecto",
+    "title": "VISIÓN",
+    "paragraph": "Ser el proveedor de mayor valor en el apoyo a la comunidad, la integración de la cultura, la conservación de su folclor y la ayuda al desarrollo de nuestra gente."
+  },
+  "team": {
+    "title": "¿Quienes Somos?",
+    "alt-general": "equipo de trabajo",
+
+    "name0": "Jonatan Soto",
+    "hierarchy0": "<em>Miembro de la Junta Directiva</em>",
+
+    "name1": "Jacquelina Santos",
+    "hierarchy1": "<em>Tesorera</em>",
+
+    "name2": "Juan Moreno",
+    "hierarchy2": "<em>Sargento de Armas</em>",
+
+    "name3": "Dorca Hernandez",
+    "hierarchy3": "<em>Miembro de la Junta Directiva</em>",
+
+    "name4": "Viviana Placido",
+    "hierarchy4": "<em>Directora de Eventos y logística</em>"
+  },
+  "footer": {
+    "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
+
+    "title-email": "Enviar Correo",
+
+    "paragraph": "La Coalición Domínico Americana es una organizacion sin fines de lucro con el codigo 501 C 3."
+  }
+}

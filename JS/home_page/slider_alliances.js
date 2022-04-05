@@ -164,7 +164,6 @@ const sliderAutoActive = (viewportWidth, index) => {
 
 const sliderAutoDesac = () => {
   clearInterval(sliderAutoMobile);
-
   sliderAutoActive(viewportWidth, 0);
 };
 

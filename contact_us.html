@@ -227,12 +227,13 @@
                       title="Spanish"
                       class="idioma--list-item"
                     >
-                      <span lang="es">ES</span>
+                      <span data-lang="es" lang="es">ES</span>
                       <img
+                        data-lang="es"
                         data-section="header"
                         data-content="alt-es"
                         src="assets/img/png/icon/republica-dominicana.png"
-                        alt="bandera de republica dominicana"
+                        alt="Flag of The Dominican Republic"
                       />
                     </li>
                     <li
@@ -242,12 +243,13 @@
                       title="English"
                       class="idioma--list-item"
                     >
-                      <span lang="en">EN</span>
+                      <span data-lang="en" lang="en">EN</span>
                       <img
+                        data-lang="en"
                         data-section="header"
                         data-content="alt-en"
                         src="assets/img/png/icon/estados-unidos.png"
-                        alt="bandera de estados unidos"
+                        alt="Flag of The United States"
                       />
                     </li>
                   </ul>
@@ -268,13 +270,21 @@
 
           <source srcset="assets/img/jpg/prueba/prueba_menus.jpg" />
           <img
+            data-section="banner"
+            data-content="alt"
             class="banner--img"
             src="assets/img/jpg/prueba/prueba_menus.jpg"
             alt="grupo de personas en una oficina trabajando en distintos servicios digitales que ofrecen a las empresas"
           />
         </picture>
 
-        <h2 class="banner--title">CONTÁCTANOS</h2>
+        <h2
+          data-section="banner"
+          data-content="title-principal"
+          class="banner--title"
+        >
+          CONTACT US
+        </h2>
       </div>
 
       <div class="wave"></div>
@@ -288,7 +298,7 @@
           frameborder="0"
           marginheight="0"
           marginwidth="0"
-          >Cargando…
+          >Loading…
         </iframe>
       </div>
 
@@ -296,7 +306,7 @@
 
       <div class="container-paragraph">
         <div class="container-paragraph--text">
-          <p>
+          <p data-section="info-form" data-content="paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
             architecto porro voluptatibus possimus maiores soluta. Sed, tempore
             nostrum labore corporis at, doloremque alias vero aut sequi eveniet error
@@ -365,7 +375,7 @@
     <!-- Scripts JS -->
     <script src="JS/template/load.js"></script>
     <script src="JS/template/menu.js"></script>
-
+    <script src="JS/template/lang.js"></script>
     <script src="JS/contacts/contactoForm.js"></script>
   </body>
 </html>

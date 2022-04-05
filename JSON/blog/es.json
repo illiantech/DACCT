@@ -1,0 +1,36 @@
+{
+  "header": {
+    "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
+
+    "title-active-menu": "Activar Menú",
+    "title-desactive-menu": "Desactivar Menú",
+
+    "title-nav-home": "Inicio",
+    "title-nav-about_us": "Conócenos",
+    "title-nav-programs": "Programas",
+    "title-nav-events": "Eventos",
+    "title-nav-contacts": "Contáctanos",
+    "title-nav-donate": "Donar",
+
+    "nav-lang": "Idioma",
+    "title-es": "Español",
+    "title-en": "Ingles",
+
+    "alt-es": "bandera de republica dominicana",
+    "alt-en": "bandera de estados unidos"
+  },
+  "banner": {
+    "alt": ""
+  },
+  "blog": {
+    "title-link": "Ver más",
+    "title-previous-articles": "Artículos anteriores"
+  },
+  "footer": {
+    "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
+
+    "title-email": "Enviar Correo",
+
+    "paragraph": "La Coalición Domínico Americana es una organizacion sin fines de lucro con el codigo 501 C 3."
+  }
+}

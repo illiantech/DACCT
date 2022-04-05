@@ -1,0 +1,66 @@
+{
+  "header": {
+    "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
+
+    "title-active-menu": "Enable menu",
+    "title-desactive-menu": "Disable menu",
+
+    "title-nav-home": "Home",
+    "title-nav-about_us": "About us",
+    "title-nav-programs": "Programs",
+    "title-nav-events": "Events",
+    "title-nav-contacts": "Contact us",
+    "title-nav-donate": "Donate",
+
+    "nav-lang": "language",
+    "title-es": "Spanish",
+    "title-en": "English",
+
+    "alt-es": "Flag of The Dominican Republic",
+    "alt-en": "Flag of The United States"
+  },
+
+  "banner": {
+    "alt": "",
+    "title-principal": "EVENTS"
+  },
+
+  "events-title": {
+    "titles": "<h3>Name:</h3><h3>Description:</h3><h3>Date and Time:</h3><h3>Location:</h3>"
+  },
+
+  "events-title-mobile": {
+    "name": "Name:",
+    "description": "Description:",
+    "date": "Date and Time:",
+    "location": "Location:"
+  },
+
+  "event-0": {
+    "name-paragraph": "Older Adult's Day",
+
+    "description-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque porro nemo error nam iste distinctio ullam? Voluptas nulla suscipit...",
+
+    "date-paragraph": "September 30, 2022 at 02:00 pm GMT-04:00 Connecticut",
+
+    "location-paragraph": "550 MAIN STREET HARTFORD CT 06103 United States"
+  },
+
+  "event-1": {
+    "name-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+
+    "description-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque porro nemo error nam iste distinctio ullam? Voluptas nulla suscipit...",
+
+    "date-paragraph": "March 19, 2022 at 2:00 p.m",
+
+    "location-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque porro nemo"
+  },
+
+  "footer": {
+    "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
+
+    "title-email": "Send email",
+
+    "paragraph": "The Dominican-American Coalition is a non profit organization with the code 501 C 3."
+  }
+}

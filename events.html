@@ -226,12 +226,13 @@
                       title="Spanish"
                       class="idioma--list-item"
                     >
-                      <span lang="es">ES</span>
+                      <span data-lang="es" lang="es">ES</span>
                       <img
+                        data-lang="es"
                         data-section="header"
                         data-content="alt-es"
                         src="assets/img/png/icon/republica-dominicana.png"
-                        alt="bandera de republica dominicana"
+                        alt="Flag of The Dominican Republic"
                       />
                     </li>
                     <li
@@ -241,12 +242,13 @@
                       title="English"
                       class="idioma--list-item"
                     >
-                      <span lang="en">EN</span>
+                      <span data-lang="en" lang="en">EN</span>
                       <img
+                        data-lang="en"
                         data-section="header"
                         data-content="alt-en"
                         src="assets/img/png/icon/estados-unidos.png"
-                        alt="bandera de estados unidos"
+                        alt="Flag of The United States"
                       />
                     </li>
                   </ul>
@@ -273,131 +275,110 @@
           />
         </picture>
 
-        <h2 class="banner--title">EVENTOS</h2>
+        <h2
+          data-section="banner"
+          data-content="title-principal"
+          class="banner--title"
+        >
+          EVENTS
+        </h2>
       </div>
 
       <div class="wave"></div>
       <hr />
       <!-- eventoi (cronograma) -->
-      <div class="events-title">
+      <div data-section="events-title" data-content="titles" class="events-title">
         <h3>Name:</h3>
-        <h3>Descripción:</h3>
-        <h3>Fecha y Hora:</h3>
-        <h3>Ubicación:</h3>
+        <h3>Description:</h3>
+        <h3>Date and Time:</h3>
+        <h3>Location:</h3>
       </div>
       <article class="events">
-        <h4>Name:</h4>
-        <p class="events--paragraph">Día del Adulto mayor</p>
+        <h4 data-section="events-title-mobile" data-content="name">Name:</h4>
+        <p
+          data-section="event-0"
+          data-content="name-paragraph"
+          class="events--paragraph"
+        >
+          Older Adult's Day
+        </p>
 
-        <h4>Descripción:</h4>
-        <p class="events--paragraph">
+        <h4 data-section="events-title-mobile" data-content="description">
+          Description:
+        </h4>
+        <p
+          data-section="event-0"
+          data-content="description-paragraph"
+          class="events--paragraph"
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
           itaque porro nemo error nam iste distinctio ullam? Voluptas nulla
           suscipit...
         </p>
 
-        <h4>Fecha y Hora:</h4>
-        <time class="events--paragraph" datetime="2022-03-19" pubdate
-          >30 de Septiembre del 2022 a las 02:00 pm GMT-04:00 Connecticut</time
+        <h4 data-section="events-title-mobile" data-content="date">
+          Date and Time:
+        </h4>
+        <time
+          data-section="event-0"
+          data-content="date-paragraph"
+          class="events--paragraph"
+          datetime="2022-09-30"
+          pubdate
+          >September 30, 2022 at 02:00 pm GMT-04:00 Connecticut</time
         >
 
-        <h4>Ubicación:</h4>
-        <p class="events--paragraph">
+        <h4 data-section="events-title-mobile" data-content="location">Location:</h4>
+        <p
+          data-section="event-0"
+          data-content="location-paragraph"
+          class="events--paragraph"
+        >
           550 MAIN STREET HARTFORD CT 06103 United States
         </p>
       </article>
       <article class="events">
-        <h4>Name:</h4>
-        <p class="events--paragraph">
+        <h4 data-section="events-title-mobile" data-content="name">Name:</h4>
+        <p
+          data-section="event-1"
+          data-content="name-paragraph"
+          class="events--paragraph"
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
 
-        <h4>Descripción:</h4>
-        <p class="events--paragraph">
+        <h4 data-section="events-title-mobile" data-content="description">
+          Description:
+        </h4>
+        <p
+          data-section="event-1"
+          data-content="description-paragraph"
+          class="events--paragraph"
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
           itaque porro nemo error nam iste distinctio ullam? Voluptas nulla
           suscipit...
         </p>
 
-        <h4>Fecha y Hora:</h4>
-        <time class="events--paragraph" datetime="2022-03-19" pubdate
-          >30 de Marzo del 2022 a las 14:00</time
+        <h4 data-section="events-title-mobile" data-content="date">
+          Date and Time:
+        </h4>
+        <time
+          data-section="event-1"
+          data-content="date-paragraph"
+          class="events--paragraph"
+          datetime="2022-03-19"
+          pubdate
+        >
+          March 19, 2022 at 2:00 p.m</time
         >
 
-        <h4>Ubicación:</h4>
-        <p class="events--paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-          itaque porro nemo
-        </p>
-      </article>
-      <article class="events">
-        <h4>Name:</h4>
-        <p class="events--paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-
-        <h4>Descripción:</h4>
-        <p class="events--paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-          itaque porro nemo error nam iste distinctio ullam? Voluptas nulla
-          suscipit...
-        </p>
-
-        <h4>Fecha y Hora:</h4>
-        <time class="events--paragraph" datetime="2022-03-19" pubdate
-          >30 de Marzo del 2022 a las 14:00</time
+        <h4 data-section="events-title-mobile" data-content="location">Location:</h4>
+        <p
+          data-section="event-1"
+          data-content="location-paragraph"
+          class="events--paragraph"
         >
-
-        <h4>Ubicación:</h4>
-        <p class="events--paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-          itaque porro nemo
-        </p>
-      </article>
-      <article class="events">
-        <h4>Name:</h4>
-        <p class="events--paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-
-        <h4>Descripción:</h4>
-        <p class="events--paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-          itaque porro nemo error nam iste distinctio ullam? Voluptas nulla
-          suscipit...
-        </p>
-
-        <h4>Fecha y Hora:</h4>
-        <time class="events--paragraph" datetime="2022-03-19" pubdate
-          >30 de Septiembre del 2022 a las 14:00</time
-        >
-
-        <h4>Ubicación:</h4>
-        <p class="events--paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-          itaque porro nemo
-        </p>
-      </article>
-      <article class="events">
-        <h4>Name:</h4>
-        <p class="events--paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-
-        <h4>Descripción:</h4>
-        <p class="events--paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-          itaque porro nemo error nam iste distinctio ullam? Voluptas nulla
-          suscipit...
-        </p>
-
-        <h4>Fecha y Hora:</h4>
-        <time class="events--paragraph" datetime="2022-03-19" pubdate
-          >30 de Marzo del 2022 a las 14:00</time
-        >
-
-        <h4>Ubicación:</h4>
-        <p class="events--paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
           itaque porro nemo
         </p>
@@ -462,5 +443,6 @@
     <!-- Scripts JS -->
     <script src="JS/template/load.js"></script>
     <script src="JS/template/menu.js"></script>
+    <script src="JS/template/lang.js"></script>
   </body>
 </html>

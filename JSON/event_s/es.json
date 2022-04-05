@@ -1,0 +1,66 @@
+{
+  "header": {
+    "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
+
+    "title-active-menu": "Activar Menú",
+    "title-desactive-menu": "Desactivar Menú",
+
+    "title-nav-home": "Inicio",
+    "title-nav-about_us": "Conócenos",
+    "title-nav-programs": "Programas",
+    "title-nav-events": "Eventos",
+    "title-nav-contacts": "Contáctanos",
+    "title-nav-donate": "Donar",
+
+    "nav-lang": "Idioma",
+    "title-es": "Español",
+    "title-en": "Ingles",
+
+    "alt-es": "bandera de republica dominicana",
+    "alt-en": "bandera de estados unidos"
+  },
+
+  "banner": {
+    "alt": "",
+    "title-principal": "EVENTOS"
+  },
+
+  "events-title": {
+    "titles": "<h3>Nombre:</h3><h3>Descripción:</h3><h3>Fecha y hora:</h3><h3>Ubicación:</h3>"
+  },
+
+  "events-title-mobile": {
+    "name": "Nombre:",
+    "description": "Descripción:",
+    "date": "Fecha y hora:",
+    "location": "Ubicación:"
+  },
+
+  "event-0": {
+    "name-paragraph": "Día del Adulto Mayor",
+
+    "description-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque porro nemo error nam iste distinctio ullam? Voluptas nulla suscipit...",
+
+    "date-paragraph": "30 de septiembre de 2022 a las 14:00 GMT-04:00 Connecticut",
+
+    "location-paragraph": "550 MAIN STREET HARTFORD CT 06103 United States"
+  },
+
+  "event-1": {
+    "name-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+
+    "description-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque porro nemo error nam iste distinctio ullam? Voluptas nulla suscipit...",
+
+    "date-paragraph": "30 de marzo de 2022 a las 14:00",
+
+    "location-paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque porro nemo"
+  },
+
+  "footer": {
+    "alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",
+
+    "title-email": "Enviar Correo",
+
+    "paragraph": "La Coalición Domínico Americana es una organizacion sin fines de lucro con el codigo 501 C 3."
+  }
+}
