@@ -22,14 +22,8 @@ const sliderAutoActive = (viewportWidth, index) => {
 };
 
 const sliderAutoDesac = () => {
-<<<<<<< HEAD
-  clearInterval(sliderAutoMobile);
-  sliderAutoActive(viewportWidth, 0);
-=======
 	clearInterval(sliderAutoMobile);
-
 	sliderAutoActive(viewportWidth, 0);
->>>>>>> 522e444d4e533f9e8661e8dd490010f9cd0a30fd
 };
 
 allianceList.addEventListener('touchmove', () => {
