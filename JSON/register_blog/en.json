@@ -40,7 +40,7 @@
 			"srcset": "assets/img/register_blog/moment-4.jpg",
 			"src": "assets/img/register_blog/moment-4.jpg",
 
-			"static": true
+			"static": false
 		},
 		{
 			"title": "Don Quijote of La Mancha.",
@@ -82,7 +82,7 @@
 			"srcset": "assets/img/register_blog/moment-4.jpg",
 			"src": "assets/img/register_blog/moment-4.jpg",
 
-			"static": true
+			"static": false
 		},
 		{
 			"title": "JS elements you should know",
