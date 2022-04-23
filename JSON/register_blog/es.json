@@ -1,44 +1,44 @@
 {
 	"articles": [
 		{
-			"title": "Bajo la Misma Estrella",
+			"title": "Habilidades para la vida",
 
-			"link": "assets/Constancia-de-Trabajo-daniel.pdf",
+			"link": "assets/articles/es/23-04-2022/habilidades_para_la_vida.pdf",
 
-			"date": "2022-09-13",
+			"date": "2022-04-23",
 
-			"visual_date": "13 de septiembre del 2022",
+			"visual_date": "23 de abril del 2022",
 
-			"text_preview": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni...",
+			"text_preview": "Estamos en una transición generacional en lo que respecta a la crianza de los hijos. Muchos de nuestros padres y abuelos utilizaban expresiones como: ‘‘estudia, lo que tienes en la cabeza es lo único que...",
 
 			"text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente libero, temporibus repellat voluptatem totam vel tempora ipsa praesentium laudantium quaerat reiciendis quasi eum placeat architecto molestias consequatur quibusdam? Pariatur, velit.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste rerum ullam quis repellat quas laudantium nobis quia itaque reprehenderit, reiciendis et voluptas, odit maxime? Dolorem laboriosam deserunt in praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odio maxime nulla dolorum ratione nobis officia? Sit accusamus at, consequuntur eaque consequatur, sequi eos nam voluptas, vero enim illo molestias? Lorem ipsum, dolor sit amet consectetur adipisicing elit. At non aperiam reiciendis labore laborum molestiae asperiores sequi impedit nam dicta laboriosam possimus expedita quaerat molestias, ad natus ex voluptates rem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aliquid beatae molestias, cupiditate ullam ab. Expedita est fuga quibusdam dolorum iste corporis libero veniam voluptas, alias facere id, voluptatibus quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus mollitia molestias, ea incidunt accusamus quaerat pariatur dolores consectetur ratione sed quis? Magni magnam vero similique porro mollitia omnis, exercitationem error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, repudiandae vel porro ea nihil consequatur nesciunt assumenda sit facere error repellat, velit similique mollitia accusantium? Iste, doloribus. Nobis, molestias omnis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem labore, laudantium nihil debitis quisquam fuga quod voluptatem. Sunt earum similique ratione saepe repellat labore laborum provident deleniti. Delectus, aliquam provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae error enim architecto tenetur ipsum voluptatem qui assumenda ea necessitatibus quasi libero odit laboriosam, officia aspernatur dolorum obcaecati earum molestias quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia excepturi dolor illum natus nobis voluptas in, saepe, id expedita quas magnam atque omnis quibusdam obcaecati cum nemo, commodi eius?",
 
 			"alt": "hola",
 
-			"srcset_1300": "assets/img/register_blog/moment-4.jpg",
-			"srcset": "assets/img/register_blog/moment-4.jpg",
-			"src": "assets/img/register_blog/moment-4.jpg",
+			"srcset_1300": "assets/articles/es/23-04-2022/img/webp/habilidades_vida_720.webp",
+			"srcset": "assets/articles/es/23-04-2022/img/webp/habilidades_vida_480.webp",
+			"src": "assets/articles/es/23-04-2022/img/habilidades_vida_720.jpg",
 
 			"static": false
 		},
 		{
-			"title": "Titulo de Articulo Tamaño Aprox pero mas largo para determinar sus limites",
+			"title": "El buen trato",
 
-			"link": "assets/Constancia-de-Trabajo-daniel.pdf",
+			"link": "assets/articles/es/23-04-2022/el_buen_trato.pdf",
 
-			"date": "2022-03-17",
+			"date": "2022-04-23",
 
-			"visual_date": "17 de marzo del 2022",
+			"visual_date": "23 de abril del 2022",
 
-			"text_preview": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate facilis unde, cumque repellendus adipisci sequi ratione ipsam aliquam tenetur suscipit voluptatibus molestias perspiciatis magnam magni...",
+			"text_preview": "Diversas investigaciones y estudios sobre la crianza de los hijos en la comunidad latina nos permiten saber que los padres tienden a repetir en sus hijos las prácticas de crianza que recibieron, por lo que...",
 
 			"text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente libero, temporibus repellat voluptatem totam vel tempora ipsa praesentium laudantium quaerat reiciendis quasi eum placeat architecto molestias consequatur quibusdam? Pariatur, velit.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste rerum ullam quis repellat quas laudantium nobis quia itaque reprehenderit, reiciendis et voluptas, odit maxime? Dolorem laboriosam deserunt in praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odio maxime nulla dolorum ratione nobis officia? Sit accusamus at, consequuntur eaque consequatur, sequi eos nam voluptas, vero enim illo molestias? Lorem ipsum, dolor sit amet consectetur adipisicing elit. At non aperiam reiciendis labore laborum molestiae asperiores sequi impedit nam dicta laboriosam possimus expedita quaerat molestias, ad natus ex voluptates rem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aliquid beatae molestias, cupiditate ullam ab. Expedita est fuga quibusdam dolorum iste corporis libero veniam voluptas, alias facere id, voluptatibus quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus mollitia molestias, ea incidunt accusamus quaerat pariatur dolores consectetur ratione sed quis? Magni magnam vero similique porro mollitia omnis, exercitationem error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, repudiandae vel porro ea nihil consequatur nesciunt assumenda sit facere error repellat, velit similique mollitia accusantium? Iste, doloribus. Nobis, molestias omnis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem labore, laudantium nihil debitis quisquam fuga quod voluptatem. Sunt earum similique ratione saepe repellat labore laborum provident deleniti. Delectus, aliquam provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae error enim architecto tenetur ipsum voluptatem qui assumenda ea necessitatibus quasi libero odit laboriosam, officia aspernatur dolorum obcaecati earum molestias quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia excepturi dolor illum natus nobis voluptas in, saepe, id expedita quas magnam atque omnis quibusdam obcaecati cum nemo, commodi eius?",
 
 			"alt": "hola",
 
-			"srcset_1300": "assets/img/register_blog/moment-4.jpg",
-			"srcset": "assets/img/register_blog/moment-4.jpg",
-			"src": "assets/img/register_blog/moment-4.jpg",
+			"srcset_1300": "assets/articles/es/23-04-2022/img/webp/buen_trato_720.webp",
+			"srcset": "assets/articles/es/23-04-2022/img/webp/buen_trato_480.webp",
+			"src": "assets/articles/es/23-04-2022/img/buen_trato_720.jpg",
 
 			"static": false
 		},
