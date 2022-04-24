@@ -112,7 +112,7 @@
 
 .title {
 	position: absolute;
-
+	font-family: 'Fugaz One', cursive;
 	color: var(--white);
 	width: 75%;
 	letter-spacing: 3px;
@@ -130,6 +130,7 @@
 @media (min-width: 1000px) {
 	.title {
 		font-size: calc(var(--letterSizeMedium) * 2);
-		width: 600px;
+		text-align: center;
+		width: 100%;
 	}
 }
