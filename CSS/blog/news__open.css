@@ -115,7 +115,9 @@
 /* Enlaces de articles */
 
 .open-articles--link {
+	display: inline-block;
 	word-break: break-all;
+	margin-bottom: 25px;
 }
 
 /* Item-list de articles */
