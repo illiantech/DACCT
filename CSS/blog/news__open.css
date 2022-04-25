@@ -118,6 +118,8 @@
 	word-break: break-all;
 }
 
+/* Item-list de articles */
+
 .open-articles--item-list {
 	margin-bottom: 25px;
 }
