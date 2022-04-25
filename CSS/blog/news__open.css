@@ -115,13 +115,11 @@
 /* Enlaces de articles */
 
 .open-articles--link {
-	display: inline-block;
-	width: 100%;
-	height: auto;
+	word-break: break-all;
 }
 
 .open-articles--item-list {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 @media (min-width: 1300px) {
