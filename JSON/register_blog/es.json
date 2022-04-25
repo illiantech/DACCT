@@ -3,7 +3,7 @@
 		{
 			"title": "Habilidades para la vida",
 
-			"link": "assets/articles/es/23-04-2022/habilidades_para_la_vida.pdf",
+			"link": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/habilidades_para_la_vida.pdf",
 
 			"date": "2022-04-23",
 
@@ -15,16 +15,16 @@
 
 			"alt": "hola",
 
-			"srcset_1300": "assets/articles/es/23-04-2022/img/webp/habilidades_vida_720.webp",
-			"srcset": "assets/articles/es/23-04-2022/img/webp/habilidades_vida_480.webp",
-			"src": "assets/articles/es/23-04-2022/img/habilidades_vida_720.jpg",
+			"srcset_1300": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/img/webp/habilidades_vida_720.webp",
+			"srcset": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/img/webp/habilidades_vida_480.webp",
+			"src": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/img/habilidades_vida_720.jpg",
 
 			"static": false
 		},
 		{
 			"title": "El buen trato",
 
-			"link": "assets/articles/es/23-04-2022/el_buen_trato.pdf",
+			"link": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/el_buen_trato.pdf",
 
 			"date": "2022-04-23",
 
@@ -36,9 +36,9 @@
 
 			"alt": "hola",
 
-			"srcset_1300": "assets/articles/es/23-04-2022/img/webp/buen_trato_720.webp",
-			"srcset": "assets/articles/es/23-04-2022/img/webp/buen_trato_480.webp",
-			"src": "assets/articles/es/23-04-2022/img/buen_trato_720.jpg",
+			"srcset_1300": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/img/webp/buen_trato_720.webp",
+			"srcset": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/img/webp/buen_trato_480.webp",
+			"src": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/img/buen_trato_720.jpg",
 
 			"static": false
 		},
