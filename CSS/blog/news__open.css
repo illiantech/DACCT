@@ -115,6 +115,9 @@
 /* Enlaces de articles */
 
 .open-articles--link {
+	display: inline-block;
+	width: 100%;
+	height: auto;
 }
 
 @media (min-width: 1300px) {
