@@ -119,7 +119,7 @@
 
 		/* coloca los elemntos en funcion del espacio disponible */
 
-		width: 335%;
+		width: 300%;
 		/* para desplazamiento a la izquierda previo */
 		margin-left: calc(-100% / 3);
 	}
