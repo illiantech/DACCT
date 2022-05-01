@@ -1,77 +1,77 @@
 {
-  "header": {
-    "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
+	"header": {
+		"alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
 
-    "title-active-menu": "Enable menu",
-    "title-desactive-menu": "Disable menu",
+		"title-active-menu": "Enable menu",
+		"title-desactive-menu": "Disable menu",
 
-    "title-nav-home": "Home",
-    "title-nav-about_us": "About us",
-    "title-nav-programs": "Programs",
-    "title-nav-events": "Events",
-    "title-nav-contacts": "Contact us",
-    "title-nav-donate": "Donate",
+		"title-nav-home": "Home",
+		"title-nav-about_us": "About us",
+		"title-nav-programs": "Programs",
+		"title-nav-events": "Events",
+		"title-nav-contacts": "Contact us",
+		"title-nav-donate": "Donate",
 
-    "nav-lang": "language",
-    "title-es": "Spanish",
-    "title-en": "English",
+		"nav-lang": "language",
+		"title-es": "Spanish",
+		"title-en": "English",
 
-    "alt-es": "Flag of The Dominican Republic",
-    "alt-en": "Flag of The United States"
-  },
-  "banner": {
-    "alt": "",
-    "title-principal": "ABOUT US"
-  },
+		"alt-es": "Flag of The Dominican Republic",
+		"alt-en": "Flag of The United States"
+	},
+	"banner": {
+		"alt": "",
+		"title-principal": "ABOUT US"
+	},
 
-  "what_is": {
-    "title": "What does The Dominican American Coalition of Connecticut do?",
-    "paragraph0": "Through the execution of human development programs, The Dominican American Coalition of Connecticut works for the benefit of the inhabitants of the State of Connecticut by applying models of social intervention that seek the transformation of people, applying the “Value-Art” method.",
-    "paragraph1": "In virtue of the above, it develops its social work through art focused on education, history, culture, social welfare, entrepreneurship and productivity. The work is done hand in hand with other social organizations and private enterprise."
-  },
+	"what_is": {
+		"title": "What does The Dominican American Coalition of Connecticut do?",
+		"paragraph0": "Through the execution of human development programs, The Dominican-American Coalition of Connecticut works for the benefit of the inhabitants of the State of Connecticut by applying models of social intervention that seeks the transformation of people, applying the “valor-arte” method, which means give “VALUE” to people through the “ARTS”.",
+		"paragraph1": "In virtue of the above, it develops its social work through the arts focused on education, history, culture, social welfare, entrepreneurship, and productivity. The work is done hand-in-hand with other social organizations and private enterprise."
+	},
 
-  "objects": {
-    "title": "What is the specific objective of the organization?",
-    "paragraph": "To work on issues that affect the development of Connecticut residents without discrimination in the areas of education and at the same time in activities that promote the cultural roots, diversity and history of the communities."
-  },
+	"objects": {
+		"title": "What is the specific objective of the organization?",
+		"paragraph": "To work on issues that affect the development of Connecticut residents without discrimination in the areas of education and at the same time in activities that promote the cultural roots, diversity, and history of the communities."
+	},
 
-  "mision": {
-    "alt": "group of people in a meeting room working on the mission of their project",
-    "title": "MISSION",
-    "paragraph": "To work towards a more united Connecticut through social service assistance programs, cultural celebration and advocating for educational options."
-  },
+	"mision": {
+		"alt": "group of people in a meeting room working on the mission of their project",
+		"title": "MISSION",
+		"paragraph": "To work towards a more united Connecticut through social service assistance programs, cultural celebration, and advocating for educational options."
+	},
 
-  "vision": {
-    "alt": "group of people in a meeting room planning the vision of their project",
-    "title": "VISSION",
-    "paragraph": "to be the highest value provider in community support, culture integration, conservation of their folklore and help in the development of the people of the community."
-  },
+	"vision": {
+		"alt": "group of people in a meeting room planning the vision of their project",
+		"title": "VISSION",
+		"paragraph": "To be the most valuable provider in community support, culture integration, conservation of their folklore, and help in the development of the people of our community."
+	},
 
-  "team": {
-    "title": "About us",
-    "alt-general": "team work",
+	"team": {
+		"title": "About us",
+		"alt-general": "team work",
 
-    "name0": "Jonatan Soto",
-    "hierarchy0": "<em>Member of the board</em>",
+		"name0": "Jonatan Soto",
+		"hierarchy0": "<em>Member of the board</em>",
 
-    "name1": "Jacquelina Santos",
-    "hierarchy1": "<em>Treasurer</em>",
+		"name1": "Jacquelina Santos",
+		"hierarchy1": "<em>Treasurer</em>",
 
-    "name2": "Juan Moreno",
-    "hierarchy2": "<em>Sergeant at Arms</em>",
+		"name2": "Juan Moreno",
+		"hierarchy2": "<em>Sergeant at Arms</em>",
 
-    "name3": "Dorca Hernandez",
-    "hierarchy3": "<em>Member of the board</em>",
+		"name3": "Dorca Hernandez",
+		"hierarchy3": "<em>Member of the board</em>",
 
-    "name4": "Viviana Placido",
-    "hierarchy4": "<em>Director of Events and Logistics</em>"
-  },
+		"name4": "Viviana Placido",
+		"hierarchy4": "<em>Director of Events and Logistics</em>"
+	},
 
-  "footer": {
-    "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
+	"footer": {
+		"alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
 
-    "title-email": "Send email",
+		"title-email": "Send email",
 
-    "paragraph": "The Dominican-American Coalition is a non profit organization with the code 501 C 3."
-  }
+		"paragraph": "The Dominican-American Coalition is a non profit organization with the code 501 C 3."
+	}
 }

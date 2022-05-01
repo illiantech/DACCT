@@ -11,9 +11,7 @@ const blocksContent = document.querySelectorAll('[data-section]');
 const translate = async (lang) => {
 	// objeto JSON
 	// la ruta del fetch esta sujeta a cambio en funcion al hosting
-	const objectTranslate = await fetch(
-		`https://kanutegx.github.io/DACCT/JSON/${routeLang}/${lang}.json`
-	).then((res) => res.json());
+	const objectTranslate = await fetch(`https://kanutegx.github.io/DACCT/JSON/${routeLang}/${lang}.json`).then((res) => res.json());
 
 	// iteracion de bloques de contenido para agregar datos del objeto a partir del indice del mismo
 	for (const blockContent of blocksContent) {
@@ -51,8 +49,7 @@ const translate = async (lang) => {
 // No se coloca solo un "else" porque si recarga la pagina y el valor no es "es" se ejecutara la funcion incluso ya tiendo el idioma en ingles por defecto
 
 if (localStorage.getItem('lang') === 'es') translate(localStorage.getItem('lang'));
-else if (localStorage.getItem('lang') === 'en')
-	translate(localStorage.getItem('lang'));
+else if (localStorage.getItem('lang') === 'en') translate(localStorage.getItem('lang'));
 
 // declaracion del click para cambio de idioma
 

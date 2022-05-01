@@ -1,59 +1,59 @@
 {
-  "header": {
-    "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
+	"header": {
+		"alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
 
-    "title-active-menu": "Enable menu",
-    "title-desactive-menu": "Disable menu",
+		"title-active-menu": "Enable menu",
+		"title-desactive-menu": "Disable menu",
 
-    "title-nav-home": "Home",
-    "title-nav-about_us": "About us",
-    "title-nav-programs": "Programs",
-    "title-nav-events": "Events",
-    "title-nav-contacts": "Contact us",
-    "title-nav-donate": "Donate",
+		"title-nav-home": "Home",
+		"title-nav-about_us": "About us",
+		"title-nav-programs": "Programs",
+		"title-nav-events": "Events",
+		"title-nav-contacts": "Contact us",
+		"title-nav-donate": "Donate",
 
-    "nav-lang": "language",
-    "title-es": "Spanish",
-    "title-en": "English",
+		"nav-lang": "language",
+		"title-es": "Spanish",
+		"title-en": "English",
 
-    "alt-es": "Flag of The Dominican Republic",
-    "alt-en": "Flag of The United States"
-  },
-  "banner": {
-    "alt": "",
-    "title-principal": "PROGRAMS"
-  },
-  "programs0": {
-    "alt-svg": "Two hands joined together",
-    "alt": "Group of young people and elderly people sharing and learning values for healthy coexistance to reinforce family bonds",
+		"alt-es": "Flag of The Dominican Republic",
+		"alt-en": "Flag of The United States"
+	},
+	"banner": {
+		"alt": "",
+		"title-principal": "PROGRAMS"
+	},
+	"programs0": {
+		"alt-svg": "Two hands joined together",
+		"alt": "Group of young people and elderly people sharing and learning values for healthy coexistance to reinforce family bonds",
 
-    "paragraph": "This program was born from the hand of United Healthcare, Gala Foods Supermarket and the Be Well Kairos Foundation as a response to the imperative need to bring the aging population with early childhood to share experience, anecdotes and values grandparents to children and art, joy and affection of children to grandparents, this in order to strengthen family ties in a world that is slowly beginning to suffer from them.<br /><br /> Our older adults are motivated through talks by different specialists on topics such as: metabolism, nutrition, financial education, psychology, etc. In addition to artistic presentations, raffles, dynamics, refreshments and the love of the volunteers of our organization."
-  },
-  "programs1": {
-    "alt-svg": "First aid kit with medicines",
-    "alt": "people in a storage managing the food for the social program CODAC",
+		"paragraph": "This program was born from the collaboration of United Healthcare, Gala Foods Supermarket, and the BeWell Kairos Foundation as a response to the imperative need to bring the aging population a connection with our younger generations to share experience, anecdotes, and life values of grandparents. In return our children bring them joy through the arts and the affection to the elderly. This will strengthen family ties in a world that is slowly beginning to suffer from personal connections.<br /><br />Our older adults are motivated through talks by different specialists on topics such as: metabolism, nutrition, financial education, psychology, etc. In addition to artistic presentations, they also benefit from raffles, games, refreshments and the love of the volunteers of our organization."
+	},
+	"programs1": {
+		"alt-svg": "First aid kit with medicines",
+		"alt": "people in a storage managing the food for the social program CODAC",
 
-    "paragraph": "Is the name of the social assistance program with which we benefit dozens of Connecticut residents, with immigration applications, translations, notaries, rent, food among others.<br /><br /> The coalition relies on the professional and valuable work of 2 social workers who address all kinds of problems on Mondays and Tuesdays."
-  },
-  "programs2": {
-    "alt-svg": "Responsible finances to learn to manage your money better",
-    "alt": "financial analysis to learn to better manage personal finances en small businesses",
+		"paragraph": "Our social assistance program with which we benefit dozens of Connecticut residents with immigration applications, translations, notaries, rent, food, among other services.<br /><br />The coalition relies on the professional and valuable work of 2 social workers who address all kinds of questions and forms during the week."
+	},
+	"programs2": {
+		"alt-svg": "Responsible finances to learn to manage your money better",
+		"alt": "financial analysis to learn to better manage personal finances en small businesses",
 
-    "title": "My Finances",
-    "paragraph": "<p class='programs-list--paragraph'>Our Financial Education and Personal Development Program seeks to promote financial stability in the community. The more knowledge people have about credit and banking services, the better decisions they will make regarding money matters, saving money and improving their financial condition and wellbeing. Some of our workshops include:</p><ul><li>Personal Finance.</li><li>Finance and small business development.</li><li>Women's Entrepreneurship.</li><li>Job Search Tools.</li></ul>"
-  },
-  "programs3": {
-    "alt-svg": "Alliance between people with their hands on their hearts",
-    "alt": "people forming an alliance with the purpose of offering value to society",
+		"title": "My Finances",
+		"paragraph": "<p class='programs-list--paragraph'>Our program seeks to promote financial stability in the community by providing financial literacy. The more knowledge people have about credit and financial services, the better decisions they will be able make regarding money matters, saving money, and improving their financial conditions and well-being. Some of our workshops include:</p><ul><li>Budgeting.</li><li>Finance and small business development.</li><li>Women's Entrepreneurship.</li><li>Job Search Tools.</li><li>First time home buyer seminars.</li><li>Credit repair.</li><li>Financial education for children and adults.</li></ul>"
+	},
+	"programs3": {
+		"alt-svg": "Alliance between people with their hands on their hearts",
+		"alt": "people forming an alliance with the purpose of offering value to society",
 
-    "title": "Co Alliance",
-    "paragraph": "Our Co-Alliance program seeks to establish partnerships with social and private organizations on issues relevant to the communities, with the objective of sharing knowledge, programs and resources with these entities. <br /><br />In alliance with LEAD, we developed our “ESL” program where our volunteers and beneficiaries are trained in the English language to open doors to better professional opportunities."
-  },
-  "footer": {
-    "alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
+		"title": "Co Alliance",
+		"paragraph": "Our Co-Alliance program seeks to establish partnerships with social and private organizations on issues relevant to the communities with the objective of sharing knowledge, programs, and resources with these entities."
+	},
+	"footer": {
+		"alt-logo": "Logo with flags of The Dominican Republic and The United States where they make a social contribution in Connecticut",
 
-    "title-email": "Send email",
+		"title-email": "Send email",
 
-    "paragraph": "The Dominican-American Coalition is a non profit organization with the code 501 C 3."
-  }
+		"paragraph": "The Dominican-American Coalition is a non profit organization with the code 501 C 3."
+	}
 }
