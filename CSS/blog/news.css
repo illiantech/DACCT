@@ -25,7 +25,8 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
-	height: 6000px;
+	/* son 6000px */
+	height: 2000px;
 }
 
 .blog--list-item {
@@ -228,7 +229,8 @@
 		height: auto;
 		display: grid;
 		grid-template-columns: var(--width) var(--width);
-		grid-template-rows: repeat(5, 600px);
+		/* son 5 filas*/
+		grid-template-rows: repeat(2, 600px);
 	}
 }
 
@@ -236,7 +238,8 @@
 	.blog--list {
 		--width: 1000px;
 		display: flex;
-		height: 4500px;
+		/* son 4500px */
+		height: 1500px;
 	}
 
 	.blog--list-item {
