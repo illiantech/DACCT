@@ -112,13 +112,19 @@
 
 .title {
 	position: absolute;
-	font-family: 'Fugaz One', cursive;
+	font-family: 'ITC Edwardian Script W04 Reg', 'Outfit', sans-serif;
 	color: var(--white);
 	width: 75%;
-	letter-spacing: 3px;
+	letter-spacing: 5px;
+	font-size: var(--letterSizeTitle);
 	margin-bottom: 0;
 	margin-top: 0;
-	text-align: left;
+}
+
+.title span {
+	display: inline-block;
+	height: 1px;
+	width: 1px;
 }
 
 @media (min-width: 600px) {
@@ -129,7 +135,7 @@
 
 @media (min-width: 1000px) {
 	.title {
-		font-size: calc(var(--letterSizeMedium) * 2);
+		font-size: calc(var(--letterSizeTitle) * 1.5);
 		text-align: center;
 		width: 100%;
 	}
