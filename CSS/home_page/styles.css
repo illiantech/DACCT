@@ -112,19 +112,13 @@
 
 .title {
 	position: absolute;
-	font-family: 'ITC Edwardian Script W04 Reg', 'Outfit', sans-serif;
+	font-family: 'Ballet', 'Outfit', sans-serif;
 	color: var(--white);
 	width: 75%;
 	letter-spacing: 5px;
 	font-size: var(--letterSizeTitle);
 	margin-bottom: 0;
 	margin-top: 0;
-}
-
-.title span {
-	display: inline-block;
-	height: 1px;
-	width: 1px;
 }
 
 @media (min-width: 600px) {
