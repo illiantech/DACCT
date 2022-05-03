@@ -63,5 +63,3 @@ languageContainer.addEventListener('click', (e) => {
 		localStorage.setItem('lang', `${language}`);
 	}
 });
-
-localStorage.clear();
