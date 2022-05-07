@@ -41,7 +41,6 @@
 }
 
 :root::-webkit-scrollbar-button:increment,
-.contenedor::-webkit-scrollbar-button,
 .nav::-webkit-scrollbar-button:increment,
 .blog--article::-webkit-scrollbar-button:increment {
 	display: none;

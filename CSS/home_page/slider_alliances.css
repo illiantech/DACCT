@@ -25,7 +25,7 @@
 	display: flex;
 	/* solo cambiar un valor para redimensionar todo */
 
-	height: 100%;
+	height: 105%;
 }
 
 .alliance--list-item,
@@ -64,6 +64,7 @@
 /* slider con CSS en movil */
 
 @media (max-width: 999px) {
+	/* Slider elastic CSS*/
 	.alliance--list__mobile {
 		overflow-x: scroll;
 		scroll-snap-type: x mandatory;
@@ -71,6 +72,34 @@
 
 	.alliance--list__mobile .alliance--list-item {
 		scroll-snap-align: center;
+	}
+
+	/* personalize scroll bar */
+
+	.alliance--list__mobile::-webkit-scrollbar {
+		-webkit-appearance: none;
+	}
+
+	.alliance--list__mobile::-webkit-scrollbar:vertical {
+		width: 0.5rem;
+	}
+
+	.alliance--list__mobile::-webkit-scrollbar-button:increment {
+		display: none;
+	}
+
+	.alliance--list__mobile::-webkit-scrollbar:horizontal {
+		height: 10px;
+	}
+
+	.alliance--list__mobile::-webkit-scrollbar-thumb {
+		background-color: var(--colorSecundario);
+		border-radius: 20px;
+		border: 2px solid var(--white);
+	}
+
+	.alliance--list__mobile::-webkit-scrollbar-track {
+		border-radius: 10px;
 	}
 }
 
