@@ -51,15 +51,15 @@
 		"title": "About us",
 		"alt-general": "team work",
 
-		"hierarchy0": "<em>Member of the board</em>",
+		"hierarchy0": "",
 
-		"hierarchy1": "<em>Treasurer</em>",
+		"hierarchy1": "<em>Member of the board</em>",
 
-		"hierarchy2": "<em>Sergeant at Arms</em>",
+		"hierarchy2": "<em>Treasurer</em>",
 
-		"hierarchy3": "<em>Member of the board</em>",
+		"hierarchy3": "",
 
-		"hierarchy4": "<em>Director of Events and Logistics</em>"
+		"hierarchy4": ""
 	},
 
 	"footer": {

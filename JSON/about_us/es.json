@@ -46,15 +46,15 @@
 		"title": "¿Quienes Somos?",
 		"alt-general": "equipo de trabajo",
 
-		"hierarchy0": "<em>Miembro de la Junta Directiva</em>",
+		"hierarchy0": "",
 
-		"hierarchy1": "<em>Tesorera</em>",
+		"hierarchy1": "<em>Miembro de la Junta Directiva</em>",
 
-		"hierarchy2": "<em>Sargento de Armas</em>",
+		"hierarchy2": "<em>Tesorera</em>",
 
-		"hierarchy3": "<em>Miembro de la Junta Directiva</em>",
+		"hierarchy3": "",
 
-		"hierarchy4": "<em>Directora de Eventos y logística</em>"
+		"hierarchy4": ""
 	},
 	"footer": {
 		"alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",

@@ -75,7 +75,7 @@
 .team-article--paragraph {
 	margin-top: 0;
 	margin-bottom: 10px;
-	font-size: calc(var(--letterSizeSmall) * 1.1);
+	font-size: var(--letterSizeSmall);
 	font-weight: 400;
 	/* regular */
 	font-style: normal;
