@@ -33,22 +33,19 @@ setInterval(() => {
 
 const blogList = document.getElementById('blogList');
 
-const blogListArray = Array.from(blogList.children);
+blogList.addEventListener('click', (e) => {
+	const open = e.target.dataset.open;
 
-blogListArray.forEach((item, index) => {
-	const itemButtom = item.firstElementChild.lastElementChild;
-
-	itemButtom.addEventListener('click', (e) => {
+	if (open) {
 		history.pushState(
 			{
-				validOpenBlog: index
+				validOpenBlog: open
 			},
 			'',
 			'blog.html'
 		);
-		// NO CONSIDERA EL PUSHSTATE COMO UN CAMBIO DE ESTADO DE POPSTATE
-		// no se recarga porque ya lo hacemos con href
-	});
+		history.go();
+	}
 });
 
 // redireccion a blog cuando accede desde home page con las flechas del navegador.

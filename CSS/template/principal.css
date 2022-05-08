@@ -2,6 +2,11 @@
 
 * {
 	box-sizing: border-box;
+
+	/* in firefox */
+
+	scrollbar-width: thin;
+	scrollbar-color: var(--colorSecundario) var(--white);
 }
 
 :root {
@@ -23,6 +28,7 @@
 }
 
 /* scroll */
+/* in webkit/blink (chromium) */
 /* investigar a profundidad */
 
 :root::-webkit-scrollbar,

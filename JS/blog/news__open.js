@@ -12,15 +12,14 @@ if (history.state != null) {
 
 blogList.addEventListener('click', (e) => {
 	const open = e.target.dataset.open;
-	if (open != undefined) {
-		if (open == 'active') {
-			const item = e.target.parentElement.parentElement.parentElement.parentElement;
 
-			item.classList.add('blog--list-item__open');
-		} else {
-			const item = e.target.parentElement;
-			item.classList.remove('blog--list-item__open');
-		}
+	if (open == 'active') {
+		const item = e.target.parentElement.parentElement.parentElement.parentElement;
+
+		item.classList.add('blog--list-item__open');
+	} else if (open == 'desactive') {
+		const item = e.target.parentElement;
+		item.classList.remove('blog--list-item__open');
 	}
 });
 
