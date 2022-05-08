@@ -46,15 +46,15 @@
 		"title": "¿Quienes Somos?",
 		"alt-general": "equipo de trabajo",
 
-		"hierarchy0": "",
+		"hierarchy0": "<em>Presidenta</em>",
 
 		"hierarchy1": "<em>Miembro de la Junta Directiva</em>",
 
 		"hierarchy2": "<em>Tesorera</em>",
 
-		"hierarchy3": "",
+		"hierarchy3": "<em>Directora Ejecutiva</em>",
 
-		"hierarchy4": ""
+		"hierarchy4": "<em>Secretaria Administrativa</em>"
 	},
 	"footer": {
 		"alt-logo": "Logo de banderas de republica dominicana y estados unidos donde se trabaja en una contribucion social en Connecticut",

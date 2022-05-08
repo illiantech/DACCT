@@ -51,15 +51,15 @@
 		"title": "About us",
 		"alt-general": "team work",
 
-		"hierarchy0": "",
+		"hierarchy0": "<em>President</em>",
 
 		"hierarchy1": "<em>Member of the board</em>",
 
 		"hierarchy2": "<em>Treasurer</em>",
 
-		"hierarchy3": "",
+		"hierarchy3": "<em>Executive director</em>",
 
-		"hierarchy4": ""
+		"hierarchy4": "<em>Administrative secretary</em>"
 	},
 
 	"footer": {
