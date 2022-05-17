@@ -1,20 +1,159 @@
 .wave {
-  background-image: url(../../assets/img/svg/contactanos/wave_contactanos.svg);
+	background-image: url(../../assets/img/svg/contactanos/wave_contactanos.svg);
 }
 
 /* border Indicator */
 .list--item:nth-child(6) > a {
-  border-bottom: 3px solid var(--colorSecundario);
+	border-bottom: 3px solid var(--colorSecundario);
 }
 
 /* ----- */
-.contac{
-  width: 100%;
+
+/* form-block ----- block*/
+
+.form-block {
+	position: relative;
+	z-index: 10;
+	width: 90vw;
+	height: 860px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	background-color: hsl(228, 4%, 76%);
+	border-radius: 20px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.contact-form{
-  width: 100%;
-  height: 1000px;
-  margin-bottom: -10%;
-  position: relative;
-  z-index: 1000;
+
+.form-block::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background-color: var(--colorPrimario);
+}
+
+/* form-block group-information ----- block */
+
+.form-block--group-information {
+	position: relative;
+	background-color: #fff;
+	width: 70%;
+	height: 200px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	margin-bottom: 10px;
+}
+
+.form-block--group-information h3 {
+	margin-top: 15px;
+	margin-bottom: 25px;
+	text-align: center;
+	color: var(--colorPrimario2);
+	font-size: var(--letterSizeMedium);
+	letter-spacing: 2px;
+}
+
+.form-block--group-information p {
+	width: 80%;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.form-block--group-information p i {
+	color: var(--colorPrimario2);
+	margin-right: 10px;
+}
+
+/* form-block group-form ----- block */
+
+.form-block--group-inputs {
+	width: 80%;
+	position: relative;
+}
+
+.form-block--group-inputs label {
+	display: block;
+	width: 150px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: var(--colorPrimario2);
+}
+
+/* textarea comun style with inputs*/
+
+.form-block--group-inputs input,
+.form-block--group-inputs textarea {
+	width: 100%;
+	height: 40px;
+	border-radius: 10px;
+	outline: none;
+	border: 3px solid transparent;
+	transition: border 0.2s;
+}
+
+/* textarea */
+
+.form-block--group-inputs textarea {
+	resize: none;
+	height: 200px;
+	margin-bottom: 25px;
+}
+
+/* inputs text focus */
+
+.form-block--group-inputs input:nth-last-of-type(n + 2):focus,
+.form-block--group-inputs textarea:focus {
+	border: 3px solid var(--colorPrimario);
+}
+
+/* submit */
+
+.form-block--group-inputs input:last-of-type {
+	margin-top: 33.4px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	color: var(--colorSecundario);
+	font-weight: bold;
+}
+
+/* submit hover */
+
+.form-block--group-inputs input:last-of-type:hover {
+	border: 3px solid var(--colorSecundario);
+}
+
+.form-block--group-inputs p {
+	width: 100%;
+	margin: 0;
+	color: red;
+	position: absolute;
+	font-size: 0.8rem;
+	/* pending */
+	opacity: 0;
+}
+
+/* message submit */
+
+.form-block--group-inputs p:nth-last-of-type(2) {
+	width: 210px;
+	text-align: center;
+	font-size: var(--letterSizeSmall);
+	background-color: var(--colorSecundario);
+	color: var(--white);
+	left: calc(50% - 105px);
+}
+
+.form-block--group-inputs p:last-of-type {
+	text-align: center;
+	top: calc(100% + 15px);
+	font-size: var(--letterSizeSmall);
+	color: blue;
 }
