@@ -95,6 +95,7 @@
 	outline: none;
 	border: 3px solid transparent;
 	transition: border 0.2s;
+	background-color: #fff;
 }
 
 /* textarea */
