@@ -36,7 +36,7 @@ const filterSearch = () => {
 			link.classList.add('list-blog--item-title');
 
 			link.textContent = article.title;
-			link.title = 'Abrir artículo';
+			link.title = articles[0].open_article;
 			link.href = article.link;
 			link.target = '_blank';
 
@@ -61,7 +61,7 @@ const filterSearch = () => {
 	if (list.children.length === 0) {
 		// en caso de que no ninguna key coinsida
 		const item = document.createElement('li');
-		item.textContent = 'Articulo no encontrado...';
+		item.textContent = articles[0].none_article;
 		item.classList.add('list-blog--item__undefined');
 		// agregar alerta en lista
 		list.append(item);

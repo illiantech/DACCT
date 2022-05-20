@@ -1,6 +1,10 @@
 {
 	"articles": [
 		{
+			"open_article": "Abrir artículo",
+
+			"none_article": "Artículo no encontrado...",
+
 			"title": "Habilidades para la vida",
 
 			"link": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/habilidades_para_la_vida.pdf",

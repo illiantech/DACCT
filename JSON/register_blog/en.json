@@ -1,7 +1,11 @@
 {
 	"articles": [
 		{
-			"title": "LifeSkills",
+			"open_article": "Open article",
+
+			"none_article": "Article not found...",
+
+			"title": "Life Skills",
 
 			"link": "https://kanutegx.github.io/DACCT/assets/articles/en/23-04-2022/good_treatment.pdf",
 
