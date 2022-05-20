@@ -34,11 +34,11 @@
 		"email-validator": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 
 		"message": "Mensaje:",
-		"message-input": "Danos tus ideas",
+		"message-input": "Comparte tus ideas",
 
 		"submit": "Enviar",
 		"submit-error": "ERROR: Datos incorrectos",
-		"submit-send": "Tu formulario se ha enviado exitosamente"
+		"submit-send": "Tu formulario se ah enviado exitosamente"
 	},
 	"info-form": {
 		"title": "Información",

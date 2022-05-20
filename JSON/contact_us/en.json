@@ -34,7 +34,7 @@
 		"email-validator": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 
 		"message": "Message:",
-		"message-input": "Give us your ideas",
+		"message-input": "Share your ideas",
 
 		"submit": "Send",
 		"submit-error": "ERROR: Incorrect data",
