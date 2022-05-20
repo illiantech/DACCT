@@ -125,6 +125,7 @@
 	width: 50%;
 	color: var(--colorSecundario);
 	font-weight: bold;
+	cursor: pointer;
 }
 
 .form-block--group-inputs p {

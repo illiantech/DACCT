@@ -1,20 +1,22 @@
+const regExpName = /^[a-z]+\s?([a-z]+?\s?){1,}$/i;
+
+const regExpEmail =
+	/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/;
+
 const btn = document.getElementById('button');
 
 form.addEventListener('submit', function (event) {
 	event.preventDefault();
 
-	btn.value = 'Sending...';
-
+	// Elementos de la libreria Email JS
 	const serviceID = 'default_service';
 	const templateID = 'template_o7vzfkj';
 
 	emailjs.sendForm(serviceID, templateID, this).then(
 		() => {
-			btn.value = 'Send Email';
 			alert('Sent!');
 		},
 		(err) => {
-			btn.value = 'Send Email';
 			alert(JSON.stringify(err));
 		}
 	);
