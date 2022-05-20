@@ -23,7 +23,25 @@
 		"alt": "",
 		"title-principal": "CONTACT US"
 	},
+	"form": {
+		"name": "Full name:",
+		"name-validator": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+
+		"required": "Mandatory field",
+
+		"email": "Email:",
+		"email-input": "example@gmail.com",
+		"email-validator": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+
+		"message": "Message:",
+		"message-input": "Give us your ideas",
+
+		"submit": "Send",
+		"submit-error": "ERROR: Incorrect data",
+		"submit-send": "Your form was successfully submitted"
+	},
 	"info-form": {
+		"title": "Information",
 		"paragraph": "<strong>Be a volunteer!</strong> The objective of The Dominican American Coalition of Connecticut is to educate and improve the quality of life of many people. Thanks to people like you we'll be able to reach our goals. If you have time to collaborate in our projects, Contact us and become a volunteer!"
 	},
 	"footer": {

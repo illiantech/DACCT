@@ -23,7 +23,25 @@
 		"alt": "",
 		"title-principal": "CONTÁCTANOS"
 	},
+	"form": {
+		"name": "Nombre completo:",
+		"name-validator": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+
+		"required": "Campo obligatorio",
+
+		"email": "Correo:",
+		"email-input": "ejemplo@gmail.com",
+		"email-validator": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+
+		"message": "Mensaje:",
+		"message-input": "Danos tus ideas",
+
+		"submit": "Enviar",
+		"submit-error": "ERROR: Datos incorrectos",
+		"submit-send": "Tu formulario se ha enviado exitosamente"
+	},
 	"info-form": {
+		"title": "Información",
 		"paragraph": "<strong>¡Hazte voluntario!</strong> El objetivo de La Coalicion Dominico Americana de Connecticut es de educar y mejorar la calidad de vida de muchas personas. Gracias a tí seremos capaces de alcanzar nuestras metas. Si tienes tiempo para colaborar en nuestros proyectos, ¡Contactanos y hazte voluntario!"
 	},
 	"footer": {

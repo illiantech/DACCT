@@ -73,34 +73,6 @@
 	.alliance--list__mobile .alliance--list-item {
 		scroll-snap-align: center;
 	}
-
-	/* personalize scroll bar */
-
-	.alliance--list__mobile::-webkit-scrollbar {
-		-webkit-appearance: none;
-	}
-
-	.alliance--list__mobile::-webkit-scrollbar:vertical {
-		width: 0.5rem;
-	}
-
-	.alliance--list__mobile::-webkit-scrollbar-button:increment {
-		display: none;
-	}
-
-	.alliance--list__mobile::-webkit-scrollbar:horizontal {
-		height: 10px;
-	}
-
-	.alliance--list__mobile::-webkit-scrollbar-thumb {
-		background-color: var(--colorSecundario);
-		border-radius: 20px;
-		border: 2px solid var(--white);
-	}
-
-	.alliance--list__mobile::-webkit-scrollbar-track {
-		border-radius: 10px;
-	}
 }
 
 @media (min-width: 1000px) {

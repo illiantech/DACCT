@@ -24,6 +24,9 @@ const translate = async (lang) => {
 		else if (blockContent.hasAttribute('placeholder'))
 			// colocar placeholder para los inputs
 			blockContent.placeholder = objectTranslate[section][content];
+		else if (blockContent.hasAttribute('value'))
+			// colocar values para los inputs
+			blockContent.value = objectTranslate[section][content];
 		else if (blockContent.hasAttribute('title') && blockContent.hasChildNodes()) {
 			// colocar en titles con nodos hijos
 			if (blockContent.firstChild.nodeName == '#text') {

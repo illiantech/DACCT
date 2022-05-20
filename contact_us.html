@@ -204,43 +204,34 @@
 
 			<form class="form-block" id="form">
 				<div class="form-block--group-information">
-					<h3>Information</h3>
+					<h3 data-section="info-form" data-content="title">Information</h3>
 					<p><i class="fa-solid fa-phone"></i>+1 203-913-5370</p>
 					<p><i class="fa-solid fa-location-dot"></i>853 Fairfield Ave 2nd Bridgeport CT 06605</p>
 					<p><i class="fa-solid fa-envelope"></i>contact@dacct.org</p>
 				</div>
 				<div class="form-block--group-inputs">
-					<label for="name">Full name:</label>
+					<label data-section="form" data-content="name" for="name">Full name:</label>
 
-					<input id="name" class="name" type="text" name="Name" />
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-					<p>Mandatory field</p>
+					<input placeholder="Jhon Smith" id="name" class="name" type="text" name="Name" />
+					<p data-section="form" data-content="name-validator">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p data-section="form" data-content="required">Mandatory field</p>
 
-					<label for="email">Email:</label>
+					<label data-section="form" data-content="email" for="email">Email:</label>
 
-					<input id="email" type="text" name="Email" />
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-					<p>Mandatory field</p>
+					<input data-section="form" data-content="email-input" placeholder="example@gmail.com" id="email" type="text" name="Email" />
+					<p data-section="form" data-content="email-validator">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p data-section="form" data-content="required">Mandatory field</p>
 
-					<label for="message">Message:</label>
+					<label data-section="form" data-content="message" for="message">Message:</label>
 
-					<textarea name="Message" id="message"></textarea>
+					<textarea data-section="form" data-content="message-input" placeholder="Give us your ideas" name="Message" id="message"></textarea>
 
-					<p>ERROR: Incorrect data</p>
-					<input type="submit" value="send" />
-					<p>Your form was successfully submitted</p>
+					<p data-section="form" data-content="submit-error">ERROR: Incorrect data</p>
+					<input data-section="form" data-content="submit" id="button" type="submit" value="Send" />
+					<p data-section="form" data-content="submit-send">Your form was successfully submitted</p>
 				</div>
-
-				<!-- <input type="hidden" name="_next" value="http://127.0.0.1:5501/contact_us.html" />
-				<input type="hidden" name="_captcha" value="false" /> -->
 			</form>
-			<script>
-				const form = document.getElementById('form');
 
-				form.addEventListener('submit', (e) => {
-					e.preventDefault();
-				});
-			</script>
 			<!-- fin contacto -->
 
 			<div class="container-paragraph">
@@ -313,6 +304,19 @@
 		<!-- Scripts JS -->
 		<script src="JS/template/load.js"></script>
 		<script src="JS/template/menu.js"></script>
+
+		<!-- validator form Email JS -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+		<script type="text/javascript">
+			emailjs.init('jd6wTODeJiFTDdn8m');
+		</script>
+
+		<!-- validator my script -->
+
+		<script src="JS/contacts/form_validator.js"></script>
+		<!-- END -->
+
 		<script src="JS/template/lang.js"></script>
 	</body>
 </html>
