@@ -95,9 +95,14 @@
 	border-radius: 15px;
 	outline: none;
 	border: 3px solid transparent;
-	transition: border 0.2s;
 	background-color: #fff;
 	margin-bottom: 5px;
+	transition: border 0.2s;
+}
+
+/* example */
+.invalid {
+	color: blueviolet;
 }
 
 /* textarea */
@@ -134,10 +139,37 @@
 	color: red;
 	position: absolute;
 	font-size: 0.8rem;
-	/* pending */
 	opacity: 0;
+	transition: opacity 0.2s;
 }
 
+/* invalid modifier NAME */
+
+.form-block--group-inputs__name-invalid p:first-of-type {
+	opacity: 1;
+}
+
+.form-block--group-inputs__name-invalid input:first-of-type {
+	border: 3px solid red;
+}
+
+.form-block--group-inputs__name-invalid input:first-of-type:focus {
+	border: 3px solid red;
+}
+
+/* invalid modifier EMAIL */
+
+.form-block--group-inputs__email-invalid p:nth-of-type(3) {
+	opacity: 1;
+}
+
+.form-block--group-inputs__email-invalid input:nth-of-type(2) {
+	border: 3px solid red;
+}
+
+.form-block--group-inputs__email-invalid input:nth-of-type(2):focus {
+	border: 3px solid red;
+}
 /* message submit */
 
 .form-block--group-inputs p:nth-last-of-type(2) {

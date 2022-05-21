@@ -1,7 +1,23 @@
-const regExpName = /^[a-z]+\s?([a-z]+?\s?){1,}$/i;
+const regExp = {
+	name: /^([a-záéíóúñ]\s?){1,}$/i,
+	email:
+		/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/
+};
 
-const regExpEmail =
-	/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/;
+// funtion validator inputs
+
+const form = document.getElementById('form');
+
+const validator = (e) => {
+	const element = e.target;
+	const validator = element.dataset.validator;
+
+	if (validator) form.classList.toggle(`form-block--group-inputs__${validator}-invalid`, regExp[validator].test(element.value) != true);
+};
+
+form.addEventListener('input', validator);
+
+// submit button
 
 const btn = document.getElementById('button');
 

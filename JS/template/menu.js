@@ -1,4 +1,5 @@
 // Menu menos de 1300 px
+
 const menuActive = document.getElementById('menu-active');
 const menuDesac = document.getElementById('menu-desactive');
 const menuNav = document.getElementById('menu-nav');
@@ -11,13 +12,12 @@ menuDesac.addEventListener('click', (e) => {
 	menuNav.classList.remove('menu__start');
 });
 
-// remover menu al clicar fuera de el
+// remover menu al clicar afuera del mismo
 
-menuNav.addEventListener('mouseleave', () => {
-	const main = document.getElementById('main');
-	main.addEventListener('mousedown', () => {
-		menuNav.classList.remove('menu__start');
-	});
+const main = document.getElementById('main');
+
+main.addEventListener('click', () => {
+	menuNav.classList.remove('menu__start');
 });
 
 // Idioma
