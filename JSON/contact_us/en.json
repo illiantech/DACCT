@@ -25,13 +25,13 @@
 	},
 	"form": {
 		"name": "Full name:",
-		"name-validator": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		"name-validator": "Only alphabetic characters with a space between each word",
 
 		"required": "Mandatory field",
 
 		"email": "Email:",
 		"email-input": "example@gmail.com",
-		"email-validator": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		"email-validator": "Please enter a valid email address",
 
 		"message": "Message:",
 		"message-input": "Share your ideas",
