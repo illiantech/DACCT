@@ -38,7 +38,7 @@
 
 		"submit": "Enviar",
 		"submit-error": "ERROR: Datos incorrectos",
-		"submit-send": "Tu formulario se ah enviado exitosamente"
+		"submit-send": "Tu formulario se ha enviado exitosamente"
 	},
 	"info-form": {
 		"title": "Información",

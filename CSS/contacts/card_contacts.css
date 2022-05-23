@@ -100,12 +100,13 @@
 	transition: border 0.2s;
 }
 
-/* example */
-.invalid {
-	color: blueviolet;
-}
-
 /* textarea */
+
+.form-block--group-inputs textarea {
+	resize: none;
+	height: 150px;
+	margin-bottom: 25px;
+}
 
 .form-block--group-inputs textarea {
 	resize: none;
@@ -143,33 +144,6 @@
 	transition: opacity 0.2s;
 }
 
-/* invalid modifier NAME */
-
-.form-block--group-inputs__name-invalid p:first-of-type {
-	opacity: 1;
-}
-
-.form-block--group-inputs__name-invalid input:first-of-type {
-	border: 3px solid red;
-}
-
-.form-block--group-inputs__name-invalid input:first-of-type:focus {
-	border: 3px solid red;
-}
-
-/* invalid modifier EMAIL */
-
-.form-block--group-inputs__email-invalid p:nth-of-type(3) {
-	opacity: 1;
-}
-
-.form-block--group-inputs__email-invalid input:nth-of-type(2) {
-	border: 3px solid red;
-}
-
-.form-block--group-inputs__email-invalid input:nth-of-type(2):focus {
-	border: 3px solid red;
-}
 /* message submit */
 
 .form-block--group-inputs p:nth-last-of-type(2) {
@@ -178,7 +152,9 @@
 	font-size: var(--letterSizeSmall);
 	background-color: var(--colorSecundario);
 	color: var(--white);
-	left: calc(50% - 105px);
+	left: 0;
+	transition-property: left, opacity;
+	transition-timing-function: cubic-bezier(0.15, 0.32, 0.58, 1.28);
 }
 
 .form-block--group-inputs p:last-of-type {
@@ -186,6 +162,42 @@
 	top: calc(100% + 10px);
 	font-size: var(--letterSizeSmall);
 	color: blue;
+}
+
+/* --- INVALID or REQUIRED --- */
+
+/* invalid or required modifier NAME */
+/* invalid or required modifier EMAIL */
+
+.form-block--group-inputs__name-required p:nth-of-type(2),
+.form-block--group-inputs__email-required p:nth-of-type(4),
+.form-block--group-inputs__name-invalid p:first-of-type,
+.form-block--group-inputs__email-invalid p:nth-of-type(3) {
+	opacity: 1;
+}
+
+.form-block--group-inputs__name-required input:first-of-type,
+.form-block--group-inputs__name-required input:first-of-type:focus,
+.form-block--group-inputs__email-required input:nth-of-type(2),
+.form-block--group-inputs__email-required input:nth-of-type(2):focus,
+.form-block--group-inputs__name-invalid input:first-of-type,
+.form-block--group-inputs__name-invalid input:first-of-type:focus,
+.form-block--group-inputs__email-invalid input:nth-of-type(2),
+.form-block--group-inputs__email-invalid input:nth-of-type(2):focus {
+	border: 3px solid red;
+}
+
+/* submit error */
+
+.form-block--group-inputs__submit-error p:nth-last-of-type(2) {
+	opacity: 1;
+	left: calc(50% - 105px);
+}
+
+/* submit sent */
+
+.form-block--group-inputs__submit-send p:last-of-type {
+	opacity: 1;
 }
 
 @media (min-width: 1000px) {

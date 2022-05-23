@@ -212,19 +212,20 @@
 				<div class="form-block--group-inputs">
 					<label data-section="form" data-content="name" for="name">Full name:</label>
 
-					<input data-validator="name" placeholder="Jhon Smith" id="name" type="text" name="Name" />
+					<input class="itemInput" data-validator="name" placeholder="Jhon Smith" id="name" type="text" name="Name" />
 					<p data-section="form" data-content="name-validator">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 					<p data-section="form" data-content="required">Mandatory field</p>
 
 					<label data-section="form" data-content="email" for="email">Email:</label>
 
 					<input
+						class="itemInput"
 						data-validator="email"
 						data-section="form"
 						data-content="email-input"
 						placeholder="example@gmail.com"
 						id="email"
-						type="email"
+						type="text"
 						name="Email"
 					/>
 					<p data-section="form" data-content="email-validator">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -232,10 +233,17 @@
 
 					<label data-section="form" data-content="message" for="message">Message:</label>
 
-					<textarea data-section="form" data-content="message-input" placeholder="Share your ideas" name="Message" id="message"></textarea>
+					<textarea
+						class="itemInput"
+						data-section="form"
+						data-content="message-input"
+						placeholder="Share your ideas"
+						name="Message"
+						id="message"
+					></textarea>
 
 					<p data-section="form" data-content="submit-error">ERROR: Incorrect data</p>
-					<input data-section="form" data-content="submit" id="button" type="submit" value="Send" />
+					<input class="itemInput" data-section="form" data-content="submit" type="submit" value="Send" />
 					<p data-section="form" data-content="submit-send">Your form was successfully submitted</p>
 				</div>
 			</form>
@@ -323,7 +331,7 @@
 
 		<!-- validator my script -->
 
-		<script src="JS/contacts/form_validator.js"></script>
+		<script src="JS/contacts/form_validator.js" type="module"></script>
 
 		<!-- END -->
 	</body>
