@@ -8,8 +8,6 @@ const formSubmitError = formInputs.children[10];
 
 const btnSubmit = formInputs.children[11];
 
-const itemInputs = document.querySelectorAll('.itemInput');
-
 const inputs = {
 	name: undefined,
 	email: undefined
@@ -90,7 +88,7 @@ const submitSend = () => {
 form.addEventListener('submit', function (event) {
 	event.preventDefault();
 
-	// se coloca primero para verificar si es indefenido antes de de enviar para que no lo lea cuando mute el objeto
+	// // se coloca primero para verificar si es indefenido antes de de enviar para que no lo lea cuando mute el objeto
 	if (inputs.name == undefined) formInputs.classList.add(`form-block--group-inputs__name-required`);
 
 	if (inputs.email == undefined) formInputs.classList.add(`form-block--group-inputs__email-required`);
@@ -99,16 +97,13 @@ form.addEventListener('submit', function (event) {
 	else submitError();
 
 	if (send) {
-		// Elementos de la libreria Email JS
-		const serviceID = 'default_service';
-		const templateID = 'template_o7vzfkj';
-
 		if (localStorage.getItem('lang') == 'es') btnSubmit.value = 'Enviando...';
 		else btnSubmit.value = 'Sending...';
 
-		itemInputs.forEach((item) => {
-			item.setAttribute('disabled', 'true');
-		});
+		btnSubmit.setAttribute('disabled', 'true');
+		// Elementos de la libreria Email JS
+		const serviceID = 'default_service';
+		const templateID = 'template_rdyx4sh';
 
 		emailjs.sendForm(serviceID, templateID, this).then(
 			() => {
@@ -119,9 +114,7 @@ form.addEventListener('submit', function (event) {
 				if (localStorage.getItem('lang') == 'es') btnSubmit.value = 'Enviar';
 				else btnSubmit.value = 'Send';
 
-				itemInputs.forEach((item) => {
-					item.removeAttribute('disabled');
-				});
+				btnSubmit.removeAttribute('disabled');
 			},
 			(err) => {
 				if (localStorage.getItem('lang') == 'es') alert('Error de conexion: Intentalo de nuevo');
