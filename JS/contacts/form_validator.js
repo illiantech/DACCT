@@ -100,6 +100,7 @@ form.addEventListener('submit', function (event) {
 		if (localStorage.getItem('lang') == 'es') btnSubmit.value = 'Enviando...';
 		else btnSubmit.value = 'Sending...';
 
+		// se desabilita solo el submit btn porque la libreria depende de que los inputs esten habilitados
 		btnSubmit.setAttribute('disabled', 'true');
 		// Elementos de la libreria Email JS
 		const serviceID = 'default_service';
