@@ -85,6 +85,13 @@ const submitSend = () => {
 	form.reset();
 };
 
+const enableSubtmit = () => {
+	if (localStorage.getItem('lang') == 'es') btnSubmit.value = 'Enviar';
+	else btnSubmit.value = 'Send';
+
+	btnSubmit.removeAttribute('disabled');
+};
+
 form.addEventListener('submit', function (event) {
 	event.preventDefault();
 
@@ -112,14 +119,13 @@ form.addEventListener('submit', function (event) {
 
 				send = false;
 
-				if (localStorage.getItem('lang') == 'es') btnSubmit.value = 'Enviar';
-				else btnSubmit.value = 'Send';
-
-				btnSubmit.removeAttribute('disabled');
+				enableSubtmit();
 			},
 			(err) => {
 				if (localStorage.getItem('lang') == 'es') alert('Error de conexion: Intentalo de nuevo');
 				else alert('Connection error: try again');
+
+				enableSubtmit();
 			}
 		);
 	}
