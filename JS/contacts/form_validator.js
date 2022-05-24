@@ -111,7 +111,8 @@ form.addEventListener('submit', function (event) {
 		btnSubmit.setAttribute('disabled', 'true');
 		// Elementos de la libreria Email JS
 		const serviceID = 'default_service';
-		const templateID = 'template_rdyx4sh';
+		// const templateID = 'template_rdyx4sh';
+		const templateID = 'template_o7vzfkj';
 
 		emailjs.sendForm(serviceID, templateID, this).then(
 			() => {
