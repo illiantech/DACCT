@@ -22,7 +22,8 @@ let timeoutError, timeoutSend;
 // Regular Expresion
 
 const regExp = {
-	name: /^([a-záéíóúñ]\s?){1,}$/i,
+	// Lo unico es que es valido cuando termina en guion
+	name: /^([a-záéíóúñ]\-?\s?){1,}$/i,
 	email:
 		/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/
 };
