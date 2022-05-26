@@ -1,4 +1,4 @@
-// Menu menos de 1300 px
+// Menu menos de 1300 px (MOVIL)
 
 const menuActive = document.getElementById('menu-active');
 const menuDesac = document.getElementById('menu-desactive');
