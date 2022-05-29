@@ -23,7 +23,7 @@
 			"srcset": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/img/webp/habilidades_vida_480.webp",
 			"src": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/img/habilidades_vida_720.jpg",
 
-			"static": false
+			"static": true
 		},
 		{
 			"title": "El buen trato",
@@ -44,7 +44,7 @@
 			"srcset": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/img/webp/buen_trato_480.webp",
 			"src": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/img/buen_trato_720.jpg",
 
-			"static": false
+			"static": true
 		},
 		{
 			"title": "Lenguaje inclusivo",
