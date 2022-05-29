@@ -44,7 +44,7 @@
 			"srcset": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/img/webp/buen_trato_480.webp",
 			"src": "https://kanutegx.github.io/DACCT/assets/articles/es/23-04-2022/img/buen_trato_720.jpg",
 
-			"static": true
+			"static": false
 		},
 		{
 			"title": "Lenguaje inclusivo",
@@ -65,7 +65,7 @@
 			"srcset": "https://kanutegx.github.io/DACCT/assets/articles/es/01-05-2022/img/webp/lenguaje_inclusivo_480.webp",
 			"src": "https://kanutegx.github.io/DACCT/assets/articles/es/01-05-2022/img/lenguaje_inclusivo_720.jpg",
 
-			"static": false
+			"static": true
 		}
 	]
 }

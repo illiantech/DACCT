@@ -70,40 +70,34 @@ const contentIndexBlogs = (i, index) => {
 const insertArticles = () => {
 	// delcaracion de variables dentro de la funcion
 	let insertion = 0; // inserción del destacado (solo cuando sea estatico en article)
-	let position = 0; // position push (tiene que concordar con los static article)
+	let position = 2; // position push (tiene que concordar con los static article)
 
 	// lectura de articles para integracion de contenido
 	for (let index = 0; index < articles.length; index++) {
 		if (articles[index].static) {
 			// inserción del destacado
-			if (insertion < elementsList.children.length) {
-				if (routeLang === 'blog') {
-					// blog.html
-					contentOriginalBlog(insertion, index);
+			if (routeLang === 'blog') {
+				// blog.html
+				contentOriginalBlog(insertion, index);
 
-					// DESTACADO - BLOG STATIC
-					const star = document.createElement('div');
-					star.classList.add('star');
+				// DESTACADO - BLOG STATIC
+				const star = document.createElement('div');
+				star.classList.add('star');
 
-					elementsList.children[insertion].children[1].firstElementChild.lastElementChild.before(star);
-				} else {
-					// index.html
-					contentIndexBlogs(insertion, index);
+				elementsList.children[insertion].children[1].firstElementChild.lastElementChild.before(star);
+			} else {
+				// index.html
+				contentIndexBlogs(insertion, index);
 
-					// DESTACADO - BLOG STATIC
-					const star = document.createElement('div');
-					star.classList.add('star');
+				// DESTACADO - BLOG STATIC
+				const star = document.createElement('div');
+				star.classList.add('star');
 
-					elementsList.children[insertion].firstElementChild.lastElementChild.before(star);
-				}
-
-				insertion++;
-				index++;
+				elementsList.children[insertion].firstElementChild.lastElementChild.before(star);
 			}
-		}
-
-		// position push
-		if (position < elementsList.children.length) {
+			insertion++;
+		} else if (position < elementsList.children.length) {
+			// position push
 			if (routeLang === 'blog') {
 				// blog.html
 				contentOriginalBlog(position, index);
