@@ -70,7 +70,7 @@ const contentIndexBlogs = (i, index) => {
 const insertArticles = () => {
 	// delcaracion de variables dentro de la funcion
 	let insertion = 0; // inserción del destacado (solo cuando sea estatico en article)
-	let position = 2; // position push (tiene que concordar con los static article)
+	let position = articles[0].position_static; // position push (tiene que concordar con los static article)
 
 	// lectura de articles para integracion de contenido
 	for (let index = 0; index < articles.length; index++) {
@@ -130,7 +130,7 @@ const fetchInsertArticles = async (lang) => {
 fetchInsertArticles(localStorage.getItem('lang'));
 
 // click event de lang
-
+// Agregar funcion al evento principal con import y export
 languageContainer.addEventListener('click', (e) => {
 	const language = e.target.dataset.lang;
 
