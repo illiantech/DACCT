@@ -36,7 +36,7 @@ const filterSearch = () => {
 			link.classList.add('list-blog--item-title');
 
 			link.textContent = article.title;
-			link.title = articles[0].open_article;
+			link.title = articles[0].title_open_article;
 			link.href = article.link;
 			link.target = '_blank';
 

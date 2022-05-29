@@ -1,7 +1,9 @@
 {
 	"articles": [
 		{
-			"open_article": "Open article",
+			"position_static": 0,
+
+			"title_open_article": "Open article",
 
 			"none_article": "Article not found...",
 
