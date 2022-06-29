@@ -2,10 +2,14 @@
 
 const blogList = document.getElementById('blogList');
 
+const rootScroll = document.firstElementChild;
+
 // Push de estado de blog desde la home page
 
 if (history.state != null) {
 	blogList.children[history.state.validOpenBlog].classList.add('blog--list-item__open');
+
+	rootScroll.style.overflowY = 'hidden';
 }
 
 // active and desactive open blog
@@ -17,9 +21,14 @@ blogList.addEventListener('click', (e) => {
 		const item = e.target.parentElement.parentElement.parentElement.parentElement;
 
 		item.classList.add('blog--list-item__open');
+
+		rootScroll.style.overflowY = 'hidden';
 	} else if (open == 'desactive') {
 		const item = e.target.parentElement;
+
 		item.classList.remove('blog--list-item__open');
+
+		rootScroll.style.overflowY = 'auto';
 	}
 });
 

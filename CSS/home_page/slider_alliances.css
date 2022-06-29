@@ -118,9 +118,9 @@
 	.alliance--list {
 		position: absolute;
 
-		/* coloca los elemntos en funcion del espacio disponible */
+		/* coloca los elementos en funcion del espacio disponible */
 
-		width: 300%;
+		width: 266.5%;
 		/* para desplazamiento a la izquierda previo */
 		margin-left: calc(-100% / 3);
 	}
