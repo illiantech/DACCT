@@ -59,7 +59,8 @@
 }
 
 .blog--list-item__open .blog--article-picture {
-	width: 70%;
+	width: 80%;
+	max-width: 590px;
 	height: auto;
 	margin-top: 50px;
 	margin-bottom: 30px;
@@ -130,10 +131,6 @@
 
 	.blog--list-item__open:nth-child(2n) .blog--article {
 		align-items: center;
-	}
-
-	.blog--list-item__open .blog--article-picture {
-		width: 50%;
 	}
 
 	.blog--list-item__open .blog--article-title {
