@@ -33,6 +33,9 @@
 		"email-input": "example@gmail.com",
 		"email-validator": "Please enter a valid email address",
 
+		"phone": "Phone",
+		"phone-validator": "Please Input a valid phone number",
+
 		"message": "Message:",
 		"message-input": "Share your ideas",
 

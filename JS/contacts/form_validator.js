@@ -10,7 +10,8 @@ const btnSubmit = formInputs.children[11];
 
 const inputs = {
 	name: undefined,
-	email: undefined
+	email: undefined,
+	phone: undefined
 };
 
 let send = false;
@@ -23,7 +24,8 @@ const regExp = {
 	// Lo unico es que es valido cuando termina en guion
 	name: /^([a-záéíóúñ]\-?\s?){1,}$/i,
 	email:
-		/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/
+		/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/,
+	phone: /^\+?[0-9]+$/
 };
 
 // funtion validator inputs
@@ -33,7 +35,7 @@ const validator = (e) => {
 	const validator = element.dataset.validator;
 
 	if (validator) {
-		if (element.value.length == 0) {
+		if (element.value.length === 0) {
 			formInputs.classList.remove(`form-block--group-inputs__${validator}-invalid`);
 
 			inputs[validator] = undefined;
@@ -43,7 +45,7 @@ const validator = (e) => {
 		if (inputs[validator] != undefined)
 			formInputs.classList.toggle(`form-block--group-inputs__${validator}-invalid`, !regExp[validator].test(element.value));
 
-		formInputs.classList.toggle(`form-block--group-inputs__${validator}-required`, inputs[validator] == undefined);
+		formInputs.classList.toggle(`form-block--group-inputs__${validator}-required`, inputs[validator] === undefined);
 	}
 };
 
@@ -85,8 +87,8 @@ const submitSend = () => {
 	form.reset();
 };
 
-const enableSubtmit = () => {
-	if (localStorage.getItem('lang') == 'es') btnSubmit.value = 'Enviar';
+const enableSubmit = () => {
+	if (localStorage.getItem('lang') === 'es') btnSubmit.value = 'Enviar';
 	else btnSubmit.value = 'Send';
 
 	btnSubmit.removeAttribute('disabled');
@@ -96,15 +98,17 @@ form.addEventListener('submit', function (event) {
 	event.preventDefault();
 
 	// // se coloca primero para verificar si es indefenido antes de de enviar para que no lo lea cuando mute el objeto
-	if (inputs.name == undefined) formInputs.classList.add(`form-block--group-inputs__name-required`);
+	if (inputs.name === undefined) formInputs.classList.add(`form-block--group-inputs__name-required`);
 
-	if (inputs.email == undefined) formInputs.classList.add(`form-block--group-inputs__email-required`);
+	if (inputs.email === undefined) formInputs.classList.add(`form-block--group-inputs__email-required`);
 
-	if (inputs.name == true && inputs.email == true) send = true;
+	if (inputs.phone === undefined) formInputs.classList.add(`form-block--group-inputs__phone-required`);
+
+	if (inputs.name === true && inputs.email === true && inputs.phone === true) send = true;
 	else submitError();
 
 	if (send) {
-		if (localStorage.getItem('lang') == 'es') btnSubmit.value = 'Enviando...';
+		if (localStorage.getItem('lang') === 'es') btnSubmit.value = 'Enviando...';
 		else btnSubmit.value = 'Sending...';
 
 		// se desabilita solo el submit btn porque la libreria depende de que los inputs esten habilitados
@@ -120,13 +124,13 @@ form.addEventListener('submit', function (event) {
 
 				send = false;
 
-				enableSubtmit();
+				enableSubmit();
 			},
 			(err) => {
-				if (localStorage.getItem('lang') == 'es') alert('Error de conexion: Intentalo de nuevo');
+				if (localStorage.getItem('lang') === 'es') alert('Error de conexion: Intentalo de nuevo');
 				else alert('Connection error: try again');
 
-				enableSubtmit();
+				enableSubmit();
 			}
 		);
 	}

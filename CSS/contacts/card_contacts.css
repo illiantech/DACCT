@@ -16,7 +16,7 @@
 	z-index: 10;
 	width: 90vw;
 	max-width: 1200px;
-	height: 820px;
+	height: 930px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 100px;
@@ -171,8 +171,10 @@
 
 .form-block--group-inputs__name-required p:nth-of-type(2),
 .form-block--group-inputs__email-required p:nth-of-type(4),
+.form-block--group-inputs__phone-required p:nth-of-type(6),
 .form-block--group-inputs__name-invalid p:first-of-type,
-.form-block--group-inputs__email-invalid p:nth-of-type(3) {
+.form-block--group-inputs__email-invalid p:nth-of-type(3),
+.form-block--group-inputs__phone-invalid p:nth-of-type(5) {
 	opacity: 1;
 }
 
@@ -180,10 +182,14 @@
 .form-block--group-inputs__name-required input:first-of-type:focus,
 .form-block--group-inputs__email-required input:nth-of-type(2),
 .form-block--group-inputs__email-required input:nth-of-type(2):focus,
+.form-block--group-inputs__phone-required input:nth-of-type(3),
+.form-block--group-inputs__phone-required input:nth-of-type(3):focus,
 .form-block--group-inputs__name-invalid input:first-of-type,
 .form-block--group-inputs__name-invalid input:first-of-type:focus,
 .form-block--group-inputs__email-invalid input:nth-of-type(2),
-.form-block--group-inputs__email-invalid input:nth-of-type(2):focus {
+.form-block--group-inputs__email-invalid input:nth-of-type(2):focus,
+.form-block--group-inputs__phone-invalid input:nth-of-type(3),
+.form-block--group-inputs__phone-invalid input:nth-of-type(3):focus {
 	border: 3px solid red;
 }
 
@@ -204,7 +210,7 @@
 	/* form-block ----- block*/
 
 	.form-block {
-		height: 620px;
+		height: 730px;
 		flex-direction: row;
 		justify-content: flex-end;
 	}
