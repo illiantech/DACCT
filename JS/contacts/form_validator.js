@@ -25,7 +25,7 @@ const regExp = {
 	name: /^([a-záéíóúñ]\-?\s?){1,}$/i,
 	email:
 		/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/,
-	phone: /^\+?[0-9]+$/
+	phone: /^\+?(-?\(?\)?\s?[0-9]+\s?){1,}$/
 };
 
 // funtion validator inputs
@@ -49,7 +49,7 @@ const validator = (e) => {
 	}
 };
 
-form.addEventListener('input', validator);
+form.addEventListener('change', validator);
 
 // submit form
 
