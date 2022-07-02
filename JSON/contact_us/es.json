@@ -33,7 +33,7 @@
 		"email-input": "ejemplo@gmail.com",
 		"email-validator": "Ingrese un correo electrónico válido",
 
-		"phone": "Teléfono",
+		"phone": "Teléfono:",
 		"phone-validator": "Ingrese un número de teléfono válido",
 
 		"message": "Mensaje:",
