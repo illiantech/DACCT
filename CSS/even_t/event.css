@@ -1,73 +1,95 @@
 .wave {
-  background-image: url(../../assets/img/svg/even_t/wave_events.svg);
+	background-image: url(../../assets/img/svg/even_t/wave_events.svg);
 }
 
 /* border Indicator */
 .list--item:nth-child(5) > a {
-  border-bottom: 3px solid var(--colorSecundario);
+	border-bottom: 3px solid var(--colorSecundario);
 }
 /* ----- */
 
 .events-title {
-  display: none;
+	display: none;
 }
 
 .events {
-  width: 90vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 20px;
-  border: 3px solid var(--colorPrimario);
+	width: 90vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+	border: 3px solid var(--colorPrimario);
 }
 
 .events:last-of-type {
-  margin-bottom: 50px;
-}
-
-.events h4,
-.events--paragraph {
-  width: 80vw;
+	margin-bottom: 50px;
 }
 
 .events h4 {
-  margin-bottom: 0;
-  color: var(--colorPrimario2);
+	margin-bottom: 0;
+	color: var(--colorPrimario2);
 }
 
-.events time {
-  margin-top: 16px;
-  margin-bottom: 16px;
+.events h4,
+.events p,
+.events time,
+.events--gallery {
+	width: 90%;
+}
+
+.events time,
+.events--gallery {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.events--gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.events--gallery picture {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 @media (min-width: 1300px) {
-  .events-title {
-    display: flex;
-    justify-content: space-evenly;
-    max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+	.events-title {
+		display: flex;
+		justify-content: space-evenly;
+		max-width: 1500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-  .events-title h3 {
-    display: inline-block;
-    color: var(--colorPrimario2);
-  }
+	.events-title h3 {
+		display: inline-block;
+		color: var(--colorPrimario2);
+	}
 
-  .events {
-    flex-direction: row;
-    justify-content: space-evenly;
-    max-width: 1300px;
-  }
+	.events {
+		flex-direction: row;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		max-width: 1300px;
+	}
 
-  .events h4 {
-    display: none;
-  }
+	.events h4 {
+		display: none;
+	}
 
-  .events--paragraph {
-    max-width: 250px;
-  }
+	.events p,
+	.events time {
+		max-width: 200px;
+	}
+
+	.events--gallery {
+		width: 60%;
+	}
 }

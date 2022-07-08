@@ -4,9 +4,9 @@ const form = document.getElementById('form');
 
 const formInputs = form.children[1];
 
-const formSubmitError = formInputs.children[10];
+const formSubmitError = document.getElementById('formSubmitError');
 
-const btnSubmit = formInputs.children[11];
+const formSubmit = document.getElementById('formSubmit');
 
 const inputs = {
 	name: undefined,
@@ -88,10 +88,10 @@ const submitSend = () => {
 };
 
 const enableSubmit = () => {
-	if (localStorage.getItem('lang') === 'es') btnSubmit.value = 'Enviar';
-	else btnSubmit.value = 'Send';
+	if (localStorage.getItem('lang') === 'es') formSubmit.value = 'Enviar';
+	else formSubmit.value = 'Send';
 
-	btnSubmit.removeAttribute('disabled');
+	formSubmit.removeAttribute('disabled');
 };
 
 form.addEventListener('submit', function (event) {
@@ -108,11 +108,11 @@ form.addEventListener('submit', function (event) {
 	else submitError();
 
 	if (send) {
-		if (localStorage.getItem('lang') === 'es') btnSubmit.value = 'Enviando...';
-		else btnSubmit.value = 'Sending...';
+		if (localStorage.getItem('lang') === 'es') formSubmit.value = 'Enviando...';
+		else formSubmit.value = 'Sending...';
 
 		// se desabilita solo el submit btn porque la libreria depende de que los inputs esten habilitados
-		btnSubmit.setAttribute('disabled', 'true');
+		formSubmit.setAttribute('disabled', 'true');
 		// Elementos de la libreria Email JS
 		const serviceID = 'default_service';
 		// const templateID = 'template_rdyx4sh';
