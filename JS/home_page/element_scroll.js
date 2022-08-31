@@ -1,15 +1,19 @@
+// funtion elements id
+
+const $id = (id) => document.getElementById(id);
+
 // section blog
-const blogHome = document.getElementById('blogHome');
+const blogHome = $id('blogHome');
 const blogHomeTop = blogHome.offsetTop;
 
 //section estrategias
 
-const containerCardTwo = document.getElementById('containerCardTwo');
-const cardTwo = document.getElementById('cardTwo');
+const containerCardTwo = $id('containerCardTwo');
+const cardTwo = $id('cardTwo');
 const cardTop = containerCardTwo.offsetTop;
 
 // section programas
-const programs = document.getElementById('programs');
+const programs = $id('programs');
 const programsTop = programs.offsetTop;
 
 // arrays de elementos a aplicar este efecto

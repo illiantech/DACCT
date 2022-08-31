@@ -151,7 +151,7 @@
 
 /* Bottom de donar */
 
-.donar-buttom {
+.donate-buttom {
 	position: absolute;
 	top: 103%;
 	left: 2.5%;
@@ -161,7 +161,7 @@
 	justify-content: center;
 }
 
-.donar-buttom a {
+.donate-buttom a {
 	border-bottom: none;
 	padding-left: 0;
 	padding-bottom: 0;
@@ -181,41 +181,29 @@
 /* Idioma menu */
 
 .list--item:last-child {
-	border-bottom: none;
 	position: absolute;
 	top: 105%;
 	right: 5%;
 	display: inline-block;
 	font-size: var(--letterSizeSmall);
-	height: 25px;
-}
 
-.idioma {
-	border-bottom: none;
-	display: flex;
-	justify-content: center;
 	width: 90px;
-	padding-bottom: 2.5px;
-	border-bottom: 3px solid var(--colorSecundario);
 }
 
-.idioma > em {
-	font-style: normal;
-
-	text-align: center;
-	cursor: pointer;
+.lang {
+	display: none;
 }
 
-.idioma--selector {
-	width: 90px;
+.lang--selector {
+	width: 100%;
 	height: 90px;
-	overflow: hidden;
 	position: relative;
+	top: -50%;
 }
 
-.idioma--list {
+.lang--list {
 	position: absolute;
-	top: -105%;
+	top: 0%;
 	width: 100%;
 	height: 100%;
 	display: inline-block;
@@ -227,33 +215,26 @@
 	transition: top 0.4s ease;
 }
 
-/* idioma hover CCS PC */
-
-.idioma__hover:hover + .idioma--selector > .idioma--list,
-.idioma__hover + .idioma--selector > .idioma--list:hover, 
-/* idioma bottom JS Movil */
-.idioma--list__active {
-	top: -5%;
-}
-
-.idioma--list-item {
+.lang--list-item {
 	padding-top: 5px;
 	padding-bottom: 5px;
+	/* pero que el contenedor tenga altura automatica */
 	border: 2px solid var(--colorPrimario);
 	border-radius: 5px;
 	background-color: var(--white);
-	/* pero que el contenedor tenga altura automatica */
+
 	display: flex;
 
 	justify-content: flex-end;
 }
 
-.idioma--list-item:first-child {
+.lang--list-item:first-child {
 	margin-bottom: 7.5px;
 	margin-top: 15px;
+	/* para el espacio entre bloques */
 }
 
-.idioma--list-item > span {
+.lang--list-item > span {
 	text-decoration: none;
 	color: var(--black);
 
@@ -261,7 +242,7 @@
 	left: 2.5px;
 }
 
-.idioma--list-item > img {
+.lang--list-item > img {
 	width: 20px;
 	height: 20px;
 	margin-right: 2.5px;
@@ -337,7 +318,7 @@
 	}
 
 	/* Donar */
-	.donar-buttom {
+	.donate-buttom {
 		position: absolute;
 		left: 102.5%;
 		top: 25%;
@@ -346,7 +327,7 @@
 		justify-content: center;
 	}
 
-	.donar-buttom a {
+	.donate-buttom a {
 		border-radius: 10px;
 		width: 90px;
 		height: 45px;
@@ -354,7 +335,7 @@
 		transition: all 0.2s ease;
 	}
 
-	.donar-buttom a:hover {
+	.donate-buttom a:hover {
 		width: 100px;
 		height: 50px;
 		font-size: var(--letterSizeMedium);
@@ -367,6 +348,34 @@
 	.list--item:last-child {
 		right: -250px;
 		top: 50%;
-		width: 90px;
+	}
+
+	.lang {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding-bottom: 2.5px;
+		border-bottom: 3px solid var(--colorSecundario);
+	}
+
+	.lang > em {
+		font-style: normal;
+
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.lang--selector {
+		overflow: hidden;
+		top: 0;
+	}
+
+	.lang--list {
+		top: -105%;
+	}
+
+	.lang__hover:hover + .lang--selector > .lang--list,
+	.lang--list:hover {
+		top: -5%;
 	}
 }
